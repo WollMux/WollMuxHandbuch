@@ -1,0 +1,24 @@
+{
+	"gitbook": "3.x.x",
+	"title": "WollMux Handbuch",
+	"author": "Landeshauptstadt München",
+	"root": "markdown",
+	"plugins": [ "atoc", "collapsible-menu", "forkmegithub", "richquotes", "redirect", "splitter" ],
+	"links": {
+		"sidebar": {
+			"Homepage": "http://www.wollmux.org"
+		}
+	},
+	"pluginsConfig": {
+        "atoc": {
+            "addClass": true,
+            "className": "toc"
+        },
+        "forkmegithub": {
+            "url": "https://github.com/WollMux/WollMux"
+        }
+    },
+	"styles": {
+		"website": "styles/website.css"
+	}
+}
