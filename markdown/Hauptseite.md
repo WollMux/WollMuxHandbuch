@@ -1,5 +1,3 @@
-[ English version](Main_Page.md "wikilink")
-
 ![](Wollmux_logo_medium.gif "fig:Wollmux_logo_medium.gif") - das Briefkopf- und Formularsystem der LHM
 ======================================================================================================
 
