@@ -17,7 +17,12 @@ module.exports = function(grunt) {
               // Task-specific options go here.
             },
             gitbook: {
-                cmd: 'gitbook.cmd',
+                cmd: (function(){
+                  if (process.platform.startsWith("win")) {
+                    return "gitbook.cmd";
+                  }
+                  return "gitbook";
+                }()),
                 args: [
                     'build'
                 ]
