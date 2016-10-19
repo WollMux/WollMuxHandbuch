@@ -2,6 +2,7 @@
 	"gitbook": "3.x.x",
 	"title": "WollMux Handbuch",
 	"author": "Landeshauptstadt München",
+	"language": "de",
 	"root": "markdown",
 	"plugins": [ "atoc", "collapsible-menu", "forkmegithub", "richquotes", "redirect", "splitter" ],
 	"links": {

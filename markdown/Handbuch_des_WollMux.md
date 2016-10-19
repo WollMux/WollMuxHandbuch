@@ -1,5 +1,3 @@
-[English Version](WollMux_Handbook.md "wikilink")
-
 ![Eierlegender WollMux](100px-Wollmux.jpg "Eierlegender WollMux")
 
 Die Seiten dieser Kategorie stellen das Administrations-Handbuch des
