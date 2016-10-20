@@ -4,7 +4,7 @@
 	"author": "Landeshauptstadt München",
 	"language": "de",
 	"root": "markdown",
-	"plugins": [ "atoc", "collapsible-menu", "forkmegithub", "richquotes", "redirect", "splitter" ],
+	"plugins": [ "atoc", "collapsible-menu", "forkmegithub", "richquotes", "redirect", "splitter", "back-to-top-button" ],
 	"links": {
 		"sidebar": {
 			"Homepage": "http://www.wollmux.org"

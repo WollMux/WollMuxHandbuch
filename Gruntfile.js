@@ -1,4 +1,6 @@
 module.exports = function(grunt) {
+    require('load-grunt-tasks')(grunt);
+
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
         watch: {
@@ -43,6 +45,23 @@ module.exports = function(grunt) {
                     logConcurrentOutput: true
                 }
             }
+        },
+        markdownlint: {
+          full: {
+            options: {
+              config: {
+                'default': true,
+                'line-length': false,
+                'blanks-around-headers': false,
+                'no-duplicate-header': false,
+                'no-inline-html': false
+              }
+            },
+            src: [
+              'README.md',
+              'markdown/*.md'
+            ]
+          }
         }
     });
 
@@ -50,6 +69,8 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-run');
     grunt.loadNpmTasks('grunt-serve');
     grunt.loadNpmTasks('grunt-concurrent');
+    grunt.loadNpmTasks('grunt-markdownlint');
 
     grunt.registerTask('default', ['run:gitbook', 'concurrent:gbserve']);
+    grunt.registerTask('check', ['markdownlint']);
 };
