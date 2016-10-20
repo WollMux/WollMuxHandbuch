@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "license": "CC-BY-SA-4.0",
   "repository": {
-      "type": "git",
-      "url": "https://github.com/WollMux/WollMuxHandbuch"
+    "type": "git",
+    "url": "https://github.com/WollMux/WollMuxHandbuch"
   },
   "devDependencies": {
     "grunt": "~1.0.0",
@@ -13,6 +13,7 @@
     "grunt-contrib-nodeunit": "~1.0.0",
     "grunt-contrib-uglify": "~2.0.0",
     "grunt-contrib-watch": "^1.0.0",
+    "grunt-gh-pages": "^2.0.0",
     "grunt-markdownlint": "^1.0.9",
     "grunt-run": "^0.6.0",
     "grunt-serve": "^0.1.6",

@@ -59,7 +59,18 @@ This command will compile the Markdown to HTML and start the GitBook server. Any
 
 The server listens on the port 4000. To see the HTML document open your browser on `http://localhost:4000`.
 
-If your browser has a plugin for LiveReload installed, the website is automatically refreshed.
+If your browser has a plugin for [LiveReload](http://livereload.com/) installed, the website is automatically refreshed.
+
+## Deployment
+
+The task `deploy` recompiles the documentation and pushes the resulting web-site
+into the branch `gh-pages`.
+
+`grunt deploy [--tag="<tag>"] [--message="<commit-message>"]`
+
+* **tag**: Creates a tag on the branch `gh-pages`. Default: no tag is created.
+
+* **message**: Commit message. Default: "Neue Version."
 
 ---
 

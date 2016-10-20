@@ -1,0 +1,12 @@
+cmd: "gitbook build"
+atomCommandName: "gitbook:build"
+name: "build"
+
+targets:
+    lint:
+        cmd: "grunt check"
+        atomCommandName: "gitbook:check"
+        errorMatch: "(?<file>.+): (?<line>\\d+): (?<message>.+)"
+    deploy:
+        cmd: "grunt deploy"
+        atomCommandName: "gitbook:deploy"
