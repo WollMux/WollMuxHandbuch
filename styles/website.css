@@ -1,0 +1,42 @@
+blockquote.alert > strong
+{
+    width: auto;
+    height : auto;
+}
+
+.toc {
+    border: 1px solid #aaa;
+    background-color: #f9f9f9;
+    font-size: 95%;
+    padding: 7px;
+    display: table;
+}
+
+.book.color-theme-2 .toc {
+    background-color: #2d3143;
+}
+
+ul.toc, .toc ul {
+    list-style-type: decimal;
+}
+
+ul.summary > li.chapter > a {
+    font-weight: bold;
+}
+
+.page-inner {
+    max-width: 80%;
+}
+
+li[data-path="./"] {
+    display: none;
+    visibility: hidden;
+}
+
+.markdown-section h1 {
+    font-size: 1.8em;
+}
+
+.markdown-section h2 {
+    font-size: 1.6em;
+}
