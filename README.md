@@ -6,7 +6,7 @@ The documentation is written in [Markdown format](https://toolchain.gitbook.com/
 ## Build Requirements
 
 * [Node.js](https://nodejs.org)
-* [Grunt](http://gruntjs.com/)
+* [Grunt](http://gruntjs.com/getting-started)
 * [GitBook](https://toolchain.gitbook.com/setup.html)
 * [Calibre](https://calibre-ebook.com/download) for PDF and eBook formats.
 
@@ -20,14 +20,16 @@ The documentation is written in [Markdown format](https://toolchain.gitbook.com/
 
   `npm install`
 
+* Switch to the GitBook folder
+
+  `cd WollMuxHandbuch`
+
 * Install Gitbook plugins
 
   `gitbook install`
 
-* Build the documentation
-  * Switch to the GitBook folder
 
-    `cd WollMuxHandbuch`
+* Build the documentation
 
   * HTML
 
