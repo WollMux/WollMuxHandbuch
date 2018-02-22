@@ -70,10 +70,7 @@ Falls noch nicht angezeigt: **OpenOffice.org** --&gt; Menü **Ansicht**
 
 ### Die Schaltfläche “Textbaustein einfügen”
 
-Nach Betätigen der Schaltfläche , wird vom Cursor ausgehend eine
-Rückwärts suche gestartet, die so lange läuft, bis in einem Absatz keine
-Textbausteine mehr gefunden werden. Alle dabei gefundenen Textbausteine
-werden entsprechend aufgelöst. In den einzelnen Textbausteinen können
+Nach Betätigen der Schaltfläche , wird vom Cursor ausgehend rückwärts das erste Wort ausgewählt. Dieses wird dann durch einen Textbaustein ersetzt, falls ein solcher existiert. In den einzelnen Textbausteinen können
 Platzhalter eingefügt werden (OpenOffice.org&rarr;Menü
 “Einfügen”&rarr;Feldbefehle&rarr;Andere&rarr;Reiter
 “Funktionen”&rarr;Feldtyp “Platzhalter”&rarr;Format “Text”). Nach dem
