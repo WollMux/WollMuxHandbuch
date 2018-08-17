@@ -7,7 +7,7 @@
         <title>WollMux installieren (vor Version 16.04) · WollMux Handbuch</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.2.2">
+        <meta name="generator" content="GitBook 3.2.3">
         <meta name="author" content="Landeshauptstadt München">
         
         
@@ -844,7 +844,7 @@ in der gew&#xFC;nschten Version in ein beliebiges Verzeichnis <em>&lt;Verz&gt;</
 <li>Schliessen aller offenen OOo-/LO-Fenster, sowie der
 <a href="WollMuxBar.html" title="wikilink">WollMuxBar</a>.</li>
 </ul>
-<blockquote class="clearfix alert alert-warning"><strong class="fa fa-4x fa-exclamation-triangle"></strong>
+<blockquote class="clearfix alert alert-warning"><strong class="fa fa-2x fa-exclamation-triangle"></strong>
 <p> Bitte schauen Sie im Taskmanager nach, ob auch wirklich alle
 Prozesse mit dem Namen &#x201C;soffice.bin&#x201D; beendet sind. Falls nicht,
 schlie&#xDF;en Sie bitte alle noch laufenden soffice.bin-Prozesse &#xFC;ber den
@@ -882,7 +882,7 @@ Verzeichnis <em>/usr/bin</em></li>
 Befehl <em>wollmuxbar</em> bzw. (mit vollst&#xE4;ndigem Pfad) <em>/usr/bin/wollmuxbar</em>
 aufrufen. Sie k&#xF6;nnen auch eine entsprechende Verkn&#xFC;pfung auf dem Desktop
 anlegen.</p>
-<blockquote class="clearfix alert alert-info"><strong class="fa fa-4x fa-info"></strong>
+<blockquote class="clearfix alert alert-info"><strong class="fa fa-2x fa-info"></strong>
 <p> Falls Sie <a href="http://www.libreoffice.org" target="_blank">LibreOffice</a> verwenden, beachten
 Sie bitte die <strong><a href="WollMuxBar.html#libroffice" title="wikilink">Hinweise f&#xFC;r den Start der WollMuxBar mit LibreOffice</a></strong>.</p>
 </blockquote>
@@ -916,7 +916,7 @@ Modus auszuf&#xFC;hren, m&#xFC;ssen Sie ihn &#xFC;ber die Kommandozeile mit der 
 <strong>--SILENT</strong> oder <strong>/S</strong> starten (Der Uninstaller <code>wollmux_unistall.exe</code>
 kennt nur die Variante <strong>/S</strong>):</p>
 <p><code>wollmux-&lt;VERSION&gt;-installer.exe --SILENT</code></p>
-<blockquote class="clearfix alert alert-info"><strong class="fa fa-4x fa-info"></strong>
+<blockquote class="clearfix alert alert-info"><strong class="fa fa-2x fa-info"></strong>
 <p> Wenn der Installer mit der Option <em>--SILENT</em> bzw. <em>/S</em>
 ausgef&#xFC;hrt wird, erhalten Sie keinerlei R&#xFC;ckmeldung, ob die Installation
 erfolgreich war oder nicht.</p>
@@ -933,19 +933,19 @@ beliebig):</p>
 <li><strong>--NODESKTOP</strong> : Gibt an, dass der Installer keine Verkn&#xFC;fung auf dem Desktop anlegen soll.</li>
 <li><strong>--LOCAL</strong> : Gibt an, dass der Installer eine Installation auf Benutzerebene und nicht auf Rechnerebene durchf&#xFC;hren soll.</li>
 </ul>
-<blockquote class="clearfix alert alert-warning"><strong class="fa fa-4x fa-exclamation-triangle"></strong>
+<blockquote class="clearfix alert alert-warning"><strong class="fa fa-2x fa-exclamation-triangle"></strong>
 <p> Im Allgemeinen wird von der Verwendung dieser Option abgeraten! Der bei der Installation generierte Uninstaller unterst&#xFC;tzt diese Option nicht und die Deinstallation &#xFC;ber den Uninstaller wird daher nicht funktionieren. Zudem kann ein Vermischen von WollMux-Installationen auf Rechnerebene und Benutzerebene zu Problemen f&#xFC;hren und wird vom WollMux nicht unterst&#xFC;tzt. Wenn Sie diese Option verwenden, kann der Installer auch ohne Administratorrechte ausgef&#xFC;hrt werden.</p>
 </blockquote>
 <ul>
 <li><strong>--NOKILL</strong> : Diese Kommandozeilenoption, die ebenfalls f&#xFC;r den Uninstaller zur Verf&#xFC;gung steht, gibt an, dass vor dem Ausf&#xFC;hren der Installation/Deinstallation nicht versucht werden soll, vorhandene soffice-Prozesse zu beenden. Ohne diese Option versucht der Installer mittels eine Java-Tools soffice-Prozesse sauber zu beenden. In bestimmten Szenarien kann dies allerdings zu Problemen f&#xFC;hren (z.B. wenn die <a href="WollMuxBar.html" title="wikilink">WollMuxBar</a> mit der Quickstarter-Option gestartet wurde), so dass der Installer die Installation nicht sauber durchf&#xFC;hren kann. In diesem Fall verwenden Sie bitte die NOKILL-Option und stellen Sie manuell sicher, dass vor Ausf&#xFC;hren des Installers keine soffice-Prozesse mehr laufen.</li>
 </ul>
-<blockquote class="clearfix alert alert-warning"><strong class="fa fa-4x fa-exclamation-triangle"></strong>
+<blockquote class="clearfix alert alert-warning"><strong class="fa fa-2x fa-exclamation-triangle"></strong>
 <p> Wenn Sie den Installer mit LibreOffice verwenden wollen, muss die NOKILL-Option zwangsl&#xE4;ufig gesetzt sein!</p>
 </blockquote>
 <ul>
 <li><strong>--LIBRE</strong> : Ist diese Option nicht angegeben, sucht der Installer zun&#xE4;chst nach einer Installation von OpenOffice.org. Nur wenn er keine OpenOffice.org-Installation findet, sucht er dann nach einer LibreOffice-Installation und verwendet diese. Wollen Sie das Verwenden einer eventuell vorhandenen OpenOffice.org-Installation &#xFC;berspringen und ausdr&#xFC;cklich f&#xFC;r LibreOffice installieren, so k&#xF6;nnen Sie die --LIBRE-Option daf&#xFC;r verwenden.</li>
 </ul>
-<blockquote class="clearfix alert alert-warning"><strong class="fa fa-4x fa-exclamation-triangle"></strong>
+<blockquote class="clearfix alert alert-warning"><strong class="fa fa-2x fa-exclamation-triangle"></strong>
 <p> Wenn Sie den Installer mit LibreOffice verwenden wollen, muss die NOKILL-Option zwangsl&#xE4;ufig gesetzt sein! Beachten Sie au&#xDF;erdem die <a href="WollMuxBar#libreoffice" title="wikilink">Hinweise f&#xFC;r den Start der WollMuxBar mit LibreOffice</a>.*</p>
 </blockquote>
 <p><strong>Beispiel:</strong></p>
@@ -969,7 +969,7 @@ in der gew&#xFC;nschten Version in ein beliebiges Verzeichnis &lt;Verz&gt;.</li>
 Schnellstarter in der Taskleiste links neben der Uhr, sowie der
 <a href="WollMuxBar.html" title="wikilink">WollMuxBar</a>.</li>
 </ul>
-<blockquote class="clearfix alert alert-warning"><strong class="fa fa-4x fa-exclamation-triangle"></strong>
+<blockquote class="clearfix alert alert-warning"><strong class="fa fa-2x fa-exclamation-triangle"></strong>
 <p> Bitte schauen Sie im Taskmanager nach, ob auch wirklich alle
 Prozesse mit dem Namen &#x201C;soffice.bin&#x201D; beendet sind. Falls nicht,
 schlie&#xDF;en Sie bitte alle noch laufenden soffice.bin-Prozesse &#xFC;ber den
@@ -1009,7 +1009,7 @@ auf dem Desktop oder dem Startmen&#xFC; anlegen.</p>
 <h4 id="installation-unter-libreoffice-portable">Installation unter LibreOffice Portable</h4>
 <p>Siehe
 <a href="WollMux_mit_LibreOffice_Portable.html" title="wikilink">WollMux_mit_LibreOffice_Portable</a></p>
-<blockquote class="clearfix alert alert-info"><strong class="fa fa-4x fa-info"></strong>
+<blockquote class="clearfix alert alert-info"><strong class="fa fa-2x fa-info"></strong>
 <p> Falls Sie <a href="http://www.libreoffice.org" target="_blank">LibreOffice</a> verwenden, beachten
 Sie bitte die <strong><a href="WollMuxBar.html#libreoffice" title="wikilink">Hinweise f&#xFC;r den Start der WollMuxBar mit LibreOffice</a></strong>.</p>
 </blockquote>
@@ -1056,7 +1056,7 @@ Sie bitte die <strong><a href="WollMuxBar.html#libreoffice" title="wikilink">Hin
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"WollMux installieren (vor Version 16.04)","level":"1.4.24.1","depth":3,"next":{"title":"WollMux installieren (vor_Version 16.04a)","level":"1.4.24.2","depth":3,"path":"WollMux_installieren_vor_Version_16.04.md","ref":"WollMux_installieren_vor_Version_16.04.md","articles":[]},"previous":{"title":"WollMux installieren","level":"1.4.24","depth":2,"path":"WollMux_installieren.md","ref":"WollMux_installieren.md","articles":[{"title":"WollMux installieren (vor Version 16.04)","level":"1.4.24.1","depth":3,"path":"WollMux_installieren_vor_Version_16.04.md","ref":"WollMux_installieren_vor_Version_16.04.md","articles":[]},{"title":"WollMux installieren (vor_Version 16.04a)","level":"1.4.24.2","depth":3,"path":"WollMux_installieren_vor_Version_16.04.md","ref":"WollMux_installieren_vor_Version_16.04.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["atoc","collapsible-menu","forkmegithub","richquotes","redirect","splitter","back-to-top-button"],"root":"markdown","styles":{"website":"styles/website.css"},"pluginsConfig":{"collapsible-menu":{},"atoc":{"addClass":true,"className":"toc"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{},"highlight":{},"back-to-top-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"redirect":{},"forkmegithub":{"color":"gray","url":"https://github.com/WollMux/WollMux"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Landeshauptstadt München","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"WollMux Handbuch","language":"de","links":{"sidebar":{"Homepage":"http://www.wollmux.org"}},"gitbook":"3.x.x"},"file":{"path":"WollMux_installieren_vor_Version_16.04.md","mtime":"2016-10-20T05:47:19.652Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-10-20T12:45:12.436Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"WollMux installieren (vor Version 16.04)","level":"1.4.24.1","depth":3,"next":{"title":"WollMux installieren (vor_Version 16.04a)","level":"1.4.24.2","depth":3,"path":"WollMux_installieren_vor_Version_16.04.md","ref":"WollMux_installieren_vor_Version_16.04.md","articles":[]},"previous":{"title":"WollMux installieren","level":"1.4.24","depth":2,"path":"WollMux_installieren.md","ref":"WollMux_installieren.md","articles":[{"title":"WollMux installieren (vor Version 16.04)","level":"1.4.24.1","depth":3,"path":"WollMux_installieren_vor_Version_16.04.md","ref":"WollMux_installieren_vor_Version_16.04.md","articles":[]},{"title":"WollMux installieren (vor_Version 16.04a)","level":"1.4.24.2","depth":3,"path":"WollMux_installieren_vor_Version_16.04.md","ref":"WollMux_installieren_vor_Version_16.04.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["atoc","collapsible-menu","forkmegithub","richquotes","redirect","splitter","back-to-top-button"],"root":"markdown","styles":{"website":"styles/website.css"},"pluginsConfig":{"collapsible-menu":{},"atoc":{"addClass":true,"className":"toc"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{},"highlight":{},"back-to-top-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"redirect":{},"forkmegithub":{"color":"gray","url":"https://github.com/WollMux/WollMux"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Landeshauptstadt München","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"WollMux Handbuch","language":"de","links":{"sidebar":{"Homepage":"http://www.wollmux.org"}},"gitbook":"3.x.x"},"file":{"path":"WollMux_installieren_vor_Version_16.04.md","mtime":"2018-08-16T11:23:28.063Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-08-17T10:15:08.576Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

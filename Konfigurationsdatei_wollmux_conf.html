@@ -7,7 +7,7 @@
         <title>Konfigurationsdatei wollmux.conf · WollMux Handbuch</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.2.2">
+        <meta name="generator" content="GitBook 3.2.3">
         <meta name="author" content="Landeshauptstadt München">
         
         
@@ -1548,7 +1548,7 @@ werden. Beispiel</p>
 <pre><code>Dialoge(
   FONT_ZOOM &quot;2.0&quot;  # alle Schriften doppelt so gro&#xDF; wie normal.
 )
-</code></pre><blockquote class="clearfix alert alert-info"><strong class="fa fa-4x fa-info"></strong>
+</code></pre><blockquote class="clearfix alert alert-info"><strong class="fa fa-2x fa-info"></strong>
 <p> Die Einstellung Font-Zoom in den Optionen der WollMuxBar setzt
 derzeit nur den Font-Zoom in der WollMuxBar)</p>
 </blockquote>
@@ -1963,7 +1963,7 @@ Regel gibt.</li>
 der Datenquellenname) ist m&#xF6;glich und bedeutet, dass leere
 Suchanfragen und die Suchanfrage &quot;*&quot; erlaubt sind und alle
 Datens&#xE4;tze der Datenquelle zur&#xFC;ckliefern sollen.</p>
-<blockquote class="clearfix alert alert-warning"><strong class="fa fa-4x fa-exclamation-triangle"></strong>
+<blockquote class="clearfix alert alert-warning"><strong class="fa fa-2x fa-exclamation-triangle"></strong>
 <p> Dieses Feature wird derzeit nicht von allen Datenquellentypen unterst&#xFC;tzt
 und nur nach Bedarf weiterentwickelt.</p>
 </blockquote>
@@ -2083,7 +2083,7 @@ Spezifikationselemente dieses Dialogs vollkommen analog zu denen des
 <a href="#absenderdaten-bearbeiten" title="wikilink">Absenderdaten Bearbeiten</a>
 Dialogs sind, werden im Folgenden nur einige Elemente herausgegriffen,
 die dort nicht erw&#xE4;hnt oder die von besonderem Interesse sind.</p>
-<blockquote class="clearfix alert alert-info"><strong class="fa fa-4x fa-info"></strong>
+<blockquote class="clearfix alert alert-info"><strong class="fa fa-2x fa-info"></strong>
 <p> Die &#xE4;hnliche Struktur der Konfigurationsabschnitte f&#xFC;r diesen Dialog und den <a href="#absenderdaten-bearbeiten" title="wikilink">Absenderdaten Bearbeiten</a> Dialog dient dazu, den Lernaufwand f&#xFC;r die Administratoren zu reduzieren. Die real verf&#xFC;gbaren M&#xF6;glichkeiten der Anpassung beschr&#xE4;nken sich jedoch auf die f&#xFC;r den jeweiligen Dialog vorgesehenen Funktionalit&#xE4;ten.</p>
 </blockquote>
 <h3 id="beschreibung-der-unterabschnitte-von-fensterdrucken">Beschreibung der Unterabschnitte von Fenster/Drucken</h3>
@@ -2696,7 +2696,7 @@ mit &quot;&lt;&quot;, Gr&#xF6;&#xDF;er als mit &quot;&gt;&quot; und gleich mit &
 </ul>
 <p>Beispiel:</p>
 <p><code>SHORTCUT &quot;a+alt+umschalt&quot;</code></p>
-<blockquote class="clearfix alert alert-info"><strong class="fa fa-4x fa-info"></strong>
+<blockquote class="clearfix alert alert-info"><strong class="fa fa-2x fa-info"></strong>
 <p> Bei Verwendung von Sonderzeichen, die nur durch Dr&#xFC;cken von
 Umschalt/Shift erreichbar sind (z.B. &quot;/&quot;) mu&#xDF; die Taste &quot;umschalt&quot; bzw.
 &quot;shift&quot; auch in der Tastenkombination angegeben werden.</p>
@@ -2763,13 +2763,13 @@ Rechnern zentral administriert durchzuf&#xFC;hren.</p>
 <li><p><strong>URL</strong>: Gibt die URL der .odb-Datei an. Relative URLs werden relativ zum <a href="#der-defaultcontext" title="wikilink">DEFAULT_CONTEXT</a> aufgel&#xF6;st.</p>
 </li>
 </ul>
-<blockquote class="clearfix alert alert-warning"><strong class="fa fa-4x fa-exclamation-triangle"></strong>
+<blockquote class="clearfix alert alert-warning"><strong class="fa fa-2x fa-exclamation-triangle"></strong>
 <p> ODB-Datenbanken, die ihre Daten direkt in der ODB-Datei speichern, werden derzeit von OOo auf HTTP-Servern nicht richtig unterst&#xFC;tzt. Sie lassen sich zwar registrieren, jedoch sind keine Zugriffe auf die enthaltenen Tabellen m&#xF6;glich. Andere Orte (z.B. Netzlaufwerk) sollten jedoch funktionieren. Schreibrechte des Benutzers auf die Datei sind nicht erforderlich. Andere Datenbanktypen sind von diesem Problem nach derzeitigem Kenntnisstand nicht betroffen.</p>
 </blockquote>
 <ul>
 <li><strong>REFRESH (optional)</strong>: Ist bereits eine Datenquelle mit dem angegebenen Namen bei OpenOffice registriert, so wird diese Registrierung vom WollMux <em>nicht</em> &#xFC;berschrieben, au&#xDF;er das Attribut REFRESH ist vorhanden und auf &quot;true&quot; gesetzt.</li>
 </ul>
-<blockquote class="clearfix alert alert-info"><strong class="fa fa-4x fa-info"></strong>
+<blockquote class="clearfix alert alert-info"><strong class="fa fa-2x fa-info"></strong>
 <p> Bei file-URLs wird die Datei bei der Registrierung bereits ge&#xF6;ffnet und falls dies fehlschl&#xE4;gt (z.B. weil die Datei nicht existiert) wird die Registrierung nicht durchgef&#xFC;hrt. Bei HTTP-URLs erfolgt kein derartiger Zugriff. Die Datenbank wird unabh&#xE4;ngig von der Existenz der Datei registriert. Ein Fehler tritt also erst bei einem versuchten Zugriff auf den Inhalt der Datenbank auf.</p>
 </blockquote>
 <h2 id="datenquellen-referenzen">Datenquellen-Referenzen</h2>
@@ -3063,7 +3063,7 @@ seinen Anfragen stellen soll. Als &lt;Syntaxbezeichner&gt; werden unterst&#xFC;t
 <p><em>ansi</em>, <em>oracle</em>, <em>mysql</em>, <em>pervasivesql</em></p>
 <p>Die Angabe SQL_SYNTAX ist optional. Wird sie weggelassen, so wird
 <em>ansi</em> angenommen.</p>
-<blockquote class="clearfix alert alert-warning"><strong class="fa fa-4x fa-exclamation-triangle"></strong>
+<blockquote class="clearfix alert alert-warning"><strong class="fa fa-2x fa-exclamation-triangle"></strong>
 <p> Bei der Verwendung von Calc-Dateien als Datenquelle muss
 als Syntax <em>pervasivesql</em> angegeben werden.</p>
 </blockquote>
@@ -3297,7 +3297,7 @@ vorherige Punkte). Die Schl&#xFC;ssel der Datens&#xE4;tze bleiben jedoch auch
 dann unver&#xE4;ndert, wenn Schl&#xFC;sselspalten der Originaldatenquelle
 verdeckt werden.</li>
 </ul>
-<blockquote class="clearfix alert alert-warning"><strong class="fa fa-4x fa-exclamation-triangle"></strong>
+<blockquote class="clearfix alert alert-warning"><strong class="fa fa-2x fa-exclamation-triangle"></strong>
 <p> Die funky-Datenquelle hat nur unvollst&#xE4;ndige Unterst&#xFC;tzung f&#xFC;r Suchanfragen auf transformierten Spalten. Wenn sie die inverse Transformation nicht berechnen kann, reicht sie die Suchanfrage einfach unver&#xE4;ndert an die Originaldatenquelle weiter. Die bei einer Suche gelieferten Ergebnisse werden jedoch um die entsprechenden berechneten Spalten erg&#xE4;nzt. Wird aufgrund von Namensgleichheit eine SpalteX durch eine NeueSpalteX verdeckt, kann dies zu Diskrepanzen f&#xFC;hren, wenn eine Suche sich auf SpalteX bezieht. Beispiel:</p>
 </blockquote>
 <pre><code>Datenquelle(
@@ -3704,7 +3704,7 @@ niemals f&#xFC;r Endanwenderinnen und Endanwender sichtbar sein, sondern
 ausschlie&#xDF;lich zur Unterst&#xFC;tzung der Einrichtung und des Tests des
 WollMux von Systemadministratoren verwendet werden.</li>
 </ul>
-<blockquote class="clearfix alert alert-info"><strong class="fa fa-4x fa-info"></strong>
+<blockquote class="clearfix alert alert-info"><strong class="fa fa-2x fa-info"></strong>
 <p>    Trotz des martialischen Namens kann dieser Befehl keine h&#xE4;ngenden
     OpenOffice.org Prozesse beenden.</p>
 </blockquote>
@@ -3770,7 +3770,7 @@ Men&#xFC;gruppen werden &#xFC;ber den <a href="Konfigurationsdatei_wollmux.conf#
 WollMuxBarKonfigurationen</a>
 bzw. &#xFC;ber den <a href="WollMuxBar.html#optionen-dialog" title="wikilink">Optionen-Dialog</a>
 aktiviert.</p>
-<blockquote class="clearfix alert alert-info"><strong class="fa fa-4x fa-info"></strong>
+<blockquote class="clearfix alert alert-info"><strong class="fa fa-2x fa-info"></strong>
 <p> Das Attribut CONF_ID kann bei dem selben Element mehrfach vorkommen und sowohl ein einzelner String als auch eine Liste sein. Alle CONF_IDs werden zu einer Liste vereinigt. Damit das Element angezeigt wird reicht es aus, wenn eine einzige CONF_ID aus dieser Liste unter den aktiven Men&#xFC;gruppen ist.</p>
 </blockquote>
 <h2 id="der-abschnitt-wollmuxbarkonfigurationen">Der Abschnitt WollMuxBarKonfigurationen</h2>
@@ -4005,7 +4005,7 @@ verf&#xFC;gbar.</p>
   Anwender auf das Problem aufmerksam zu machen, damit er die
   Systembetreuung einschaltet. So wird verhindert, dass z.B.
   stillschweigend falsche Daten in ein Formular eingef&#xFC;gt werden.</p>
-<blockquote class="clearfix alert alert-warning"><strong class="fa fa-4x fa-exclamation-triangle"></strong>
+<blockquote class="clearfix alert alert-warning"><strong class="fa fa-2x fa-exclamation-triangle"></strong>
 <p> Der Fehlerstring kann sich jederzeit &#xE4;ndern (und
   dies ist auch bereits schon geschehen). Es d&#xFC;rfen also keine
   direkten Vergleiche gegen diesen String durchgef&#xFC;hrt werden. Zum
@@ -4155,7 +4155,7 @@ verwendet werden.</p>
   IstZahl(MATCH(VALUE(&apos;Argument&apos;), &quot;[0-9]+&quot;))
   IstHerr(MATCH(VALUE(&apos;Anrede&apos;), &quot;Herrn?&quot;))
 )
-</code></pre><blockquote class="clearfix alert alert-info"><strong class="fa fa-4x fa-info"></strong>
+</code></pre><blockquote class="clearfix alert alert-info"><strong class="fa fa-2x fa-info"></strong>
 <p> F&#xFC;r den einfachen Vergleich zweier Strings auf Gleichheit sollte die MATCH-Funktion nicht verwendet werden, da es hier leicht zu Fehlern kommen kann, wenn im zweiten Argument Zeichen verwendet werden, die in regul&#xE4;ren Ausdr&#xFC;cken eine besondere Bedeutung haben. F&#xFC;r den einfachen Vergleich zweier Strings steht die Funktion STRCMP zur Verf&#xFC;gung.</p>
 </blockquote>
 <h3 id="replace-argument-regex-repstr">REPLACE (&lt;Argument&gt;, &lt;RegEx&gt;, &lt;RepStr&gt;)</h3>
@@ -4225,7 +4225,7 @@ f&#xFC;r &lt;MaxStellen&gt; 1024.</p>
 <p>Falls bei der Auswertung ein Fehler auftritt oder &lt;Argument&gt; keine
 legale Zahl zur&#xFC;ckliefert, dann liefert FORMAT einen Fehler.</p>
 <p>Hinweis: Als Dezimaltrennzeichen wird nur das zu den aktuellen Spracheinstellungen passende akzeptiert. Ist OpenOffice.org auf &quot;Deutsch&quot; eingestellt, so ist dies das Komma, im Falle von Englisch der Punkt.</p>
-<blockquote class="clearfix alert alert-info"><strong class="fa fa-4x fa-info"></strong>
+<blockquote class="clearfix alert alert-info"><strong class="fa fa-2x fa-info"></strong>
 <p> Die Funktion FORMAT verh&#xE4;lt sich identisch zu DIVIDE und erlaubt im Prinzip auch die Angabe eines Divisors mit BY. Im Sinne der Klarheit sollte sie jedoch nicht so verwendet werden.</p>
 </blockquote>
 <h2 id="arithmetik">Arithmetik</h2>
@@ -4293,7 +4293,7 @@ String-Literale zul&#xE4;ssig. Wird &lt;MinStellen&gt; weggelassen, so wird 0
 angenommen.</p>
 <p>Falls bei der Auswertung von &lt;Dividend&gt; oder &lt;Divisor&gt; ein Fehler
 auftritt oder der Divisor 0 ist, dann liefert DIVIDE einen Fehler.</p>
-<blockquote class="clearfix alert alert-info"><strong class="fa fa-4x fa-info"></strong>
+<blockquote class="clearfix alert alert-info"><strong class="fa fa-2x fa-info"></strong>
 <p> Die Funktion DIVIDE verh&#xE4;lt sich identisch zu FORMAT. Im Prinzip kann auch die Angabe des Divisors weggelassen werden. Es wird dann 1 angenommen und die Angabe MAX ist dann optional. Im Sinne der Klarheit ist davon jedoch abzuraten.</p>
 </blockquote>
 <h3 id="abs-argument1--argumentn">ABS (&lt;Argument1&gt; ... &lt;ArgumentN&gt;)</h3>
@@ -4335,7 +4335,7 @@ nicht, ob im Formularfeld ein (durch eine andere Funktion berechneter)
 Fehlerwert steht. Stattdessen liefert dieser Aufruf nur dann &quot;true&quot;,
 wenn das Formularfeld mit der ID &quot;formularfeld&quot; gar nicht existiert,
 weil nur dann die VALUE-Funktion einen Fehler liefert.</p>
-<blockquote class="clearfix alert alert-info"><strong class="fa fa-4x fa-info"></strong>
+<blockquote class="clearfix alert alert-info"><strong class="fa fa-2x fa-info"></strong>
 <p> Wenn es darum geht, im Fehlerfall einen besonderen Wert zur&#xFC;ckzuliefern, ist SELECT mit einem ONERROR-Zweig meist g&#xFC;nstiger als direkte Tests mit ISERROR oder ISERRORSTRING.</p>
 </blockquote>
 <h3 id="iserrorstring-funktion">ISERRORSTRING (&lt;Funktion&gt;)</h3>
@@ -4411,7 +4411,7 @@ IF-Bedingung, alle nicht-true Ergebnisse false entsprechen:</p>
 <p>Beispiel: <code>NUMCMP(&quot;2&quot; &quot;1&quot; &quot;3&quot;)</code></p>
 </li>
 <li><p>Fehler: Falls eine der ausgewerteten Funktionen einen Fehler liefert oder das Ergebnis keine legale Zahl darstellt, so liefert NUMCMP einen Fehler.</p>
-<blockquote class="clearfix alert alert-warning"><strong class="fa fa-4x fa-exclamation-triangle"></strong>
+<blockquote class="clearfix alert alert-warning"><strong class="fa fa-2x fa-exclamation-triangle"></strong>
 <p> NUMCMP wendet das Kurzschlussverfahren an, d.h. es wertet nur soviele Argumente aus wie notwendig. Wenn z.B. Argument2 echt kleiner als Argument1 ist und Argument3 echt gr&#xF6;&#xDF;er, dann kann das Ergebnis nur &quot;0&quot; lauten und die Argumente 4 bis N werden gar nicht mehr ausgewertet. Eventuelle Fehler, die bei der Auswertung dieser Argumente auftreten w&#xFC;rden, werden nicht erkannt.</p>
 </blockquote>
 <p>Beispiel: <code>NUMCMP(&quot;2&quot;,&quot;1&quot;,SUM(&quot;keineZahl&quot;),&quot;3&quot;) = Fehler!</code>, aber <code>NUMCMP(&quot;2&quot; &quot;1&quot; &quot;3&quot; SUM(&quot;keineZahl&quot;)) = &quot;0&quot;</code></p>
@@ -4433,7 +4433,7 @@ kleiner oder gleich &lt;MaxAbweichung&gt; ist.</p>
 <p>Beispiel 2: <code>LT(&quot;1&quot; &quot;2&quot; &quot;3&quot; MARGIN &quot;1&quot;) = &quot;false&quot;</code></p>
 <ul>
 <li><p>Fehler: Falls eine der ausgewerteten Funktionen einen Fehler liefert oder das Ergebnis keine legale Zahl darstellt, so liefert LT einen Fehler.</p>
-<blockquote class="clearfix alert alert-warning"><strong class="fa fa-4x fa-exclamation-triangle"></strong>
+<blockquote class="clearfix alert alert-warning"><strong class="fa fa-2x fa-exclamation-triangle"></strong>
 <p> LT wendet das Kurzschlussverfahren an, d.h. es wertet nur soviele Argumente aus wie notwendig. Wenn z.B. Argument2 kleiner Argument1 ist, dann kann das Ergebnis nur &quot;false&quot; lauten und und die Argumente 3 bis N werden gar nicht mehr ausgewertet. Eventuelle Fehler, die bei der Auswertung dieser Argumente auftreten w&#xFC;rden, werden nicht erkannt.</p>
 </blockquote>
 <p>Beispiel: <code>LT(&quot;2&quot;,SUM(&quot;keineZahl&quot;),&quot;1&quot;) = Fehler!</code>, aber <code>LT(&quot;2&quot; &quot;1&quot; SUM(&quot;keineZahl&quot;)) = &quot;false&quot;</code></p>
@@ -4824,7 +4824,7 @@ beliebigen Anzahl von Suchanfragen nach folgendem Schema:</p>
   der Datenquellenname) ist m&#xF6;glich und bedeutet, dass leere
   Suchanfragen und die Suchanfrage &quot;*&quot; erlaubt sind und alle
   Datens&#xE4;tze der Datenquelle zur&#xFC;ckliefern sollen.</p>
-<blockquote class="clearfix alert alert-warning"><strong class="fa fa-4x fa-exclamation-triangle"></strong>
+<blockquote class="clearfix alert alert-warning"><strong class="fa fa-2x fa-exclamation-triangle"></strong>
 <p> Dieses
   Feature wird derzeit nicht von allen Datenquellentypen unterst&#xFC;tzt
   und nur nach Bedarf weiterentwickelt.</p>
@@ -4857,7 +4857,7 @@ erfolgen soll regelt das DISPLAY-Attribut. Neben statischen Textteilen
 kann das Anzeigemuster Platzhalter der Form <code>${Spaltenname}</code> enthalten,
 die f&#xFC;r den jeweiligen Datensatz durch den entsprechenden Spaltenwert
 ersetzt werden.</p>
-<blockquote class="clearfix alert alert-warning"><strong class="fa fa-4x fa-exclamation-triangle"></strong>
+<blockquote class="clearfix alert alert-warning"><strong class="fa fa-2x fa-exclamation-triangle"></strong>
 <p> Die Spaltennamen im DISPLAY-Attribut sind grunds&#xE4;tzlich durch den <em>Spaltenumsetzung</em>-Abschnitt definierte Spalten. Soll eine Spalte des Datensatzes unver&#xE4;ndert angezeigt werden, so muss eine entsprechende 1:1 Umsetzung im <em>Spaltenumsetzung</em>-Abschnitt erfolgen.</p>
 </blockquote>
 <h2 id="vorschau">Vorschau</h2>
@@ -4869,7 +4869,7 @@ Datensatzes werden hier dargestellt. Jede DB_SPALTE kann derzeit
 maximal einmal im Vorschau-Abschnitt verwendet werden. Bei mehrfachen
 Eintr&#xE4;gen mit der selben DB_SPALTE wird nur im letzten Textfeld die
 Spalte angezeigt.</p>
-<blockquote class="clearfix alert alert-warning"><strong class="fa fa-4x fa-exclamation-triangle"></strong>
+<blockquote class="clearfix alert alert-warning"><strong class="fa fa-2x fa-exclamation-triangle"></strong>
 <p> Die Spaltennamen im DB_SPALTE-Attribut sind grunds&#xE4;tzlich durch den <em>Spaltenumsetzung</em>-Abschnitt definierte Spalten. Soll eine Spalte des Datensatzes unver&#xE4;ndert angezeigt werden, so muss eine entsprechende 1:1 Umsetzung im <em>Spaltenumsetzung</em>-Abschnitt erfolgen.</p>
 </blockquote>
 <h2 id="fussbereich">Fussbereich</h2>
@@ -5074,7 +5074,7 @@ L&#xF6;schungen (d.h. ohne Einf&#xFC;gungen oder Verschiebungen) alle
 <em>Match</em>-Abschnitte ableiten lassen. Die <em>Match</em>-Abschnitte sind also
 quasi auf die wesentlichen Erkennungsmerkmale zusammengestutzte
 Formularbeschreibungen.</p>
-<blockquote class="clearfix alert alert-info"><strong class="fa fa-4x fa-info"></strong>
+<blockquote class="clearfix alert alert-info"><strong class="fa fa-2x fa-info"></strong>
 <p> Die Reihenfolge von Abschnitten und Schl&#xFC;ssel-Wert-Paaren in <em>Match</em>-Abschnitten ist bedeutungslos. Deswegen kann man auch alle <em>Match</em>-Abschnitte zu einem gro&#xDF;en <em>Match</em>-Abschnitt zusammenfassen ohne die Bedeutung zu ver&#xE4;ndern.</p>
 </blockquote>
 <h2 id="buttonanpassung">Buttonanpassung</h2>
@@ -5310,7 +5310,7 @@ Merkmale an.</p>
 <p><a href="#arithmetik" title="wikilink">WollMux-Funktionen</a>
 verwenden automatisch das f&#xFC;r die in OpenOffice.org eingestellte Region
 passende Dezimaltrennzeichen (normalerweise Punkt oder Komma).</p>
-<blockquote class="clearfix alert alert-info"><strong class="fa fa-4x fa-info"></strong>
+<blockquote class="clearfix alert alert-info"><strong class="fa fa-2x fa-info"></strong>
 <p> <a href="http://qa.openoffice.org/issues/show_bug.cgi?id=80654" target="_blank">Issue 80654</a> sorgt unter Umst&#xE4;nden f&#xFC;r eine falsche Erkennung der Region, wenn die gew&#xE4;hlte Benutzerinterface-Sprache von den gew&#xE4;hlten L&#xE4;ndereinstellungen abweicht.</p>
 </blockquote>
 <h2 id="der-abschnitt-l10n">Der Abschnitt L10n</h2>
@@ -5389,7 +5389,7 @@ entspricht dem des Abschnitts <em><a href="#funktionen" title="wikilink">Funktio
 <li>Die WollMux-Funktionen in diesem Abschnitt werden der Reihe nach
   aufgerufen, bevor der WollMux das Dokument bearbeitet.</li>
 </ul>
-<blockquote class="clearfix alert alert-info"><strong class="fa fa-4x fa-info"></strong>
+<blockquote class="clearfix alert alert-info"><strong class="fa fa-2x fa-info"></strong>
 <p> Bestimmte, teils auch ver&#xE4;ndernde, Handlungen f&#xFC;hrt der WollMux noch vorher aus.</p>
 </blockquote>
 <ul>
@@ -5591,7 +5591,7 @@ Formular-GUI-Beschreibung findet sich unter <a href="okumentkommandos_des_WollMu
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Konfigurationsdatei wollmux.conf","level":"1.4.15","depth":2,"next":{"title":"Rebranding","level":"1.4.16","depth":2,"path":"Rebranding.md","ref":"Rebranding.md","articles":[]},"previous":{"title":"Konfiguration des WollMux in ihrem Referat","level":"1.4.14","depth":2,"path":"Konfiguration_des_WollMux_in_Ihrem_Referat.md","ref":"Konfiguration_des_WollMux_in_Ihrem_Referat.md","articles":[]},"dir":"ltr"},"config":{"plugins":["atoc","collapsible-menu","forkmegithub","richquotes","redirect","splitter","back-to-top-button"],"root":"markdown","styles":{"website":"styles/website.css"},"pluginsConfig":{"collapsible-menu":{},"atoc":{"addClass":true,"className":"toc"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{},"highlight":{},"back-to-top-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"redirect":{},"forkmegithub":{"color":"gray","url":"https://github.com/WollMux/WollMux"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Landeshauptstadt München","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"WollMux Handbuch","language":"de","links":{"sidebar":{"Homepage":"http://www.wollmux.org"}},"gitbook":"3.x.x"},"file":{"path":"Konfigurationsdatei_wollmux_conf.md","mtime":"2016-10-20T05:47:19.590Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-10-20T12:45:12.436Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Konfigurationsdatei wollmux.conf","level":"1.4.15","depth":2,"next":{"title":"Rebranding","level":"1.4.16","depth":2,"path":"Rebranding.md","ref":"Rebranding.md","articles":[]},"previous":{"title":"Konfiguration des WollMux in ihrem Referat","level":"1.4.14","depth":2,"path":"Konfiguration_des_WollMux_in_Ihrem_Referat.md","ref":"Konfiguration_des_WollMux_in_Ihrem_Referat.md","articles":[]},"dir":"ltr"},"config":{"plugins":["atoc","collapsible-menu","forkmegithub","richquotes","redirect","splitter","back-to-top-button"],"root":"markdown","styles":{"website":"styles/website.css"},"pluginsConfig":{"collapsible-menu":{},"atoc":{"addClass":true,"className":"toc"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{},"highlight":{},"back-to-top-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"redirect":{},"forkmegithub":{"color":"gray","url":"https://github.com/WollMux/WollMux"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Landeshauptstadt München","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"WollMux Handbuch","language":"de","links":{"sidebar":{"Homepage":"http://www.wollmux.org"}},"gitbook":"3.x.x"},"file":{"path":"Konfigurationsdatei_wollmux_conf.md","mtime":"2018-08-16T11:23:28.055Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-08-17T10:15:08.576Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

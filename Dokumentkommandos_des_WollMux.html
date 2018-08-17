@@ -7,7 +7,7 @@
         <title>Dokumentkommandos des WollMux · WollMux Handbuch</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.2.2">
+        <meta name="generator" content="GitBook 3.2.3">
         <meta name="author" content="Landeshauptstadt München">
         
         
@@ -1034,7 +1034,7 @@ definiert sein.</bezeichner></bezeichner></p>
 <hr>
 <p><strong>G&#xFC;ltigkeitsbereich und Lebensdauer</strong>: Das Kommando &apos;insertFormValue&apos; ist automatisch bei Vorlagen, Dokumenten und Formulardokumenten aktiv und kann &#xFC;ber die FormGUI, &#xFC;ber den Seriendruckmechanismus (WollMux) und &#xFC;ber den Empf&#xE4;gerauswahl-Dialog gef&#xFC;llt werden.</p>
 <!-- -->
-<blockquote class="clearfix alert alert-info"><strong class="fa fa-4x fa-info"></strong>
+<blockquote class="clearfix alert alert-info"><strong class="fa fa-2x fa-info"></strong>
 <p> Datenbankfelder, die &#xFC;ber den Datenquellenbrowser (Ansicht/Datenquellen) bzw. &#xFC;ber Einf&#xFC;gen/Feldbefehl/Andere.../Datenbank/Seriendruck-Feld eingef&#xFC;gt wurden, werden vom WollMux behandelt als w&#xE4;ren es insertFormValue-Kommandos. Als ID wird der Spaltenname herangezogen.</p>
 </blockquote>
 <h4 id="id-eindeutiger-bezeichner-des-formularfeldes">ID (eindeutiger Bezeichner des Formularfeldes)</h4>
@@ -1131,7 +1131,7 @@ gesetztes H&#xE4;ckchen abgebildet.</li>
 <p><strong>Das Attribut <code>HIGHLIGHT_COLOR &apos;&lt;farbe&gt;&apos;</code></strong>: Das Attribut HIGHLIGHT_COLOR wird vom WollMux automatisch in das zugeh&#xF6;rigen Dokumentkommando gesetzt, wenn die <a href="Hilfen_fuer_Sachleitende_Verfuegungen_verwenden.html#die-schaltfl&#xE4;chen-zur-drucksteuerung-einzelner-bl&#xF6;cke" title="wikilink">Schaltfl&#xE4;chen zur Drucksteuerung einzelner Bl&#xF6;cke</a> bet&#xE4;tigt werden und im <a href="Konfigurationsdatei_wollmux_conf.html#der-abschnitt-sachleitendeverfuegungen" title="wikilink">Abschnitt SachleitendeVerfuegungen</a> der Konfigurationsdatei entsprechende Farben hinterlegt sind. Das Attribut markiert einen Druckblock, der mit einer Hintergrundfarbe versehen ist und wird dann verwendet, wenn ein Dokument mit Sachleitenden Verf&#xFC;gungen gedruckt wird. Vor dem Druckvorgang hebt der WollMux dabei alle farblichen Markieren der Druckbl&#xF6;cke auf (falls Farben gesetzt wurden) und stellt sie nach dem Druckvorgang wieder her in dem er den Wert von HIGHLIGHT_COLOR liest und auf den entsprechenden Bereich als Hintergrundfarbe anwendet. Die Farbe <farbe> wird als Hex-Zahl in der form AARRGGBB (A=Alpha, R=Rot, G=Gr&#xFC;n, B=Blau) beschrieben (z.B. entspricht &quot;00ff0000&quot; der Farbe rot).</farbe></p>
 <hr>
 <p><strong>G&#xFC;ltigkeitsbereich und Lebensdauer</strong>: Das Kommando &quot;draftOnly&quot; wird beim Drucken eines ge&#xF6;ffneten Dokuments, einer ge&#xF6;ffneten Vorlage und einer zur Bearbeitung ge&#xF6;ffneten Vorlage mit Sachleitende Verf&#xFC;gungen ausgef&#xFC;hrt. Gel&#xF6;scht wird das Kommando &#xFC;ber OOo-Writer Symbolleiste &quot;<em>Sachleitende Verf&#xFC;gungen (WollMux)</em>&quot; Button &quot;<em>Nur Entwurf</em>&quot;.</p>
-<blockquote class="clearfix alert alert-warning"><strong class="fa fa-4x fa-exclamation-triangle"></strong>
+<blockquote class="clearfix alert alert-warning"><strong class="fa fa-2x fa-exclamation-triangle"></strong>
 <p> Die Kommandos &quot;draftOnly&quot;, &quot;notInOriginal&quot;, &quot;originalOnly&quot;, &quot;copyOnly&quot; und &quot;allVersions&quot; dienen zur Drucksteuerung der Sachleitenden Verf&#xFC;gungen und sollten nicht h&#xE4;ndisch durch das Einf&#xFC;gen entsprechender Textmarken erzeugt werden, sondern &#xFC;ber die <a href="Hilfen_fuer_Sachleitende_Verfuegungen_verwenden.html#die-schaltfl&#xE4;chen-zur-drucksteuerung-einzelner-bl&#xF6;cke" title="wikilink">Schaltfl&#xE4;chen zur Drucksteuerung</a>, die in der <a href="Hilfen_fuer_Sachleitende_Verfuegungen_verwenden.html#die-openoffice-writer-symbolleiste-sachleitende-verf&#xFC;gungen" title="wikilink">Symbolleiste &apos;Sachleitende Verf&#xFC;gungen&apos;</a> enthalten sind.</p>
 </blockquote>
 <h3 id="das-kommando-notinoriginal">Das Kommando &quot;notInOriginal&quot;</h3>
@@ -1142,7 +1142,7 @@ gesetztes H&#xE4;ckchen abgebildet.</li>
 <p><strong>Das Attribut <code>HIGHLIGHT_COLOR &apos;&lt;farbe&gt;&apos;</code></strong>: Das Attribut HIGHLIGHT_COLOR ist im <a href="#das-kommado-draftonly" title="wikilink">Abschnitt des Dokumentkommandos draftOnly</a> beschrieben.</p>
 <hr>
 <p><strong>G&#xFC;ltigkeitsbereich und Lebensdauer</strong>: Das Kommando &quot;notInOriginal&quot; wird beim Drucken eines ge&#xF6;ffneten Dokuments, einer ge&#xF6;ffneten Vorlage und einer zur Bearbeitung ge&#xF6;ffneten Vorlage mit Sachleitende Verf&#xFC;gungen ausgef&#xFC;hrt. Gel&#xF6;scht wird das Kommando &#xFC;ber OOo-Writer Symbolleiste &quot;Sachleitende Verf&#xFC;gungen (WollMux)&quot; Button &quot;Nicht im Original&quot;.</p>
-<blockquote class="clearfix alert alert-warning"><strong class="fa fa-4x fa-exclamation-triangle"></strong>
+<blockquote class="clearfix alert alert-warning"><strong class="fa fa-2x fa-exclamation-triangle"></strong>
 <p> Achtung: Die Kommandos &quot;draftOnly&quot;, &quot;notInOriginal&quot;, &quot;originalOnly&quot;, &quot;copyOnly&quot; und &quot;allVersions&quot; dienen zur Drucksteuerung der Sachleitenden Verf&#xFC;gungen und sollten nicht h&#xE4;ndisch durch das Einf&#xFC;gen entsprechender Textmarken erzeugt werden, sondern &#xFC;ber die <a href="Hilfen_fuer_Sachleitende_Verfuegungen_verwenden.html#die-schaltfl&#xE4;chen-zur-drucksteuerung-einzelner-bl&#xF6;cke" title="wikilink">Schaltfl&#xE4;chen zur Drucksteuerung</a>, die in der <a href="Hilfen_fuer_Sachleitende_Verfuegungen_verwenden.html#die-openoffice-writer-symbolleiste-sachleitende-verf&#xFC;gungen" title="wikilink">Symbolleiste &apos;Sachleitende Verf&#xFC;gungen&apos;</a> enthalten sind.</p>
 </blockquote>
 <h3 id="das-kommando-originalonly">Das Kommando &quot;originalOnly&quot;</h3>
@@ -1155,7 +1155,7 @@ gesetztes H&#xE4;ckchen abgebildet.</li>
 <hr>
 <p><strong>G&#xFC;ltigkeitsbereich und Lebensdauer</strong>: Das Kommando &quot;originalOnly&quot; wird beim Drucken eines ge&#xF6;ffneten Dokuments, einer ge&#xF6;ffneten Vorlage und einer zur Bearbeitung ge&#xF6;ffneten Vorlage mit Sachleitende Verf&#xFC;gungen ausgef&#xFC;hrt. Gel&#xF6;scht wird das Kommando &#xFC;ber OOo-Writer Symbolleiste &quot;Sachleitende Verf&#xFC;gungen (WollMux)&quot; Button &quot;Nur Original&quot;.</p>
 <!-- -->
-<blockquote class="clearfix alert alert-warning"><strong class="fa fa-4x fa-exclamation-triangle"></strong>
+<blockquote class="clearfix alert alert-warning"><strong class="fa fa-2x fa-exclamation-triangle"></strong>
 <p> Achtung: Die Kommandos &quot;draftOnly&quot;, &quot;notInOriginal&quot;, &quot;originalOnly&quot;, &quot;copyOnly&quot; und &quot;allVersions&quot; dienen zur Drucksteuerung der Sachleitenden Verf&#xFC;gungen und sollten nicht h&#xE4;ndisch durch das Einf&#xFC;gen entsprechender Textmarken erzeugt werden, sondern &#xFC;ber die <a href="Hilfen_fuer_Sachleitende_Verfuegungen_verwenden.html#die-schaltfl&#xE4;chen-zur-drucksteuerung-einzelner-bl&#xF6;cke" title="wikilink">Schaltfl&#xE4;chen zur Drucksteuerung</a>, die in der <a href="Hilfen_fuer_Sachleitende_Verfuegungen_verwenden.html#die-openoffice-writer-symbolleiste-sachleitende-verf&#xFC;gungen" title="wikilink">Symbolleiste &apos;Sachleitende Verf&#xFC;gungen&apos;</a> enthalten sind.</p>
 </blockquote>
 <h3 id="das-kommando-copyonly">Das Kommando &quot;copyOnly&quot;</h3>
@@ -1166,7 +1166,7 @@ gesetztes H&#xE4;ckchen abgebildet.</li>
 <p><strong>Das Attribut <code>HIGHLIGHT_COLOR &apos;&lt;farbe&gt;&apos;</code></strong>: Das Attribut HIGHLIGHT_COLOR ist im <a href="#das-kommado-draftonly" title="wikilink">Abschnitt des Dokumentkommandos draftOnly</a> beschrieben.</p>
 <hr>
 <p><strong>G&#xFC;ltigkeitsbereich und Lebensdauer</strong>: Das Kommando &quot;copyOnly&quot; wird beim Drucken eines ge&#xF6;ffneten Dokuments, einer ge&#xF6;ffneten Vorlage und einer zur Bearbeitung ge&#xF6;ffneten Vorlage mit Sachleitende Verf&#xFC;gungen ausgef&#xFC;hrt. Gel&#xF6;scht wird das Kommando &#xFC;ber OOo-Writer Symbolleiste &quot;Sachleitende Verf&#xFC;gungen (WollMux)&quot; Button &quot;Nur Abdrucke&quot;.</p>
-<blockquote class="clearfix alert alert-warning"><strong class="fa fa-4x fa-exclamation-triangle"></strong>
+<blockquote class="clearfix alert alert-warning"><strong class="fa fa-2x fa-exclamation-triangle"></strong>
 <p> Achtung: Die Kommandos &quot;draftOnly&quot;, &quot;notInOriginal&quot;, &quot;originalOnly&quot;, &quot;copyOnly&quot; und &quot;allVersions&quot; dienen zur Drucksteuerung der Sachleitenden Verf&#xFC;gungen und sollten nicht h&#xE4;ndisch durch das Einf&#xFC;gen entsprechender Textmarken erzeugt werden, sondern &#xFC;ber die <a href="Hilfen_fuer_Sachleitende_Verfuegungen_verwenden.html#die-schaltfl&#xE4;chen-zur-drucksteuerung-einzelner-bl&#xF6;cke" title="wikilink">Schaltfl&#xE4;chen zur Drucksteuerung</a>, die in der <a href="Hilfen_fuer_Sachleitende_Verfuegungen_verwenden.html#die-openoffice-writer-symbolleiste-sachleitende-verf&#xFC;gungen" title="wikilink">Symbolleiste &apos;Sachleitende Verf&#xFC;gungen&apos;</a> enthalten sind.</p>
 </blockquote>
 <h3 id="das-kommando-allversions">Das Kommando &quot;allVersions&quot;</h3>
@@ -1177,7 +1177,7 @@ gesetztes H&#xE4;ckchen abgebildet.</li>
 <p><strong>Das Attribut <code>HIGHLIGHT_COLOR &apos;&lt;farbe&gt;&apos;</code></strong>: Das Attribut HIGHLIGHT_COLOR ist im <a href="#das-kommado-draftonly" title="wikilink">Abschnitt des Dokumentkommandos draftOnly</a> beschrieben.</p>
 <hr>
 <p><strong>G&#xFC;ltigkeitsbereich und Lebensdauer</strong>: Das Kommando &quot;allVersion&quot; wird beim Drucken eines ge&#xF6;ffneten Dokuments, einer ge&#xF6;ffneten Vorlage und einer zur Bearbeitung ge&#xF6;ffneten Vorlage mit Sachleitende Verf&#xFC;gungen ausgef&#xFC;hrt. Gel&#xF6;scht wird das Kommando &#xFC;ber OOo-Writer Symbolleiste &quot;Sachleitende Verf&#xFC;gungen (WollMux)&quot; Button &quot;Immer drucken&quot;.</p>
-<blockquote class="clearfix alert alert-warning"><strong class="fa fa-4x fa-exclamation-triangle"></strong>
+<blockquote class="clearfix alert alert-warning"><strong class="fa fa-2x fa-exclamation-triangle"></strong>
 <p> Achtung: Die Kommandos &quot;draftOnly&quot;, &quot;notInOriginal&quot;, &quot;originalOnly&quot;, &quot;copyOnly&quot; und &quot;allVersions&quot; dienen zur Drucksteuerung der Sachleitenden Verf&#xFC;gungen und sollten nicht h&#xE4;ndisch durch das Einf&#xFC;gen entsprechender Textmarken erzeugt werden, sondern &#xFC;ber die <a href="Hilfen_fuer_Sachleitende_Verfuegungen_verwenden.html#die-schaltfl&#xE4;chen-zur-drucksteuerung-einzelner-bl&#xF6;cke" title="wikilink">Schaltfl&#xE4;chen zur Drucksteuerung</a>, die in der <a href="Hilfen_fuer_Sachleitende_Verfuegungen_verwenden.html#die-openoffice-writer-symbolleiste-sachleitende-verf&#xFC;gungen" title="wikilink">Symbolleiste &apos;Sachleitende Verf&#xFC;gungen&apos;</a> enthalten sind.</p>
 </blockquote>
 <h2 id="kommandos-des-briefkopfsystems">Kommandos des Briefkopfsystems</h2>
@@ -1365,7 +1365,7 @@ insertValue-Dokumentkommando w&#xFC;rde wie folgt aussehen:</p>
 <p><strong>Beschreibung</strong>: Das Dokumentkommando <em>insertContent</em> ist ein Kommando zum Mischen von Textfragmenten. Das Kommando f&#xFC;gt den Inhalt eines weiteren Textfragments in eine &#xFC;ber die WollMuxBar &quot;Vorlagen und Formulare&quot; ge&#xF6;ffnete Vorlage ein. Das Kommando ben&#xF6;tigt dazu eine Liste mit FRAG_ID-Attributen, die Sie in der Men&#xFC;beschreibung der WollMuxBar festlegen k&#xF6;nnen. Die exakte Funktionsweise von <em>insertContent</em> ist daher auch im Abschnitt <a href="Konfigurationsdatei_wollmux_conf.html#liste-mit-fragid-attributen" title="wikilink">Konfigurationsdatei wollmux.conf - Liste mit FRAG_ID-Attributen</a> beschrieben.</p>
 <hr>
 <p><strong>G&#xFC;ltigkeitsbereich und Lebensdauer</strong>: Beim Erzeugen eines Dokuments aus einer Vorlage wird das WollMux-Kommando &apos;insertContent&apos; einmalig ausgef&#xFC;hrt. Der Inhalt eines weiteren Textfragment wird eingef&#xFC;gt und danach wird das WollMux-Kommando gel&#xF6;scht.</p>
-<blockquote class="clearfix alert alert-info"><strong class="fa fa-4x fa-info"></strong>
+<blockquote class="clearfix alert alert-info"><strong class="fa fa-2x fa-info"></strong>
 <p> Bitte beachten Sie auch den Abschnitt <a href="Textfragmente_im_WollMux.html#&#xFC;bernahme-von-absatzformaten-beim-einf&#xFC;gen-von-textfragmenten" title="wikilink">&#xDC;bernahme von Absatzformaten beim Einf&#xFC;gen von Textfragmenten</a>
 in dem festgelegt ist, in welchem Fall welche Absatzformate verwendet
 werden.</p>
@@ -1952,7 +1952,7 @@ oder der Sicht aus der die Daten gelesen werden sollen.</li>
 </ul>
 </li>
 </ul>
-<blockquote class="clearfix alert alert-info"><strong class="fa fa-4x fa-info"></strong>
+<blockquote class="clearfix alert alert-info"><strong class="fa fa-2x fa-info"></strong>
 <p> Anmerkung: Manche Datenbanken ben&#xF6;tigen Angaben
 zur Benutzerauthentifizierung. Diese Angaben d&#xFC;rfen nicht im
 Dokument abgelegt werden, da Dokumente auch nach extern
@@ -2397,7 +2397,7 @@ stattdessen die Definition global in der wollmux.conf gehalten werden.</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Dokumentkommandos des WollMux","level":"1.4.4","depth":2,"next":{"title":"Erstellung oder Anpassung einer Vorlage - Beispiel","level":"1.4.5","depth":2,"path":"Erstellung_oder_Anpassung_einer_Vorlage_-_Beispiel.md","ref":"Erstellung_oder_Anpassung_einer_Vorlage_-_Beispiel.md","articles":[]},"previous":{"title":"Datenbanken mit dem WollMux verwenden","level":"1.4.3","depth":2,"path":"Datenbanken_mit_dem_WollMux_verwenden.md","ref":"Datenbanken_mit_dem_WollMux_verwenden.md","articles":[]},"dir":"ltr"},"config":{"plugins":["atoc","collapsible-menu","forkmegithub","richquotes","redirect","splitter","back-to-top-button"],"root":"markdown","styles":{"website":"styles/website.css"},"pluginsConfig":{"collapsible-menu":{},"atoc":{"addClass":true,"className":"toc"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{},"highlight":{},"back-to-top-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"redirect":{},"forkmegithub":{"color":"gray","url":"https://github.com/WollMux/WollMux"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Landeshauptstadt München","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"WollMux Handbuch","language":"de","links":{"sidebar":{"Homepage":"http://www.wollmux.org"}},"gitbook":"3.x.x"},"file":{"path":"Dokumentkommandos_des_WollMux.md","mtime":"2016-10-20T05:47:19.564Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-10-20T12:45:12.436Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Dokumentkommandos des WollMux","level":"1.4.4","depth":2,"next":{"title":"Erstellung oder Anpassung einer Vorlage - Beispiel","level":"1.4.5","depth":2,"path":"Erstellung_oder_Anpassung_einer_Vorlage_-_Beispiel.md","ref":"Erstellung_oder_Anpassung_einer_Vorlage_-_Beispiel.md","articles":[]},"previous":{"title":"Datenbanken mit dem WollMux verwenden","level":"1.4.3","depth":2,"path":"Datenbanken_mit_dem_WollMux_verwenden.md","ref":"Datenbanken_mit_dem_WollMux_verwenden.md","articles":[]},"dir":"ltr"},"config":{"plugins":["atoc","collapsible-menu","forkmegithub","richquotes","redirect","splitter","back-to-top-button"],"root":"markdown","styles":{"website":"styles/website.css"},"pluginsConfig":{"collapsible-menu":{},"atoc":{"addClass":true,"className":"toc"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{},"highlight":{},"back-to-top-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"redirect":{},"forkmegithub":{"color":"gray","url":"https://github.com/WollMux/WollMux"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Landeshauptstadt München","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"WollMux Handbuch","language":"de","links":{"sidebar":{"Homepage":"http://www.wollmux.org"}},"gitbook":"3.x.x"},"file":{"path":"Dokumentkommandos_des_WollMux.md","mtime":"2018-08-16T11:23:28.047Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-08-17T10:15:08.576Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

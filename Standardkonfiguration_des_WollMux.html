@@ -7,7 +7,7 @@
         <title>Standardkonfiguration des WollMux · WollMux Handbuch</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.2.2">
+        <meta name="generator" content="GitBook 3.2.3">
         <meta name="author" content="Landeshauptstadt München">
         
         
@@ -1058,11 +1058,11 @@ Funktionen. Der Programmcode der Funktion ist also nicht in der
 Standardkonfiguration enthalten, sondern im WollMux. Damit die
 entsprechende Funktion funktioniert, muss also eine WollMux-Version
 verwendet werden, die den Code tats&#xE4;chlich enth&#xE4;lt.</p>
-<blockquote class="clearfix alert alert-info"><strong class="fa fa-4x fa-info"></strong>
+<blockquote class="clearfix alert alert-info"><strong class="fa fa-2x fa-info"></strong>
 <p> &#xC4;nderungen an der <code>funktionen.conf</code> sind h&#xE4;ufiger Ausl&#xF6;ser f&#xFC;r Inkompatibilit&#xE4;ten einer neuen Standardkonfiguration mit alten WollMux-Versionen. Diese &#xE4;u&#xDF;ern sich in Fehlermeldungen in der <code>wollmux.log</code>, die sich auf die entsprechende Funktion beziehen. Ob dies zu benutzersichtbaren Fehlern f&#xFC;hrt oder nicht h&#xE4;ngt davon ab, ob die neue Funktion in den Standardbriefk&#xF6;pfen verwendet wird oder nicht. Falls sie nicht in den Standardbriefk&#xF6;pfen verwendet wird, kann der entsprechende Eintrag in der <code>funktionen.conf</code> einfach auskommentiert werden, um die Fehlermeldung zu beseitigen.</p>
 </blockquote>
 <!-- -->
-<blockquote class="clearfix alert alert-warning"><strong class="fa fa-4x fa-exclamation-triangle"></strong>
+<blockquote class="clearfix alert alert-warning"><strong class="fa fa-2x fa-exclamation-triangle"></strong>
 <p> &#xC4;nderungen an den Deklarationen der Standardfunktionen sind zwar prinzipiell durch entsprechende eigene Eintr&#xE4;ge in der <code>referat.conf</code> m&#xF6;glich, sind jedoch mit Vorsicht zu genie&#xDF;en. Sollten Sie die Notwendigkeit sehen, die Standardfunktionen f&#xFC;r Ihr Referat anzupassen, so erstellen Sie bitte ein Ticket, damit D-III-ITD-D101 Sie dabei unterst&#xFC;tzen kann.</p>
 </blockquote>
 <h2 id="referatseigene-plugins">Referatseigene Plugins</h2>
@@ -1084,7 +1084,7 @@ beantragte Urlaub. Die Funktion <em>Resturlaub</em> ist also einfach</p>
 <p>Diese Funktion wollen wir &#xFC;ber ein referatsspezifisches Java-Plugin
 realisieren. In diesem Fall wird die Funktion in einer Vorlage des KVR
 eingesetzt.</p>
-<blockquote class="clearfix alert alert-info"><strong class="fa fa-4x fa-info"></strong>
+<blockquote class="clearfix alert alert-info"><strong class="fa fa-2x fa-info"></strong>
 <p> Der WollMux unterst&#xFC;tzt seit der Version 3.8.1 auch arithmetische <a href="Konfigurationsdatei_wollmux_conf.html#grundfunktionen" title="wikilink">Grundfunktionen</a>. Im Fall einer simplen Berechnung wie im Falle des Resturlaubs stellen diese Funktionen eine einfachere Alternative zu externen Plugins dar.</p>
 </blockquote>
 <p>Die Funktion <em>Resturlaub</em> wird wie folgt (als externes Plugin)
@@ -1130,7 +1130,7 @@ Plugins in Dateien nach dem Muster <code>conf/plugins-</code><referat><code>.con
 im Verzeichnis <code>conf/</code> eingetragen werden. Das von D-III-ITD-D101
 bereitgestellte Archiv enth&#xE4;lt auch bereits eine Datei
 <code>plugins-kvr.conf</code>, die dies demonstriert.</referat></p>
-<blockquote class="clearfix alert alert-warning"><strong class="fa fa-4x fa-exclamation-triangle"></strong>
+<blockquote class="clearfix alert alert-warning"><strong class="fa fa-2x fa-exclamation-triangle"></strong>
 <p> Funktionen
 m&#xFC;ssen zur Verwendung nicht zwangsweise global deklariert werden und
 diese Deklaration hat durchaus ihre Nachteile. Lesen Sie hierzu die
@@ -1382,7 +1382,7 @@ direkt nebeneinander.</li>
 Maustaste an den Separatoren zwischen den Spaltenk&#xF6;pfen so
 Vergr&#xF6;&#xDF;ern/Verkleinern, dass man beide gut lesen kann.</li>
 </ul>
-<blockquote class="clearfix alert alert-info"><strong class="fa fa-4x fa-info"></strong>
+<blockquote class="clearfix alert alert-info"><strong class="fa fa-2x fa-info"></strong>
 <p> Symlinks sind in dieser Ansicht durch kleine Pfeile links
 unten am Icon der Datei gekennzeichnet. Und nat&#xFC;rlich sind sie dadurch
 erkennbar, dass ihre <em>Verkn&#xFC;pfung</em>-Spalte nicht leer ist.</p>
@@ -1394,7 +1394,7 @@ erkennbar, dass ihre <em>Verkn&#xFC;pfung</em>-Spalte nicht leer ist.</p>
 <p><code>ln -sn &quot;&amp;lt;Quelle&amp;gt;&quot; &quot;&amp;lt;Ziel&amp;gt;&quot;</code></p>
 <p>einen Symlink. Beispiel</p>
 <p><code>ln -sn &quot;../../fragmente/Briefkopf-extern-ohne-Logo.ott&quot;  &quot;Externer Briefkopf ohne Logo.ott&quot;</code></p>
-<blockquote class="clearfix alert alert-warning"><strong class="fa fa-4x fa-exclamation-triangle"></strong>
+<blockquote class="clearfix alert alert-warning"><strong class="fa fa-2x fa-exclamation-triangle"></strong>
 <p> Man muss darauf achten, den Parameter <code>-sn</code> nicht zu vergessen. L&#xE4;sst man ihn weg, gibt es <em>keine</em> Fehlermeldung. Stattdessen wird ein sogenannter harter Link angelegt. Ein harter Link ist von der Originaldatei durch nichts zu unterscheiden (insbesondere gibt es keine <em>Verkn&#xFC;pfung</em>-Angabe im Konqueror) und wegen dieser Intransparenz f&#xFC;r die Verwendung in der Standardkonfiguration nicht geeignet.</p>
 </blockquote>
 <h3 id="probleme-mit-symlinks">Probleme mit Symlinks</h3>
@@ -1437,7 +1437,7 @@ Arbeitsplatzrechners liegt.</p>
 <p><code>../../fragmente/referat/vorlage.ott</code></p>
 <p>dagegen funktioniert auch auf dem Server, da die ganze
 Verzeichnisstruktur kopiert wurde.</p>
-<blockquote class="clearfix alert alert-info"><strong class="fa fa-4x fa-info"></strong>
+<blockquote class="clearfix alert alert-info"><strong class="fa fa-2x fa-info"></strong>
 <p> Der Dateimanager Konqueror erzeugt standardm&#xE4;&#xDF;ig absolute Symlinks,
 also die problematische Sorte. Diese werden jedoch von <code>automux</code>
 automatisch korrigiert. Dies funktioniert jedoch nur dann
@@ -1448,7 +1448,7 @@ Hochladen oder sonstiger Weitergabe mindestens einmal <code>run_automux</code>
 aufgerufen wird.</p>
 </blockquote>
 <!-- -->
-<blockquote class="clearfix alert alert-warning"><strong class="fa fa-4x fa-exclamation-triangle"></strong>
+<blockquote class="clearfix alert alert-warning"><strong class="fa fa-2x fa-exclamation-triangle"></strong>
 <p> Der Konqueror hat einen Bug, der daf&#xFC;r sorgt, dass manchmal die Verkn&#xFC;pfungsziele in der Ansicht nicht aktualisiert werden. Auch <em>Ansicht/Erneut Laden (F5)</em> hilft in diesem Fall nicht. Der Konqueror muss dann beendet und neu ge&#xF6;ffnet werden, damit die Ansicht stimmt. Sollten also nach dem Aufruf von <code>run_automux</code> einige Symlinks trotzdem noch mit absoluten Zielen angezeigt werden, kann dieser Bug die Ursache sein. Dieses Problem betrifft aber nur die Anzeige und hat ansonsten keine sch&#xE4;dlichen Auswirkungen.</p>
 </blockquote>
 <h4 id="relative-symlinks">Relative Symlinks</h4>
@@ -1471,7 +1471,7 @@ der Symlink im Verzeichnis</p>
 <p>verschoben, so h&#xF6;rt er jedoch auf zu funktionieren, denn von dort aus
 gesehen bedeutet <code>../../</code> n&#xE4;mlich das Verzeichnis</p>
 <p><code>/home/felix.wollmux/wollmux-standard-config/vorlagen/standard/</code></p>
-<blockquote class="clearfix alert alert-info"><strong class="fa fa-4x fa-info"></strong>
+<blockquote class="clearfix alert alert-info"><strong class="fa fa-2x fa-info"></strong>
 <p> Dieser Fehler passiert typischerweise, wenn man in der Men&#xFC;struktur
 nachtr&#xE4;glich Untermen&#xFC;s einrichten m&#xF6;chte und die alten Men&#xFC;punkte
 einfach nur in das Untermen&#xFC; verschiebt. Auch in diesem Fall jedoch
@@ -1691,7 +1691,7 @@ bereitgestellten Archiven der Standardkonfiguration zu finden sind:</p>
   ohne Sicherheitsabfragen. Die zugeh&#xF6;rige <code>.button</code> Datei ist\
   <code>vorlagen/standard/40.eXtras/40.K</code> <code>I</code> <code>L</code> <code>L.button</code>.</li>
 </ul>
-<blockquote class="clearfix alert alert-info"><strong class="fa fa-4x fa-info"></strong>
+<blockquote class="clearfix alert alert-info"><strong class="fa fa-2x fa-info"></strong>
 <p> Der obige Abschnitt wird nicht mit jedem Release
 aktualisiert. Abweichungen, insbesondere bzgl. der Sortierungspr&#xE4;fixe
 sind m&#xF6;glich. Wenn Ihnen eine solche Abweichung auff&#xE4;llt, dann teilen
@@ -2072,7 +2072,7 @@ im <code>X.insertFrag</code> Verzeichnis einen entsprechenden Symlink
 <code>Fusszeile.ott</code>.</li>
 </ul>
 <p>Hinweis: Wenn der WollMux beim &#xD6;ffnen einer Vorlage eine Popup-Meldung &#x201C;Fehler bei der Dokumentbearbeitung&#x201D; bringt, dann kann ein fehlendes Fragment die Ursache sein. Sehen Sie entweder in der <code>wollmux.log</code> nach oder schauen Sie im Dokument nach einem &quot;&lt;FEHLER:&gt;&quot; Marker und lassen Sie die Maus &#xFC;ber dem zugeh&#xF6;rigen Kommentarfeld schweben. Dort erfahren Sie n&#xE4;heres dar&#xFC;ber, um welches Fragment es geht. Vergessen Sie auch nicht, nach dem &#xC4;ndern eines der <code>?.insertFrag</code> Verzeichnisse immer <code>run_automux</code> laufen zu lassen.</p>
-<blockquote class="clearfix alert alert-warning"><strong class="fa fa-4x fa-exclamation-triangle"></strong>
+<blockquote class="clearfix alert alert-warning"><strong class="fa fa-2x fa-exclamation-triangle"></strong>
 <p> Die Verwaltung der Fragmente liegt in der WollMux-Komponente von OpenOffice.org, <em>nicht</em> in der WollMuxBar. Die WollMuxBar zu schlie&#xDF;en reicht also <em>nicht</em> aus (und ist sogar gar nicht notwendig), damit eine ge&#xE4;nderte Konfiguration der Fragmente Wirkung zeigt. Es m&#xFC;ssen <em>alle</em> OpenOffice.org Prozesse (Prozessname <code>soffice.bin</code>) beendet werden, bevor die neue Konfiguration effektiv wird. Beachten Sie, dass auch nach Schlie&#xDF;en aller OOo Fenster noch unsichtbare <code>soffice.bin</code> Prozesse aktiv sein k&#xF6;nnen. Das Verwenden des Taskmanagers ist also ratsam.</p>
 </blockquote>
 <h3 id="beispiel-eine-benutzergruppe-soll-ein-anderes-logo-in-der-fu&#xDF;zeile-haben">Beispiel: Eine Benutzergruppe soll ein anderes Logo in der Fu&#xDF;zeile haben</h3>
@@ -2140,7 +2140,7 @@ die <code>wollmuxbar_</code>&lt;gruppe&gt;<code>.conf</code> Dateien geschrieben
 der <code>wollmuxbar_bl&#xFC;mchen.conf</code> beim Aufruf des externen Briefkopfes
 das Total-E-Quality Logo.</li>
 </ul>
-<blockquote class="clearfix alert alert-warning"><strong class="fa fa-4x fa-exclamation-triangle"></strong>
+<blockquote class="clearfix alert alert-warning"><strong class="fa fa-2x fa-exclamation-triangle"></strong>
 <p> Die Verwaltung der Fragmente liegt in der WollMux-Komponente von OpenOffice.org, <em>nicht</em> in der WollMuxBar. Die WollMuxBar zu schlie&#xDF;en reicht also <em>nicht</em> aus (und ist sogar gar nicht notwendig), damit eine ge&#xE4;nderte Konfiguration der Fragmente Wirkung zeigt. Es m&#xFC;ssen <em>alle</em> OpenOffice.org Prozesse (Prozessname <code>soffice.bin</code>) beendet werden, bevor die neue Konfiguration effektiv wird. Beachten Sie, dass auch nach Schlie&#xDF;en aller OOo Fenster noch unsichtbare <code>soffice.bin</code> Prozesse aktiv sein k&#xF6;nnen. Das Verwenden des Taskmanagers ist also ratsam.</p>
 </blockquote>
 <h3 id="beispiel-eine-benutzergruppe-soll-nur-die-orga-e-mail-adresse-im-briefkopf-haben">Beispiel: Eine Benutzergruppe soll nur die Orga-E-Mail-Adresse im Briefkopf haben</h3>
@@ -2215,7 +2215,7 @@ der Dateierweiterung <code>.ott</code>.</li>
 Dateimanager), wird der externe Briefkopf automatisch eingemischt
 und mit den korrekten Sachbearbeiterdaten bef&#xFC;llt.</li>
 </ul>
-<blockquote class="clearfix alert alert-warning"><strong class="fa fa-4x fa-exclamation-triangle"></strong>
+<blockquote class="clearfix alert alert-warning"><strong class="fa fa-2x fa-exclamation-triangle"></strong>
 <p> Um eine Mischvorlage zu bearbeiten, <em>muss</em> diese korrekt als Vorlage ge&#xF6;ffnet werden. Verwenden Sie daf&#xFC;r entweder auf dem Basisclient im Dateimanager <em>Rechts-Klick/Vorlage bearbeiten</em> oder in OpenOffice.org den Men&#xFC;punkt <em>Datei/Dokumentvorlage/Bearbeiten...</em>\
 Es gibt eine ganz einfache Merkregel: Wenn in dem OpenOffice.org Fenster, das Sie vor sich haben ein Briefkopf angezeigt wird, dann d&#xFC;rfen Sie es <em>unter keinen Umst&#xE4;nden</em> als Vorlage speichern. Es verliert sonst dauerhaft die F&#xE4;higkeit den Briefkopf dynamisch einzumischen und mit Sachbearbeiterdaten zu bef&#xFC;llen. Sehen Sie dagegen statt eines Briefkopfs einen Platzhalter, wie z.B. &quot;&lt;externer Briefkopf&gt;&quot;, dann k&#xF6;nnen Sie getrost als Vorlage speichern.</p>
 </blockquote>
@@ -2342,7 +2342,7 @@ Mehr &#xFC;ber diese Vorlagen erfahren Sie im entsprechenden Artikel.</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Standardkonfiguration des WollMux","level":"1.4.21","depth":2,"next":{"title":"Standardkonfiguration des WollMux installieren und pflegen","level":"1.4.22","depth":2,"path":"Standardkonfiguration_des_WollMux_installieren_und_pflegen.md","ref":"Standardkonfiguration_des_WollMux_installieren_und_pflegen.md","articles":[]},"previous":{"title":"Seriendruckvorlagen mit dem WollMux erstellen","level":"1.4.20","depth":2,"path":"Seriendruckvorlagen_mit_dem_WollMux_erstellen.md","ref":"Seriendruckvorlagen_mit_dem_WollMux_erstellen.md","articles":[]},"dir":"ltr"},"config":{"plugins":["atoc","collapsible-menu","forkmegithub","richquotes","redirect","splitter","back-to-top-button"],"root":"markdown","styles":{"website":"styles/website.css"},"pluginsConfig":{"collapsible-menu":{},"atoc":{"addClass":true,"className":"toc"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{},"highlight":{},"back-to-top-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"redirect":{},"forkmegithub":{"color":"gray","url":"https://github.com/WollMux/WollMux"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Landeshauptstadt München","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"WollMux Handbuch","language":"de","links":{"sidebar":{"Homepage":"http://www.wollmux.org"}},"gitbook":"3.x.x"},"file":{"path":"Standardkonfiguration_des_WollMux.md","mtime":"2016-10-20T05:47:19.621Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-10-20T12:45:12.436Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Standardkonfiguration des WollMux","level":"1.4.21","depth":2,"next":{"title":"Standardkonfiguration des WollMux installieren und pflegen","level":"1.4.22","depth":2,"path":"Standardkonfiguration_des_WollMux_installieren_und_pflegen.md","ref":"Standardkonfiguration_des_WollMux_installieren_und_pflegen.md","articles":[]},"previous":{"title":"Seriendruckvorlagen mit dem WollMux erstellen","level":"1.4.20","depth":2,"path":"Seriendruckvorlagen_mit_dem_WollMux_erstellen.md","ref":"Seriendruckvorlagen_mit_dem_WollMux_erstellen.md","articles":[]},"dir":"ltr"},"config":{"plugins":["atoc","collapsible-menu","forkmegithub","richquotes","redirect","splitter","back-to-top-button"],"root":"markdown","styles":{"website":"styles/website.css"},"pluginsConfig":{"collapsible-menu":{},"atoc":{"addClass":true,"className":"toc"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{},"highlight":{},"back-to-top-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"redirect":{},"forkmegithub":{"color":"gray","url":"https://github.com/WollMux/WollMux"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Landeshauptstadt München","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"WollMux Handbuch","language":"de","links":{"sidebar":{"Homepage":"http://www.wollmux.org"}},"gitbook":"3.x.x"},"file":{"path":"Standardkonfiguration_des_WollMux.md","mtime":"2018-08-16T11:23:28.059Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-08-17T10:15:08.576Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
