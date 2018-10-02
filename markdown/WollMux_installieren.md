@@ -61,7 +61,12 @@ Installers:
 
 ![thumb|Abbildung 4](180px-Wm16.04-java-installer-04.png "wikilink")
 
--   Systemweite Installation (Abbildung 5)
+-   Registry Eintrag (Abbildung 5)
+    - Hier wird ein Registry Eintrag (HKEY\_LOCAL\_MACHINE//Software/WollMux bzw. HKEY\_LOCAL\_MACHINE//Software/WOW6432Node/WollMux für 32-Bit Java) angelegt, der den Pfad zur WollMux Konfiguration hat (siehe. [Konfigurationsdatei wollmux.conf](Konfigurationsdatei_wollmux_conf.md "wikilink")
+
+![thumb|Abbildung 5](installerRegKey.png "wikilink")
+
+-   Systemweite Installation (Abbildung 6)
     -   WollMux.oxt kann für alle Benutzer (“shared”)
         installiert werden.
     -   Standardmäßig ist die Option nicht aktiv.
@@ -69,29 +74,29 @@ Installers:
         sudo aufgerufen werden.
     -   Unter Windows verlangt der Installer automatisch Admin-Rechte.
 
-![thumb|Abbildung 5](180px-Wm16.04-java-installer-05.png "wikilink")
+![thumb|Abbildung 6](180px-Wm16.04-java-installer-05.png "wikilink")
 
--   Zusammenfassung (Abbildung 6)
+-   Zusammenfassung (Abbildung 7)
 
-![thumb|Abbildung 6](180px-Wm16.04-java-installer-06.png "wikilink")
+![thumb|Abbildung 7](180px-Wm16.04-java-installer-06.png "wikilink")
 
--   Installation (Abbildung 7)
+-   Installation (Abbildung 8)
 
-![thumb|Abbildung 7](180px-Wm16.04-java-installer-07.png "wikilink")
+![thumb|Abbildung 8](180px-Wm16.04-java-installer-07.png "wikilink")
 
--   Desktop-Icons und Startmenü (Abbildung 8)
+-   Desktop-Icons und Startmenü (Abbildung 9)
     -   Desktop-Verknüpfungen können nur unter Windows angelegt werden.
     -   Standardmäßig werden keine Desktop-Verknüpfungen erstellt
 
-![thumb|Abbildung 8](180px-Wm16.04-java-installer-08.png "wikilink")
+![thumb|Abbildung 9](180px-Wm16.04-java-installer-08.png "wikilink")
 
--   Abschluß (Abbildung 9)
+-   Abschluß (Abbildung 10)
     -   Die Datei **auto-install.xml** kann über den Button
         *“Automatisches Installationsskript generieren”*
         erstellt werden. Dabei werden alle getroffenen
         Einstellungen gespeichert.
 
-![thumb|Abbildung 9](180px-Wm16.04-java-installer-09.png "wikilink")
+![thumb|Abbildung 10](180px-Wm16.04-java-installer-09.png "wikilink")
 
 ### Unbeaufsichtigte Installation
 

@@ -12,23 +12,28 @@ angegebenen Reihenfolge gesucht:
 
 1.  über die Umgebungsvariable %WOLLMUX\_CONF\_PATH% (Pfad inklusive
     Dateiname, Beispiel: *C:\\Programme\\wollmux\\wollmux.conf*)
-2.  unter dem Dateipfad (inkl. Dateiname), der im Wert "ConfigPath" im
+2.  *&lt;Profilverzeichnis&gt;/.wollmux/wollmux.conf*, wobei
+    &lt;Profilverzeichnis&gt; auf einem deutschen Windows das Verzeichnis
+    "C:\\Benutzer\\&lt;Benutzername&gt;" bezeichnet
+3.  *&lt;Startverzeichnis&gt;/.wollmux/wollmux.conf*, wobei &lt;Startverzeichnis&gt; den Ordner bezeichnet, in dem die Anwendung aufgerufen wird.
+4.  unter dem Dateipfad (inkl. Dateiname), der im Wert "ConfigPath" im
     Registrierungsschlüssel *HKEY\_CURRENT\_USER\\Software\\WollMux*
     festgelegt ist
-3.  *<Profilverzeichnis>/.wollmux/wollmux.conf*, wobei
-    <Profilverzeichnis> auf einem deutschen Windows das Verzeichnis
-    "C:\\Dokumente und Einstellungen\\<Benutzername>" bezeichnet
-4.  unter dem Dateipfad (inkl. Dateiname), der im Wert "ConfigPath" im
+5.  unter dem Dateipfad (inkl. Dateiname), der im Wert "ConfigPath" im
     Registrierungsschlüssel *HKEY\_LOCAL\_MACHINE\\Software\\WollMux*
     festgelegt ist
-5.  *C:\\Programme\\wollmux\\wollmux.conf*
+6.  *%APPDATA%/.wollmux/wollmux.conf*, wobei %APPDATA% auf einem deutschen Windows das Verzeichnis "C:\\Benutzer\\&lt;Benutzername&gt;\\AppData\\Roaming" bezeichnet
+7.  *%COMMON_APPDATA/.wollmux/wollmux.conf*, wobei %COMMON_APPDATA% auf einem deutschen Windows das Verzeichnis "C:\\ProgramData" bezeichnet
+8.  *C:\\Programme (x86)\\.wollmux\\wollmux.con*
+9.  *C:\\Programme\\.wollmux\\wollmux.conf*
 
 **Unter Linux:**
 
 1.  über die Umgebungsvariable \$WOLLMUX\_CONF\_PATH (Pfad inklusive
     Dateiname, Beispiel: */etc/wollmux/wollmux.conf*)
 2.  *`$HOME`/.wollmux/wollmux.conf*
-3.  */etc/wollmux/wollmux.conf*
+3.  *&lt;Startverzeichnis&gt;/.wollmux/wollmux.conf*, wobei &lt;Startverzeichnis&gt; den Ordner bezeichnet, in dem die Anwendung aufgerufen wird.
+4.  */etc/wollmux/wollmux.conf*
 
 Sobald die Konfigurationsdatei gefunden wurde, wird vom WollMux nicht
 mehr an den übrigen Stellen weitergesucht. Wenn also unter Linux eine
