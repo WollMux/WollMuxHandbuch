@@ -7,7 +7,7 @@
         <title>WollMux installieren · WollMux Handbuch</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="generator" content="GitBook 3.2.2">
         <meta name="author" content="Landeshauptstadt München">
         
         
@@ -902,7 +902,14 @@ nachinstalliert werden.</li>
 </ul>
 <p><img src="180px-Wm16.04-java-installer-04.png" alt="thumb|Abbildung 4" title="wikilink"></p>
 <ul>
-<li>Systemweite Installation (Abbildung 5)<ul>
+<li>Registry Eintrag (Abbildung 5)<ul>
+<li>Hier wird ein Registry Eintrag (HKEY_LOCAL_MACHINE//Software/WollMux bzw. HKEY_LOCAL_MACHINE//Software/WOW6432Node/WollMux f&#xFC;r 32-Bit Java) angelegt, der den Pfad zur WollMux Konfiguration hat (siehe. <a href="Konfigurationsdatei_wollmux_conf.html" title="wikilink">Konfigurationsdatei wollmux.conf</a></li>
+</ul>
+</li>
+</ul>
+<p><img src="installerRegKey.png" alt="thumb|Abbildung 5" title="wikilink"></p>
+<ul>
+<li>Systemweite Installation (Abbildung 6)<ul>
 <li>WollMux.oxt kann f&#xFC;r alle Benutzer (&#x201C;shared&#x201D;)
 installiert werden.</li>
 <li>Standardm&#xE4;&#xDF;ig ist die Option nicht aktiv.</li>
@@ -912,25 +919,25 @@ sudo aufgerufen werden.</li>
 </ul>
 </li>
 </ul>
-<p><img src="180px-Wm16.04-java-installer-05.png" alt="thumb|Abbildung 5" title="wikilink"></p>
+<p><img src="180px-Wm16.04-java-installer-05.png" alt="thumb|Abbildung 6" title="wikilink"></p>
 <ul>
-<li>Zusammenfassung (Abbildung 6)</li>
+<li>Zusammenfassung (Abbildung 7)</li>
 </ul>
-<p><img src="180px-Wm16.04-java-installer-06.png" alt="thumb|Abbildung 6" title="wikilink"></p>
+<p><img src="180px-Wm16.04-java-installer-06.png" alt="thumb|Abbildung 7" title="wikilink"></p>
 <ul>
-<li>Installation (Abbildung 7)</li>
+<li>Installation (Abbildung 8)</li>
 </ul>
-<p><img src="180px-Wm16.04-java-installer-07.png" alt="thumb|Abbildung 7" title="wikilink"></p>
+<p><img src="180px-Wm16.04-java-installer-07.png" alt="thumb|Abbildung 8" title="wikilink"></p>
 <ul>
-<li>Desktop-Icons und Startmen&#xFC; (Abbildung 8)<ul>
+<li>Desktop-Icons und Startmen&#xFC; (Abbildung 9)<ul>
 <li>Desktop-Verkn&#xFC;pfungen k&#xF6;nnen nur unter Windows angelegt werden.</li>
 <li>Standardm&#xE4;&#xDF;ig werden keine Desktop-Verkn&#xFC;pfungen erstellt</li>
 </ul>
 </li>
 </ul>
-<p><img src="180px-Wm16.04-java-installer-08.png" alt="thumb|Abbildung 8" title="wikilink"></p>
+<p><img src="180px-Wm16.04-java-installer-08.png" alt="thumb|Abbildung 9" title="wikilink"></p>
 <ul>
-<li>Abschlu&#xDF; (Abbildung 9)<ul>
+<li>Abschlu&#xDF; (Abbildung 10)<ul>
 <li>Die Datei <strong>auto-install.xml</strong> kann &#xFC;ber den Button
 <em>&#x201C;Automatisches Installationsskript generieren&#x201D;</em>
 erstellt werden. Dabei werden alle getroffenen
@@ -938,7 +945,7 @@ Einstellungen gespeichert.</li>
 </ul>
 </li>
 </ul>
-<p><img src="180px-Wm16.04-java-installer-09.png" alt="thumb|Abbildung 9" title="wikilink"></p>
+<p><img src="180px-Wm16.04-java-installer-09.png" alt="thumb|Abbildung 10" title="wikilink"></p>
 <h3 id="unbeaufsichtigte-installation">Unbeaufsichtigte Installation</h3>
 <p>Die Installation kann auch &#xFC;ber die Konsole ohne GUI ausgef&#xFC;hrt werden
 (<a href="https://izpack.atlassian.net/wiki/display/IZPACK/Unattended+Installations" target="_blank">Unattended
@@ -1039,7 +1046,7 @@ wird eine WollMux-Konfiguration ben&#xF6;tigt (siehe
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"WollMux installieren","level":"1.4.24","depth":2,"next":{"title":"WollMux installieren (vor Version 16.04)","level":"1.4.24.1","depth":3,"path":"WollMux_installieren_vor_Version_16.04.md","ref":"WollMux_installieren_vor_Version_16.04.md","articles":[]},"previous":{"title":"Textfragmente im WollMux","level":"1.4.23","depth":2,"path":"Textfragmente_im_WollMux.md","ref":"Textfragmente_im_WollMux.md","articles":[]},"dir":"ltr"},"config":{"plugins":["atoc","collapsible-menu","forkmegithub","richquotes","redirect","splitter","back-to-top-button"],"root":"markdown","styles":{"website":"styles/website.css"},"pluginsConfig":{"collapsible-menu":{},"atoc":{"addClass":true,"className":"toc"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{},"highlight":{},"back-to-top-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"redirect":{},"forkmegithub":{"color":"gray","url":"https://github.com/WollMux/WollMux"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Landeshauptstadt München","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"WollMux Handbuch","language":"de","links":{"sidebar":{"Homepage":"http://www.wollmux.org"}},"gitbook":"3.x.x"},"file":{"path":"WollMux_installieren.md","mtime":"2018-08-16T11:23:28.063Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-08-17T10:15:08.576Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"WollMux installieren","level":"1.4.24","depth":2,"next":{"title":"WollMux installieren (vor Version 16.04)","level":"1.4.24.1","depth":3,"path":"WollMux_installieren_vor_Version_16.04.md","ref":"WollMux_installieren_vor_Version_16.04.md","articles":[]},"previous":{"title":"Textfragmente im WollMux","level":"1.4.23","depth":2,"path":"Textfragmente_im_WollMux.md","ref":"Textfragmente_im_WollMux.md","articles":[]},"dir":"ltr"},"config":{"plugins":["atoc","collapsible-menu","forkmegithub","richquotes","redirect","splitter","back-to-top-button"],"root":"markdown","styles":{"website":"styles/website.css"},"pluginsConfig":{"collapsible-menu":{},"atoc":{"addClass":true,"className":"toc"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{},"highlight":{},"back-to-top-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"redirect":{},"forkmegithub":{"color":"gray","url":"https://github.com/WollMux/WollMux"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Landeshauptstadt München","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"WollMux Handbuch","language":"de","links":{"sidebar":{"Homepage":"http://www.wollmux.org"}},"gitbook":"3.x.x"},"file":{"path":"WollMux_installieren.md","mtime":"2018-10-02T11:07:46.306Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-10-02T11:09:29.892Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
