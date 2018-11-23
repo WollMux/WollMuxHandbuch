@@ -1412,8 +1412,6 @@ Unterabschnitt *Buttons* werden die Buttons spezifiziert, die am unteren
 Rand des jeweiligen Tabs angezeigt werden sollen. In der wollmux.conf
 können global bestimmte Buttons aktiviert oder deaktiviert werden.
 
-Multiform: Die Funktion Multiform erlaubt es mehrere Formulare gleichzeitig zu befüllen. Dabei werden die Formularbeschreibungen der einzelnen Formulare zu einer gemeinsamen Formularbeschreibung zusammengefügt und in Form einer gemeinsamen Eingabemaske angezeigt. Ausführliche Informationen dazu befinden sich auf der Seite [Schnittstellen des WollMux für Experten](Schnittstellen_des_WollMux_fuer_Experten.md#formguis-independentmerged "wikilink") auf der unter anderem beschrieben steht, nach welchen Regeln die Formularbeschreibungen der Einzelformulare zusammengefügt werden. Auf der Seite [Standardkonfiguration des WollMux](Standardkonfiguration_des_WollMux.md#multi-form-zusammengehörige-formulare-gemeinsam-ausfüllen "wikilink") ist beschrieben, wie Formulare zur gemeinsamen Bearbeitung in die WollMux-Leiste eingefügt werden können.
-
 ## PLAUSI_MARKER_COLOR "&lt;Farbangabe&gt;"
 
 Felder, die mit einer Plausibilitätsprüfung hinterlegt sind werden in

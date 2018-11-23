@@ -834,11 +834,6 @@ weiter. Es gibt allerdings ein paar Ausnahmen von diesem Prinzip:
 - *?.buttons*: Verzeichnisse, die nach diesem Muster benannt sind,
     werden für den Aufbau der Menüstruktur ignoriert. Sie bestimmen die
     Buttonleiste der WollMuxBar (siehe weiter oben).
-- *\*.multi*: Verzeichnisse nach diesem Muster werden zwar in die
-    Menüstruktur eingebaut, allerdings ergeben sie keine Untermenüs,
-    sondern spezielle Menüpunkte, die mehrere Formulare zum
-    gleichzeitigen Ausfüllen öffnen. Diese Multi-Form-Funktionalität
-    wird [weiter unten](#multi-form-zusammengehörige-formulare-gemeinsam-ausfüllen "wikilink") beschrieben.
 
 In allen Verzeichnissen und Unterverzeichnissen können Vorlagendateien
 bzw. Symlinks darauf hinterlegt werden. Diese Dateien werden von
@@ -1212,76 +1207,6 @@ Batch-Datei `sensible-browser.bat` in einem Verzeichnis anzulegen, das
 im PATH steht. In dieser Batch-Datei können dem Browser auch
 entsprechende Kommandozeilenparameter übergeben werden, die z.B. die URL
 in einem Tab anstatt in einem neuen Fenster öffnen.
-
-Multi-Form: zusammengehörige Formulare gemeinsam ausfüllen
-----------------------------------------------------------
-
-Es gibt manchmal die Situation, dass zu einem Vorgang mehrere Formulare
-gehören, in denen teilweise die selben Daten benötigt werden. Es ist ein
-unnötiger Mehraufwand, wenn die Sachbearbeiterin bzw. der Sachbearbeiter
-die Daten mehrfach eingeben muss. Mit Multi-Forms kann dies zumindest
-dort vermieden werden, wo bekannt ist, welche Vorlagen oft gemeinsam
-ausgefüllt werden müssen und sich diese sinnvoll gruppieren lassen.
-
-### Multi-Forms aus Benutzersicht
-
-Für den Endbenutzer stellt sich ein Multiform wie folgt dar
-
--   Es gibt ein Untermenü in der WollMuxBar, das typischerweise nach dem
-    Vorgang benannt ist, zu dem es mehrere Formulare gibt, die man evtl.
-    gemeinsam ausfüllen möchte.
--   In dem Untermenü befinden sich normale Menüeinträge für die
-    einzelnen zu dem Vorgang gehörigen Formulare. Über diese lassen sich
-    die entsprechenden Formulare ganz normal aufrufen.
--   Zusätzlich gibt es einen besonderen Menüpunkt, typischerweise mit
-    einer Bezeichnung wie “Mehrere Ausfüllen” o.ä.
--   Wird der Menüpunkt “Mehrere Ausfüllen” angewählt, so öffnet sich ein
-    Dialogfenster, in dem der Benutzer mittels Checkboxen die Formulare
-    auswählen kann, die er gemeinsam ausfüllen möchte.
--   Nachdem der Benutzer die Formulare ausgewählt hat, werden die
-    entsprechenden Vorlagen geöffnet. Anstatt einer eigenen Formular-GUI
-    für jedes einzelne Formular wird jedoch nur eine Formular-GUI
-    geöffnet, über die alle Formulare gleichzeitig ausgefüllt werden.
-
-Die von D-III-ITD-5.1 bereitgestellten Archive enthalten zur
-Demonstration ein Multi-Form “Abtretungserklärung”, das sie im Menü
-“Formulare” finden. Dieses Multi-Form demonstriert, wie die altbekannte
-Abtretungserklärung (die weiterhin als “Abtretungserklärung
-(monolithisch)” verfügbar ist) als Multi-Form realisiert werden kann.
-
-### Multi-Forms aus Administratorsicht
-
-Der wichtigste Schritt ist, die einzelnen Formulare, für die gemeinsames
-Ausfüllen möglich sein soll, entsprechend vorzubereiten. Die
-Anforderungen an die Einzelvorlagen eines Multi-Forms finden Sie in der
-Beschreibung des [Dispatch-Kommandos wollmux:Open](Schnittstellen_des_WollMux_fuer_Experten.md#wollmuxopen "wikilink")
-in der Dokumentation der [Schnittstellen des WollMux für Experten](Schnittstellen_des_WollMux_für_Experten.md "wikilink").
-
-Das Aufnehmen von Multi-Forms in die WollMuxBar ist mit `automux` ganz
-einfach. Sie erstellen einfach ein Verzeichnis, dessen Namen die
-Erweiterung `.multi` hat. Aufbau und Inhalt des Verzeichnisses sind
-genau gleich wie bei den Verzeichnissen für WollMuxBar-Untermenüs, d.h.
-sie legen in dem Verzeichnis normalerweise Symlinks auf die
-entsprechenden Vorlagen ab. Allerdings erstellt `automux` aus so einem
-`.multi` Verzeichnis kein Untermenü, sondern einen Aufruf des Dialogs
-zur Auswahl der gemeinsam auszufüllenden Vorlagen.
-
-Die von D-III-ITD-5.1 bereitgestellten Archive enthalten im Verzeichnis
-`vorlagen/standard/2.Formulare/50.Abtretungserklärung` ein Verzeichnis
-mit dem Namen `X.Mehrere Ausfüllen.multi`, das dieses Prinzip
-demonstriert. Das “X.” am Anfang des Namens ist dabei nur ein normales
-Sortierpräfix, das dafür sorgt, dass der Eintrag am Ende der Liste
-(insbes. hinter dem Separator mit Sortierpräfix “W.”) erscheint. Dieses
-Beispiel zeigt auch deutlich, dass das `.multi` Verzeichnis nur für den
-“Mehrere Ausfüllen” Menüeintrag verantwortlich ist. Es führt nicht
-automatisch dazu, dass ein Untermenü mit den entsprechenden Vorlagen
-angelegt wird. Das heißt, wenn wie im Beispiel der Abtretungserklärung
-eine Vorlage auch einzeln aufrufbar sein soll, dann muss diese Vorlage
-im Verzeichnisbaum zweimal vorkommen. In diesem Beispiel ist die Vorlage
-"`Abtretungserklärung` `bei` `Gewährung` `der` `Kaution` `als`
-`Darlehen.ott`" einmal als normale Datei im Verzeichnis
-`50.Abtretungserklärung` zu finden und einmal als Symlink im Verzeichnis
-`50.Abtretungserklärung/X.Mehrere Ausfüllen.multi`.
 
 Gruppenspezifische Konfigurationseinstellungen
 ==============================================

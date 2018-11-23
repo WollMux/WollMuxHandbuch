@@ -3044,6 +3044,8 @@ Derzeit sind folgende Aktionen möglich:
     Dokument, d.h. die Datei wird direkt zum Bearbeiten geöffnet, ohne
     dass ein neues Dokument "UnbenanntX" angelegt wird. Erfordert die
     Angabe des Attributs FRAG\_ID.
+- *open*:
+> **WARNING** Diese Aktion wird nicht länger unterstützt.
 - *openExt*: Öffnet eine Datei oder URL mit einer externen Anwendung.
     Erfordert die Angabe des Attributs EXT, das die externe Anwendung
     identifiziert (typischerweise die Dateierweiterung) sowie des
@@ -3056,12 +3058,6 @@ Derzeit sind folgende Aktionen möglich:
     In der URL kann die Variable `${user.home}` verwendet werden. Diese
     wird ersetzt durch die mit "file:" beginnende URL des
     Home-Verzeichnisses (unter Windows `C:\Dokumente und Einstellungen\<Benutzer>`, unter Linux `/home/<Benutzer>`).
-- *open*: Erfordert die Angabe eines Elements OPEN, dessen Inhalt
-    Daten im selben Format wie für [das Dispatch-Kommando wollmux:Open](Schnittstellen_des_WollMux_fuer_Experten.md#wollmuxopen "wikilink") sind.
-    Der Benutzer bekommt einen Auswahldialog mit je einem Eintrag für
-    jedes Element des *Labels*-Abschnitts. In diesem Dialog kann der
-    Benutzer auswählen, welche Vorlagen/Dokumente gemeinsam geöffnet
-    werden sollen (Multi-Form).
 -   *absenderAuswaehlen*: Öffnet das Dialogfenster "Absender Auswählen".
 -   *dumpInfo*: erzeugt eine Datei `$HOME/.wollmux/dump<DatumUndZeit>`,
     die wichtige Informationen für die Fehlersuche im Zusammenhang mit
