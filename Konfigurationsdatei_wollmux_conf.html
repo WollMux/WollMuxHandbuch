@@ -3676,6 +3676,10 @@ einfaches Menue-Element (mit dem Typ &quot;button&quot;) ausgef&#xFC;hrt werden 
   Dokument, d.h. die Datei wird direkt zum Bearbeiten ge&#xF6;ffnet, ohne
   dass ein neues Dokument &quot;UnbenanntX&quot; angelegt wird. Erfordert die
   Angabe des Attributs FRAG_ID.</li>
+<li><em>open</em>:<blockquote class="clearfix alert alert-warning"><strong class="fa fa-2x fa-exclamation-triangle"></strong>
+<p> Diese Aktion wird nicht l&#xE4;nger unterst&#xFC;tzt.</p>
+</blockquote>
+</li>
 <li><p><em>openExt</em>: &#xD6;ffnet eine Datei oder URL mit einer externen Anwendung.
   Erfordert die Angabe des Attributs EXT, das die externe Anwendung
   identifiziert (typischerweise die Dateierweiterung) sowie des
@@ -3688,12 +3692,6 @@ einfaches Menue-Element (mit dem Typ &quot;button&quot;) ausgef&#xFC;hrt werden 
   wird ersetzt durch die mit &quot;file:&quot; beginnende URL des
   Home-Verzeichnisses (unter Windows <code>C:\Dokumente und Einstellungen\&lt;Benutzer&gt;</code>, unter Linux <code>/home/&lt;Benutzer&gt;</code>).</p>
 </li>
-<li><em>open</em>: Erfordert die Angabe eines Elements OPEN, dessen Inhalt
-  Daten im selben Format wie f&#xFC;r <a href="Schnittstellen_des_WollMux_fuer_Experten.html#wollmuxopen" title="wikilink">das Dispatch-Kommando wollmux:Open</a> sind.
-  Der Benutzer bekommt einen Auswahldialog mit je einem Eintrag f&#xFC;r
-  jedes Element des <em>Labels</em>-Abschnitts. In diesem Dialog kann der
-  Benutzer ausw&#xE4;hlen, welche Vorlagen/Dokumente gemeinsam ge&#xF6;ffnet
-  werden sollen (Multi-Form).</li>
 <li><em>absenderAuswaehlen</em>: &#xD6;ffnet das Dialogfenster &quot;Absender Ausw&#xE4;hlen&quot;.</li>
 <li><em>dumpInfo</em>: erzeugt eine Datei <code>$HOME/.wollmux/dump&lt;DatumUndZeit&gt;</code>,
 die wichtige Informationen f&#xFC;r die Fehlersuche im Zusammenhang mit
@@ -5596,7 +5594,7 @@ Formular-GUI-Beschreibung findet sich unter <a href="okumentkommandos_des_WollMu
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Konfigurationsdatei wollmux.conf","level":"1.4.15","depth":2,"next":{"title":"Rebranding","level":"1.4.16","depth":2,"path":"Rebranding.md","ref":"Rebranding.md","articles":[]},"previous":{"title":"Konfiguration des WollMux in ihrem Referat","level":"1.4.14","depth":2,"path":"Konfiguration_des_WollMux_in_Ihrem_Referat.md","ref":"Konfiguration_des_WollMux_in_Ihrem_Referat.md","articles":[]},"dir":"ltr"},"config":{"plugins":["atoc","collapsible-menu","forkmegithub","richquotes","redirect","splitter","back-to-top-button"],"root":"markdown","styles":{"website":"styles/website.css"},"pluginsConfig":{"collapsible-menu":{},"atoc":{"addClass":true,"className":"toc"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{},"highlight":{},"back-to-top-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"redirect":{},"forkmegithub":{"color":"gray","url":"https://github.com/WollMux/WollMux"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Landeshauptstadt München","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"WollMux Handbuch","language":"de","links":{"sidebar":{"Homepage":"http://www.wollmux.org"}},"gitbook":"3.x.x"},"file":{"path":"Konfigurationsdatei_wollmux_conf.md","mtime":"2018-10-02T11:07:46.302Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-10-02T11:09:29.892Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Konfigurationsdatei wollmux.conf","level":"1.4.15","depth":2,"next":{"title":"Rebranding","level":"1.4.16","depth":2,"path":"Rebranding.md","ref":"Rebranding.md","articles":[]},"previous":{"title":"Konfiguration des WollMux in ihrem Referat","level":"1.4.14","depth":2,"path":"Konfiguration_des_WollMux_in_Ihrem_Referat.md","ref":"Konfiguration_des_WollMux_in_Ihrem_Referat.md","articles":[]},"dir":"ltr"},"config":{"plugins":["atoc","collapsible-menu","forkmegithub","richquotes","redirect","splitter","back-to-top-button"],"root":"markdown","styles":{"website":"styles/website.css"},"pluginsConfig":{"collapsible-menu":{},"atoc":{"addClass":true,"className":"toc"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{},"highlight":{},"back-to-top-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"redirect":{},"forkmegithub":{"color":"gray","url":"https://github.com/WollMux/WollMux"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Landeshauptstadt München","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"WollMux Handbuch","language":"de","links":{"sidebar":{"Homepage":"http://www.wollmux.org"}},"gitbook":"3.x.x"},"file":{"path":"Konfigurationsdatei_wollmux_conf.md","mtime":"2018-12-10T13:16:11.131Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-12-10T13:17:07.315Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

@@ -1536,11 +1536,6 @@ weiter. Es gibt allerdings ein paar Ausnahmen von diesem Prinzip:</p>
 <li><em>?.buttons</em>: Verzeichnisse, die nach diesem Muster benannt sind,
   werden f&#xFC;r den Aufbau der Men&#xFC;struktur ignoriert. Sie bestimmen die
   Buttonleiste der WollMuxBar (siehe weiter oben).</li>
-<li><em>\</em>.multi*: Verzeichnisse nach diesem Muster werden zwar in die
-  Men&#xFC;struktur eingebaut, allerdings ergeben sie keine Untermen&#xFC;s,
-  sondern spezielle Men&#xFC;punkte, die mehrere Formulare zum
-  gleichzeitigen Ausf&#xFC;llen &#xF6;ffnen. Diese Multi-Form-Funktionalit&#xE4;t
-  wird <a href="#multi-form-zusammengeh&#xF6;rige-formulare-gemeinsam-ausf&#xFC;llen" title="wikilink">weiter unten</a> beschrieben.</li>
 </ul>
 <p>In allen Verzeichnissen und Unterverzeichnissen k&#xF6;nnen Vorlagendateien
 bzw. Symlinks darauf hinterlegt werden. Diese Dateien werden von
@@ -1864,67 +1859,6 @@ Batch-Datei <code>sensible-browser.bat</code> in einem Verzeichnis anzulegen, da
 im PATH steht. In dieser Batch-Datei k&#xF6;nnen dem Browser auch
 entsprechende Kommandozeilenparameter &#xFC;bergeben werden, die z.B. die URL
 in einem Tab anstatt in einem neuen Fenster &#xF6;ffnen.</p>
-<h2 id="multi-form-zusammengeh&#xF6;rige-formulare-gemeinsam-ausf&#xFC;llen">Multi-Form: zusammengeh&#xF6;rige Formulare gemeinsam ausf&#xFC;llen</h2>
-<p>Es gibt manchmal die Situation, dass zu einem Vorgang mehrere Formulare
-geh&#xF6;ren, in denen teilweise die selben Daten ben&#xF6;tigt werden. Es ist ein
-unn&#xF6;tiger Mehraufwand, wenn die Sachbearbeiterin bzw. der Sachbearbeiter
-die Daten mehrfach eingeben muss. Mit Multi-Forms kann dies zumindest
-dort vermieden werden, wo bekannt ist, welche Vorlagen oft gemeinsam
-ausgef&#xFC;llt werden m&#xFC;ssen und sich diese sinnvoll gruppieren lassen.</p>
-<h3 id="multi-forms-aus-benutzersicht">Multi-Forms aus Benutzersicht</h3>
-<p>F&#xFC;r den Endbenutzer stellt sich ein Multiform wie folgt dar</p>
-<ul>
-<li>Es gibt ein Untermen&#xFC; in der WollMuxBar, das typischerweise nach dem
-Vorgang benannt ist, zu dem es mehrere Formulare gibt, die man evtl.
-gemeinsam ausf&#xFC;llen m&#xF6;chte.</li>
-<li>In dem Untermen&#xFC; befinden sich normale Men&#xFC;eintr&#xE4;ge f&#xFC;r die
-einzelnen zu dem Vorgang geh&#xF6;rigen Formulare. &#xDC;ber diese lassen sich
-die entsprechenden Formulare ganz normal aufrufen.</li>
-<li>Zus&#xE4;tzlich gibt es einen besonderen Men&#xFC;punkt, typischerweise mit
-einer Bezeichnung wie &#x201C;Mehrere Ausf&#xFC;llen&#x201D; o.&#xE4;.</li>
-<li>Wird der Men&#xFC;punkt &#x201C;Mehrere Ausf&#xFC;llen&#x201D; angew&#xE4;hlt, so &#xF6;ffnet sich ein
-Dialogfenster, in dem der Benutzer mittels Checkboxen die Formulare
-ausw&#xE4;hlen kann, die er gemeinsam ausf&#xFC;llen m&#xF6;chte.</li>
-<li>Nachdem der Benutzer die Formulare ausgew&#xE4;hlt hat, werden die
-entsprechenden Vorlagen ge&#xF6;ffnet. Anstatt einer eigenen Formular-GUI
-f&#xFC;r jedes einzelne Formular wird jedoch nur eine Formular-GUI
-ge&#xF6;ffnet, &#xFC;ber die alle Formulare gleichzeitig ausgef&#xFC;llt werden.</li>
-</ul>
-<p>Die von D-III-ITD-5.1 bereitgestellten Archive enthalten zur
-Demonstration ein Multi-Form &#x201C;Abtretungserkl&#xE4;rung&#x201D;, das sie im Men&#xFC;
-&#x201C;Formulare&#x201D; finden. Dieses Multi-Form demonstriert, wie die altbekannte
-Abtretungserkl&#xE4;rung (die weiterhin als &#x201C;Abtretungserkl&#xE4;rung
-(monolithisch)&#x201D; verf&#xFC;gbar ist) als Multi-Form realisiert werden kann.</p>
-<h3 id="multi-forms-aus-administratorsicht">Multi-Forms aus Administratorsicht</h3>
-<p>Der wichtigste Schritt ist, die einzelnen Formulare, f&#xFC;r die gemeinsames
-Ausf&#xFC;llen m&#xF6;glich sein soll, entsprechend vorzubereiten. Die
-Anforderungen an die Einzelvorlagen eines Multi-Forms finden Sie in der
-Beschreibung des <a href="Schnittstellen_des_WollMux_fuer_Experten.html#wollmuxopen" title="wikilink">Dispatch-Kommandos wollmux:Open</a>
-in der Dokumentation der <a href="Schnittstellen_des_WollMux_f&#xFC;r_Experten.md" title="wikilink">Schnittstellen des WollMux f&#xFC;r Experten</a>.</p>
-<p>Das Aufnehmen von Multi-Forms in die WollMuxBar ist mit <code>automux</code> ganz
-einfach. Sie erstellen einfach ein Verzeichnis, dessen Namen die
-Erweiterung <code>.multi</code> hat. Aufbau und Inhalt des Verzeichnisses sind
-genau gleich wie bei den Verzeichnissen f&#xFC;r WollMuxBar-Untermen&#xFC;s, d.h.
-sie legen in dem Verzeichnis normalerweise Symlinks auf die
-entsprechenden Vorlagen ab. Allerdings erstellt <code>automux</code> aus so einem
-<code>.multi</code> Verzeichnis kein Untermen&#xFC;, sondern einen Aufruf des Dialogs
-zur Auswahl der gemeinsam auszuf&#xFC;llenden Vorlagen.</p>
-<p>Die von D-III-ITD-5.1 bereitgestellten Archive enthalten im Verzeichnis
-<code>vorlagen/standard/2.Formulare/50.Abtretungserkl&#xE4;rung</code> ein Verzeichnis
-mit dem Namen <code>X.Mehrere Ausf&#xFC;llen.multi</code>, das dieses Prinzip
-demonstriert. Das &#x201C;X.&#x201D; am Anfang des Namens ist dabei nur ein normales
-Sortierpr&#xE4;fix, das daf&#xFC;r sorgt, dass der Eintrag am Ende der Liste
-(insbes. hinter dem Separator mit Sortierpr&#xE4;fix &#x201C;W.&#x201D;) erscheint. Dieses
-Beispiel zeigt auch deutlich, dass das <code>.multi</code> Verzeichnis nur f&#xFC;r den
-&#x201C;Mehrere Ausf&#xFC;llen&#x201D; Men&#xFC;eintrag verantwortlich ist. Es f&#xFC;hrt nicht
-automatisch dazu, dass ein Untermen&#xFC; mit den entsprechenden Vorlagen
-angelegt wird. Das hei&#xDF;t, wenn wie im Beispiel der Abtretungserkl&#xE4;rung
-eine Vorlage auch einzeln aufrufbar sein soll, dann muss diese Vorlage
-im Verzeichnisbaum zweimal vorkommen. In diesem Beispiel ist die Vorlage
-&quot;<code>Abtretungserkl&#xE4;rung</code> <code>bei</code> <code>Gew&#xE4;hrung</code> <code>der</code> <code>Kaution</code> <code>als</code>
-<code>Darlehen.ott</code>&quot; einmal als normale Datei im Verzeichnis
-<code>50.Abtretungserkl&#xE4;rung</code> zu finden und einmal als Symlink im Verzeichnis
-<code>50.Abtretungserkl&#xE4;rung/X.Mehrere Ausf&#xFC;llen.multi</code>.</p>
 <h1 id="gruppenspezifische-konfigurationseinstellungen">Gruppenspezifische Konfigurationseinstellungen</h1>
 <p>Es ist manchmal notwendig, f&#xFC;r bestimmte Benutzergruppen spezielle
 Konfigurationseinstellungen vorzunehmen. Die Standardkonfiguration sieht
@@ -2342,7 +2276,7 @@ Mehr &#xFC;ber diese Vorlagen erfahren Sie im entsprechenden Artikel.</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Standardkonfiguration des WollMux","level":"1.4.21","depth":2,"next":{"title":"Standardkonfiguration des WollMux installieren und pflegen","level":"1.4.22","depth":2,"path":"Standardkonfiguration_des_WollMux_installieren_und_pflegen.md","ref":"Standardkonfiguration_des_WollMux_installieren_und_pflegen.md","articles":[]},"previous":{"title":"Seriendruckvorlagen mit dem WollMux erstellen","level":"1.4.20","depth":2,"path":"Seriendruckvorlagen_mit_dem_WollMux_erstellen.md","ref":"Seriendruckvorlagen_mit_dem_WollMux_erstellen.md","articles":[]},"dir":"ltr"},"config":{"plugins":["atoc","collapsible-menu","forkmegithub","richquotes","redirect","splitter","back-to-top-button"],"root":"markdown","styles":{"website":"styles/website.css"},"pluginsConfig":{"collapsible-menu":{},"atoc":{"addClass":true,"className":"toc"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{},"highlight":{},"back-to-top-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"redirect":{},"forkmegithub":{"color":"gray","url":"https://github.com/WollMux/WollMux"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Landeshauptstadt München","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"WollMux Handbuch","language":"de","links":{"sidebar":{"Homepage":"http://www.wollmux.org"}},"gitbook":"3.x.x"},"file":{"path":"Standardkonfiguration_des_WollMux.md","mtime":"2017-06-27T06:51:47.564Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-10-02T11:09:29.892Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Standardkonfiguration des WollMux","level":"1.4.21","depth":2,"next":{"title":"Standardkonfiguration des WollMux installieren und pflegen","level":"1.4.22","depth":2,"path":"Standardkonfiguration_des_WollMux_installieren_und_pflegen.md","ref":"Standardkonfiguration_des_WollMux_installieren_und_pflegen.md","articles":[]},"previous":{"title":"Seriendruckvorlagen mit dem WollMux erstellen","level":"1.4.20","depth":2,"path":"Seriendruckvorlagen_mit_dem_WollMux_erstellen.md","ref":"Seriendruckvorlagen_mit_dem_WollMux_erstellen.md","articles":[]},"dir":"ltr"},"config":{"plugins":["atoc","collapsible-menu","forkmegithub","richquotes","redirect","splitter","back-to-top-button"],"root":"markdown","styles":{"website":"styles/website.css"},"pluginsConfig":{"collapsible-menu":{},"atoc":{"addClass":true,"className":"toc"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{},"highlight":{},"back-to-top-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"redirect":{},"forkmegithub":{"color":"gray","url":"https://github.com/WollMux/WollMux"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Landeshauptstadt München","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"WollMux Handbuch","language":"de","links":{"sidebar":{"Homepage":"http://www.wollmux.org"}},"gitbook":"3.x.x"},"file":{"path":"Standardkonfiguration_des_WollMux.md","mtime":"2018-12-10T13:16:11.135Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-12-10T13:17:07.315Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

@@ -853,15 +853,7 @@ auf den WollMux Vorlagen und Programmbibliotheken erstellen.</p>
 <li><a href="#die-dispatch-kommandos-des-wollmux">Die Dispatch-Kommandos des WollMux</a><ul>
 <li><a href="#wollmuxabsenderauswaehlen">wollmux:AbsenderAuswaehlen</a></li>
 <li><a href="#wollmuxpalverwalten">wollmux:PALVerwalten</a></li>
-<li><a href="#wollmuxopen">wollmux:Open</a><ul>
-<li><a href="#astemplate-truefalse">AS_TEMPLATE &#x201C;true|false&#x201D;</a></li>
-<li><a href="#formguis-independentmerged">FORMGUIS &#x201C;independent|merged&#x201D;</a></li>
-<li><a href="#buttonanpassung">Buttonanpassung</a></li>
-<li><a href="#masterfragid">&quot;&lt;masterFragId...&gt;&quot;</a></li>
-<li><a href="#contentfragid">&quot;&lt;contentFragId...&gt;&quot;</a></li>
-<li><a href="#labels">Labels</a></li>
-</ul>
-</li>
+<li><a href="#wollmuxopen">wollmux:Open</a></li>
 <li><a href="#wollmuxopentemplate">wollmux:OpenTemplate</a></li>
 <li><a href="#wollmuxopendocument">wollmux:OpenDocument</a></li>
 <li><a href="#wollmuxfunctiondialog">wollmux:FunctionDialog</a></li>
@@ -998,172 +990,9 @@ Pers&#xF6;nliche Absenderliste (PAL) des Briefkopfsystems verwaltet werden
 kann. Hier ein Beispiel f&#xFC;r einen solchen Dialog:</p>
 <p><img src="WOL_PALVerwaltenDialog.png" alt="" title="WOL_PALVerwaltenDialog.png"></p>
 <h3 id="wollmuxopen">wollmux:Open</h3>
-<p>Syntax der URL:</p>
-<p><code>wollmux:Open#</code><utf8urlencodedinfo></utf8urlencodedinfo></p>
-<p>&#xD6;ffnet ein oder mehrere Dokumente oder Vorlagen. Die genaue
-Spezifikation, was wie ge&#xF6;ffnet wird findet sich in</p>
-<p><utf8urlencodedinfo>. Dies ist ein URL-kodierter UTF-8 String, der in
-der <a href="Format_von_WollMux-Config-Dateien.html" title="wikilink">Syntax von WollMux-Konfig-Dateien</a>
-Daten wie im Folgenden n&#xE4;her erl&#xE4;utert enth&#xE4;lt:</utf8urlencodedinfo></p>
-<pre><code>AS_TEMPLATE &quot;true|false&quot;
-FORMGUIS &quot;independent|merged&quot;
-Labels(&quot;&lt;Label1&gt;&quot; &quot;&lt;Label2&gt;&quot; ...)
-Fragmente(
-  FRAG_ID_LIST (&quot;&lt;masterFragId1&gt;&quot; &quot;&lt;contentFragId11&gt;&quot; ...)
-  FRAG_ID_LIST (&quot;&lt;masterFragId2&gt;&quot; &quot;&lt;contentFragId21&gt;&quot; ...)
-  ...
-)
-Buttonanpassung(
-  EinzigerTab( NEVER (&quot;form2PDF&quot;, &quot;prevTab&quot;, &quot;nextTab&quot; ) 
-               ALWAYS (LABEL &quot;Drucken...&quot; TYPE &quot;button&quot; HOTKEY &quot;D&quot; ACTION &quot;printForm&quot;) 
-             )
-  ErsterTab( NEVER (&quot;form2PDF&quot;, &quot;printForm&quot;, &quot;prevTab&quot;) 
-             ALWAYS (LABEL &quot;Weiter-&gt;&quot;  TYPE &quot;button&quot; HOTKEY &quot;W&quot;  ACTION &quot;nextTab&quot;) 
-           )
-  MittlererTab( NEVER (&quot;form2PDF&quot;, &quot;printForm&quot;) 
-                ALWAYS (LABEL &quot;&lt;-Zur&#xFC;ck&quot;  TYPE &quot;button&quot; HOTKEY &quot;Z&quot;  ACTION &quot;prevTab&quot;)
-                ALWAYS (LABEL &quot;Weiter-&gt;&quot;  TYPE &quot;button&quot; HOTKEY &quot;W&quot;  ACTION &quot;nextTab&quot;) 
-              )
-  LetzterTab(NEVER (&quot;form2PDF&quot;, &quot;nextTab&quot;) 
-               ALWAYS (LABEL &quot;&lt;-Zur&#xFC;ck&quot;  TYPE &quot;button&quot; HOTKEY &quot;Z&quot;  ACTION &quot;prevTab&quot;)
-               ALWAYS (LABEL &quot;Drucken...&quot; TYPE &quot;button&quot; HOTKEY &quot;D&quot; ACTION &quot;printForm&quot;)
-            )
-)
-</code></pre><blockquote class="clearfix alert alert-info"><strong class="fa fa-2x fa-info"></strong>
-<p> Technische Anmerkung: Der Schl&#xFC;ssel FRAG_ID_LIST ist derzeit willk&#xFC;rlich (d.h. es kann ein beliebiger anderer Schl&#xFC;ssel stattdessen verwendet werden.) Einziger Zweck dieses Schl&#xFC;ssels ist es, daf&#xFC;r zu sorgen, dass auch im Falle, dass es keine &lt;contentFragId..&gt;s gibt, eine Liste erzeugt wird. Ohne den Schl&#xFC;ssel wird n&#xE4;mlich aus einer Liste mit einem Element ein einziges Element, d.h. die &lt;masterFragId..&gt; w&#xFC;rde direkt unter dem Fragmente-Knoten stehen, ohne einen Zwischenknoten. Es ist allerdings durchaus m&#xF6;glich, dass der Schl&#xFC;ssel FRAG_ID_LIST sp&#xE4;ter einmal verwendet wird. Es sollte also kein anderer verwendet werden, auch wenn dies derzeit keinen Fehler produziert.</p>
+<blockquote class="clearfix alert alert-warning"><strong class="fa fa-2x fa-exclamation-triangle"></strong>
+<p> Dieser Dispatch wird nicht l&#xE4;nger unterst&#xFC;tzt.</p>
 </blockquote>
-<h4 id="astemplate-truefalse">AS_TEMPLATE &#x201C;true|false&#x201D;</h4>
-<p>Falls auf &#x201C;true&#x201D; gesetzt, werden alle Master-Fragmente als Vorlage
-ge&#xF6;ffnet, d.h. sie ergeben jeweils ein neues &#x201C;UnbenanntX&#x201D; Dokument.
-Default-Wert ist &#x201C;true&#x201D;.</p>
-<h4 id="formguis-independentmerged">FORMGUIS &#x201C;independent|merged&#x201D;</h4>
-<p>Falls ein oder mehrere der Fragmente eine Formularbeschreibung
-enthalten, so werden diese im &#x201C;merged&#x201D; Fall zu einer einzigen
-Formularbeschreibung verschmolzen, die alle Dokumente gleichzeitig
-bef&#xFC;llt. Im &#x201C;independent&#x201D; Fall bekommt jedes Dokument eine eigene
-Formularbeschreibung. Default-Wert ist &#x201C;independent&#x201D;.</p>
-<p>Das Verschmelzen der Formularbeschreibungen l&#xE4;uft so, dass die neue
-Formularbeschreibung die Reiter aller urspr&#xFC;nglichen
-Formularbeschreibungen in der urspr&#xFC;nglichen Reihenfolge enth&#xE4;lt. Dabei
-werden Reiter mit dem gleichen Bezeichner (d.i. der Name des Abschnitts
-des Reiters) als der selbe Reiter angesehen und Duplikate werden
-eliminiert.</p>
-<p>Achtung: Das Ergebnis ist nur dann wohldefiniert, wenn alle Reiter, die den gleichen Bezeichner haben auch den identischen Inhalt haben. Dies muss bei der Erstellung der einzelnen Formulare eines Multi-Forms ber&#xFC;cksichtigt werden.\
-Achtung: In den einzelnen Formularen eines Multi-Forms darf die selbe ID nicht f&#xFC;r verschiedene Eingabefelder verwendet werden, au&#xDF;er diese befinden sich auf Reitern mit identischem Bezeichner (so dass am Ende nur ein Eingabefeld mit der selben ID &#xFC;brigbleibt).</p>
-<p>Beispiel:</p>
-<pre><code>WM(
-  Formular(
-    TITLE &quot;Testformular&quot;
-    Fenster( 
-      Empfaenger(
-        Eingabefelder(
-          (LABEL &quot;Name&quot; TYPE &quot;textfield&quot; ID &quot;Name&quot;)
-        )
-      )
-
-      Daten1(
-        Eingabefelder(
-          (LABEL &quot;Datum Eins&quot; TYPE &quot;textfield&quot; ID &quot;Datum&quot;)
-        )
-      )         
-    )   
-  )
-)
-</code></pre><p>verschmolzen mit</p>
-<pre><code>WM(
-  Formular(
-    TITLE &quot;Testformular&quot;
-    Fenster( 
-      Empfaenger(
-        Eingabefelder(
-          (LABEL &quot;Name&quot; TYPE &quot;textfield&quot; ID &quot;Name&quot;)
-        )
-      )
-
-      Daten2(
-        Eingabefelder(
-          (LABEL &quot;Datum Zwei&quot; TYPE &quot;textfield&quot; ID &quot;Datum&quot;)  #Fehler (siehe unten)!
-        )
-      )         
-    )   
-  )
-)
-</code></pre><p>ergibt</p>
-<pre><code>WM(
-  Formular(
-    TITLE &quot;Testformular&quot;
-    Fenster( 
-      Empfaenger(
-        Eingabefelder(
-          (LABEL &quot;Name&quot; TYPE &quot;textfield&quot; ID &quot;Name&quot;)
-        )
-      )
-
-      Daten1(
-        Eingabefelder(
-          (LABEL &quot;Datum Eins&quot; TYPE &quot;textfield&quot; ID &quot;Datum&quot;)
-        )
-      )         
-
-      Daten2(
-        Eingabefelder(
-          (LABEL &quot;Datum Zwei&quot; TYPE &quot;textfield&quot; ID &quot;Datum&quot;) #Fehler (siehe unten)!
-        )
-      )         
-    )   
-  )
-)
-</code></pre><p>Man sieht dabei Folgendes:</p>
-<ul>
-<li>Die verschmolzene Beschreibung hat nur einen Reiter mit Bezeichner
-  <strong>Empfaenger</strong>. Aus welcher der beiden Beschreibungen dieser kommt
-  ist undefiniert! Dies macht aber keine Probleme, da beide Reiter
-  identischen Inhalt haben.</li>
-<li>Die verschmolzene Beschreibung hat sowohl den Reiter <strong>Daten1</strong> als
-  auch den Reiter <strong>Daten2</strong>, da diese unterschiedliche Bezeichner
-  haben und daher nicht zusammengefasst werden.</li>
-<li>Die verschmolzene Beschreibung hat zwei Eingabefelder mit der <strong>ID
-  &#x201C;Datum&#x201D;</strong>. Dies ist ein <em>schwerer Fehler</em>, auch wenn beide Felder
-  f&#xFC;r den Endbenutzer durch die unterschiedlichen Labels und die Lage
-  auf unterschiedlichen Tabs deutlich voneinander unterscheidbar sind.
-  W&#xFC;rde dieses Multi-Form in der Praxis eingesetzt, w&#xFC;rde jedes der
-  beiden Eingabefelder <em>alle</em> Dokumente &#xE4;ndern, nicht nur das zu dem
-  es geh&#xF6;rt. Dies w&#xE4;re in der Formular-GUI jedoch nicht sichtbar.
-  Benutzer k&#xF6;nnen problemlos verschiedene Werte in das Feld &#x201C;Datum
-  Eins&#x201D; und das Feld &#x201C;Datum Zwei&#x201D; eintragen und sehen die
-  unterschiedlichen Werte in der Formular-GUI. Dass jeweils die letzte
-  &#xC4;nderung, egal in welchem der beiden Felder, <em>alle</em> Dokumente
-  &#xE4;ndert, bemerken die Benutzer nur bei &#xDC;berpr&#xFC;fung der Dokumente.</li>
-</ul>
-<h4 id="buttonanpassung">Buttonanpassung</h4>
-<p>Im Falle FORMGUIS &#x201C;merged&#x201D; kann es beim Verschmelzen der Formular-GUIs
-der Formulare dazu kommen, dass die Benutzerf&#xFC;hrung der Buttonleiste
-gest&#xF6;rt wird. Zum Beispiel ist es m&#xF6;glich, dass in der verschmolzenen
-Formular-GUI ein mittleres Tab keinen &#x201C;Weiter-&gt;&#x201D; Button, daf&#xFC;r jedoch
-einen Drucken-Button hat. Des weiteren wird eventuell ein PDF-Button
-angeboten, obwohl diese Funktion bei verschmolzenen Formularen nicht
-funktioniert. Um all diese Probleme zu umgehen kann ein Abschnitt
-Buttonanpassung verwendet werden. Die Funktionsweise diese Abschnitts
-ist genau gleich wie die einer <a href="Konfigurationsdatei_wollmux_conf.html#buttonanpassung" title="wikilink"><em>Buttonanpassung</em> in einer <em>Formularanpassung</em></a>.</p>
-<h4 id="masterfragid">&quot;&lt;masterFragId...&gt;&quot;</h4>
-<p>Gibt ein Fragment an, das in einem eigenen OpenOffice-Fenster ge&#xF6;ffnet
-werden soll. Pro Gruppe innerhalb des <em>Fragmente</em>-Abschnitts ist
-mindestens eine Fragment-ID anzugeben. Die erste Fragment-ID ist immer
-die &lt;masterFragId...&gt;.</p>
-<h4 id="contentfragid">&quot;&lt;contentFragId...&gt;&quot;</h4>
-<p>Optional k&#xF6;nnen in jeder Gruppe des <em>Fragmente</em>-Abschnitts beliebig
-viele &lt;contentFragId...&gt; angegeben werden. Diese werden in der
-Reihenfolge in der sie angegeben werden benutzt um
-<a href="Dokumentkommandos_des_WollMux.html#das-kommando-insertcontent" title="wikilink">insertContent-Kommandos</a>
-zu bef&#xFC;llen.</p>
-<h4 id="labels">Labels</h4>
-<p>Der <em>Labels</em>-Abschnitt wird beim Ausf&#xFC;hren des Dispatch-Kommandos
-ignoriert. Er wird nur im Kontext von <a href="Konfigurationsdatei_wollmux_conf.html#menues-und-symbolleisten" title="wikilink">Men&#xFC;s und Symbolleisten</a>
-in der wollmux.conf ausgewertet. Hier bestimmt er bei der ACTION &#x201C;open&#x201D;
-die Anzeige der Gruppen im Auswahlfenster, in dem der Anwender die
-Dokumente/Vorlagen ausw&#xE4;hlt, die er gemeinsam &#xF6;ffnen m&#xF6;chte. Zu jeder
-Gruppe im <em>Fragmente</em>-Abschnitt existiert ein Label im
-<em>Labels</em>-Abschnitt (in der selben Reihenfolge).</p>
 <h3 id="wollmuxopentemplate">wollmux:OpenTemplate</h3>
 <p>Syntax der URL:</p>
 <p><code>wollmux:OpenDocument#&lt;FRAG_ID&gt;</code></p>
@@ -2573,7 +2402,7 @@ vom WollMux exportierten X-Interfaces ansprechbar.</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Schnittstellen des WollMux für Experten","level":"1.4.18","depth":2,"next":{"title":"Seriendruck, erweiterte Funktion","level":"1.4.19","depth":2,"path":"Seriendruck_erweiterte_Funktion.md","ref":"Seriendruck_erweiterte_Funktion.md","articles":[]},"previous":{"title":"Repository","level":"1.4.17","depth":2,"path":"Repository.md","ref":"Repository.md","articles":[]},"dir":"ltr"},"config":{"plugins":["atoc","collapsible-menu","forkmegithub","richquotes","redirect","splitter","back-to-top-button"],"root":"markdown","styles":{"website":"styles/website.css"},"pluginsConfig":{"collapsible-menu":{},"atoc":{"addClass":true,"className":"toc"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{},"highlight":{},"back-to-top-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"redirect":{},"forkmegithub":{"color":"gray","url":"https://github.com/WollMux/WollMux"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Landeshauptstadt München","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"WollMux Handbuch","language":"de","links":{"sidebar":{"Homepage":"http://www.wollmux.org"}},"gitbook":"3.x.x"},"file":{"path":"Schnittstellen_des_WollMux_fuer_Experten.md","mtime":"2017-06-27T06:51:47.564Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-10-02T11:09:29.892Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Schnittstellen des WollMux für Experten","level":"1.4.18","depth":2,"next":{"title":"Seriendruck, erweiterte Funktion","level":"1.4.19","depth":2,"path":"Seriendruck_erweiterte_Funktion.md","ref":"Seriendruck_erweiterte_Funktion.md","articles":[]},"previous":{"title":"Repository","level":"1.4.17","depth":2,"path":"Repository.md","ref":"Repository.md","articles":[]},"dir":"ltr"},"config":{"plugins":["atoc","collapsible-menu","forkmegithub","richquotes","redirect","splitter","back-to-top-button"],"root":"markdown","styles":{"website":"styles/website.css"},"pluginsConfig":{"collapsible-menu":{},"atoc":{"addClass":true,"className":"toc"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{},"highlight":{},"back-to-top-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"redirect":{},"forkmegithub":{"color":"gray","url":"https://github.com/WollMux/WollMux"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Landeshauptstadt München","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"WollMux Handbuch","language":"de","links":{"sidebar":{"Homepage":"http://www.wollmux.org"}},"gitbook":"3.x.x"},"file":{"path":"Schnittstellen_des_WollMux_fuer_Experten.md","mtime":"2018-12-10T13:16:11.135Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-12-10T13:17:07.315Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
