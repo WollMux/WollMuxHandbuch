@@ -15,17 +15,16 @@ angegebenen Reihenfolge gesucht:
 2.  *&lt;Profilverzeichnis&gt;/.wollmux/wollmux.conf*, wobei
     &lt;Profilverzeichnis&gt; auf einem deutschen Windows das Verzeichnis
     "C:\\Benutzer\\&lt;Benutzername&gt;" bezeichnet
-3.  *&lt;Startverzeichnis&gt;/.wollmux/wollmux.conf*, wobei &lt;Startverzeichnis&gt; den Ordner bezeichnet, in dem die Anwendung aufgerufen wird.
-4.  unter dem Dateipfad (inkl. Dateiname), der im Wert "ConfigPath" im
+3.  unter dem Dateipfad (inkl. Dateiname), der im Wert "ConfigPath" im
     Registrierungsschlüssel *HKEY\_CURRENT\_USER\\Software\\WollMux*
     festgelegt ist
-5.  unter dem Dateipfad (inkl. Dateiname), der im Wert "ConfigPath" im
+4.  unter dem Dateipfad (inkl. Dateiname), der im Wert "ConfigPath" im
     Registrierungsschlüssel *HKEY\_LOCAL\_MACHINE\\Software\\WollMux*
     festgelegt ist
-6.  *%APPDATA%/.wollmux/wollmux.conf*, wobei %APPDATA% auf einem deutschen Windows das Verzeichnis "C:\\Benutzer\\&lt;Benutzername&gt;\\AppData\\Roaming" bezeichnet
-7.  *%COMMON_APPDATA/.wollmux/wollmux.conf*, wobei %COMMON_APPDATA% auf einem deutschen Windows das Verzeichnis "C:\\ProgramData" bezeichnet
-8.  *C:\\Programme (x86)\\.wollmux\\wollmux.con*
-9.  *C:\\Programme\\.wollmux\\wollmux.conf*
+5.  *%APPDATA%/.wollmux/wollmux.conf*, wobei %APPDATA% auf einem deutschen Windows das Verzeichnis "C:\\Benutzer\\&lt;Benutzername&gt;\\AppData\\Roaming" bezeichnet
+6.  *%COMMON_APPDATA/.wollmux/wollmux.conf*, wobei %COMMON_APPDATA% auf einem deutschen Windows das Verzeichnis "C:\\ProgramData" bezeichnet
+7.  *C:\\Programme (x86)\\.wollmux\\wollmux.con*
+8.  *C:\\Programme\\.wollmux\\wollmux.conf*
 
 **Unter Linux:**
 
