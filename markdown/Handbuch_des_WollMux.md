@@ -31,9 +31,9 @@ wollmux.conf](Konfigurationsdatei_wollmux_conf.md "wikilink").
 
 #### Ich möchte eine Vorlage/ein Formular erstellen.
 
-Lesen Sie [Textfragmente im WollMux](Textfragmente_im_WollMux.md "wikilink"), danach [Erstellung oder Anpassung einer Vorlage - Beispiel](Erstellung_oder_Anpassung_einer_Vorlage_-_Beispiel.md "wikilink")
+Lesen Sie [Textfragmente im WollMux](Textfragmente_im_WollMux.md "wikilink"), danach [Erstellung oder Anpassung einer Vorlage - Beispiel](FormularMax/Erstellung_oder_Anpassung_einer_Vorlage_-_Beispiel.md "wikilink")
 und zu guter letzt [Dokumentkommandos des WollMux](Dokumentkommandos_des_WollMux.md "wikilink"). Außerdem lohnt ein
-Blick ins [FormularMax-Handbuch (PDF)](http://www.wollmux.net/wiki/images/8/8e/FormularMax_Handbuch.pdf)
+Blick ins [Handbuch des FormularMax](FormularMax/FormularMax.md "wikilink")
 und [WollMux-Seriendruck (PDF)](http://www.wollmux.net/files/WollMux_Seriendruck.pdf).
 
 #### Ich möchte ein tieferes Verständnis für die Technik des WollMux.

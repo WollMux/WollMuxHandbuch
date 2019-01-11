@@ -33,9 +33,9 @@ kommen die ÖPNV Verbindungen aus Textdateien.
 **Abbildung 2** zeigt dann das daraus erzeugte fertige mit Daten
 versehene Dokument.
 
-![**Abbildung 1: Vorlage für den externen Briefkopf**](400px-Ext_Briefkopf_Textmarken.jpg "Abbildung 1: Vorlage für den externen Briefkopf")<BR>Abbildung 1   
+![**Abbildung 1: Vorlage für den externen Briefkopf**](images/400px-Ext_Briefkopf_Textmarken.jpg "Abbildung 1: Vorlage für den externen Briefkopf")<BR>Abbildung 1   
 
-![**Abbildung 2: Der ausgefüllte Briefkopf**](400px-Ext_Briefkopf_fertig.jpg "Abbildung 2: Der ausgefüllte Briefkopf")<BR>Abbildung 2
+![**Abbildung 2: Der ausgefüllte Briefkopf**](images/400px-Ext_Briefkopf_fertig.jpg "Abbildung 2: Der ausgefüllte Briefkopf")<BR>Abbildung 2
 
 Die Textmarken verweisen auf andere Vorlagen, über die der Briefkopf
 dann befüllt wird. Der Briefkopf besteht somit eigentlich aus mehreren
@@ -92,7 +92,7 @@ eine hohe Flexibilität im Bezug auf Anpassung von Formatierungen und
 Anpassung/Ergänzung von Werten. Ein Beispiel für den Aufbau eines
 Textfragment sieht man in **Abbildung 3**.
 
-![**Abbildung 3: Aufbau eines Texfragments**](200px-Fragment_Absenderangaben.jpg "Abbildung 3: Aufbau eines Texfragments")<BR>Abbildung 3
+![**Abbildung 3: Aufbau eines Texfragments**](images/200px-Fragment_Absenderangaben.jpg "Abbildung 3: Aufbau eines Texfragments")<BR>Abbildung 3
 
 **Aufbau des Textfragments:**
 -   in diesem Beispiel ist die erste Leerzeile für die Leerzeile zwischen der Angabe zur Hauptabteilung und den restlichen Adressangaben

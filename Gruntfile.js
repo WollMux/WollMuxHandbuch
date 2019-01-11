@@ -9,7 +9,7 @@ module.exports = function(grunt) {
         pkg: grunt.file.readJSON('package.json'),
         watch: {
           scripts: {
-            files: ['markdown/*.*', 'markdown/styles/*.*'],
+            files: ['markdown/**/*.*'],
             tasks: ['run:gitbook'],
             options: {
               spawn: false,
