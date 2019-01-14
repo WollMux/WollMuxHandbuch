@@ -5,6 +5,8 @@
 Der FormularMax 4000 ist eine integrierte Entwicklungsumgebung für die
 Erstellung und Pflege von WollMux-Formularen und Vorlagen.
 
+> **INFO** Ab und zu kommt es vor, dass sich der FormularMax im Hintergrund öffnet. Man muss dann nur in der Taskleiste die WollMux/FormularMax-Anwendung finden und anklicken und der FormularMax erscheint im Vordergrund.
+
 ## Button einrichten
 
 Um den FormularMax 4000 aufrufen zu können muss zuerst der Symbolleiste
