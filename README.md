@@ -68,7 +68,10 @@ If your browser has a plugin for [LiveReload](http://livereload.com/) installed,
 The task `deploy` recompiles the documentation and pushes the resulting web-site
 into the branch `gh-pages`.
 
+`git checkout WollMux_<version>`
 `grunt deploy [--tag="<tag>"] [--message="<commit-message>"]`
+
+* **version**: Select the productive version to publish.
 
 * **tag**: Creates a tag on the branch `gh-pages`. Default: no tag is created.
 
