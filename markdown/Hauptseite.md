@@ -27,8 +27,7 @@ Dokumentation
 **[Handbuch des WollMux](Handbuch_des_WollMux.md "wikilink")** -
 Anleitungen zur Verwendung und Konfiguration des WollMux
 
-**[FormularMax-Handbuch
-(PDF)](http://www.wollmux.net/files/FormularMax_Handbuch.pdf)** -
+**[FormularMax-Handbuch](FormularMax/FormularMax.md "wikilink")** -
 Ausführliches Handbuch für die Erstellung von WollMux-Vorlagen mit dem
 im WollMux enthaltenen “FormularMax 4000”
 
