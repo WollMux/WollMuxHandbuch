@@ -196,7 +196,13 @@ natürlich nicht)
 
 ### Alle Felder anpassen
 
--
+Der Menüpunkt "Alle Felder anpassen" erlaubt das schnelle Ersetzen von Formfeldern mit dem inserFormValue-Kommando durch Serienbrieffelder oder Freitext.
+Über die Schaltfläche "Serienbrieffeld" kann ein Serienbrieffeld aus der aktuellen Serienbriefdatenquelle ausgwählt und in das Textfeld "Neue Belegung" eingefügt werden. Alternativ kann in das Textfeld auch ein beliebiger Text eingetragen werden.
+Beim Anklicken der Schaltfläche "Felder anpassen" werden alle Felder, bei denen eine neue Belegung eingetragen wurde, durch ein Serienbrieffeld bzw. einen Text ersetzt.
+
+> **Warning** Bei dieser Aktion werden die ursprünglichen Formfelder gelöscht und können daher nicht noch einmal angepasst werden.
+>
+> Wenn keine Formfelder im Dokument vorhanden sind, bleibt der Menüpunkt ausgegraut.
 
 [Kategorie:Handbuch des
 WollMux](Kategorie:Handbuch_des_WollMux "wikilink")
