@@ -16,18 +16,17 @@ The documentation is written in [Markdown format](https://toolchain.gitbook.com/
 
   `git clone https://github.com/WollMux/WollMuxHandbuch.git`
 
-* Install Node.js dependencies
-
-  `npm install`
-
 * Switch to the GitBook folder
 
   `cd WollMuxHandbuch`
 
+* Install Node.js dependencies
+
+  `npm install`
+  
 * Install Gitbook plugins
 
   `gitbook install`
-
 
 * Build the documentation
 
