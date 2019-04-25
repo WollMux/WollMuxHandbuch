@@ -116,6 +116,32 @@ weiter:
     **java\_uno.jar, juh.jar, jurt.jar, ridl.jar, unoloader.jar**
     **unoil.jar** *(im Ordner: `program\classes`)*
 
+Falls der master-Branch gebaut wird und `UNOHelper` bzw. `wollmux-core` dafür nicht in der
+passenden Version im Maven-Repository bereitstehen, müssen die beiden Projekte als
+Build-Abhängigkeiten eingetragen werden. Dazu in Eclipse das WollMux-Projekt auswählen,
+dann im Menü Project&rarr;Properties wählen und im Dialog unter Java Build Path&rarr;Projects
+die Projekte `UNOHelper` und `wollmux-core` hinzufügen.
+
+Pfade
+-----
+
+Der Pfad zur LibreOffice-Installation, welche zum Testen benutzt wird, lässt sich über
+den Schlüssel `OOO_BASE` in der Datei `unix.properties`, bzw. `windows.properties` festlegen.
+
+Debugging
+---------
+
+Um WollMux direkt aus Eclipse heraus debuggen zu können, muss zuerst die Extension
+`WollMux_ButtonsOnly.oxt` installiert werden.
+Diese kann mit folgendem Befehl erstellt werden: `ant WollMux.oxt-ButtonsOnly`.
+
+Nachdem diese Extension in LibreOffice installiert ist, muss in Eclipse eine
+Debug-Konfiguration vom Typ "Java Application" angelegt werden. Als Main-Klasse muss
+`de.muenchen.allg.itd51.wollmux.DebugExternalWollMux` angegeben werden.
+
+Dann kann die Debug-Konfiguration in Eclipse starten (darauf achten dass kein soffice-Prozess läuft).
+Im Anschluss kann LibreOffice gestartet werden.
+
 Ältere Versionen
 ----------------
 
