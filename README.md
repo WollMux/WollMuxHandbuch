@@ -59,7 +59,7 @@ The server is started with Grunt.
 
 This command will compile the Markdown to HTML and start the GitBook server. Any time a file in the folder `markdown` is changed, the files are recompiled and the server is restarted.
 
-The server listens on the port 4000. To see the HTML document open your browser on `http://localhost:4000`.
+The server listens on the port 4000. To see the HTML document open your browser on `http://localhost:4000/Hauptseite.html`.
 
 If your browser has a plugin for [LiveReload](http://livereload.com/) installed, the website is automatically refreshed.
 
