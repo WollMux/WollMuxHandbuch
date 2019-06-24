@@ -5,8 +5,8 @@
 Diese Version ist unstable, da sie bei der Landeshauptstadt München
 nicht vollständig getestet wurde.
 Eine detaillierte Auflistung der Änderungen findet sich in den [
-Releasenotes](Releasenotes_16.04.md "wikilink").
-Der WollMux 16.04 kann im [Downloadbereich](Download.md "wikilink")
+Releasenotes](Releasenotes_16.04.md).
+Der WollMux 16.04 kann im [Downloadbereich](Download.md)
 heruntergeladen werden.
 
 #### 30. Mai 2015
@@ -41,7 +41,7 @@ released (German only).
 
 **WollMux 15.04** und **WollMux-Konfiguration 15.04** veröffentlicht.
 Eine detaillierte Auflistung der Änderungen findet sich im
-[Downloadbereich](Download.md "wikilink")
+[Downloadbereich](Download.md)
 
 #### 24. November 2014
 
@@ -70,18 +70,18 @@ daily builds from <http://www.wollmux.net/daily/> instead.
 #### 06. Juli 2012
 
 Am 06. Juli fand der 1.WollMux Community Workshop in München statt.
-Details sind [ hier](1._WollMux_Community_Workshop.md "wikilink")
+Details sind [ hier](1._WollMux_Community_Workshop.md)
 verfügbar.
 
 #### 08. Mai 2012
 
 Die Wollmux-Konfiguration 11.11a - abgestimmt auf den WollMux 11.10a -
-steht ab sofort zum [Download](Download.md "wikilink") zur Verfügung.
+steht ab sofort zum [Download](Download.md) zur Verfügung.
 
 #### 30. April 2012
 
 Das Windows-Setup für den WollMux 11.10a steht jetzt zum
-[Download](Download.md "wikilink") zur Verfügung.
+[Download](Download.md) zur Verfügung.
 
 #### 27. April 2012
 

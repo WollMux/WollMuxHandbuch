@@ -62,7 +62,7 @@ gewisse Programme bzw. Programmbibliotheken installiert sein:
 
     Git ist ein Sourcecodeverwaltungssystem und wird benötigt, um die
     Sourcen des WollMux von GitHub herunterzuladen (siehe auch
-    [Repository](Repository.md "wikilink")).
+    [Repository](Repository.md)).
 
     > **INFO** Für die Arbeit mit [Eclipse](http://www.eclipse.org) kann das
     [EGit-Plugin](http://eclipse.org/egit/) verwendet werden.
@@ -101,7 +101,7 @@ WollMux-Quelltext und weitere nötige Bibliotheken
 Der Source Code des WollMux steht auf
 [GitHub](http://github.com/WollMux/WollMux/) in einem Git-Repository zur
 Verfügung. Mehr dazu erfahren Sie auch auf der Seite
-**[Repository](Repository.md "wikilink")**.
+**[Repository](Repository.md)**.
 
 Um den WollMux zu kompilieren langt es allerdings nicht, nur den
 WollMux-Quelltext herunterzuladen (d.h. aus dem Repository
@@ -110,7 +110,7 @@ Bibliotheken aus drei Unterprojekten:
 
 -   **[WollMux](http://github.com/WollMux/WollMux/)**:
     Enthält den Code für die WollMux-Extension und die
-    [WollMuxBar](WollMuxBar "wikilink").
+    [WollMuxBar](WollMuxBar).
 -   **[UNOHelper](http://github.com/WollMux/UNOHelper/)**:
     Enthält Hilfsklassen für die Arbeit mit der UNO API von
     LibreOffice/OpenOffice.org, die vom WollMux verwendet wird.
@@ -182,8 +182,8 @@ weiter:
 Siehe auch
 ----------
 
--   [Repository](Repository.md "wikilink")
--   [WollMux installieren](WollMux_installieren.md "wikilink")
--   [Wollmux-Debugging](Wollmux-Debugging.md "wikilink")
--   [WollMuxBar](WollMuxBar.md "wikilink")
--   [Konfigurationsdatei wollmux.conf](Konfigurationsdatei_wollmux_conf.md "wikilink")
+-   [Repository](Repository.md)
+-   [WollMux installieren](WollMux_installieren.md)
+-   [Wollmux-Debugging](Wollmux-Debugging.md)
+-   [WollMuxBar](18.0/WollMuxBar.md)
+-   [Konfigurationsdatei wollmux.conf](18.0/Konfigurationsdatei_wollmux_conf.md)

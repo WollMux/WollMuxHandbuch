@@ -5,10 +5,10 @@ Linux
 
 #### Installation der OpenOffice.org-/LibreOffice-Extension
 
--   [Herunterladen der Datei WollMux.oxt](WollMux_downloaden.md "wikilink")
+-   [Herunterladen der Datei WollMux.oxt](Download.md)
     in der gewünschten Version in ein beliebiges Verzeichnis *&lt;Verz&gt;*.
 -   Schliessen aller offenen OOo-/LO-Fenster, sowie der
-    [WollMuxBar](WollMuxBar.md "wikilink").
+    [WollMuxBar](18.0/WollMuxBar.md).
 
 > **WARNING** Bitte schauen Sie im Taskmanager nach, ob auch wirklich alle
 Prozesse mit dem Namen “soffice.bin” beendet sind. Falls nicht,
@@ -40,9 +40,9 @@ wird deshalb vom WollMux nicht unterstützt.
 
 #### Installation der WollMuxBar
 
--   [Herunterladen der Datei *WollMuxBar.jar*](WollMux_downloaden.md "wikilink"); die Datei
+-   [Herunterladen der Datei *WollMuxBar.jar*](Download.md); die Datei
     speichern im Verzeichnis */usr/share/java*
--   [Herunterladen der Datei *wollmuxbar*](WollMux_downloaden.md "wikilink"); die Datei speichern im
+-   [Herunterladen der Datei *wollmuxbar*](Download.md); die Datei speichern im
     Verzeichnis */usr/bin*
 
 Die WollMuxBar lässt sich anschließend einfach über die Konsole mit dem
@@ -51,7 +51,7 @@ aufrufen. Sie können auch eine entsprechende Verknüpfung auf dem Desktop
 anlegen.
 
 > **INFO** Falls Sie [LibreOffice](http://www.libreoffice.org) verwenden, beachten
-Sie bitte die **[Hinweise für den Start der WollMuxBar mit LibreOffice](WollMuxBar.md#libroffice "wikilink")**.
+Sie bitte die **[Hinweise für den Start der WollMuxBar mit LibreOffice](18.0/WollMuxBar.md#libreoffice)**.
 
 Windows
 -------
@@ -59,8 +59,8 @@ Windows
 ### EXE-Installer für Windows
 
 Für Windows steht ein EXE-Installer (*wollmux-&lt;VERSION&gt;-installer.exe*)
-zur Verfügung, der den [WollMux](WollMux.md "wikilink") sowie die
-[WollMuxBar](WollMuxBar.md "wikilink") auf Ihrem System einrichtet und
+zur Verfügung, der den WollMux sowie die
+[WollMuxBar](18.0/WollMuxBar.md) auf Ihrem System einrichtet und
 optional eine Verknüpfung auf dem Desktop und im Startmenü anlegt.
 
 **Hinweise:**
@@ -108,13 +108,13 @@ beliebig):
 
 > **WARNING** Im Allgemeinen wird von der Verwendung dieser Option abgeraten! Der bei der Installation generierte Uninstaller unterstützt diese Option nicht und die Deinstallation über den Uninstaller wird daher nicht funktionieren. Zudem kann ein Vermischen von WollMux-Installationen auf Rechnerebene und Benutzerebene zu Problemen führen und wird vom WollMux nicht unterstützt. Wenn Sie diese Option verwenden, kann der Installer auch ohne Administratorrechte ausgeführt werden.
 
-- **--NOKILL** : Diese Kommandozeilenoption, die ebenfalls für den Uninstaller zur Verfügung steht, gibt an, dass vor dem Ausführen der Installation/Deinstallation nicht versucht werden soll, vorhandene soffice-Prozesse zu beenden. Ohne diese Option versucht der Installer mittels eine Java-Tools soffice-Prozesse sauber zu beenden. In bestimmten Szenarien kann dies allerdings zu Problemen führen (z.B. wenn die [WollMuxBar](WollMuxBar.md "wikilink") mit der Quickstarter-Option gestartet wurde), so dass der Installer die Installation nicht sauber durchführen kann. In diesem Fall verwenden Sie bitte die NOKILL-Option und stellen Sie manuell sicher, dass vor Ausführen des Installers keine soffice-Prozesse mehr laufen.
+- **--NOKILL** : Diese Kommandozeilenoption, die ebenfalls für den Uninstaller zur Verfügung steht, gibt an, dass vor dem Ausführen der Installation/Deinstallation nicht versucht werden soll, vorhandene soffice-Prozesse zu beenden. Ohne diese Option versucht der Installer mittels eine Java-Tools soffice-Prozesse sauber zu beenden. In bestimmten Szenarien kann dies allerdings zu Problemen führen (z.B. wenn die [WollMuxBar](18.0/WollMuxBar.md) mit der Quickstarter-Option gestartet wurde), so dass der Installer die Installation nicht sauber durchführen kann. In diesem Fall verwenden Sie bitte die NOKILL-Option und stellen Sie manuell sicher, dass vor Ausführen des Installers keine soffice-Prozesse mehr laufen.
 
 > **WARNING** Wenn Sie den Installer mit LibreOffice verwenden wollen, muss die NOKILL-Option zwangsläufig gesetzt sein!
 
 - **--LIBRE** : Ist diese Option nicht angegeben, sucht der Installer zunächst nach einer Installation von OpenOffice.org. Nur wenn er keine OpenOffice.org-Installation findet, sucht er dann nach einer LibreOffice-Installation und verwendet diese. Wollen Sie das Verwenden einer eventuell vorhandenen OpenOffice.org-Installation überspringen und ausdrücklich für LibreOffice installieren, so können Sie die --LIBRE-Option dafür verwenden.
 
-> **WARNING** Wenn Sie den Installer mit LibreOffice verwenden wollen, muss die NOKILL-Option zwangsläufig gesetzt sein! Beachten Sie außerdem die [Hinweise für den Start der WollMuxBar mit LibreOffice](WollMuxBar#libreoffice "wikilink").*
+> **WARNING** Wenn Sie den Installer mit LibreOffice verwenden wollen, muss die NOKILL-Option zwangsläufig gesetzt sein! Beachten Sie außerdem die [Hinweise für den Start der WollMuxBar mit LibreOffice](WollMuxBar#libreoffice).*
 
 **Beispiel:**
 
@@ -136,11 +136,11 @@ auch für alle Benutzer eines Rechners installiert werden. Für die
 -   Vorraussetzung: OpenOffice.org wurde vollständig installiert und
     mindestens ein mal gestartet, so dass das benutzerspezifische
     initiale Setup bereits durchgeführt wurde.
--   [Herunterladen der Datei WollMux.oxt](WollMux_downloaden.md "wikilink")
+-   [Herunterladen der Datei WollMux.oxt](Download.md)
     in der gewünschten Version in ein beliebiges Verzeichnis &lt;Verz&gt;.
 -   Schliessen aller offenen OOo-Fenster, einschließlich dem
     Schnellstarter in der Taskleiste links neben der Uhr, sowie der
-    [WollMuxBar](WollMuxBar.md "wikilink").
+    [WollMuxBar](18.0/WollMuxBar.md).
 
 > **WARNING** Bitte schauen Sie im Taskmanager nach, ob auch wirklich alle
 Prozesse mit dem Namen “soffice.bin” beendet sind. Falls nicht,
@@ -173,7 +173,7 @@ Sie bitte folgenden Befehl ein - nur mit Administratorrechten möglich:
 -   Erzeugen eines Ordners, in dem die WollMuxBar installiert werden
     soll, z.B. *C:\\Programme\\wollmux*
 -   Die Dateien *WollMuxBar.jar* und *wollmuxbar.exe*
-    [downloaden](WollMux_downloaden.md "wikilink") und in den soeben
+    [downloaden](Download.md) und in den soeben
     erzeugten Ordner kopieren.
 
 Die WollMuxBar lässt sich anschließend einfach über das Ausführen der
@@ -184,7 +184,7 @@ auf dem Desktop oder dem Startmenü anlegen.
 #### Installation unter LibreOffice Portable
 
 Siehe
-[WollMux\_mit\_LibreOffice\_Portable](WollMux_mit_LibreOffice_Portable.md "wikilink")
+[WollMux\_mit\_LibreOffice\_Portable](WollMux_mit_LibreOffice_Portable.md)
 
 > **INFO** Falls Sie [LibreOffice](http://www.libreoffice.org) verwenden, beachten
-Sie bitte die **[Hinweise für den Start der WollMuxBar mit LibreOffice](WollMuxBar.md#libreoffice "wikilink")**.
+Sie bitte die **[Hinweise für den Start der WollMuxBar mit LibreOffice](WollMuxBar.md#libreoffice)**.

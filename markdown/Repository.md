@@ -21,7 +21,7 @@ Repository auschecken können. Diese Anleitung beschränkt sich auf das
 einfache Kommandozeilentool “git”. Die folgenden Kommandos sollten
 sowohl unter Linux als auch unter Windows funktionieren. Voraussetzung
 ist natürlich, dass Git installiert und im Pfad ist (mehr zu Git
-erfahren Sie unter "[Git - Was ist das?](#git---was-ist-das "wikilink")").
+erfahren Sie unter "[Git - Was ist das?](#git---was-ist-das)").
 
 ### WollMux auschecken
 
@@ -58,7 +58,7 @@ enthält, was man zu Git wissen muss und komplett online lesbar ist.
 Um einfach nur den WollMux Source Code auszuchecken langt es allerdings,
 wenn Sie es schaffen Git auf ihrem System zu installieren und dann die
 Anweisungen im Unterabschnitt "[Checkout des Quelltext aus dem
-Repository](#checkout-des-quelltextes-aus-dem-repository "wikilink")"
+Repository](#checkout-des-quelltextes-aus-dem-repository)"
 befolgen. Eine Anleitung wie Sie Git bei sich installieren, finden Sie
 ebenfalls unter
 [git-scm.com](http://git-scm.com/book/de/v1/Los-geht%E2%80%99s-Git-installieren).
@@ -69,12 +69,12 @@ WollMux selber kompilieren
 Wenn Sie den Quelltext von WollMux ausgecheckt haben, können Sie
 theoretisch den WollMux selber bei sich bauen.
 Weitere Informationen hierzu finden Sie unter "[WollMux
-kompilieren](WollMux_kompilieren.md "wikilink")" (bei Problemen einfach auf
-der [Mailingliste](Mailinglisten.md "wikilink") fragen).
+kompilieren](WollMux_kompilieren.md)" (bei Problemen einfach auf
+der [Mailingliste](Mailinglisten.md) fragen).
 
 > **Hint** Um alle Features des WollMux verwenden zu können, wird
 > zusätzlich eine WollMux-Konfiguration benötigt. Eine
 > Beispielkonfiguration befindet sich z.B. in unserem
-> [Download-Bereich](Download.md "wikilink").
+> [Download-Bereich](Download.md).
 
 <Category:Eierlegender_WollMux> <Category:Handbuch_des_WollMux>

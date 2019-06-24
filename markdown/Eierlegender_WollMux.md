@@ -1,13 +1,13 @@
-![Eierlegender WollMux](100px-Wollmux.jpg "Eierlegender WollMux")
+![Eierlegender WollMux](images/100px-Wollmux.jpg "Eierlegender WollMux")
 
 ### Quicklinks
 
-[WollMux downloaden](Download.md "wikilink")
+[WollMux downloaden](Download.md)
 
 [Konfiguration des WollMux in Ihrem
-Referat](Konfiguration_des_WollMux_in_Ihrem_Referat.md "wikilink")
+Referat](18.0/Konfiguration_des_WollMux_in_Ihrem_Referat.md)
 
-[Handbuch und Wegweiser](Handbuch_des_WollMux.md "wikilink")
+[Handbuch und Wegweiser](18.0/Handbuch_des_WollMux.md)
 
 ### Definition
 

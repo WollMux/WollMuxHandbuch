@@ -57,7 +57,7 @@ Problemen führen und wird deshalb vom WollMux nicht unterstützt.
 Der erste Start
 ---------------
 
-[thumb|Abbildung 11](datei:wm16.04-erster-start.png "wikilink") Nach
+[thumb|Abbildung 11](datei:wm16.04-erster-start.png) Nach
 erfolgreicher Installation der WollMux-Extension
 (LibreOffice/OpenOffice) wird beim Start des Writers auf die fehlende
 Datei “wollmux.conf” hingewiesen (Abbildung 11).
@@ -66,10 +66,8 @@ Das bedeutet, dass der WollMux ohne zentraler Vorlagensammlung
 arbeitet.\
 Folgende Feature sind nutzbar:
 
--   [ Seriendruckvorlagen mit dem WollMux
-    erstellen](Seriendruckvorlagen_mit_dem_WollMux_erstellen "wikilink")
--   [ WollMux Formulare mit dem FM4000
-    erstellen](FormularMax_4000 "wikilink")
+-   [Seriendruckvorlagen mit dem WollMux erstellen](Seriendruckvorlagen_mit_dem_WollMux_erstellen)
+-   [WollMux Formulare mit dem FM4000 erstellen](FormularMax_4000)
 
 **Hinweis:** Bei älteren WollMux-Versionen (vor 16.04) muss eine
 WollMux-Konfiguration installiert werden.
@@ -79,7 +77,7 @@ WollMuxBar installieren
 
 Um die WollMuxBar und eine zentrale Vorlagensammlung nutzen zu können,
 wird eine WollMux-Konfiguration benötigt (siehe
-[Standardkonfiguration\_des\_WollMux\_installieren\_und\_pflegen](Standardkonfiguration_des_WollMux_installieren_und_pflegen "wikilink")).
+[Standardkonfiguration\_des\_WollMux\_installieren\_und\_pflegen](Standardkonfiguration_des_WollMux_installieren_und_pflegen)).
 
 ### Unter Linux
 

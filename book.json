@@ -4,7 +4,7 @@
 	"author": "Landeshauptstadt München",
 	"language": "de",
 	"root": "markdown",
-	"plugins": [ "atoc", "collapsible-menu", "forkmegithub", "richquotes", "redirect", "splitter", "back-to-top-button" ],
+	"plugins": [ "atoc", "collapsible-menu", "forkmegithub", "richquotes", "redirect", "splitter", "back-to-top-button", "link-checker"],
 	"links": {
 		"sidebar": {
 			"Homepage": "http://www.wollmux.org"
@@ -17,7 +17,10 @@
         },
         "forkmegithub": {
             "url": "https://github.com/WollMux/WollMux"
-        }
+		},
+		"link-checker": {
+			"dieOnError": false
+		}
     },
 	"styles": {
 		"website": "styles/website.css"

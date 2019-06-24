@@ -43,7 +43,7 @@ gewisse Programme bzw. Programmbibliotheken installiert sein:
 -   **[Git](http://git-scm.com/downloads/)**:
     Git ist ein Sourcecodeverwaltungssystem und wird benötigt, um die
     Sourcen des WollMux von GitHub herunterzuladen (siehe auch
-    [Repository](Repository.md "wikilink")).
+    [Repository](Repository.md)).
 
     > **INFO** Für die Arbeit mit [Eclipse](http://www.eclipse.org) kann das
     [EGit-Plugin](http://eclipse.org/egit/) verwendet werden.
@@ -53,7 +53,7 @@ WollMux-Quelltext
 
 Der Sourcecode des WollMux und seine Abhängigkeiten liegen auf
 [GitHub](http://github.com/WollMux/) zur Verfügung. Mehr dazu erfahren
-Sie auch auf der Seite **[Repository](Repository.md "wikilink")**.
+Sie auch auf der Seite **[Repository](Repository.md)**.
 
 Um den WollMux zu kompilieren wird der WollMux-Quelltext folgendermaßen
 geklont:
@@ -94,8 +94,8 @@ Zum Kompilieren des WollMux muss im Ordner `WollMux` das Kommando
 -   Der Installer liegt unter `WollMux/target` bereit.
 
 Die nächsten Schritte zur Installation sind unter
-[WollMux\_installieren](WollMux_installieren "wikilink") und
-[WollMux\_manuell\_installieren](WollMux_manuell_installieren "wikilink")
+[WollMux\_installieren](WollMux_installieren) und
+[WollMux\_manuell\_installieren](WollMux_manuell_installieren)
 erklärt.
 
 Kurzanleitung für Eclipse
@@ -145,15 +145,15 @@ Im Anschluss kann LibreOffice gestartet werden.
 Ältere Versionen
 ----------------
 
-siehe [WollMux kompilieren (vor Version 16.04)](WollMux_kompilieren_vor_Version_16.04.md "wikilink")
+siehe [WollMux kompilieren (vor Version 16.04)](WollMux_kompilieren_vor_Version_16.04.md)
 
 Siehe auch
 ----------
 
--   [Repository](Repository.md "wikilink")
--   [WollMux installieren](WollMux_installieren.md "wikilink")
--   [Wollmux-Debugging](Wollmux-Debugging.md "wikilink")
--   [WollMuxBar](WollMuxBar.md "wikilink")
--   [Konfigurationsdatei wollmux.conf](Konfigurationsdatei_wollmux_conf.md "wikilink")
+-   [Repository](Repository.md)
+-   [WollMux installieren](WollMux_installieren.md)
+-   [Wollmux-Debugging](Wollmux-Debugging.md)
+-   [WollMuxBar](18.0/WollMuxBar.md)
+-   [Konfigurationsdatei wollmux.conf](18.0/Konfigurationsdatei_wollmux_conf.md)
 
 <Category:Eierlegender_WollMux> <Category:Handbuch_des_WollMux>

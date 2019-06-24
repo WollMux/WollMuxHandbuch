@@ -17,17 +17,17 @@ Mehr darüber, was der WollMux alles kann, erfahren Sie hier: **[Features des Wo
 > - **[WollMux 18.0.2](http://www.wollmux.net/files/18.0.2/wollmux-18.0.2-installer.jar)** (![](Linux-icon.png "fig:Linux-icon.png")![](Windows-icon.png "fig:Windows-icon.png") Linux und Windows, 18MB)
 > - **[WollMux-Konfiguration 18.0.2](http://www.wollmux.net/files/18.0.2/wollmux-config-de-utf8-18.0.2.tar.gz)** (![](Linux-icon.png "fig:Linux-icon.png") Linux, deutsch, 5MB)
 > - **[WollMux-Konfiguration 18.0.2](http://www.wollmux.net/files/18.0.2/wollmux-config-de-18.0.2-installer.exe)** (![](Windows-icon.png "fig:Windows-icon.png") Windows, deutsch, 5MB)
-> - [Andere Sprachen & Versionen](Download.md "wikilink")
+> - [Andere Sprachen & Versionen](Download.md)
 >
 > <span style="font-size:smaller; color:gray;">Um alle Features des WollMux nutzen zu können ist eine WollMux-Konfiguration erforderlich!</span>
 
 Dokumentation
 -------------
 
-**[Handbuch des WollMux](Handbuch_des_WollMux.md "wikilink")** -
+**[Handbuch des WollMux](18.0/Handbuch_des_WollMux.md)** -
 Anleitungen zur Verwendung und Konfiguration des WollMux
 
-**[FormularMax-Handbuch](FormularMax/FormularMax.md "wikilink")** -
+**[FormularMax-Handbuch](18.0/FormularMax/FormularMax.md)** -
 Ausführliches Handbuch für die Erstellung von WollMux-Vorlagen mit dem
 im WollMux enthaltenen “FormularMax 4000”
 
@@ -35,7 +35,7 @@ im WollMux enthaltenen “FormularMax 4000”
 (PDF)](http://www.wollmux.net/files/WollMux_Seriendruck.pdf)** -
 Ausführliches Handbuch für den WollMux Seriendruck
 
-**[Mailinglisten](Mailinglisten.md "wikilink")** - Weitere Hilfe steht
+**[Mailinglisten](Mailinglisten.md)** - Weitere Hilfe steht
 Ihnen jederzeit über unsere Mailinglisten zur Verfügung.
 
 Source Code
@@ -47,10 +47,10 @@ Den aktuellen Quelltext finden Sie in unserem **[Source Code Repository](https:/
 
 Eine Anleitung zum Auschecken des Quelltextes aus dem Code Repository
 und wie Sie den WollMux selber compilieren können, finden Sie auf der
-Wiki-Seite **[Repository](Repository.md "wikilink")**.
+Wiki-Seite **[Repository](Repository.md)**.
 
 Bei weitergehenden Fragen wenden Sie sich an unsere
-**[Mailinglisten](Mailinglisten.md "wikilink")**.
+**[Mailinglisten](Mailinglisten.md)**.
 
 Fehlermeldungen
 ---------------
