@@ -707,7 +707,7 @@ Persönliche Absenderliste Verwalten
 
 Dieser Dialog erlaubt dem Benutzer, Einträge zu seiner persönlichen
 Absenderliste hinzuzufügen oder von ihr zu entfernen. Der Dialog bietet
-ein Suchfeld, über das der Benutzer bequem auf die Absenderdaten aus
+Suchfelder, über die der Benutzer bequem auf die Absenderdaten aus
 vorhandenen Verzeichnissen (insbes. LDAP) zugreifen kann, um diese in
 seine Absenderliste zu übernehmen. Die Beschreibung dieses Dialogs
 befindet sich innerhalb der Konfigurationsdatei in einem Abschnitt
@@ -717,223 +717,26 @@ folgenden Inhalt hat:
 ```
 Dialoge(
   PersoenlicheAbsenderliste(
-    Fenster(
-      Verwalten(
-        TITLE "Absenderliste Verwalten (WollMux)"
-
-        Intro(
-          (LABEL "Sie können nach Vorname, Nachname, Email und Orga-Einheit suchen" TYPE "label" )
-          (TYPE "glue")
-        )
-        
-        Suche(
-          (TYPE "textfield" ID "suchanfrage" ACTION "search")
-          (LABEL "Suchen"  TYPE "button" HOTKEY "S"  ACTION "search")
-        )
-        
-        Suchergebnis(
-          (LABEL "Suchergebnis" TYPE "label")
-          (TYPE "listbox" ID "suchergebnis" LINES "10" ACTION "addToPAL" DISPLAY "%{Nachname}, %{Vorname} (%{Rolle})")
-        )
-        
-        HinUndHer(
-          (LABEL "-->"  TYPE "button" ACTION "addToPAL")
-          (LABEL "<--"  TYPE "button" ACTION "removeFromPAL")
-        )
-        
-        Absenderliste(
-          (LABEL "Persönliche Absenderliste" TYPE "label")
-          (TYPE "listbox" ID "pal" LINES "10" ACTION "editEntry" DISPLAY "%{Nachname}, %{Vorname} (%{Rolle})")
-        )
-          
-        Fussbereich(
-          (LABEL "Löschen"  TYPE "button" HOTKEY "L"  ACTION "removeFromPAL")
-          (LABEL "Bearbeiten..."  TYPE "button" HOTKEY "B"  ACTION "editEntry")
-          (LABEL "Kopieren"  TYPE "button" HOTKEY "K"  ACTION "copyEntry")
-          (LABEL "Neu"  TYPE "button" HOTKEY "N"  ACTION "editNewPALEntry")
-          (LABEL "Schließen"  TYPE "button" HOTKEY "C"  ACTION "abort")
-        )
-      )
-    )
-    Suchstrategie(
-      personal(Mail "${suchanfrage1}")
-      personal(Mail "${suchanfrage1}@muenchen.de")
-      personal(Nachname "${suchanfrage1}*")
-      personal(OrgaKurz "${suchanfrage1}")
-      personal(OrgaKurz "*${suchanfrage1}")
-      personal(Vorname "${suchanfrage1}")
-      personal(Vorname "${suchanfrage1}*")
-
-      personal(Vorname "${suchanfrage1}" Nachname "${suchanfrage2}")
-      personal(Nachname "${suchanfrage1}" Vorname "${suchanfrage2}")
-      personal(Vorname "${suchanfrage1}" Nachname "${suchanfrage2}*")
-      personal(Nachname "${suchanfrage1}" Vorname "${suchanfrage2}*")
-      personal(OrgaKurz "${suchanfrage1}-${suchanfrage2}")
-      personal(OrgaKurz "${suchanfrage1}/${suchanfrage2}")
-      personal(OrgaKurz "${suchanfrage1} ${suchanfrage2}")
-      personal(OrgaKurz "${suchanfrage1}_${suchanfrage2}")
-      personal(OrgaKurz "*${suchanfrage1}-${suchanfrage2}")
-      personal(OrgaKurz "*${suchanfrage1}/${suchanfrage2}")
-      personal(OrgaKurz "*${suchanfrage1} ${suchanfrage2}")
-      personal(OrgaKurz "*${suchanfrage1}_${suchanfrage2}")
-      personal(Vorname "${suchanfrage1}*" Nachname "${suchanfrage2}*")
-      personal(Nachname "${suchanfrage1}*" Vorname "${suchanfrage2}*")
-
-      personal(OrgaKurz "${suchanfrage1} ${suchanfrage2} ${suchanfrage3}")
-      personal(OrgaKurz "${suchanfrage1} ${suchanfrage2} ${suchanfrage3} ${suchanfrage4}")
-      personal(OrgaKurz "${suchanfrage1} ${suchanfrage2} ${suchanfrage3} ${suchanfrage4} ${suchanfrage5}")
-    )
+    Suchfelder(
+      (LABEL "Nachname" DB_SPALTE "Nachname" SORT "1")
+      (LABEL "Vorname" DB_SPALTE "Vorname" SORT "2")
+      (LABEL "Email" DB_SPALTE "Mail" SORT "3")
+      (LABEL "Orga" DB_SPALTE "OrgaKurz" SORT "4")
+    )
   )
 )
 ```
 
-Im Normalfall sollten an diesem Dialog keine Änderungen seitens der
-Referate erforderlich sein. In Ausnahmefällen kann es jedoch notwendig
-sein, bestimmte Funktionen zu deaktivieren. Da die Struktur sowie die
-Spezifikationselemente dieses Dialogs vollkommen analog zu denen des
-[Absenderdaten Bearbeiten](#absenderdaten-Bearbeiten)
-Dialogs sind, werden im Folgenden nur einige Elemente herausgegriffen,
-die dort nicht erwähnt oder die von besonderem Interesse sind.
-
-Hinweis: Die ähnliche Struktur der Konfigurationsabschnitte für den [Absenderdaten Bearbeiten](#absenderdaten-bearbeiten) Dialog und den [Persönliche Absenderliste Verwalten](#persönliche-absenderliste-verwalten) Dialog dient dazu, den Lernaufwand für die Administratoren zu reduzieren. Die real verfügbaren Möglichkeiten der Anpassung beschränken sich jedoch auf die für den jeweiligen Dialog vorgesehenen Funktionalitäten. Zum Beispiel ist es *nicht* möglich, dem Persönliche Absenderliste Verwalten Dialog neue Fenster hinzuzufügen, indem weitere Unterabschnitte im Abschnitt *Fenster* und Buttons mit *ACTION "switchWindow"* erstellt werden.
-
 ### (&lt;Beschreibung GUI-Element&gt;)
 
-#### ID "Identifikator"
+#### Suchfelder
+Dies ist eine Liste der Suchfelder, die im Dialog angezeigt werden. Jeder Eintrag beschreibt ein Texteingabefeld mit Beschriftung. Andere Feldtypen werden nicht unterstützt.
 
-Da der Dialog mehrere gleichartige GUI-Elemente haben kann dient der
-Identifikator dazu, festzulegen, welches Element welche Aufgabe erfüllt.
-Es ist jeweils nur ein einziges Element mit dem entsprechenden
-Identifikator erlaubt. Die folgenden Identifikatoren gibt es:
+- LABEL ist der Name des Suchfelds, der vor dem Texteingabefeld angezeigt wird.
+- DB_SPALTE ist die Spalte in der Datenquelle, die durchsucht werden soll.
+- SORT gibt eine Sortierreihenfolge an, in der die Eingabefelder im Dialog angezeigt werden.
 
--   *suchanfrage*: identifiziert das Textfeld, in das der Benutzer seine
-    Suchanfrage eingibt
--   *suchergebnis*: identifiziert die Listbox, in der die Suchergebnisse
-    angezeigt werden
--   *pal*: identifiziert die Listbox, in der die Persönliche
-    Absenderliste des Benutzers angezeigt wird
-
-#### TYPE "Feldtyp"
-
-Der Feldtyp spezifiziert die Art des GUI-Elements. Die folgenden
-Feldtypen werden unterstützt:
-
--   *textfield*: Ein einzeiliges Feld zur Eingabe einer Zeichenkette
--   *label*: kein Eingabefeld. Wird verwendet, um nur den
-    LABEL-Text anzuzeigen.
--   *glue*: ein unsichtbares Element, das dazu dient, Leerraum
-    einzufügen (und dadurch Links- bzw. Rechtsbündigkeit zu erreichen)
--   *listbox*: eine Liste von Möglichkeiten, aus denen der Benutzer
-    einen oder mehrere auswählen kann
--   *button*: ein normaler Button
-
-#### LINES "Anzahl"
-
-Legt die bevorzugte Anzahl anzuzeigender Einträge für ein Element des
-Typs "listbox" fest.
-
-#### ACTION "Aktion"
-
-Die Aktion spezifiziert, was passieren soll, wenn der Benutzer den
-entsprechenden Button aktiviert. Bei Listboxen wird die Aktion
-ausgeführt, wenn auf einen Eintrag der Listbox ein Doppelklick erfolgt.
-Bei Textfeldern wird die Aktion ausgeführt, wenn der Benutzer im Feld
-die ENTER-Taste drückt. Die folgenden Aktionen werden unterstützt:
-
--   *abort*: Der Dialog wird geschlossen. Änderungen an der
-    Absenderliste bleiben erhalten.
--   *search*: Die im Suchfeld eingegebene Suchanfrage wird bearbeitet.
--   *addToPAL*: fügt die in der Suchergebnisliste markierten Einträge
-    der Absenderliste hinzu.
--   *removeFromPAL*: entfernt die in der Absenderliste markierten
-    Einträge aus der Absenderliste.
--   *editEntry*: Bearbeitet den ersten in einer der Listboxen
-    selektierten Eintrag. Ist der gewählte Eintrag in der
-    Suchergebnisliste, wird er in die Absenderliste kopiert und die
-    Kopie bearbeitet.
--   *copyEntry*: Von allen selektierten Einträgen wird eine Kopie in der
-    Absenderliste erstellt.
--   *newPALEntry*: Legt einen neuen Datensatz in der Absenderliste an,
-    der nicht mit einer Datenbank verknüpft ist.
--   *editNewPALEntry*: Legt einen neuen Datensatz in der Absenderliste
-    an, der nicht mit einer Datenbank verknüpft ist und öffnet ihn
-    gleich zum Bearbeiten.
-
-Wird bei einem Button die Aktion gar nicht angegeben oder wird ein
-leerer String als Aktion spezifiziert, so wird der Button ausgegraut und
-hat keine Funktion.
-
-#### DISPLAY "Anzeigeschema"
-
-Nur möglich für Elemente vom Typ "listbox" mit ID "suchergebnis" oder
-"pal" (siehe oben). Über das DISPLAY-Attribut kann gesteuert werden, wie
-die Suchergebnisse bzw. die Einträge der Absenderliste dargestellt
-werden. Neben statischen Textteilen kann das Anzeigemuster Platzhalter
-der Form `%{Spaltenname}` enthalten, die für den jeweiligen Datensatz
-durch den entsprechenden Datenbankspaltenwert ersetzt werden.
-
-*Beispiel:* Es wird eine [LDAP-Datenquelle](#type-ldap)
-verwendet, in deren
-[Spalten-Beschreibung](#spalten-beschreibung) mit dem
-DB\_SPALTE-Attribut die Spaltennamen "Nachname", "Vorname" und "Rolle"
-definiert sind. Dann führt die Angabe von "`DISPLAY  %{Nachname},
-%{Vorname} (%{Rolle})`" z.B. zu einer Anzeige der Form "`Meier,
-Hans (Abteilungsleiter)`".
-
-### Suchstrategie
-
-Der Abschnitt *Dialoge/PersoenlicheAbsenderliste/Suchstrategie* legt
-fest, wie die vom Benutzer im mit der ID "suchanfrage" ausgezeichneten
-Textfeld eingegebenen Suchworte in Abfragen an die Datenquelle, die als
-[SENDER\_SOURCE](#sendersource) festgelegt wurde, umgesetzt
-werden. Der Abschnitt besteht aus einer beliebigen Anzahl von
-Suchanfragen nach folgendem Schema:
-
-`datenquellenname(Spaltenname1 "Suchmuster1>" Spaltenname2 "<Suchmuster2>" ... )`
-
-Im Folgenden einige Praxisbeispiele:
-
-```
-personal(Mail "${suchanfrage1}")
-personal(Mail "${suchanfrage1}@muenchen.de")
-personal(Nachname "${suchanfrage1}*")
-personal(Vorname "${suchanfrage1}" Nachname "${suchanfrage2}")
-personal(OrgaKurz "${suchanfrage1}-${suchanfrage2}")
-```
-
-Bemerkungen:
-
--   **Für die Suche in der Persönlichen Absenderliste wird IMMER die als
-    [SENDER\_SOURCE](#sendersource) festgelegte Datenquelle
-    verwendet, unabhängig davon, welcher Datenquellenname hier angegeben
-    wird!** Die Zeilen `personal(Mail "${suchanfrage1}")` und
-    `gugelhupf(Mail "${suchanfrage1}")` sind also völlig
-    gleichbedeutend! Wir empfehlen trotzdem an dieser Stelle immer den
-    Namen der als [SENDER\_SOURCE](#sendersource)
-    festgelegte Datenquelle zu verwenden, da die Funktionalität des
-    WollMux in Zukunft eventuell so verändert werden könnte, dass der
-    Name der Datenquelle an dieser Stelle doch ausgewertet wird.
--   Als Platzhalter sind \${suchanfrage1} bis \${suchanfrage2} erlaubt
-    und werden durch entsprechende Wörter der vom Benutzer eingegebenen
-    Suchanfrage ersetzt.
--   Sternchen sind als Jokerzeichen erlaubt und stehen für einen
-    beliebigen Teilstring
--   Die Suchmuster für die eingegebene Anzahl von Wörtern werden in der
-    Reihenfolge ihres Auftretens versucht und die Ergebnisse der ersten
-    Anfrage zurückgeliefert, die mindestens ein Ergebnis liefert.
--   Suchmuster, die mehr Wörter erfordern als der Benutzer eingegeben
-    hat, werden ignoriert.
--   Gibt es für die Anzahl vom Benutzer eingegebener Wörter keine Regel,
-    so wird die Eingabe so lange von hinten beginnend gekürzt bis sie
-    entweder leer ist oder eine Wortzahl erreicht wurde, für die es eine
-    Regel gibt.
--   Die Angabe eines Suchmusters ohne Spalten (d.h. nur
-    der Datenquellenname) ist möglich und bedeutet, dass leere
-    Suchanfragen und die Suchanfrage "\*" erlaubt sind und alle
-    Datensätze der Datenquelle zurückliefern sollen.
-
-    > **WARNING** Dieses Feature wird derzeit nicht von allen Datenquellentypen unterstützt
-    und nur nach Bedarf weiterentwickelt.
+Suchfelder werden paarweise untereinander angezeigt.
 
 Absender Auswählen
 ------------------
