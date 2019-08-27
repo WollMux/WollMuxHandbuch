@@ -1,4 +1,4 @@
-![](Wollmux_logo_medium.gif "fig:Wollmux_logo_medium.gif") - das Briefkopf- und Formularsystem der LHM
+![](images/Wollmux_logo_medium.gif "fig:Wollmux_logo_medium.gif") - das Briefkopf- und Formularsystem der LHM
 ======================================================================================================
 
 Der “Eierlegende WollMux” (kurz: WollMux) ist eine Extension für
@@ -70,4 +70,4 @@ Weitergehende Links
 -   <http://wiki.stadt.freiburg.de/ooo/> - OpenOffice.org-Wiki der Stadt
     Freiburg
 
-![](Limux_power.gif "Limux_power.gif")
+![](images/Limux_power.gif "Limux_power.gif")

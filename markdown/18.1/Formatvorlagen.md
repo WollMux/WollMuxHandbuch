@@ -1,34 +1,13 @@
-> **INFO** Nachfolgender Artikel beschreibt die für die Briefkopfvorlagen im
-Wollmux verwendeten Formatvorlagen. Die hier vorgestellten
-Formatvorlagen können bzw. sollten auch in allen anderen Vorlagen
-verwendet werden. Die bis jetzt von uns zur Verfügung gestellten
-Vorlagen finden Sie
-[hier](http://limux.tvc.muenchen.de/ablage/sonstiges/wollmux/vorlagen/WOL_Briefkopf-Absatzformate_v1_2005-11-22.ott)
-bzw. in der Ihrem Referat eingesetzten Version dieser Datei. Die
-Vorlagen stehen Ihnen in jedem beliebigen Dokument zur Verfügung. Sie
-müssen die Datei nur vorher über Einfügen &rarr; Datei in das Dokument einfügen.
+> **INFO** Nachfolgender Artikel beschreibt die für die Briefkopfvorlagen im Wollmux verwendeten Formatvorlagen. Die hier vorgestellten Formatvorlagen können bzw. sollten auch in allen anderen Vorlagen verwendet werden. Die bis jetzt von uns zur Verfügung gestellten Vorlagen finden Sie [hier](http://limux.tvc.muenchen.de/ablage/sonstiges/wollmux/vorlagen/WOL_Briefkopf-Absatzformate_v1_2005-11-22.ott) bzw. in der Ihrem Referat eingesetzten Version dieser Datei. Die Vorlagen stehen Ihnen in jedem beliebigen Dokument zur Verfügung. Sie müssen die Datei nur vorher über Einfügen &rarr; Datei in das Dokument einfügen.
 
-**Besonders für den Austausch von Dateien mit MS Office ist es sehr
-wichtig anstatt manueller Formatierung Formatvorlagen zu verwenden.**
-Insbesondere bei mehrmaligen Austausch kann es ansonsten zu größeren
-Problemen kommen.
+**Besonders für den Austausch von Dateien mit MS Office ist es sehr wichtig anstatt manueller Formatierung Formatvorlagen zu verwenden.** Insbesondere bei mehrmaligen Austausch kann es ansonsten zu größeren Problemen kommen.
 
-> **WARNING** Die Formatvorlage "Standard" ist nicht eindeutig definierbar.
-Sie kann in verschiedenen Installation von OpenOffice abweichen. Daher
-darf die Formatvorlage "Standard", die in jedem Textdokument vorhanden
-ist, in Vorlagen nicht verwendet werden. Auch selbst definierte
-Formatvorlagen sollten niemals mit der Formatvorlage "Standard"
-verknüpft werden (Format&rarr;Formatvorlagen, dann entsprechende
-Formatvorlage mit der rechten Maustaste anklicken, dann
-Ändern.../Verwalten)
+> **WARNING** Die Formatvorlage "Standard" ist nicht eindeutig definierbar. Sie kann in verschiedenen Installation von LibreOffice abweichen. Daher darf die Formatvorlage "Standard", die in jedem Textdokument vorhanden ist, in Vorlagen nicht verwendet werden. Auch selbst definierte Formatvorlagen sollten niemals mit der Formatvorlage "Standard" verknüpft werden (Format&rarr;Formatvorlagen, dann entsprechende Formatvorlage mit der rechten Maustaste anklicken, dann Ändern.../Verwalten)
 
 Formatvorlagen
 ==============
 
-Die Schriftart ist Arial, ausser es ist in der Tabelle etwas anderes
-angegeben. Die Maße und Vorgaben sind dem [Visuellen
-Erscheinungsbild](http://intranet.muenchen.de/?url=http://intranet.muenchen.de/basis/publ/erscheinungsbild/index.html)
-der LHM entnommen.
+Die Schriftart ist Arial, außer es ist in der Tabelle etwas anderes angegeben. Die Maße und Vorgaben sind dem [Visuellen Erscheinungsbild](http://intranet.muenchen.de/?url=http://intranet.muenchen.de/basis/publ/erscheinungsbild/index.html) der LHM entnommen.
 
 <table border="2" cellspacing="0" cellpadding="4" rules="all" style="margin:1em 1em 1em 0; border:solid 1px #AAAAAA; border-collapse:collapse; background-color:#F9F9F9; font-size:100%; empty-cells:show;">
 <tr>

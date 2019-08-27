@@ -318,30 +318,15 @@ Die Auswahl von "&lt;Wert&gt;" in der Funktion-ComboBox erlaubt die Eingabe eine
 
 #### &lt;Code&gt;
 
-Die Auswahl von "&lt;Code&gt;" in der Funktion-ComboBox erlaubt die
-Direkteingabe einer [Funktion](Konfigurationsdatei_wollmux_conf.md#funktionen) (ohne
-umschließenden Funktionsbezeichner). Die Funktion muss vollständig
-spezifiziert sein und alle Formularfelder auf die Bezug genommen wird
-müssen mit ihrer korrekten ID referenziert werden. Im folgenden ein
-Beispiel für eine PLAUSI, die testet, ob das Feld "Nachname" nicht leer
-ist.
+Die Auswahl von "&lt;Code&gt;" in der Funktion-ComboBox erlaubt die Direkteingabe einer [Funktion](Konfigurationsdatei_wollmux_conf.md#funktionen) (ohne umschließenden Funktionsbezeichner). Die Funktion muss vollständig spezifiziert sein und alle Formularfelder auf die Bezug genommen wird müssen mit ihrer korrekten ID referenziert werden. Im folgenden ein Beispiel für eine PLAUSI, die testet, ob das Feld "Nachname" nicht leer ist.
 
 `MATCH(VALUE('Nachname'), ".+")`
 
-Zu beachten ist, dass "Nachname" hier wirklich die ID des entsprechenden
-Eingabefeldes ist. Ist die ID des Eingabefeldes z.B. "nachname" (man
-beachte die Kleinschreibung), so wird die obige PLAUSI nicht funktionieren.
+Zu beachten ist, dass "Nachname" hier wirklich die ID des entsprechenden Eingabefeldes ist. Ist die ID des Eingabefeldes z.B. "nachname" (man beachte die Kleinschreibung), so wird die obige PLAUSI nicht funktionieren.
 
 #### Globale Funktion
 
-Der [Funktionen-Abschnitt der wollmux.conf](../Konfigurationsdatei_wollmux_conf.md#funktionen)
-erlaubt das Angeben von globalen Funktionen. Alle dort angegebenen
-Funktionen werden vom FM4000 zur Auswahl angeboten. Erwartet eine
-Funktion Parameter, so können diese in den entsprechenden ComboBoxen
-gesetzt werden, entweder auf einen festen String oder als Referenz auf
-ein Formularfeld. Die Auswahl von "\[nicht fest verdrahtet\]" lässt den
-entsprechenden Parameter-Wert offen. Je nach Kontext werden offen
-gelassene Parameter-Werte verschieden behandelt:
+Der [Funktionen-Abschnitt der wollmux.conf](../Konfigurationsdatei_wollmux_conf.md#funktionen) erlaubt das Angeben von globalen Funktionen. Alle dort angegebenen Funktionen werden vom FM4000 zur Auswahl angeboten. Erwartet eine Funktion Parameter, so können diese in den entsprechenden ComboBoxen gesetzt werden, entweder auf einen festen String oder als Referenz auf ein Formularfeld. Die Auswahl von "\[nicht fest verdrahtet\]" lässt den entsprechenden Parameter-Wert offen. Je nach Kontext werden offen gelassene Parameter-Werte verschieden behandelt:
 * Bei AUTOFILLs sollte nie ein Parameter unbelegt bleiben. Je nach Funktion können unbelegte Parameter zu Fehlern führen.
 * Bei TRAFOs werden alle unbelegten Parameter mit dem jeweils zu transformierenden Wert belegt. Deshalb hat eine TRAFO fast immer mindestens einen unbelegten Parameter.
 * Bei PLAUSIs werden alle unbelegten Parameter mit dem Wert des Formularfeldes zu dem die PLAUSI gehört belegt. Deshalb hat eine PLAUSI fast immer mindestens einen unbelegten Parameter.
@@ -356,18 +341,11 @@ Achtung: Wird eine global registrierte Plugin-Funktion für ein Formular verwend
 
 ##### Nicht registrierte Plugin-Funktionen
 
-Manchmal ist es nicht erwünscht, Plugin-Funktionen im globalen
-*Funktionen*-Abschnitt zu registrieren. Gründe hierfür können zum
-Beispiel folgende sein:
+Manchmal ist es nicht erwünscht, Plugin-Funktionen im globalen *Funktionen*-Abschnitt zu registrieren. Gründe hierfür können zum Beispiel folgende sein:
 * Eine Funktion wird nur in einer oder zwei Vorlagen verwendet. Es kann störend sein, wenn solche Funktionen in jeder Funtionsauswahl-Kombobox des FormularMax 4000 angezeigt werden.
 * Soll eine Vorlage an ein anderes Referat weitergegeben werden und die Vorlage verwendet eine global registrierte Plugin-Funktion, so muss das empfangende Referat die Plugin-Funktion ebenfalls global registrieren. Dabei sind schwer auflösbare Namenskonflikte möglich und die Funktion erscheint in jedem FormularMax 4000 des empfangenden Referats. Beides ist ungünstig.
 
-In solchen Fällen ist es günstiger, auf das globale registrieren einer
-Plugin-Funktion zu verzichten. Um diese dennoch verwenden zu können,
-kann eine Kombination von BIND und EXTERN direkt eingegeben werden. Zu
-diesem Zweck wird als Funktion "&lt;Code&gt;" ausgewählt und im
-Eingabefeld ein Code eingegeben wie z.B. der folgende
-
+In solchen Fällen ist es günstiger, auf das globale registrieren einer Plugin-Funktion zu verzichten. Um diese dennoch verwenden zu können, kann eine Kombination von BIND und EXTERN direkt eingegeben werden. Zu diesem Zweck wird als Funktion "&lt;Code&gt;" ausgewählt und im Eingabefeld ein Code eingegeben wie z.B. der folgende
 ```
 BIND(
  FUNCTION(
@@ -394,17 +372,7 @@ BIND(
 )
 ```
 
-In diesem Beispiel wird die Plugin-Funktion
-de.muenchen.kvr.FormularFunktionen.resturlaub verwendet. Diese erwartet
-3 Parameter. Die Bezeichner *p1*, *p2* und *p3* sind willkürliche
-Platzhalter für diese 3 Parameter. In den SET-Abschnitten werden den 3
-Parametern entsprechende Aufrufwerte zugewiesen. *urlaubsanspruch1*,
-*bereitsbeantragt1* und *jetztbeantragt1* sind *nicht* willkürlich
-gewählt, sondern sind die IDs von den 3 Eingabefeldern des
-WollMux-Formulars aus denen der Resturlaub berechnet werden soll. Es ist
-wichtig, darauf zu achten, dass das Wort "VALUE" nicht vergessen wird.
-Ansonsten würden "urlaubsanspruch1" etc. direkt als Strings übergeben
-anstatt der Werte der Eingabefelder.
+In diesem Beispiel wird die Plugin-Funktion de.muenchen.kvr.FormularFunktionen.resturlaub verwendet. Diese erwartet 3 Parameter. Die Bezeichner *p1*, *p2* und *p3* sind willkürliche Platzhalter für diese 3 Parameter. In den SET-Abschnitten werden den 3 Parametern entsprechende Aufrufwerte zugewiesen. *urlaubsanspruch1*, *bereitsbeantragt1* und *jetztbeantragt1* sind *nicht* willkürlich gewählt, sondern sind die IDs von den 3 Eingabefeldern des WollMux-Formulars aus denen der Resturlaub berechnet werden soll. Es ist wichtig, darauf zu achten, dass das Wort "VALUE" nicht vergessen wird. Ansonsten würden "urlaubsanspruch1" etc. direkt als Strings übergeben anstatt der Werte der Eingabefelder.
 
 ----------------------------------------
 

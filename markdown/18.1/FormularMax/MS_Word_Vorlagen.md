@@ -1,7 +1,5 @@
 # Umstellung von MS Word Vorlagen
 
-<!-- toc -->
-
 ## Analyse der Vorlage
 
 Die umzustellende Vorlage sollte – wenn möglich - in Word geöffnet und auf Besonderheiten überprüft werden. Sollte Word nicht mehr zur Verfügung stehen, kann diese Überprüfung auch im Writer erfolgen.
@@ -53,7 +51,7 @@ Wenn man weiß welcher Briefkopf benötigt wird, wird in der WollMux Leiste unte
 
 Benötigt die Vorlage keinen Briefkopf entfällt der nächste Schritt und es geht weiter mit Kapitel [Formatierung der Vorlage](WollMux_Vorlage.md#Formatierung_der_Vorlage).
 
-![Mischvorlage öffnen](images/LO_Mischvorlagen_deutsch.jpg "fig:Mischvorlage öffnen")
+![Mischvorlage öffnen](images/LO_Mischvorlagen_deutsch.png "fig:Mischvorlage öffnen")
 
 Eine genaue Beschreibung, um was es sich bei Mischvorlagen handelt, steht in Kapitel [Was ist eine Mischvorlage?](WollMux_Vorlage.md#Was_ist_eine_Mischvorlage).
 

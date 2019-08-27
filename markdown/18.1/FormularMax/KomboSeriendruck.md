@@ -1,7 +1,5 @@
 # Kombinationsmöglichkeiten mit dem Seriendruck
 
-<!-- toc -->
-
 Der WollMux bietet neben den in diesem Handbuch beschriebenen Features auch noch eine Seriendruckfunktion. Der Seriendruck lässt sich sowohl mit den [Sachleitende Verfügungen](SLV.md) als auch der [Formularfunktion](FM4000.md) verbinden. Natürlich lassen sich auch alle drei Komponenten zusammen verwenden.
 
 ## Seriendruck und Sachleitende Verfügungen

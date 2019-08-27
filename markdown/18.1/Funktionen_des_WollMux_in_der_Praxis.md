@@ -1,23 +1,16 @@
-Auf dieser Seite sind praktische Anwendungsfälle für
-[WollMux-Funktionen](Konfigurationsdatei_wollmux_conf.md#grundfunktionen)
-gesammelt.
+Auf dieser Seite sind praktische Anwendungsfälle für [WollMux-Funktionen](Konfigurationsdatei_wollmux_conf.md#grundfunktionen) gesammelt.
 
 Tip: Funktionstester
 ====================
 
-Im [FormularMax 4000](FormularMax_4000.md) lässt sich über
-*Ansicht/Funktionstester* ein Dialog aufrufen, in dem Funktionen
-zusammengeklickt und ausprobiert werden können.
+Im [FormularMax 4000](FormularMax_4000.md) lässt sich über **Ansicht/Funktionstester** ein Dialog aufrufen, in dem Funktionen zusammengeklickt und ausprobiert werden können.
 
 Allgemein
 =========
 
 ### Leere Eingabe für Berechnungen als 0 behandeln
 
-Die Felder a, b und c enthalten Zahlen, die z.B. mit Hilfe der
-SUM-Funktion addiert werden sollen. Dabei soll eine leere Eingabe eines
-Feldes als 0 behandelt werden:
-
+Die Felder a, b und c enthalten Zahlen, die z.B. mit Hilfe der SUM-Funktion addiert werden sollen. Dabei soll eine leere Eingabe eines Feldes als 0 behandelt werden:
 ```
 SUM( SELECT(VALUE "a" ELSE("0"))
      SELECT(VALUE "b" ELSE("0"))
@@ -26,9 +19,7 @@ SUM( SELECT(VALUE "a" ELSE("0"))
 
 ### Zahlen formatieren mit Tausenderpunkt
 
-Funktion zum Formatieren von positiven oder negativen Zahlen mit
-Tausenderpunkt, sowohl mit Komma als auch ohne Komma.
-
+Funktion zum Formatieren von positiven oder negativen Zahlen mit Tausenderpunkt, sowohl mit Komma als auch ohne Komma.
 ```
 CAT(
  REPLACE(
@@ -47,9 +38,7 @@ CAT(
 PLAUSI
 ======
 
-Plausibilitätsprüfungen dienen dazu, den Benutzer bereits während des
-Ausfüllens eines Formulars zu warnen, dass seine Eingaben nicht den
-Vorgaben entsprechen.
+Plausibilitätsprüfungen dienen dazu, den Benutzer bereits während des Ausfüllens eines Formulars zu warnen, dass seine Eingaben nicht den Vorgaben entsprechen.
 
 ### Eingabe muss aus mindestens X und höchstens Y beliebigen Zeichen bestehen
 
@@ -89,11 +78,9 @@ Summenberechnung mit min. X bis max. Y Kommastellen
 
 ### Fehleranzeigen abfangen
 
-Ergänzung &rarr; Die Werte “a” und “b” sollten einen AUTOFILL-Wert von 0
-haben. Ist der Wert "", bringt die Funktion einen Fehler.
+Ergänzung &rarr; Die Werte “a” und “b” sollten einen AUTOFILL-Wert von 0 haben. Ist der Wert "", bringt die Funktion einen Fehler.
 
-Ein anderer Lösungsansatz ist, die ONERROR-Funktion dahingehend zu
-verwenden dass ein Hinweistext ausgegeben wird, z.B.
+Ein anderer Lösungsansatz ist, die ONERROR-Funktion dahingehend zu verwenden dass ein Hinweistext ausgegeben wird, z.B.
 
 ```
 SELECT(
@@ -102,9 +89,7 @@ SELECT(
 
 ```
 
-Am elegantesten funktioniert diese Lösung, wenn in der
-Formularbeschreibung zusätzlich beim enstprechenden Feld der Parameter
-READONLY auf true gesetzt wird:
+Am elegantesten funktioniert diese Lösung, wenn in der Formularbeschreibung zusätzlich beim enstprechenden Feld der Parameter READONLY auf true gesetzt wird:
 
 **Beispiel**
 
@@ -144,19 +129,13 @@ CAT(
    )
 ```
 
-Eine genauere Beschreibung der REPLACE-Funktion und Übersicht zu
-regulären Ausdrücken finden Sie auf der Wiki-Seite "[Konfigurationsdatei wollmux.conf](Konfigurationsdatei_wollmux_conf.md#replace-argument-regex-repstr)".
+Eine genauere Beschreibung der REPLACE-Funktion und Übersicht zu regulären Ausdrücken finden Sie auf der Wiki-Seite "[Konfigurationsdatei wollmux.conf](Konfigurationsdatei_wollmux_conf.md#replace-argument-regex-repstr)".
 
 **Erklärung**
 
-In diesem regulären Ausdruck wird von der Verwendung von Gruppen
-Gebrauch gemacht. Jede Klammer stellt eine Gruppe dar. Die erste Gruppe
-"***(.)***" enthält nur den ersten Buchstaben und die zweite Gruppe
-"***(.&ast;+)***" enthält den zweiten (falls überhaupt vorhanden) und alle
-weiteren Buchstaben.
+In diesem regulären Ausdruck wird von der Verwendung von Gruppen Gebrauch gemacht. Jede Klammer stellt eine Gruppe dar. Die erste Gruppe "***(.)***" enthält nur den ersten Buchstaben und die zweite Gruppe "***(.&ast;+)***" enthält den zweiten (falls überhaupt vorhanden) und alle weiteren Buchstaben.
 
-Für die Ausgabe wurde in diesem Fall die erste Gruppe (mit ***\$1***
-bezeichnet) gewählt.
+Für die Ausgabe wurde in diesem Fall die erste Gruppe (mit ***\$1*** bezeichnet) gewählt.
 
 Die weiteren möglichen Gruppen enthalten folgende Informationen:
 
@@ -183,12 +162,9 @@ Die weiteren möglichen Gruppen enthalten folgende Informationen:
 TRAFO
 =====
 
-Transformationen dienen dazu, im Formular einen anderen Wert
-darzustellen als der Benutzer eingegeben hat. Dies wird typischerweise
-verwendet, um Werte automatisch auf bestimmte Weise zu formatieren.
-TRAFOs werden im FormularMax 4000 über den Reiter *Einfügungen* gesetzt.
+Transformationen dienen dazu, im Formular einen anderen Wert darzustellen als der Benutzer eingegeben hat. Dies wird typischerweise verwendet, um Werte automatisch auf bestimmte Weise zu formatieren. TRAFOs werden im FormularMax 4000 über den Reiter **Einfügungen** gesetzt.
 
-Hinweis: TRAFOs bekommen immer den Feldwert des Feldes übergeben auf das sie gesetzt sind. Es kann also unabhängig von der ID des Feldes immer `VALUE "param"` verwendet werden (“param” ist hier *kein* Platzhalter für die Feld-ID).
+> **HINT** TRAFOs bekommen immer den Feldwert des Feldes übergeben auf das sie gesetzt sind. Es kann also unabhängig von der ID des Feldes immer `VALUE "param"` verwendet werden (“param” ist hier *kein* Platzhalter für die Feld-ID).
 
 ### Zahl mit genau X Nachkommastellen darstellen
 

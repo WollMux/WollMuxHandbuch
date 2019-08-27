@@ -10,11 +10,11 @@ Folgende Einstellungen müssen in LibreOffice gesetzt sein, damit eine reibungsl
 
 Unter *Extras → Optionen → /Writer/Formatierungshilfen* muss die Anzeige von ausgeblendeten Text ausgeschaltet sein. Beim Drucken verwendet der WollMux die Möglichkeit in LibreOffice, Textbereiche ausblenden zu können. Damit LibreOffice beim Drucken die Anzahl der Gesamtseiten richtig berechnen kann, dürfen die ausgeblendeten Bereiche nicht angezeigt werden. Diese Option ist auf dem Basisclient bereits richtig gesetzt.
 
-![Einstellungen in den Optionen](images/LO_Optionen.jpg "fig:Einstellungen in den Optionen")
+![Einstellungen in den Optionen](../images/SLV/WriterFormatierungshilfen.png "fig:Einstellungen in den Optionen")
 
 Unter *Extras → AutoKorrektur Optionen... → Optionen* muss die Option „Nummerierung anwenden – Symbol:\*" deaktiviert sein. Die Verfügungspunkte von Sachleitenden Verfügungen beginnen mit römischen Ziffern. Damit LibreOffice diese Ziffern nicht als Aufzählungen interpretiert, muss diese Option ausgeschaltet werden. Auf dem Basisclient ist diese Option bereits richtig gesetzt. Außerdem schaltet der WollMux diese Option automatisch ab, wenn das erste Mal mit Sachleitenden Verfügungen gearbeitet wird.
 
-![Einstellungen in den Autokorrektur](images/LO_Autokorrektur.jpg "fig:Einstellungen in den Autokorrektur")
+![Einstellungen in den Autokorrektur](../images/SLV/ExtrasAutokorrektur.png "fig:Einstellungen in den Autokorrektur")
 
 Die Symbolleiste "Sachleitende Verfügung" muss im Writer im Menü *Ansicht" → Symbolleisten → Sachleitende Verfügungen (WollMux)* aktiviert werden. Die neue Symbolleiste enthält die Schaltflächen *Ziffer einfügen*, *Abdruck* und *Zuleitungszeile*. Des weiteren sind fünf Schaltflächen zur Erstellung der Blöcke zur Drucksteuerung enthalten:
 
@@ -40,7 +40,7 @@ Die Nummerierung der restlichen Verfügungspunkte wird dabei, wie unter [Die Sch
 
 Folgendes Beispiel verdeutlicht, wie die automatische Benennung der Abdruck-Zeilen funktioniert. Es entstand durch mehrmaliges Drücken auf "Abdruck":
 
-![Automatisches Zählen bei den Abdrücken](../500px-SLV_AbdruckBeispiel.png "fig:Automatisches Zählen bei den Abdrücken")
+![Automatisches Zählen bei den Abdrücken](../images/SLV/AbdruckBeispiel.png "fig:Automatisches Zählen bei den Abdrücken")
 
 Ebenso können über die Schaltfläche bereits bestehende Abdrucke entfernt werden.
 
@@ -92,7 +92,7 @@ Das Markieren eines Blocks und das Aufheben der Markierung eines Blocks funktion
 
 Ist in der Vorlage/im Dokument ein Textrahmen mit dem Namen "WollMuxVerfuegungspunkt1" vorhanden (Beispiel externer Briefkopf), so wird dieser Rahmen besonders behandelt. Er dient dazu, die Ziffer "I." zu positionieren, die im externen Briefkopf neben dem Empfängerfeld angezeigt werden soll.
 
-![Der Textrahmen "WollMuxVerfuegungspunkt1" legt fest, an welcher Stelle die Ziffer "I." im externen Briefkopf erscheinen soll, wenn Verfügungspunkte im Dokument vorhanden sind.](images/LO_WollmuxVerfuegungspunkt.jpg "fig:WollMuxVerfuegungspunkt1")
+![Der Textrahmen "WollMuxVerfuegungspunkt1" legt fest, an welcher Stelle die Ziffer "I." im externen Briefkopf erscheinen soll, wenn Verfügungspunkte im Dokument vorhanden sind.](../images/SLV/RahmenWollMuxVerfuegungspunkt1.png "fig:WollMuxVerfuegungspunkt1")
 
 Der Rahmen kann ausschließlich den Inhalt "I." besitzen und wird vom WollMux automatisch verwaltet. Bei der Erstellung dieses Textrahmens muss kein Inhalt eingefügt werden, da der WollMux den Inhalt "I." genau dann automatisch einträgt, wenn mindestens ein (weiterer) Verfügungspunkt im Dokument vorhanden ist. Ist kein Verfügungspunkt im Dokument vorhanden, so bleibt dieser Rahmen leer.
 
@@ -107,13 +107,14 @@ Manche Textinhalte werden von LibreOffice.org beim Drucken nicht korrekt ausgebl
 * Tabellen mit sichtbaren Rahmen: Beim Ausblenden eines Verfügungspunktes der eine Tabelle mit sichtbaren Rahmen enthält, wird zwar der Inhalt der Tabelle ausgeblendet, die Rahmen bleiben aber als Gerüst sichtbar.
 * Manuelle Seitenumbrüche: Wird unterhalb eines ausgeblendeten Verfügungspunktes mit Seitenumbrüchen gearbeitet, so blendet LibreOffice.org diese Seitenumbrüche nicht aus. Als Ergebnis entstehen unerwünschte leere Seiten, bei denen nur die Kopfzeile mit einer falschen Gesamtseitenzahl angezeigt wird.
 
-![Fehlerhaft ausgeblendete Tabelle](images/LO_SLVRahmenzusammen2.jpg "fig:Fehlerhaft ausgeblendete Tabelle")
+|![Fehlerhaft ausgeblendete Tabelle](../images/SLV/entwurfMitTabelle.png "fig:Fehlerhaft ausgeblendete Tabelle")|![Fehlerhaft ausgeblendete Tabelle](../images/SLV/druckfehlerBeiTabelle.png "fig:Fehlerhaft ausgeblendete Tabelle")|
 
 Mit Hilfe sogenannter Textbereiche ist es aber dennoch möglich, diese Inhalte zuverlässig auszublenden. Dazu markiert man die betroffenen Textteile mit der Maus und fügt über *Einfügen → Bereich...* einen neuen Bereich ein. Abhängig von der Position des betroffenen Textteils muss man bei der Erstellung des Bereichs auf folgende Regeln achten:
 
 * **Unterhalb eines Verfügungspunktes:**<br>
 Befindet sich der problematische Inhalt unterhalb einer Überschrift eines Verfügungspunktes, so kann der Bereich beliebig benannt werden. Man muss aber beim Markieren der betroffenen Textteile darauf achten, dass der Bereich nicht vor der Überschrift des zugehörigen Verfügungspunktes startet. Innerhalb eines so erzeugten Bereichs können keine Druckblöcke (z.B. *Immer drucken)* verwendet werden, da stets der gesamte betroffene Bereich ausgeblendet wird und so auch die Druckblöcke nicht angezeigt würden, wenn sie angezeigt werden sollten.
-![Über einen Bereich wird die Tabelle richtig ausgeblendet](images/LO_SLVRahmenzusammen3.jpg "fig:Über einen Bereich wird die Tabelle richtig ausgeblendet")
+
+|![Fehlerhaft ausgeblendete Tabelle](../images/SLV/entwurfMitTabelleUndBereich.png "fig:Fehlerhaft ausgeblendete Tabelle")|![Fehlerhaft ausgeblendete Tabelle](../images/SLV/keinDruckfehlerBeiTabelle.png "fig:Fehlerhaft ausgeblendete Tabelle")|
 
 * **Innerhalb eines Blocks zur Drucksteuerung**<br>
 Mit den Blöcken zur Drucksteuerung können beliebige Textstellen beim Drucken der Sachleitenden Verfügungen ein- oder ausgeblendet werden, auch dann, wenn sie sich nicht direkt unterhalb einer Überschrift, sondern z.B. in einem eigenen Textrahmen befinden. Liegt der problematische Inhalt in einem solchen Druckblock, so muss der Bereichsname nach folgendem System aufgebaut sein:`<beliebiger Name> GROUPS '<SLV_Sichtbarkeitsgruppe>'`<br>
@@ -132,7 +133,7 @@ Auf diese Weise definieren Sie einen Textbereich mit der Namenserweiterung GROUP
 
 Sachleitende Verfügungen können über das Symbol in der Writer Symbolleiste oder über das Writer Menü *Datei → Drucken* ausgedruckt werden. Es erscheint der Dialog "Wollmux Komfortdruck" falls Sachleitende Verfügungen vorhanden sind.
 
-![WollMux Komfortdruck](images/Komfortdruck.jpg "fig:WollMux Komfortdruck")
+![WollMux Komfortdruck](../images/SLV/WollmuxKomfortdruck.png "fig:WollMux Komfortdruck")
 
 ### Ausdrucke
 
@@ -150,21 +151,51 @@ Hier kann man festlegen, dass der Ausdruck in umgekehrter Reihenfolge startet. B
 
 Über das Symbol *Datei direkt drucken* oder den Menüeintrag *Drucken* erscheint der Dialog "Wollmux Komfortdruck".
 
-![WollMux Komfortdruck in der Vormerkung](images/KomfortdruckdialogVormerkung.jpg "fig:WollMux Komfortdruck in der Vormerkung")
+![WollMux Komfortdruck in der Vormerkung](../images/SLV/internerBriefkopf_drucken.png "fig:WollMux Komfortdruck in der Vormerkung")
 
 Nach Betätigen der Schaltfläche *Alle drucken* erhält man drei Ausdrucke. Jede als Zuleitungszeile markierte Zeile, zählt als ein Ausdruck. Wiedervorlage zählt ebenfalls als ein Ausdruck. Bei nicht benötigen eines Ausdruckes muss die Zahl entsprechend gesetzt werden. Ein- und Ausblendungen z.B für "I.A. Name" können über Schaltflächen zur Drucksteuerung einzelner Blöcke gesetzt werden.
 
-![Ansicht der Ausdrucke](images/Komfortdruck_komplett_aus_Wiki.jpg "fig:Ansicht der Ausdrucke")
+<table>
+<tr>
+<td><img src="../images/SLV/Ausdruck_internerBriefkopf1.png" /></td>
+<td><img src="../images/SLV/Ausdruck_internerBriefkopf2.png" /></td>
+<td><img src="../images/SLV/Ausdruck_internerBriefkopf3.png" /></td>
+</tr>
+<tr>
+<td>Ausdruck kann auch einzeln über die Schaltfläche "Drucken" rechts neben "III. Weglegen" ausgedruckt werden</td>
+<td>Ausdruck kann auch einzeln über die Schaltfläche "Drucken" rechts neben "II. Abdruck von I." ausgedruckt werden</td>
+<td>Ausdruck kann auch einzeln über die Schaltfläche "Drucken" rechts neben "I. Vormerkung" ausgedruckt werden</td>
+</tr>
+</table>
 
 ### Drucken eines externen Briefkopfes
 
 Über das Symbol *Datei direkt drucken* oder den Menüeintrag *Drucken* erscheint der Dialog "Wollmux Komfortdruck".
 
-![WollMux Komfortdruck ext. Briefkopf](images/Komfortdruck_ext_Briefkopf_0913.jpg "fig:WollMux Komfortdruck ext. Briefkopf")
+![WollMux Komfortdruck ext. Briefkopf](../images/SLV/externerBriefkopf_drucken.png "fig:WollMux Komfortdruck ext. Briefkopf")
 
 Nach Betätigen der Schaltfläche *Alle drucken *erhält man vier Ausdrucke. Jede als Zuleitungszeile markierte Zeile, zählt als ein Ausdruck. WV (Wiedervorlage) zählt ebenfalls als ein Ausdruck. Bei nicht benötigen eines Ausdruckes muss die Zahl entsprechend gesetzt werden. Ein- und Ausblendungen z.B für "I.A. Name" können über Schaltflächen zur Drucksteuerung einzelner Blöcke gesetzt werden.
 
-![Ansicht der Ausdrucke](images/Komfortdruck_ext_Briefkopf_4Spalten_0913.jpg "fig:Ansicht der Ausdrucke")
+<table>
+<tr>
+<th>Ausdruck "III. WV....."</th>
+<th>Ausdruck "II. Abdruck von I."</th>
+<th>Ausdruck "II. Abdruck von I."</th>
+<th>Ausdruck "I. Original"</th>
+</tr>
+<tr>
+<td><img src="../images/SLV/Ausdruck_externerBriefkopf1.png" /></td>
+<td><img src="../images/SLV/Ausdruck_externerBriefkopf2.png" /></td>
+<td><img src="../images/SLV/Ausdruck_externerBriefkopf2.png" /></td>
+<td><img src="../images/SLV/Ausdruck_externerBriefkopf3.png" /></td>
+</tr>
+<tr>
+<td>Ausdruck kann auch einzeln über die Schaltfläche "Drucken" rechts neben "III. WV ....." ausgedruckt werden</td>
+<td>Ausdruck kann auch einzeln über die Schaltfläche "Drucken" rechts neben "II. Abdruck von I." ausgedruckt werden</td>
+<td>Ausdruck kann auch einzeln über die Schaltfläche "Drucken" rechts neben "II. Abdruck von I." ausgedruckt werden</td>
+<td>Ausdruck kann auch einzeln über die Schaltfläche "Drucken" rechts neben "I. Original" ausgedruckt werden</td>
+</tr>
+</table>
 
 ### Grundsätzliches zu Sachleitende Verfügungen Drucken 
 

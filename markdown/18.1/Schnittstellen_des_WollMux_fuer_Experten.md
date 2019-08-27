@@ -1,76 +1,44 @@
 # {{ page.title }}
 
-Der WollMux kann über verschiedene Schnittstellen von aussen gesteuert
-werden. Sachbearbeiterinnen und Sachbearbeiter müssen im Normalfall von
-diesen Steuermöglichkeiten nichts wissen, da die Kommunikation über
-diese Schnittstellen für sie im Hintergrund abläuft. Der Artikel richtet
-sich an fortgeschrittene Vorlagenersteller und Entwickler, die aufbauend
-auf den WollMux Vorlagen und Programmbibliotheken erstellen.
+Der WollMux kann über verschiedene Schnittstellen von außen gesteuert werden. Sachbearbeiterinnen und Sachbearbeiter müssen im Normalfall von diesen Steuermöglichkeiten nichts wissen, da die Kommunikation über diese Schnittstellen für sie im Hintergrund abläuft. Der Artikel richtet sich an fortgeschrittene Vorlagenersteller und Entwickler, die aufbauend auf den WollMux Vorlagen und Programmbibliotheken erstellen.
 
 <!-- toc -->
 
 Schnittstellen für Vorlagenersteller und Administratoren
 ========================================================
 
-Zusätzliche Schaltflächen in die Symbolleiste von OpenOffice einbinden
+Zusätzliche Schaltflächen in die Symbolleiste von LibreOffice einbinden
 ----------------------------------------------------------------------
 
-Manche WollMux-Funktionalitäten können in Form von Schaltflächen in die
-Symbolleiste von OpenOffice eingebunden werden.
+Manche WollMux-Funktionalitäten können in Form von Schaltflächen in die Symbolleiste von LibreOffice eingebunden werden.
 
 Die Einbindung geht wie folgt:
-
 1. Extras/Anpassen.../Reiter “Symbolleisten”
-2. Oben bei Symbolleiste “Standard” auswählen
-3. Unten bei Speichern in “OpenOffice.org Writer” auswählen
-4. Button “Hinzufügen...” anklicken
-5. Links bei “Bereich” auswählen `OpenOffice.org Makros/Meine Makros/WollMux/Call`
-6. Rechts bei Befehle die gewünschte Funktionalität auswählen
-7. Button “Hinzufügen”
-8. Button “Schließen”
+2. Ziel “Standard” auswählen
+3. Bereich “LibreOffice Writer” auswählen
+5. Kategorie "Makros" auswählen
+6. Links bei Funktionen die gewünschte Funktionalität auswählen
+7. Pfeil-Button
 9. Button “OK”
 
-Folgende Funktionalitäten sind derzeit über diese Schnittstelle
-verfügbar:
+Folgende Funktionalitäten sind derzeit über diese Schnittstelle verfügbar:
 
-- **functionDialogEmpfaengerauswahl:** öffnet den Funktionsdialog
-    “Empfängerauswahl” (siehe auch
-    [\#wollmux:FunctionDialog](#wollmuxfunctiondialog))
-- **FormularMax4000:** öffnet den FormularMax 4000 (siehe auch
-    [\#wollmux:FormularMax4000](#wollmuxformularmax4000))
-- **Kill:** schließt alle OpenOffice-Prozesse ohne Rückfrage (siehe
-    auch [\#wollmux:Kill](#wollmuxkill))
-- **DumpInfo:** erzeugt eine dump-Datei zur Fehlersuche (siehe auch
-    [\#wollmux:DumpInfo](#wollmuxdumpinfo))
-- **About:** zeigt den Dialog “Info über Vorlagen und Formulare”
-    (siehe auch [\#wollmux:About](#wollmuxabout))
-- **TextbausteinEinfuegen:** fügt ein vorhandenen Textbaustein ein"
-    (siehe auch
-    [\#wollmux:TextbausteinEinfuegen](#wollmuxtextbausteineinfuegen))
-- **TextbausteinVerweisEinfuegen:** fügt eine 'insertFrag' Textmarke
-    ein die erst nach dem speichern und nochmaligen öffnen ausgewertet
-    wird" (siehe auch
-    [\#wollmux:TextbausteinVerweisEinfuegen](#wollmuxtextbausteinverweiseinfuegen))
-- **PlatzhalterAnspringen:** springt ab dem Cursor den nächsten
-    vorhandenen Platzhalter an" (siehe auch
-    [\#wollmux:PlatzhalterAnspringen](#wollmuxplatzhalteranspringen))
-- **Seriendruck:** ruft die Seriendruckfunktion des WollMux auf (siehe
-    auch [\#wollmux:Seriendruck](#wollmuxseriendruck))
+- **functionDialogEmpfaengerauswahl:** öffnet den Funktionsdialog “Empfängerauswahl” (siehe auch [\#wollmux:FunctionDialog](#wollmuxfunctiondialog))
+- **FormularMax4000:** öffnet den FormularMax 4000 (siehe auch [\#wollmux:FormularMax4000](#wollmuxformularmax4000))
+- **Kill:** schließt alle LibreOffice-Prozesse ohne Rückfrage (siehe auch [\#wollmux:Kill](#wollmuxkill))
+- **DumpInfo:** erzeugt eine dump-Datei zur Fehlersuche (siehe auch [\#wollmux:DumpInfo](#wollmuxdumpinfo))
+- **About:** zeigt den Dialog “Info über Vorlagen und Formulare” (siehe auch [\#wollmux:About](#wollmuxabout))
+- **TextbausteinEinfuegen:** fügt ein vorhandenen Textbaustein ein" (siehe auch [\#wollmux:TextbausteinEinfuegen](#wollmuxtextbausteineinfuegen))
+- **TextbausteinVerweisEinfuegen:** fügt eine 'insertFrag' Textmarke ein die erst nach dem speichern und nochmaligen öffnen ausgewertet wird" (siehe auch [\#wollmux:TextbausteinVerweisEinfuegen](#wollmuxtextbausteinverweiseinfuegen))
+- **PlatzhalterAnspringen:** springt ab dem Cursor den nächsten vorhandenen Platzhalter an" (siehe auch [\#wollmux:PlatzhalterAnspringen](#wollmuxplatzhalteranspringen))
+- **Seriendruck:** ruft die Seriendruckfunktion des WollMux auf (siehe auch [\#wollmux:Seriendruck](#wollmuxseriendruck))
 
-Technisch gesehen handelt es sich bei dieser Schnittstelle um ein
-Basic-Bibliothek namens “WollMux” mit dem Modul “Call”, in der die
-entsprechenden
-[Dispatch-Kommandos](#die-dispatch-kommandos-des-wollmux) des
-WollMux abgesetzt werden. Das Modul wird mit dem WollMux.uno.pkg
-automatisch mit installiert.
+Technisch gesehen handelt es sich bei dieser Schnittstelle um ein Basic-Bibliothek namens “WollMux” mit dem Modul “Call”, in der die entsprechenden [Dispatch-Kommandos](#die-dispatch-kommandos-des-wollmux) des WollMux abgesetzt werden. Das Modul wird mit dem WollMux.uno.pkg automatisch mit installiert.
 
 Tastenkombination für eine Schnittstelle setzen
 -----------------------------------------------
 
-Über einen [Tastenkuerzel Eintrag](Konfigurationsdatei_wollmux_conf.md#tastenkuerzel) in
-Konfigurationsdateien kann eine OOo-Writer Tastenkombination für eine
-Schnittstelle (z.B strg+t für wollmux:TextbausteinEinfuegen) gesetzt
-werden.
+Über einen [Tastenkuerzel Eintrag](Konfigurationsdatei_wollmux_conf.md#tastenkuerzel) in Konfigurationsdateien kann eine OOo-Writer Tastenkombination für eine Schnittstelle (z.B strg+t für wollmux:TextbausteinEinfuegen) gesetzt werden.
 
 Programmierschnittstellen
 =========================
@@ -78,15 +46,9 @@ Programmierschnittstellen
 Die Dispatch-Kommandos des WollMux
 ----------------------------------
 
-Der WollMux stellt eine Reihe von sog. “Dispatch-Kommandos” zur
-Verfügung, die über das
-[Dispatch-Framework](http://api.openoffice.org/docs/DevelopersGuide/OfficeDev/OfficeDev.xhtml#1_1_6_Using_the_Dispatch_Framework)
-von OpenOffice eingebunden sind und den WollMux veranlassen,
-verschiedene Aktionen auszuführen.
+Der WollMux stellt eine Reihe von sog. “Dispatch-Kommandos” zur Verfügung, die über das [Dispatch-Framework](http://api.openoffice.org/docs/DevelopersGuide/OfficeDev/OfficeDev.xhtml#1_1_6_Using_the_Dispatch_Framework) von LibreOffice eingebunden sind und den WollMux veranlassen, verschiedene Aktionen auszuführen.
 
-Das folgende Programmbeispiel in OpenOffice-Basic zeigt, wie die
-Dispatch-Kommandos des WollMux aufgerufen werden können:
-
+Das folgende Programmbeispiel in LibreOffice-Basic zeigt, wie die Dispatch-Kommandos des WollMux aufgerufen werden können:
 ```vbscript
 Sub About
   dispatchURL("wollmux:About") # hier steht die <URL>
@@ -103,9 +65,7 @@ Sub dispatchURL(urlStr` `as` `String)
   dispatch.dispatch(url, args)
 End Sub
 ```
-
-Dabei erwartet die Funktion dispatchURL(urlStr as String) eine der
-folgenden URLs:
+Dabei erwartet die Funktion dispatchURL(urlStr as String) eine der folgenden URLs:
 
 ### wollmux:AbsenderAuswaehlen
 
@@ -113,11 +73,9 @@ Syntax der URL:
 
 `wollmux:AbsenderAuswaehlen`
 
-Öffnet den Dialog “Absender Auswählen” über den der aktuelle Absender
-des Briefkopfsystems festgelegt werden kann. Hier ein Beispiel für einen
-solchen Dialog:
+Öffnet den Dialog “Absender Auswählen” über den der aktuelle Absender des Briefkopfsystems festgelegt werden kann. Hier ein Beispiel für einen solchen Dialog:
 
-![](WOL_AbsenderAuswaehlenDialog.png "WOL_AbsenderAuswaehlenDialog.png")
+![](images/Schnittstellen/AbsenderAuswaehlenDialog.png "WOL_AbsenderAuswaehlenDialog.png")
 
 ### wollmux:PALVerwalten
 
@@ -129,7 +87,7 @@ Syntax der URL:
 Persönliche Absenderliste (PAL) des Briefkopfsystems verwaltet werden
 kann. Hier ein Beispiel für einen solchen Dialog:
 
-![](WOL_PALVerwaltenDialog.png "WOL_PALVerwaltenDialog.png")
+![](images/Schnittstellen/PALVerwaltenDialog.png "WOL_PALVerwaltenDialog.png")
 
 ### wollmux:Open
 
@@ -143,15 +101,7 @@ Syntax der URL:
 
 `wollmux:OpenDocument#<FRAG_ID1>&<FRAG_ID2>&<FRAG_ID3>...`
 
-Öffnet die Vorlage mit der
-FRAG\_ID "<FRAG_ID>". Abhängig vom Typ des Dokuments und dem evtl. enthaltenen
-[Dokumentkommando setType](Dokumentkommandos_des_WollMux.md#das-kommando-settype)
-werden dabei die (anderen) enthaltenen
-[Dokumentkommandos](Dokumentkommandos_des_WollMux.md) bearbeitet
-oder nicht. Für die Verwendung im Zusammenspiel mit dem
-[insertContent-Kommando](Dokumentkommandos_des_WollMux.md#das-kommando-insertcontent)
-können mehrere FRAG\_IDs angegeben werden. Diese werden durch "&"
-getrennt.
+Öffnet die Vorlage mit der FRAG\_ID "<FRAG_ID>". Abhängig vom Typ des Dokuments und dem evtl. enthaltenen [Dokumentkommando setType](Dokumentkommandos_des_WollMux.md#das-kommando-settype) werden dabei die (anderen) enthaltenen [Dokumentkommandos](Dokumentkommandos_des_WollMux.md) bearbeitet oder nicht. Für die Verwendung im Zusammenspiel mit dem [insertContent-Kommando](Dokumentkommandos_des_WollMux.md#das-kommando-insertcontent) können mehrere FRAG\_IDs angegeben werden. Diese werden durch "&" getrennt.
 
 ### wollmux:OpenDocument
 
@@ -159,10 +109,7 @@ Syntax der URL:
 
 `wollmux:OpenDocument#<FRAG_ID>`
 
-Öffnet die Vorlage mit der
-FRAG\_ID "<FRAG_ID>" zum bearbeiten. Dabei werden die in der Vorlage enthaltenen
-[Dokumentkommandos](Dokumentkommandos_des_WollMux.md) **nicht**
-ausgewertet.
+Öffnet die Vorlage mit der FRAG\_ID "<FRAG_ID>" zum bearbeiten. Dabei werden die in der Vorlage enthaltenen [Dokumentkommandos](Dokumentkommandos_des_WollMux.md) **nicht** ausgewertet.
 
 ### wollmux:FunctionDialog
 
@@ -170,11 +117,7 @@ Syntax der URL:
 
 `wollmux:FunctionDialog#<Dialogbezeichner>`
 
-Öffnet den in der [Konfigurationsdatei wollmux.conf global definierten Funktionsdialog](Konfigurationsdatei_wollmux_conf.md#funktionsdialoge)
-mit der Bezeichnung "<Dialogbezeichner>" und überträgt die dort
-ausgewählten Funktionswerte in die im aktuell geöffneten Dokument
-enthaltenen
-[insertFormValue-Kommandos](Dokumentkommandos_des_WollMux.md#das-kommando-insertformvalue).
+Öffnet den in der [Konfigurationsdatei wollmux.conf global definierten Funktionsdialog](Konfigurationsdatei_wollmux_conf.md#funktionsdialoge) mit der Bezeichnung "<Dialogbezeichner>" und überträgt die dort ausgewählten Funktionswerte in die im aktuell geöffneten Dokument enthaltenen [insertFormValue-Kommandos](Dokumentkommandos_des_WollMux.md#das-kommando-insertformvalue).
 
 ### wollmux:FormularMax4000
 
@@ -182,8 +125,7 @@ Syntax der URL:
 
 `wollmux:FormularMax4000`
 
-Öffnet den [FormularMax 4000](FormularMax_4000.md), die
-graphische Oberfläche zur Erstellung von Formularen.
+Öffnet den [FormularMax 4000](FormularMax_4000.md), die graphische Oberfläche zur Erstellung von Formularen.
 
 ### wollmux:ZifferEinfuegen
 
@@ -191,12 +133,7 @@ Syntax der URL:
 
 `wollmux:ZifferEinfuegen`
 
-Alle vom Cursor markierten Zeilen werden als Verfügungpunkte für
-Sachleitende Verfügungen markiert und mit den entsprechenden römischen
-Ziffern versehen. Befindet sich der Cursor bereits auf einer solchen
-Zeile, so wird die Markierung wieder aufgehoben und die römische Ziffer
-entfernt. Das Verhalten ist ausführlicher beschrieben auf der Seite
-[“Hilfen für Sachleitende Verfügungen verwenden”](Hilfen_fuer_Sachleitende_Verfuegungen_verwenden.md#die-schaltfläche-ziffer-einfügen).
+Alle vom Cursor markierten Zeilen werden als Verfügungpunkte für Sachleitende Verfügungen markiert und mit den entsprechenden römischen Ziffern versehen. Befindet sich der Cursor bereits auf einer solchen Zeile, so wird die Markierung wieder aufgehoben und die römische Ziffer entfernt. Das Verhalten ist ausführlicher beschrieben auf der Seite [“Hilfen für Sachleitende Verfügungen verwenden”](Hilfen_fuer_Sachleitende_Verfuegungen_verwenden.md#die-schaltfläche-ziffer-einfügen).
 
 ### wollmux:Abdruck
 
@@ -204,11 +141,7 @@ Syntax der URL:
 
 `wollmux:Abdruck`
 
-Ab der aktuellen Cursorposition wird ein neuer Absatz "&lt;Ziffer&gt; Abdruck
-von ..." eingefügt und als Verfügungspunkt von Sachleitenden Verfügungen
-markiert. Steht der Cursor bereits auf einem solchen Absatz, so wird der
-Abdruck entfernt. Das Verhalten ist ausführlicher beschrieben auf der
-Seite [“Hilfen für Sachleitende Verfügungen verwenden”](Hilfen_fuer_Sachleitende_Verfuegungen_verwenden.md#die-schaltfläche-abdruck).
+Ab der aktuellen Cursorposition wird ein neuer Absatz "&lt;Ziffer&gt; Abdruck von ..." eingefügt und als Verfügungspunkt von Sachleitenden Verfügungen markiert. Steht der Cursor bereits auf einem solchen Absatz, so wird der Abdruck entfernt. Das Verhalten ist ausführlicher beschrieben auf der Seite [“Hilfen für Sachleitende Verfügungen verwenden”](Hilfen_fuer_Sachleitende_Verfuegungen_verwenden.md#die-schaltfläche-abdruck).
 
 ### wollmux:Zuleitungszeile
 
@@ -216,11 +149,7 @@ Syntax der URL:
 
 `wollmux:Zuleitungszeile`
 
-Alle über den Cursor ausgewählten Absätze des aktuellen
-Vordergrunddokuments werden als Zuleitungszeilen von Sachleitenden
-Verfügungen markiert oder eine evtl. bestehende Markierung wird
-aufgehoben. Das Verhalten ist ausführlicher beschrieben auf der Seite
-[“Hilfen für Sachleitende Verfügungen verwenden”](Hilfen_fuer_Sachleitende_Verfuegungen_verwenden.md#die-schaltfläche-zuleitungszeile).
+Alle über den Cursor ausgewählten Absätze des aktuellen Vordergrunddokuments werden als Zuleitungszeilen von Sachleitenden Verfügungen markiert oder eine evtl. bestehende Markierung wird aufgehoben. Das Verhalten ist ausführlicher beschrieben auf der Seite [“Hilfen für Sachleitende Verfügungen verwenden”](Hilfen_fuer_Sachleitende_Verfuegungen_verwenden.md#die-schaltfläche-zuleitungszeile).
 
 ### wollmux:DumpInfo
 
@@ -228,14 +157,7 @@ Syntax der URL:
 
 `wollmux:DumpInfo`
 
-Veranlasst den WollMux eine Datei $HOME/.wollmux/dump&lt;DatumUndZeit&gt; zu
-erzeugen, die wichtige Informationen für die Fehlersuche im Zusammenhang
-mit dem WollMux enthält. DumpInfo ist vor allem für
-WollMux-Administratoren geeignet, die bei der Installation und
-Einrichtung des WollMux auf Fehler stoßen, für deren Lösung
-Unterstützung durch D-III-ITD-5.1 notwendig wird. In diesem Fall ist die
-über dumpInfo erzeugte dump-Datei an ein entsprechendes Vorfallticket
-anzuhängen.
+Veranlasst den WollMux eine Datei $HOME/.wollmux/dump&lt;DatumUndZeit&gt; zu erzeugen, die wichtige Informationen für die Fehlersuche im Zusammenhang mit dem WollMux enthält. DumpInfo ist vor allem für WollMux-Administratoren geeignet, die bei der Installation und Einrichtung des WollMux auf Fehler stoßen, für deren Lösung Unterstützung durch D-III-ITD-5.1 notwendig wird. In diesem Fall ist die über dumpInfo erzeugte dump-Datei an ein entsprechendes Vorfallticket anzuhängen.
 
 ### wollmux:Kill
 
@@ -243,9 +165,9 @@ Syntax der URL:
 
 `wollmux:Kill`
 
-Schließt alle OpenOffice Fenster ohne jede Sicherheitsabfragen(!).
+Schließt alle LibreOffice Fenster ohne jede Sicherheitsabfragen(!).
 
-Hinweis: Abgestürzte OpenOffice.org Prozesse werden dadurch *nicht* beendet, auch der Schnellstarter nicht.
+Hinweis: Abgestürzte LibreOffice Prozesse werden dadurch *nicht* beendet, auch der Schnellstarter nicht.
 
 ### wollmux:About
 
@@ -255,25 +177,14 @@ Syntax der URL:
 
 `wollmux:About#`&lt;Version der WollMuxBar&gt;
 
-Veranlass den WollMux, den Dialog “Info über Vorlagen und Formulare
-(WollMux)” anzuzeigen, der folgende wichtige Versionsinformationen
-enthält:
-
-- Die Release-Version und SVN-Revision der WollMux-Kernkomponente
-    WollMux.uno.pkg
-- Die Release-Version und SVN-Revision der WollMuxBar falls das
-    Argument "&lt;Version der WollMuxBar&gt;" in obiger URL angebeben wurde.
-    **Anmerkung:** Die Kernkomponente des WollMux weiss nicht, welche
-    WollMuxBar eingesetzt wird. Daher gibt die WollMuxBar beim Aufruf
-    von “wollmux:About” ihre Versionsinformation an die Kernkomponente
-    weiter, die sie dann im Dialog darstellt. Fehlt das Argument, so
-    wird gar keine Information über die WollMuxBar ausgegeben.
+Veranlass den WollMux, den Dialog “Info über Vorlagen und Formulare (WollMux)” anzuzeigen, der folgende wichtige Versionsinformationen enthält:
+- Die Release-Version der WollMux-Kernkomponente WollMux.uno.pkg
 - Die Release-Version der zugrundeliegenden WollMux-Konfiguration.
 - Der DEFAULT\_CONTEXT, von dem die Konfiguration bezogen wird.
 
 Hier ein Beispiel eines solchen Dialogs:
 
-![](WOL_AboutDialog.png "WOL_AboutDialog.png")
+![](images/Bedienelemente/AboutDialog.png "WOL_AboutDialog.png")
 
 ### wollmux:TextbausteinEinfuegen
 
@@ -281,19 +192,9 @@ Syntax der URL:
 
 `wollmux:TextbausteinEinfuegen`
 
-Nach Betätigen eines vorher zugewiesenen Buttons oder einer
-Tastenkombination, wird vom Cursor ausgehend eine Rückwärts suche
-gestartet, die so lange läuft, bis in einem Absatz keine Textbausteine
-mehr gefunden werden. Alle dabei gefundenen Textbausteine werden
-entsprechend aufgelöst.
-
-- Einrichten einer Tastenkombination
-
-siehe [Tastenkombination für eine Schnittstelle setzen](#tastenkombination-für-eine-schnittstelle-setzen)
-
-- Einrichten eines Buttons
-
-siehe [Schaltflächen in die Symbolleiste von OpenOffice einbinden](#zusätzliche-schaltflächen-in-die-symbolleiste-von-openoffice-einbinden)
+Nach Betätigen eines vorher zugewiesenen Buttons oder einer Tastenkombination, wird vom Cursor ausgehend eine Rückwärts suche gestartet, die so lange läuft, bis in einem Absatz keine Textbausteine mehr gefunden werden. Alle dabei gefundenen Textbausteine werden entsprechend aufgelöst.
+- Einrichten einer Tastenkombination siehe [Tastenkombination für eine Schnittstelle setzen](#tastenkombination-für-eine-schnittstelle-setzen)
+- Einrichten eines Buttons siehe [Schaltflächen in die Symbolleiste von LibreOffice einbinden](#zusätzliche-schaltflächen-in-die-symbolleiste-von-LibreOffice-einbinden)
 
 ### wollmux:TextbausteinVerweisEinfuegen
 
@@ -301,17 +202,8 @@ Syntax der URL:
 
 `wollmux:TextbausteinVerweisEinfuegen`
 
-Nach Betätigen eines vorher zugewiesenen Buttons oder einer
-Tastenkombination, wird vom Cursor ausgehend eine Rückwärts suche
-gestartet, die so lange läuft, bis in einem Absatz keine Textbausteine
-mehr gefunden werden. Für alle dabei gefundenen Textbausteine werden
-Textmarken mit dem Dokumenten-Kommando 'insertFrag' gesetzt diese werden
-aber nicht gleich ausgewertet sondern erst nach dem Speichern als
-Vorlage und spätrigen öffnen.
-
-- Einrichten eines Buttons
-
-siehe [Schaltflächen in die Symbolleiste von OpenOffice einbinden](#zusätzliche-schaltflächen-in-die-symbolleiste-von-openoffice-einbinden)
+Nach Betätigen eines vorher zugewiesenen Buttons oder einer Tastenkombination, wird vom Cursor ausgehend eine Rückwärts suche gestartet, die so lange läuft, bis in einem Absatz keine Textbausteine mehr gefunden werden. Für alle dabei gefundenen Textbausteine werden Textmarken mit dem Dokumenten-Kommando 'insertFrag' gesetzt diese werden aber nicht gleich ausgewertet sondern erst nach dem Speichern als Vorlage und spätrigen öffnen.
+- Einrichten eines Buttons siehe [Schaltflächen in die Symbolleiste von LibreOffice einbinden](#zusätzliche-schaltflächen-in-die-symbolleiste-von-LibreOffice-einbinden)
 
 ### wollmux:PlatzhalterAnspringen
 
@@ -319,19 +211,9 @@ Syntax der URL:
 
 `wollmux:PlatzhalterAnspringen`
 
-Nach Betätigen eines vorher zugewiesenen Buttons oder einer
-Tastenkombination wird vom Cursor ausgehend der nächste Platzhalter
-angesprungen. Falls kein Platzhalter vorhanden ist sondern eine Marke
-[WM(CMD 'setJumpMark')](Dokumentkommandos_des_WollMux.md#das-kommando-setjumpmark)
-wird diese angesprungen.
-
-- Einrichten einer Tastenkombination
-
-siehe [Tastenkombination für eine Schnittstelle setzen](#tastenkombination-für-eine-schnittstelle-setzen)
-
-- Einrichten eines Buttons
-
-siehe [Schaltflächen in die Symbolleiste von OpenOffice einbinden](#zusätzliche-schaltflächen-in-die-symbolleiste-von-openoffice-einbinden)
+Nach Betätigen eines vorher zugewiesenen Buttons oder einer Tastenkombination wird vom Cursor ausgehend der nächste Platzhalter angesprungen. Falls kein Platzhalter vorhanden ist sondern eine Marke [WM(CMD 'setJumpMark')](Dokumentkommandos_des_WollMux.md#das-kommando-setjumpmark) wird diese angesprungen.
+- Einrichten einer Tastenkombination siehe [Tastenkombination für eine Schnittstelle setzen](#tastenkombination-für-eine-schnittstelle-setzen)
+- Einrichten eines Buttons siehe [Schaltflächen in die Symbolleiste von LibreOffice einbinden](#zusätzliche-schaltflächen-in-die-symbolleiste-von-LibreOffice-einbinden)
 
 ### wollmux:Seriendruck
 
@@ -339,51 +221,29 @@ Syntax der URL:
 
 `wollmux:Seriendruck`
 
-Öffnet die Seriendruckleiste des WollMux über die alle
-Seriendruckfunktionen des WollMux angesprochen werden können. Ist
-bereits eine Seriendruckleiste geöffnet, so bleibt die bestehende
-Seriendruckleiste im Vordergrund.
+Öffnet die Seriendruckleiste des WollMux über die alle Seriendruckfunktionen des WollMux angesprochen werden können. Ist bereits eine Seriendruckleiste geöffnet, so bleibt die bestehende Seriendruckleiste im Vordergrund. 
 
-Eine zugehörige Schaltfläche bietet der WollMux automatisch an im Menü
-des Writers unter “Extras&rarr;Seriendruck (WollMux)”
-
-### wollmux:Test
-
-Syntax der URL:
-
-`wollmux:Test#<NameDerRoutine>`
-
-Über diesen Dispatch können Routinen gestartet werden, die den
-automatisierten Test des WollMux über das Paket wollmux-qatest
-unterstützen. Manche Routinen erwarten Parameter, die über eine
-Hilfsdatei /tmp/wollmux-qatest.args übergeben werden. Der entsprechende
-Test im Testtool stellt sicher, dass die Parameterdatei vor dem Aufruf
-des Dispatches erstellt wird.
-
-Folgende Routinen sind bereits implementiert:
-
-wollmux:Test\#VerfuegungspunktDrucken: Druckt den Verfügungspunkt aus, der im Parameter “VerfPunkt” (als String) übergeben wird.
-
-wollmux:Test\#SchreibeFormularwerte: Schreibt die Formularwerte, die als Parameter übergeben werden, in die geöffnete FormGUI.
+Eine zugehörige Schaltfläche bietet der WollMux automatisch an im Menü des Writers unter “Extras&rarr;Seriendruck (WollMux)”
 
 Der UNO-Service de.muenchen.allg.itd51.wollmux.WollMux
 ------------------------------------------------------
 
-Zusätzlich zu den Dispatch-Kommandos stellt der WollMux einen zentralen
-UNO-Service zur Verfügung, der über die folgende OpenOffice-Basic Zeile
-erzeugt werden kann:
+Zusätzlich zu den Dispatch-Kommandos stellt der WollMux einen zentralen UNO-Service zur Verfügung, der über die folgende LibreOffice-Basic Zeile erzeugt werden kann:
 
-In OpenOffice.org-Basic:
-
-`mux = createUNOService("de.muenchen.allg.itd51.wollmux.WollMux")`
+In LibreOffice-Basic:
+```vbscript
+mux = createUNOService("de.muenchen.allg.itd51.wollmux.WollMux")
+```
 
 In Java:
 
-`XWollMux mux = UnoRuntime.queryInterface(XWollMux.class, UNO.createUNOService("de.muenchen.allg.itd51.wollmux.WollMux");`
+```java
+XWollMux mux = UnoRuntime.queryInterface(XWollMux.class, UNO.createUNOService("de.muenchen.allg.itd51.wollmux.WollMux");
+```
 
 Das Interface XWollMux ist dabei wie folgt definiert:
 
-``` java
+```java
 /**
   Dieses Interface beschreibt alle Methoden, die der WollMux-Service exportiert.
 */
@@ -411,7 +271,7 @@ interface XWollMux
     * expandiert wurde oder bei allen anderen Dokumenttypen direkt nach dem
     * Öffnen. D.h. für jedes in OOo geöffnete Dokument erfolgt früher oder später
     * ein solches Event. Wird ein neuer EventHandler registriert, so werden ihm
-    * für alle bereits offenen OpenOffice.org Dokumente die 
+    * für alle bereits offenen LibreOffice Dokumente die 
     * OnWollMuxProcessingFinished Events nachgeliefert.
     */ 
    interface com::sun::star::document::XEventBroadcaster;
@@ -508,7 +368,7 @@ interface XWollMux
      XWollMuxDocument.
      
      @param doc
-              Ein OpenOffice.org-Dokument, in dem dokumentspezifische Funktionen des
+              Ein LibreOffice-Dokument, in dem dokumentspezifische Funktionen des
               WollMux aufgerufen werden sollen.
      @return Liefert null, falls doc durch den WollMux nicht bearbeitet wird und eine
              Instanz von XWollMuxDocument, falls es sich bei doc prinzipiell um ein
@@ -518,26 +378,13 @@ interface XWollMux
 }; 
 ```
 
-Die folgenden Abschnitte beschreiben anhand bisher in der Praxis
-relevanter Szenarien, wie diese Schnittstelle sinnvoll eingesetzt werden
-kann:
+Die folgenden Abschnitte beschreiben anhand bisher in der Praxis relevanter Szenarien, wie diese Schnittstelle sinnvoll eingesetzt werden kann:
 
 ### Synchronisation anderer Anwendungen mit dem WollMux
 
-Der WollMux bietet viele Features, wie z.B. die Möglichkeit mehrere
-Fragmente zu einem Dokument zusammenzufügen, die auch in anderen
-Erweiterungen für OpenOffice.org interessant sein können und genutzt
-werden sollen. Damit diese Anwendungen auf die Ergebnisse der
-Dokumentbearbeitung durch den WollMux zugreifen können, wurde ein
-Eventmechanismus eingeführt, über den eine Synchronisation mit dem
-WollMux erreicht wird. Die andere Anwendung registriert dazu ein
-com.sun.star.document.XEventListener-Objekt im WollMux, das bei
-Statusänderungen der Dokumentverarbeitung informiert wird. Die andere
-Anwendung kann damit gezielt auf bestimmte Ereignisse des WollMux
-reagieren.
+Der WollMux bietet viele Features, wie z.B. die Möglichkeit mehrere Fragmente zu einem Dokument zusammenzufügen, die auch in anderen Erweiterungen für LibreOffice interessant sein können und genutzt werden sollen. Damit diese Anwendungen auf die Ergebnisse der Dokumentbearbeitung durch den WollMux zugreifen können, wurde ein Eventmechanismus eingeführt, über den eine Synchronisation mit dem WollMux erreicht wird. Die andere Anwendung registriert dazu ein com.sun.star.document.XEventListener-Objekt im WollMux, das bei Statusänderungen der Dokumentverarbeitung informiert wird. Die andere Anwendung kann damit gezielt auf bestimmte Ereignisse des WollMux reagieren.
 
-Der oben erzeugte WollMux-Service implementiert dazu das Interface
-com.sun.star.document.XEventBroadcaster mit folgenden Methoden:
+Der oben erzeugte WollMux-Service implementiert dazu das Interface com.sun.star.document.XEventBroadcaster mit folgenden Methoden:
 
 ```java
 published interface XEventBroadcaster: com::sun::star::uno::XInterface
@@ -560,7 +407,7 @@ published interface XEventBroadcaster: com::sun::star::uno::XInterface
   * expandiert wurde oder bei allen anderen Dokumenttypen direkt nach dem
   * Öffnen. D.h. für jedes in OOo geöffnete Dokument erfolgt früher oder später
   * ein solches Event. Wird ein neuer EventHandler registriert, so werden ihm
-  * für alle bereits offenen OpenOffice.org Dokumente die 
+  * für alle bereits offenen LibreOffice Dokumente die 
   * OnWollMuxProcessingFinished Events nachgeliefert.
   * 
   * @param l
@@ -585,36 +432,16 @@ published interface XEventBroadcaster: com::sun::star::uno::XInterface
 };
 ```
 
-Über diesen Mechanismus können derzeit folgende Dokumentereignisse des
-WollMux abgefangen werden:
+Über diesen Mechanismus können derzeit folgende Dokumentereignisse des WollMux abgefangen werden:
+- **OnWollMuxProcessingFinished**: Dieses Event wird erzeugt, wenn ein Textdokument nach dem Öffnen vollständig vom WollMux bearbeitet und expandiert wurde oder bei allen anderen Dokumenttypen direkt nach dem Öffnen. D.h. für jedes in OOo geöffnete Dokument erfolgt früher oder später ein solches Event. Wird ein neuer EventHandler registriert, so werden ihm für alle bereits offenen LibreOffice Dokumente die **OnWollMuxProcessingFinished** Events nachgeliefert.
 
-- *OnWollMuxProcessingFinished*: Dieses Event wird erzeugt, wenn ein
-    Textdokument nach dem Öffnen vollständig vom WollMux bearbeitet und
-    expandiert wurde oder bei allen anderen Dokumenttypen direkt nach
-    dem Öffnen. D.h. für jedes in OOo geöffnete Dokument erfolgt früher
-    oder später ein solches Event. Wird ein neuer EventHandler
-    registriert, so werden ihm für alle bereits offenen OpenOffice.org
-    Dokumente die *OnWollMuxProcessingFinished* Events nachgeliefert.
-
-Tritt ein solches Ereignis auf, dann ruft der WollMux bei allen
-registrierten XEventListener-Objekten die Methode
-XEventListener.notifyEvent(com.sun.star.document.EventObject event) auf.
-Dieses EventObject enthält zwei wichtige Werte:
-
-- *EventObject.EventName*: Enhält den Namen des Events wie oben
-    beschrieben als String.
-- *EventObject.Source*: Enthält das entsprechende Dokument vom Typ
-    com.sun.star.lang.XComponent, auf das sich das Event bezieht.
+Tritt ein solches Ereignis auf, dann ruft der WollMux bei allen registrierten XEventListener-Objekten die Methode XEventListener.notifyEvent(com.sun.star.document.EventObject event) auf. Dieses EventObject enthält zwei wichtige Werte:
+- **EventObject.EventName**: Enhält den Namen des Events wie oben beschrieben als String.
+- **EventObject.Source**: Enthält das entsprechende Dokument vom Typ com.sun.star.lang.XComponent, auf das sich das Event bezieht.
 
 Beispielimplementierung - loadComponentFromURLAndWaitForWollMux
 
-Folgende Java-Klasse enthält ein Beispiel dafür, wie der
-Eventmechanismus verwendet werden kann. Sie stellt eine Methode
-loadComponentFromURLAndWaitForWollMux(...) bereit, über die ein Dokument
-in OpenOffice.org geöffnet werden kann. Die Methode kehrt aber erst dann
-zurück, wenn der WollMux das Dokument vollständig bearbeitet hat. Die
-Klasse kann bei Bedarf auch direkt in eigenen Anwendungen eingesetzt
-werden:
+Folgende Java-Klasse enthält ein Beispiel dafür, wie der Eventmechanismus verwendet werden kann. Sie stellt eine Methode loadComponentFromURLAndWaitForWollMux(...) bereit, über die ein Dokument in LibreOffice geöffnet werden kann. Die Methode kehrt aber erst dann zurück, wenn der WollMux das Dokument vollständig bearbeitet hat. Die Klasse kann bei Bedarf auch direkt in eigenen Anwendungen eingesetzt werden:
 
 ```java
 import com.sun.star.beans.PropertyValue;
@@ -709,17 +536,9 @@ public class WollMuxSensitiveLoader {
 }
 ```
 
-Diese Methode prüft ob der WollMux-Service vorhanden ist und das
-Interface XEventBroadcaster exportiert. Ist diese Bedingung nicht
-erfüllt, so ruft der WollMux direkt die Methode
-UNO.loadComponentFromURL(...) auf. Ist die Bedingung erfüllt, dann wird
-ein XEventListener-Objekt über eine anonyme Klasse erzeugt und mit
-broadcaster.addEventListener(...) registriert. Nachdem das Dokument
-geladen wurde und der WollMux die notifyEvent-Methode des anonymen
-Listener-Objekts aufgerufen hat, wird der Listener wieder deregistriert.
+Diese Methode prüft ob der WollMux-Service vorhanden ist und das Interface XEventBroadcaster exportiert. Ist diese Bedingung nicht erfüllt, so ruft der WollMux direkt die Methode UNO.loadComponentFromURL(...) auf. Ist die Bedingung erfüllt, dann wird ein XEventListener-Objekt über eine anonyme Klasse erzeugt und mit broadcaster.addEventListener(...) registriert. Nachdem das Dokument geladen wurde und der WollMux die notifyEvent-Methode des anonymen Listener-Objekts aufgerufen hat, wird der Listener wieder deregistriert.
 
-Folgende Beispielmethode verdeutlicht, wie obige Klasse eingesetzt
-werden kann:
+Folgende Beispielmethode verdeutlicht, wie obige Klasse eingesetzt werden kann:
 
 ```java
 public static void main(String[] args) throws Exception {
@@ -742,29 +561,13 @@ public static void main(String[] args) throws Exception {
 }
 ```
 
-Diese Methode öffnet die Vorlage /tmp/test.ott. Der Aufruf von
-loadComponentFromURLAndWaitForWollMux(...) kehrt erst dann zurück, wenn
-der WollMux das Dokument vollständig aufgebaut hat oder ein Timeout von
-20 Sekunden abgelaufen ist. Zur Kontrolle, ob das Dokument auch
-tatsächlich vollständig aufgebaut wurde, wird geschaut, ob in dem
-erzeugten Dokument ein Textrahmen “Absenderdaten” vorhanden ist und ggf.
-der Inhalt dieses Textrahmens ausgegeben. Zum Testen dieser Funktion
-wurde für /tmp/test.ott eine über eine Mischvorlage für den externen
-Briefkopf erzeugte Vorlage verwendet. Sie enthält die Anweisungen die
-dafür sorgen, dass der Textrahmen “Absenderdaten” nachträglich in das
-Dokument hineingezogen wird.
+Diese Methode öffnet die Vorlage /tmp/test.ott. Der Aufruf von loadComponentFromURLAndWaitForWollMux(...) kehrt erst dann zurück, wenn der WollMux das Dokument vollständig aufgebaut hat oder ein Timeout von 20 Sekunden abgelaufen ist. Zur Kontrolle, ob das Dokument auch tatsächlich vollständig aufgebaut wurde, wird geschaut, ob in dem erzeugten Dokument ein Textrahmen “Absenderdaten” vorhanden ist und ggf. der Inhalt dieses Textrahmens ausgegeben. Zum Testen dieser Funktion wurde für /tmp/test.ott eine über eine Mischvorlage für den externen Briefkopf erzeugte Vorlage verwendet. Sie enthält die Anweisungen die dafür sorgen, dass der Textrahmen “Absenderdaten” nachträglich in das Dokument hineingezogen wird.
 
-Achtung: In allen obigen Beispielen wird eine Helperklasse de.muenchen.allg.afid.UNO verwendet. Diese Klasse steht in einem eigenen GitHub-Projekt [WollMux/UNOHelper](https://github.com/WollMux/UNOHelper) zur Verfügung. Obige Beispiele können bei Bedarf aber auch relativ einfach so umgeschrieben werden, dass diese Abhängigkeit nicht mehr notwendig ist. Alle anderen importierten Module sind Bestandteile der Standard JAR-Pakete von LibreOffice / OpenOffice.org bzw. der Java-Umgebung. Es sind zur Ausführung obiger Beispiele keine WollMux-spezifischen JAR-Pakete notwendig. Damit dieser Mechanismus funktioniert, muss mindestens ein WollMux 3.11.2 installiert sein.
+Achtung: In allen obigen Beispielen wird eine Helperklasse de.muenchen.allg.afid.UNO verwendet. Diese Klasse steht in einem eigenen GitHub-Projekt [WollMux/UNOHelper](https://github.com/WollMux/UNOHelper) zur Verfügung. Obige Beispiele können bei Bedarf aber auch relativ einfach so umgeschrieben werden, dass diese Abhängigkeit nicht mehr notwendig ist. Alle anderen importierten Module sind Bestandteile der Standard JAR-Pakete von LibreOffice bzw. der Java-Umgebung. Es sind zur Ausführung obiger Beispiele keine WollMux-spezifischen JAR-Pakete notwendig. Damit dieser Mechanismus funktioniert, muss mindestens ein WollMux 3.11.2 installiert sein.
 
 ### Einbinden einer SenderBox
 
-Eine SenderBox ist in der Lage die Persönliche Absender List (PAL) des
-Briefkopfsystems anzuzeigen und einen bestimmten Absender daraus zu
-selektieren. Eine solche SenderBox ist derzeit beispielsweise in der
-WollMuxBar enthalten. Der Zugriff auf die Inhalte der PAL funktioniert
-über einen Listener-Callback-Mechanismus. Der oben erzeugte
-WollMux-Service implementiert dazu das Interface
-de.muenchen.allg.itd51.wollmux.XPALChangeEventBroadcaster:
+Eine SenderBox ist in der Lage die Persönliche Absender List (PAL) des Briefkopfsystems anzuzeigen und einen bestimmten Absender daraus zu selektieren. Eine solche SenderBox ist derzeit beispielsweise in der WollMuxBar enthalten. Der Zugriff auf die Inhalte der PAL funktioniert über einen Listener-Callback-Mechanismus. Der oben erzeugte WollMux-Service implementiert dazu das Interface de.muenchen.allg.itd51.wollmux.XPALChangeEventBroadcaster:
 
 ```java
 /** 
@@ -815,10 +618,7 @@ interface XPALChangeEventBroadcaster
 };
 ```
 
-Über addPALChangeEventListener kann ein Objekt vom Typ
-de.muenchen.allg.itd51.wollmux.XPALChangeEventListener im WollMux
-registriert werden. Dieser XPALChangeEventListener muss natürlich vorher
-z.B. über eine selbst geschriebene Java-Klasse implementiert werden:
+Über addPALChangeEventListener kann ein Objekt vom Typ de.muenchen.allg.itd51.wollmux.XPALChangeEventListener im WollMux registriert werden. Dieser XPALChangeEventListener muss natürlich vorher z.B. über eine selbst geschriebene Java-Klasse implementiert werden:
 
 ```java
 /** 
@@ -842,11 +642,7 @@ interface XPALChangeEventListener 
 };
 ```
 
-Unmittelbar nach der Registrierung und bei jeder Änderung der PAL wird
-der de.muenchen.allg.itd51.wollmux.XPALChangeEventListener über die
-Methode updateContent(EventObject eventObject) informiert. Nun enthält
-das Feld eventObject.Source eine Instanz vom Typ
-de.muenchen.allg.itd51.wollmux.XPALProvider:
+Unmittelbar nach der Registrierung und bei jeder Änderung der PAL wird der de.muenchen.allg.itd51.wollmux.XPALChangeEventListener über die Methode updateContent(EventObject eventObject) informiert. Nun enthält das Feld eventObject.Source eine Instanz vom Typ de.muenchen.allg.itd51.wollmux.XPALProvider:
 
 ```java
 /** 
@@ -889,14 +685,9 @@ interface XPALProvider
 };
 ```
 
-Über die Methoden getPALEntries() und getCurrentSender() besteht jetzt
-der Lesezugriff auf die Inhalte der Persönlichen Absenderliste und den
-aktuell ausgewählten Absender.
+Über die Methoden getPALEntries() und getCurrentSender() besteht jetzt der Lesezugriff auf die Inhalte der Persönlichen Absenderliste und den aktuell ausgewählten Absender.
 
-Zum Setzen eines neuen Absenders bietet der obige WollMux-Service die
-Methode setSender(...) an. Die Methode ist definiert im Interface
-de.muenchen.allg.itd51.wollmux.XWollMux, welches der WollMux-Service
-ebenfalls implementiert.
+Zum Setzen eines neuen Absenders bietet der obige WollMux-Service die Methode setSender(...) an. Die Methode ist definiert im Interface de.muenchen.allg.itd51.wollmux.XWollMux, welches der WollMux-Service ebenfalls implementiert.
 
 ```java
 /**
@@ -923,13 +714,7 @@ interface XWollMux
 
 ### Auslesen von Daten des aktuell im WollMux gesetzten Absenders
 
-Die Hauptaufgabe des WollMux liegt in der Bearbeitung und Manipulation
-von Textdokumenten. Es ist jedoch denkbar, dass auch in anderen
-Anwendungen Daten des WollMux verarbeitet werden sollen, wie z.B. um
-Daten des aktuell im WollMux gesetzten Absenders in eine Calc-Tabelle zu
-übertragen. Den entsprechenden Zugriff ermöglichen die Methoden
-getInsertValues() und getValue(dbSpalte), die im Interface XWollMux
-definiert sind:
+Die Hauptaufgabe des WollMux liegt in der Bearbeitung und Manipulation von Textdokumenten. Es ist jedoch denkbar, dass auch in anderen Anwendungen Daten des WollMux verarbeitet werden sollen, wie z.B. um Daten des aktuell im WollMux gesetzten Absenders in eine Calc-Tabelle zu übertragen. Den entsprechenden Zugriff ermöglichen die Methoden getInsertValues() und getValue(dbSpalte), die im Interface XWollMux definiert sind:
 
 ```java
 /**
@@ -955,7 +740,7 @@ interface XWollMux
              Absenderdaten. Gibt es keine Absenderdaten, so ist das Array leer (aber
              != null).
     */
-   **com::sun::star::beans::PropertyValues getInsertValues();**\
+    com::sun::star::beans::PropertyValues getInsertValues();
 
    /**
      Diese Methode liefert den Wert der Absenderdaten zur Datenbankspalte dbSpalte,
@@ -972,16 +757,13 @@ interface XWollMux
       @return Der Wert der Datenbankspalte dbSpalte des aktuell ausgewählten
               Absenders oder "", wenn der Wert nicht bestimmt werden kann.
      */    
-    **string getValue([in] string dbSpalte);**\
+    string getValue([in] string dbSpalte);
 
     [...]
 };
 ```
 
-Folgendes Beispiel (in OOo-Basic) zeigt, wie mit Hilfe dieser Methode
-die Spaltenwerte “Vorname” und “Nachname” (des aktuell gesetzten
-Absenders) in die ersten beiden Zellen einer Calc-Tabelle übertragen
-werden können:
+Folgendes Beispiel (in OOo-Basic) zeigt, wie mit Hilfe dieser Methode die Spaltenwerte “Vorname” und “Nachname” (des aktuell gesetzten Absenders) in die ersten beiden Zellen einer Calc-Tabelle übertragen werden können:
 
 ```vbscript
 Sub sachbearbeiterdatenInCalcEinfuegen
@@ -1001,13 +783,7 @@ End Sub
 
 ### Ausführen dokumentspezifischer Aktionen
 
-Neben den oben beschriebenen globalen WollMux-Funktionen des bietet die
-API des WollMux bestimmte Aktionen ausschließlich im Zusammenhang mit
-sich gerade in Bearbeitung befindlichen Dokumenten an. Der Umgang mit
-diesen Funktionen wirkt sich also nur auf ein bestimmtes Dokument aus
-und ist damit dokumentspezifisch. Für den Zugriff auf
-dokumentspezifische Funktionen stellt das Interface XWollMux die Methode
-getWollMuxDocument(XComponent compo) zur Verfügung:
+Neben den oben beschriebenen globalen WollMux-Funktionen des bietet die API des WollMux bestimmte Aktionen ausschließlich im Zusammenhang mit sich gerade in Bearbeitung befindlichen Dokumenten an. Der Umgang mit diesen Funktionen wirkt sich also nur auf ein bestimmtes Dokument aus und ist damit dokumentspezifisch. Für den Zugriff auf dokumentspezifische Funktionen stellt das Interface XWollMux die Methode getWollMuxDocument(XComponent compo) zur Verfügung:
 
 ``` java
 /**
@@ -1036,7 +812,7 @@ interface XWollMux
      XWollMuxDocument.
      
      @param doc
-              Ein OpenOffice.org-Dokument, in dem dokumentspezifische Funktionen des
+              Ein LibreOffice-Dokument, in dem dokumentspezifische Funktionen des
               WollMux aufgerufen werden sollen.
      @return Liefert null, falls doc durch den WollMux nicht bearbeitet wird und eine
              Instanz von XWollMuxDocument, falls es sich bei doc prinzipiell um ein
@@ -1169,33 +945,18 @@ interface XWollMuxDocument
 };
 ```
 
-Diese Schnittstelle lässt sich beispielsweise für folgenden Szenarien in
-der Praxis einsetzen:
+Diese Schnittstelle lässt sich beispielsweise für folgenden Szenarien in der Praxis einsetzen:
 
 #### Modifizieren von Feldern in WollMux-Dokumenten
 
-Ein wichtiger Anwendungsfall ist das nachträgliche Ändern von durch den
-WollMux oder den Benutzer gesetzten Werten. So kann eine externe
-Anwendung bestimmte WollMux- oder Benutzereingaben nachbilden. Dabei
-kann die externe Anwendung auf alle weiteren Features die der WollMux
-z.B. für Benutzereingaben bereithält zugreifen. Dazu gehören
-insbesondere die Ausführung von Transformations-Funktionen (TRAFOS) und
-die Steuerung von Ein-/Ausblendungen über bestimmte Formularwerte. Das
-Interface XWollMuxDocument ermöglicht die nachträgliche Manipulation von
-Absenderangaben und das Setzen von Formularwerten:
-
+Ein wichtiger Anwendungsfall ist das nachträgliche Ändern von durch den WollMux oder den Benutzer gesetzten Werten. So kann eine externe Anwendung bestimmte WollMux- oder Benutzereingaben nachbilden. Dabei kann die externe Anwendung auf alle weiteren Features die der WollMux z.B. für Benutzereingaben bereithält zugreifen. Dazu gehören insbesondere die Ausführung von Transformations-Funktionen (TRAFOS) und die Steuerung von Ein-/Ausblendungen über bestimmte Formularwerte. Das Interface XWollMuxDocument ermöglicht die nachträgliche Manipulation von Absenderangaben und das Setzen von Formularwerten:
 - Die Methode `void setInsertValue(\[in\] string dbSpalte, \[in\] string value)`: Diese Methode ermöglicht die erneute Ausführung bereits durch den WollMux abgearbeiteter [insertValue-Kommandos](Dokumentkommandos_des_WollMux.md#das-kommando-insertvalue). Alle im Dokument enthaltenen insertValue-Kommandos deren DB\_SPALTE-Attribute mit dbSpalte übereinstimmen, werden dabei erneut ausgeführt und unter Berücksichtigung evtl. gesetzter TRAFO-Funktionen neu für den Wert value berechnet und in das Dokument geschrieben. Die bisher durch den WollMux gesetzten Absenderangaben werden dabei überschrieben. Die neuen Werte sind unter Umständen erst nach Ausführung des Befehls updateInsertFields() im Dokument aktiv.
-
 - Die Methode `void updateInsertFields()`: Diese Methode stellt sicher, dass vorangegangene `setInsertValue(\[in\] string dbSpalte, \[in\] string value)`-Kommandos tatsächlich ausgeführt wurden.
-
 - Die Methode `com::sun::star::beans::PropertyValues getFormValues()`: Über diese Methode können die aktuell im Formular gesetzten Formularwerte ausgelesen werden. Die Methode liefert ein Array von PropertyValue-Objekten zurück, deren Attribute *Name* die im Dokument verfügbaren IDs repräsentieren und deren Attribute *Value* die zum Aufrufzeitpunkt gesetzten Formularwerte. So kann diese Methode z.B. verwendet werden um festzustellen, welche ID-Werte-Paare über *setFormValue(id, value)* gesetzt werden können.
-
 - Die Methode `void setFormValue(\[in\] string id, \[in\] string value)`: Diese Methode ermöglicht das Setzen bestimmter Formularwerte. Besitzt das Dokument eine Formularbeschreibung, so wird ein Wert value direkt in dem Formularfeld mit der ID id in der zugehörigen Form-GUI eingetragen und alle Folgen dieser Eintragung (AUTOFILLS, PLAUSIS, Ein-/Ausblendungen) ausgeführt. Besitzt das Dokument keine Formularbeschreibung, aber Formularfelder mit der ID id (wie z.B. EmpfaengerZeileN im externen Briefkopf), so werden nur die Formularfelder im Dokument entsprechend angepasst. Die neuen Werte sind unter Umständen erst nach Ausführung des Befehls updateFormGUI() im Dokument aktiv.
-
 - Die Methode `void updateFormGUI()`: Diese Methode stellt sicher, dass vorangegangene `void setFormValue(\[in\] string id, \[in\] string value)`-Kommandos tatsächlich ausgeführt wurden.
 
-Folgendes Codebeispiel (in Java) demonstriert, wie über den
-WollMux-Service das Ändern von Feldern möglich ist:
+Folgendes Codebeispiel (in Java) demonstriert, wie über den WollMux-Service das Ändern von Feldern möglich ist:
 
 ```java
 XWollMux mux = (XWollMux) UnoRuntime.queryInterface(XWollMux.class, UNO.createUNOService("de.muenchen.allg.itd51.wollmux.WollMux"));
@@ -1222,21 +983,11 @@ if (mux != null)
 
 #### Programmatisches Setzen von Komfortdruckfunktionen
 
-Komfortdruckfunktionen können entweder manuell bei der
-Vorlagenerstellung über den FormularMax 4000 gesetzt werden oder auch
-programmatisch. Dies kann in einigen Fällen sinnvoll sein, wenn z.B. ein
-externes Makro anhand einer bestimmten Logik erkennen soll, ob eine
-Komfortdruckfunktion für ein bestimmtes Dokument sinnvoll ist. In diesem
-Fall stehen die folgenden Methoden im Interface XWollMuxDocument zur
-Verfügung:
-
+Komfortdruckfunktionen können entweder manuell bei der Vorlagenerstellung über den FormularMax 4000 gesetzt werden oder auch programmatisch. Dies kann in einigen Fällen sinnvoll sein, wenn z.B. ein externes Makro anhand einer bestimmten Logik erkennen soll, ob eine Komfortdruckfunktion für ein bestimmtes Dokument sinnvoll ist. In diesem Fall stehen die folgenden Methoden im Interface XWollMuxDocument zur Verfügung:
 - Die Methode `void addPrintFunction(\[in\] string functionName)`: Diese Methode nimmt die Druckfunktion functionName in die Liste der Druckfunktionen des Dokuments auf. Die Druckfunktion wird dabei automatisch aktiv, wenn das Dokument das nächste mal mit Datei-&gt;Drucken gedruckt werden soll. Ist die Druckfunktion bereits in der Liste der Druckfunktionen des Dokuments enthalten, so geschieht nichts. Dabei erwartet der Parameter functionName den Namen einer Druckfunktion, die im Abschnitt “Druckfunktionen” der WollMux-Konfiguration definiert sein muss.
-
 - Die Methode `void removePrintFunction(\[in\] string functionName)`: Diese Methode löscht die Druckfunktion functionName aus der Liste der Druckfunktionen des Dokuments. Die Druckfunktion wird damit ab dem nächsten Aufruf von Datei-&gt;Drucken nicht mehr aufgerufen. Ist die Druckfunktion nicht in der Liste der Druckfunktionen des Dokuments enthalten, so geschieht nichts.
 
-Beispiel für die Verwendung von addPrintFunction(...) in einem
-Basic-Makro:
-
+Beispiel für die Verwendung von addPrintFunction(...) in einem Basic-Makro:
 ```vbscript
 Sub Main
   doc = ThisComponent
@@ -1251,54 +1002,23 @@ End Sub
 Einbinden eigener Komfortdruckfunktionen
 ----------------------------------------
 
-Beim Drucken eines Dokuments über “Datei&rarr;Drucken...” oder den
-Drucken-Knopf in der Symbolleiste kann der WollMux an Stelle des
-normalen Druckdialogs selbst definierte Komfortdruckfunktionen aufrufen.
-Dabei können in jedem Dokument mehrere Komfortdruckfunktionen hinterlegt
-werden und in einer definierten Reihenfolge miteinander verkettet
-werden. So ist es z.B. möglich die Komfortdruckfunktion für Sachleitende
-Verfügungen mit der Komfortdruckfunktion für Serienbriefe zu verketten.
-Damit kann den Anwenderinnen und Anwendern sehr viel Zeit und unnötige
-Handarbeit erspart werden.
+Beim Drucken eines Dokuments über “Datei&rarr;Drucken...” oder den Drucken-Knopf in der Symbolleiste kann der WollMux an Stelle des normalen Druckdialogs selbst definierte Komfortdruckfunktionen aufrufen. Dabei können in jedem Dokument mehrere Komfortdruckfunktionen hinterlegt werden und in einer definierten Reihenfolge miteinander verkettet werden. So ist es z.B. möglich die Komfortdruckfunktion für Sachleitende Verfügungen mit der Komfortdruckfunktion für Serienbriefe zu verketten. Damit kann den Anwenderinnen und Anwendern sehr viel Zeit und unnötige Handarbeit erspart werden.
 
 ### Einbinden in Dokument oder Vorlage
 
-Die Information, welche Druckfunktionen aktuell verwendet werden sollen,
-wird persistent unter dem Metadatenschlüssel
-['PrintFunction'](Dokumentkommandos_des_WollMux.md#printfunction)
-im entsprechenden Dokument bzw. in der entsprechenden Vorlage abgelegt
-und von dort ausgelesen. Hilfreich ist dabei der Menüpunkt
-['Druckfunktion setzen' des FormularMax 4000](FormularMax_4000.md#formulardruckfunktionen-setzen), über
-den die Druckfunktionen des Dokuments leicht manuell editiert werden
-können. Über das inzwischen veraltete Dokumentkommando
-[setPrintFunction](Dokumentkommandos_des_WollMux.md#das-kommando-setprintfunction),
-ist es ebenso möglich einzelne Druckfunktionen in die Liste der
-Druckfunktionen aufzunehmen. Des weiteren bietet der WollMux die
-Möglichkeit, Komfortdruckfunktionen programmatisch zu setzen oder aus
-einem Dokument zu entfernen. Diese Möglichkeit ist in Abschnitt
-[programmatisches Setzen von Komfortdruckfunktionen](#programmatisches-setzen-von-komfortdruckfunktionen)
-genauer beschrieben.
+Die Information, welche Druckfunktionen aktuell verwendet werden sollen, wird persistent unter dem Metadatenschlüssel ['PrintFunction'](Dokumentkommandos_des_WollMux.md#printfunction) im entsprechenden Dokument bzw. in der entsprechenden Vorlage abgelegt und von dort ausgelesen. Hilfreich ist dabei der Menüpunkt ['Druckfunktion setzen' des FormularMax 4000](FormularMax_4000.md#formulardruckfunktionen-setzen), über den die Druckfunktionen des Dokuments leicht manuell editiert werden können. Über das inzwischen veraltete Dokumentkommando [setPrintFunction](Dokumentkommandos_des_WollMux.md#das-kommando-setprintfunction), ist es ebenso möglich einzelne Druckfunktionen in die Liste der Druckfunktionen aufzunehmen. Des weiteren bietet der WollMux die Möglichkeit, Komfortdruckfunktionen programmatisch zu setzen oder aus einem Dokument zu entfernen. Diese Möglichkeit ist in Abschnitt [programmatisches Setzen von Komfortdruckfunktionen](#programmatisches-setzen-von-komfortdruckfunktionen) genauer beschrieben.
 
 ### Registrierung im Abschnitt Druckfunktionen
 
-Alle im Dokument aufgeführten Druckfunktionen müssen in einem Abschnitt
-[Druckfunktionen](Konfigurationsdatei_wollmux_conf.md#druckfunktionen)
-in der Konfigurationsdatei wollmux.conf global definiert sein. Jeder
-Eintrag in diesem Abschnitt besteht aus dem Funktionsbezeichner und dem
-Verweis auf eine physikalisch existierende Funktion, die in Java
-geschrieben sein muss. Die Definition der Funktion mit dem
-Funktionsbezeichner “SachleitendeVerfuegung” sieht beispielsweise wie
+Alle im Dokument aufgeführten Druckfunktionen müssen in einem Abschnitt [Druckfunktionen](Konfigurationsdatei_wollmux_conf.md#druckfunktionen) in der Konfigurationsdatei wollmux.conf global definiert sein. Jeder Eintrag in diesem Abschnitt besteht aus dem Funktionsbezeichner und dem Verweis auf eine physikalisch existierende Funktion, die in Java geschrieben sein muss. Die Definition der Funktion mit dem Funktionsbezeichner  SachleitendeVerfuegung” sieht beispielsweise wie
 folgt aus:
-
 ```
 Druckfunktionen(
   SachleitendeVerfuegung(EXTERN(URL "java:de.muenchen.allg.itd51.wollmux.func.StandardPrint.sachleitendeVerfuegung") ORDER "10")
 )
 ```
 
-Im Beispiel ist die zugehörige Druckfunktion in Java geschrieben. Hier
-ein Auszug aus der entsprechenden Java-Datei StandardPrint.java:
-
+Im Beispiel ist die zugehörige Druckfunktion in Java geschrieben. Hier ein Auszug aus der entsprechenden Java-Datei StandardPrint.java:
 ```java
 public static void sachleitendeVerfuegung(XPrintModel pmod)
 {
@@ -1308,12 +1028,9 @@ public static void sachleitendeVerfuegung(XPrintModel pmod)
 
 ### XPrintModel
 
-Jede Druckfunktion bekommt ein Objekt vom Typ
-*de.muenchen.allg.itd51.wollmux.XPrintModel* übergeben. Über diese
-Schnittstelle kann die Druckfunktion vereinfacht auf Druckoperationen
-oder sonstige Funktionalitäten des WollMux zugreifen:
+Jede Druckfunktion bekommt ein Objekt vom Typ *de.muenchen.allg.itd51.wollmux.XPrintModel* übergeben. Über diese Schnittstelle kann die Druckfunktion vereinfacht auf Druckoperationen oder sonstige Funktionalitäten des WollMux zugreifen:
 
-```
+```java
 /** 
   Jeder Druckfunktion wird beim Aufruf ein XPrintModel-Objekt übergeben, über
   das der Zugriff auf das Dokument und Komfortmethoden für den Druck zur 
@@ -1505,22 +1222,9 @@ interface XPrintModel
 
 Die Methoden print(n) bzw. printWithProps() und die zugehörigen Properties:
 
-Die Methode XPrintModel.printWithProps() spielt eine besondere Rolle im
-Konzept der Komfortdruckfunktionen. Ist keine weitere
-Komfortdruckfunktion für dieses Dokument gesetzt, so wird automatisch
-eine finale Druckfunktion gestartet, die das Dokument beim ersten Aufruf
-einen Dialog für die Druckereinstellungen anzeigt und direkt auf dem
-Drucker ausdruckt. Ist dem Dokument noch eine weitere
-Komfortdruckfunktion zugeordnet, so sorgt sie dafür, dass die nächste
-Komfortdruckfunktion der Aufrufkette aufgerufen wird. Die Methode
-print(n) macht nichts anderes, als printWithProps() n mal aufzurufen.
-Bei beiden Methoden ist es über sog. Properties möglich, das Verhalten
-der aufgerufenen Folgefunktion zu beeinflussen. Jede
-Komfortdruckfunktion in der Aufrufkette kann dabei beliebige Properties
-setzen und auf alle bereits gesetzten Properties zugreifen.
+Die Methode XPrintModel.printWithProps() spielt eine besondere Rolle im Konzept der Komfortdruckfunktionen. Ist keine weitere Komfortdruckfunktion für dieses Dokument gesetzt, so wird automatisch eine finale Druckfunktion gestartet, die das Dokument beim ersten Aufruf einen Dialog für die Druckereinstellungen anzeigt und direkt auf dem Drucker ausdruckt. Ist dem Dokument noch eine weitere Komfortdruckfunktion zugeordnet, so sorgt sie dafür, dass die nächste Komfortdruckfunktion der Aufrufkette aufgerufen wird. Die Methode print(n) macht nichts anderes, als printWithProps() n mal aufzurufen. Bei beiden Methoden ist es über sog. Properties möglich, das Verhalten der aufgerufenen Folgefunktion zu beeinflussen. Jede Komfortdruckfunktion in der Aufrufkette kann dabei beliebige Properties setzen und auf alle bereits gesetzten Properties zugreifen.
 
-Unter Verwendung des XPrintModels könnte eine simple
-Komfortdruckfunktion z.B. wie folgt aus sehen:
+Unter Verwendung des XPrintModels könnte eine simple Komfortdruckfunktion z.B. wie folgt aus sehen:
 
 ```java
 public static void mySimplePrintfunction(XPrintModel pmod)
@@ -1530,56 +1234,18 @@ public static void mySimplePrintfunction(XPrintModel pmod)
 }
 ```
 
-Das Beispiel druckt das aktuelle Dokument immer in zweifacher
-Ausfertigung auf dem aktuell eingestellten Drucker aus. Klar handelt es
-sich bei diesem Beispiel noch nicht um eine Funktion, die tatsächlich
-Anwendung in der Praxis haben wird. Interessant wird es erst, wenn die
-Druckfunktionen leichte Änderungen am Dokument vornimmt, bevor die
-Methode printWithProps() aufgerufen wird. Dazu steht die Methode
-getTextDocument() zur Verfügung, über die der volle Zugriff auf das
-TextDokument möglich ist. Über die Methoden setGroupVisible(...),
-setPrintBlocksProps(...) und setFormValue(...) können unter Verwendung
-bereits im WollMux bestehender Funktionalitäten ebenfalls Änderungen am
-Dokument vorgenommen werden, bevor es mit pmod.printWithProps()
-ausgedruckt wird.
+Das Beispiel druckt das aktuelle Dokument immer in zweifacher Ausfertigung auf dem aktuell eingestellten Drucker aus. Klar handelt es sich bei diesem Beispiel noch nicht um eine Funktion, die tatsächlich Anwendung in der Praxis haben wird. Interessant wird es erst, wenn die Druckfunktionen leichte Änderungen am Dokument vornimmt, bevor die Methode printWithProps() aufgerufen wird. Dazu steht die Methode getTextDocument() zur Verfügung, über die der volle Zugriff auf das TextDokument möglich ist. Über die Methoden setGroupVisible(...), setPrintBlocksProps(...) und setFormValue(...) können unter Verwendung bereits im WollMux bestehender Funktionalitäten ebenfalls Änderungen am Dokument vorgenommen werden, bevor es mit pmod.printWithProps() ausgedruckt wird.
 
-Bei jedem Aufruf einer Methode von pmod ist sichergestellt, dass der
-Aufruf synchron erfolgt und die Funktion erst zurück kehrt, wenn die
-Aktion vollständig beendet ist. So ist es möglich, das Dokument
-anzupassen, dann eine Methode von pmod (z.B. printWithProps())
-aufzurufen, das Dokument wieder zu ändern und erneut printWithProps()
-aufzurufen. Dabei würde immer das Dokument im jeweils zuvor gesetzten
-Zustand ausgedruckt werden.
+Bei jedem Aufruf einer Methode von pmod ist sichergestellt, dass der Aufruf synchron erfolgt und die Funktion erst zurück kehrt, wenn die Aktion vollständig beendet ist. So ist es möglich, das Dokument anzupassen, dann eine Methode von pmod (z.B. printWithProps()) aufzurufen, das Dokument wieder zu ändern und erneut printWithProps() aufzurufen. Dabei würde immer das Dokument im jeweils zuvor gesetzten Zustand ausgedruckt werden.
 
 Anmerkungen:
-
-- Im Unterschied zu normalen Funktionen werden Druckfunktionen immer
-    asynchron in einem eigenen Thread gestartet. Der WollMux überwacht
-    nicht, ob die Druckfunktion zurückkehrt und ob dabei
-    Fehler auftraten.
-- Die externe Druckfunktion muss als ersten und einzigen Parameter ein
-    Objekt vom Typ
-    `de.muenchen.allg.itd51.wollmux.XPrintModel` entgegennehmen.
--   Die externe Druckfunktion darf keinen Rückgabewert liefern bzw.
-    werden Rückgabewerte nicht beachtet.
+- Im Unterschied zu normalen Funktionen werden Druckfunktionen immer asynchron in einem eigenen Thread gestartet. Der WollMux überwacht nicht, ob die Druckfunktion zurückkehrt und ob dabei Fehler auftraten.
+- Die externe Druckfunktion muss als ersten und einzigen Parameter ein Objekt vom Typ `de.muenchen.allg.itd51.wollmux.XPrintModel` entgegennehmen.
+- Die externe Druckfunktion darf keinen Rückgabewert liefern bzw. werden Rückgabewerte nicht beachtet.
 
 ### Verketten von Druckfunktionen
 
-Die Möglichkeit der Verkettung von Druckfunktionen wird hier am Beispiel
-der Komfortdruckfunktionen “SachleitendenVerfuegung” und “Seriendruck”
-präsentiert. Dabei soll erreicht werden, dass der Komfortdruckdialog für
-die Sachleitenden Verfügungen und der Dialog für den Seriendruck genau
-einmal aufgerufen wird (sonst würde für jede Ausfertigung der
-Sachleitende Verfügungen ein eigener Seriendruck-Dialog erscheinen). In
-den zwei Dialogen sollen die gewünschten Einstellungen für den
-kombinierten Druck genau einmal vorgenommen werden. Erst nachdem alle
-Einstellungen gesetzt wurden, startet der eigentliche Druck auf dem
-Drucker. Um dies zu erreichen, wurde die Druckfunktion
-SachleitendeVerfuegung in zwei Teile, einen GUI-Teil und einen
-Ausgabeteil, aufgeteilt. Gemeinsam mit der Druckfunktion “Seriendruck”
-sieht der Konfigurationsabschnitt Druckfunktionen daher z.B. wie folgt
-aus:
-
+Die Möglichkeit der Verkettung von Druckfunktionen wird hier am Beispiel der Komfortdruckfunktionen “SachleitendenVerfuegung” und “Seriendruck” präsentiert. Dabei soll erreicht werden, dass der Komfortdruckdialog für die Sachleitenden Verfügungen und der Dialog für den Seriendruck genau einmal aufgerufen wird (sonst würde für jede Ausfertigung der Sachleitende Verfügungen ein eigener Seriendruck-Dialog erscheinen). In den zwei Dialogen sollen die gewünschten Einstellungen für den kombinierten Druck genau einmal vorgenommen werden. Erst nachdem alle Einstellungen gesetzt wurden, startet der eigentliche Druck auf dem Drucker. Um dies zu erreichen, wurde die Druckfunktion SachleitendeVerfuegung in zwei Teile, einen GUI-Teil und einen Ausgabeteil, aufgeteilt. Gemeinsam mit der Druckfunktion “Seriendruck” sieht der Konfigurationsabschnitt Druckfunktionen daher z.B. wie folgt aus:
 ```
 Druckfunktionen(
   SachleitendeVerfuegung(EXTERN(URL "java:de.muenchen.allg.itd51.wollmux.func.StandardPrint.sachleitendeVerfuegung") ORDER "10")
@@ -1588,56 +1254,19 @@ Druckfunktionen(
 )
 ```
 
-Die Komfortdruckfunktion “SachleitendeVerfuegung” besteht dabei nur aus
-dem notwendigen Dialog, über den die zugehörige
-Ausgabe-Komfortdruckfunktion “SachleitendeVerfuegungOutput” mit
-entsprechenden Daten über Properties versorgt wird. Die Druckfunktion
-“Seriendruck” enthält ebenfalls einen Dialog und wird direkt nach dem
-Dialog der Sachleitenden Verfügungen gestartet. Sie sorgt für eine
-Massenausgabe als Seriendruck und leitet alle Druckanfragen an die
-Ausgabe-Komfortdruckfunktion “SachleitendeVerfuegungOutput” weiter.
-Damit dieses Vorgehen funktioniert, müssen die Komfortdruckfunktionen
-also in exakt der Reihenfolge SachleitendeVerfuegung &rarr; Seriendruck
-&rarr; SachleitendeVerfuegungOutput aufgerufen werden.
+Die Komfortdruckfunktion “SachleitendeVerfuegung” besteht dabei nur aus dem notwendigen Dialog, über den die zugehörige Ausgabe-Komfortdruckfunktion “SachleitendeVerfuegungOutput” mit entsprechenden Daten über Properties versorgt wird. Die Druckfunktion “Seriendruck” enthält ebenfalls einen Dialog und wird direkt nach dem Dialog der Sachleitenden Verfügungen gestartet. Sie sorgt für eine Massenausgabe als Seriendruck und leitet alle Druckanfragen an die Ausgabe-Komfortdruckfunktion “SachleitendeVerfuegungOutput” weiter. Damit dieses Vorgehen funktioniert, müssen die Komfortdruckfunktionen also in exakt der Reihenfolge SachleitendeVerfuegung &rarr; Seriendruck &rarr; SachleitendeVerfuegungOutput aufgerufen werden.
 
-Diese Reihenfolge ist im Konfigurationsabschnitt Druckfunktionen über
-das Attribut ORDER festgelegt. Alle Druckfunktionen, die einem Dokument
-zugeordnet sind, werden vom WollMux zu einer Aufrufkette verbunden und
-dabei nach dem ORDER-Wert sortiert. Druckfunktionen mit kleinem
-Orderwert kommen in der Aufrufkette vor Druckfunktionen mit höherem
-Orderwert.
+Diese Reihenfolge ist im Konfigurationsabschnitt Druckfunktionen über das Attribut ORDER festgelegt. Alle Druckfunktionen, die einem Dokument zugeordnet sind, werden vom WollMux zu einer Aufrufkette verbunden und dabei nach dem ORDER-Wert sortiert. Druckfunktionen mit kleinem Orderwert kommen in der Aufrufkette vor Druckfunktionen mit höherem Orderwert.
 
 ### Anzeigen des Fortschrittsbalkens
 
-Druckfunktionen können unter Umständen lange Bearbeitungszeiten haben.
-Ein Beispiel hierfür ist der Seriendruck, dessen Bearbeitungszeit von
-der Anzahl der Datensätze der Seriendruckdatenquelle abhängt. Um in
-diesen Fällen einen besseren Überblick über den Gesamtfortschritt zu
-erhalten, wurde ein Fortschrittsbalken eingeführt. Jede Druckfunktion
-kann diesen Fortschrittsbalken verwenden, um den Fortschritt des
-Druckvorgangs dazustellen. Ein Druckfunktion muss dazu lediglich die
-Methode `pmod.setPrintProgressMaxValue(maxValue)` aufrufen und damit
-mitteilen, wie viele Druckversionen von dieser Druckfunktion zu erwarten
-sind. Es wird damit automatisch der Fortschrittsbalken angezeigt. Danach
-kann der aktuelle Status der Druckfunktion mittels
-`pmod.setPrintProgressValue(value)` an den Fortschrittsbalken
-übermittelt werden.
+Druckfunktionen können unter Umständen lange Bearbeitungszeiten haben. Ein Beispiel hierfür ist der Seriendruck, dessen Bearbeitungszeit von der Anzahl der Datensätze der Seriendruckdatenquelle abhängt. Um in diesen Fällen einen besseren Überblick über den Gesamtfortschritt zu erhalten, wurde ein Fortschrittsbalken eingeführt. Jede Druckfunktion kann diesen Fortschrittsbalken verwenden, um den Fortschritt des Druckvorgangs dazustellen. Ein Druckfunktion muss dazu lediglich die Methode `pmod.setPrintProgressMaxValue(maxValue)` aufrufen und damit mitteilen, wie viele Druckversionen von dieser Druckfunktion zu erwarten sind. Es wird damit automatisch der Fortschrittsbalken angezeigt. Danach kann der aktuelle Status der Druckfunktion mittels `pmod.setPrintProgressValue(value)` an den Fortschrittsbalken übermittelt werden.
 
-Bei verketteten Druckfunktionen ist der Fortschrittsbalken in der Lage,
-automatisch die Gesamtzahl der Druckversionen, die sich aus der
-Multiplikation der Maximalwerte der einzelnen Druckfunktionen ergibt,
-korrekt zu bestimmen. Jede Druckfunktion muss also nur die
-Fortschrittswerte setzen, die auch in dieser Druckfunktion anfallen.
+Bei verketteten Druckfunktionen ist der Fortschrittsbalken in der Lage, automatisch die Gesamtzahl der Druckversionen, die sich aus der Multiplikation der Maximalwerte der einzelnen Druckfunktionen ergibt, korrekt zu bestimmen. Jede Druckfunktion muss also nur die Fortschrittswerte setzen, die auch in dieser Druckfunktion anfallen.
 
 Die Property “STAGE” - Anzeigetitel des Fortschrittsfensters
 
-Zusätzlich zur Anzeige des Fortschrittsbalkens kann über die Property
-“STAGE” auch der Anzeigetitel des Forschrittsfensters geändert werden.
-Dies macht z.B. dann Sinn, wenn mehrere (u.U. zeitaufwändige) Schritte
-zur Erzeugung eines Seriendrucks notwendig sind und der Anwender
-zwischen diesen Schritten unterscheiden können soll. Folgendes
-Code-Gerüst in Java zeigt, wie das aussehen könnte:
-
+Zusätzlich zur Anzeige des Fortschrittsbalkens kann über die Property “STAGE” auch der Anzeigetitel des Forschrittsfensters geändert werden. Dies macht z.B. dann Sinn, wenn mehrere (u.U. zeitaufwändige) Schritte zur Erzeugung eines Seriendrucks notwendig sind und der Anwender zwischen diesen Schritten unterscheiden können soll. Folgendes Code-Gerüst in Java zeigt, wie das aussehen könnte:
 ```java
 public static void myPrintFunction(XPrintModel pmod) {
   
@@ -1652,24 +1281,11 @@ public static void myPrintFunction(XPrintModel pmod) {
 }
 ```
 
-Ein gesetzter Anzeigetitel gilt so lange auch für alle durch eine
-Druckfunktion aufgerufenen Druckfunktionen bis diese selbst den
-Anzeigetitel setzen. Wenn eine Druckfunktion zurück kehrt (zu der sie
-aufrufenden Druckfunktion), wird automatisch der Anzeigetiteln auf den
-Wert gesetzt, der vor dem Aufruf der Druckfunktion gegolten hat. Falls
-der Anzeigetitel gar nicht gesetzt ist, greift die Voreinstellung mit
-dem String “Drucke”.
+Ein gesetzter Anzeigetitel gilt so lange auch für alle durch eine Druckfunktion aufgerufenen Druckfunktionen bis diese selbst den Anzeigetitel setzen. Wenn eine Druckfunktion zurück kehrt (zu der sie aufrufenden Druckfunktion), wird automatisch der Anzeigetiteln auf den Wert gesetzt, der vor dem Aufruf der Druckfunktion gegolten hat. Falls der Anzeigetitel gar nicht gesetzt ist, greift die Voreinstellung mit dem String “Drucke”.
 
 Einbindung der WollMux-Interfaces in eigene Java-Komponenten
 ------------------------------------------------------------
 
-Um die in den vorherigen Abschnitten aufgeführten Interfaces des WollMux
-(z.B. XWollMux, XPrintModel, ...) in eigenen Java-Komponenten nutzen zu
-können, müssen die dafür notwendigen .class-Dateien im Classpath des
-Java-Compilers bekannt sein. Zur Vereinfachung der Einbindung existiert
-im Downloadbereich der WollMux-Binärpakete seit WollMux 6.7.1 dafür ein
-eigenes Jar-File namens **WollMuxInterfaces.jar**. Es muss lediglich
-dieses Jar-File in den Classpath aufgenommen werden, und schon sind alle
-vom WollMux exportierten X-Interfaces ansprechbar.
+Um die in den vorherigen Abschnitten aufgeführten Interfaces des WollMux (z.B. XWollMux, XPrintModel, ...) in eigenen Java-Komponenten nutzen zu können, müssen die dafür notwendigen .class-Dateien im Classpath des Java-Compilers bekannt sein. Zur Vereinfachung der Einbindung existiert im Downloadbereich der WollMux-Binärpakete seit WollMux 6.7.1 dafür ein eigenes Jar-File namens **WollMuxInterfaces.jar**. Es muss lediglich dieses Jar-File in den Classpath aufgenommen werden, und schon sind alle vom WollMux exportierten X-Interfaces ansprechbar.
 
 <Category:Eierlegender_WollMux> <Category:Handbuch_des_WollMux>

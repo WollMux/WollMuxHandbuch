@@ -5,24 +5,16 @@ Für den Zugriff auf eine Datenbank wird ein jdbc-Treiber benötigt.
 
 [Download Oracle JDBC-Treiber.](http://www.oracle.com/technology/software/tech/java/sqlj_jdbc/index.html)
 
-[<http://dba.openoffice.org/FAQ/specific.html#oracle>](http://dba.openoffice.org/FAQ/specific.html#oracle)
-
-Passend zur anzusteuernden Oracle-Datenbank bzw. zum verwendeten JAVA
-ist der passende JDBC-Treiber zu verwenden: ojdbc5.jar mit 11g und JDK
-1.5, ojdbc6.jar mit 11g und JDK 1.6, ojdbc12.jar mit 10g und JDK
-1.2+1.3, ojdbc14.jar mit 10g und JDK 1.4 + 1.5.
-
-Der Treiber sollte <u>nicht</u> auf einem Netzlaufwerk, sondern lokal
-abgelegt werden.
+Der Treiber sollte <u>nicht</u> auf einem Netzlaufwerk, sondern lokal abgelegt werden.
 
 JDBC-Treiber einbinden
 ======================
 
+
 Systemweit
 ----------
 
-Der JDBC-Treiber kann systemweit über eine referatseigene OpenOffice.org
-Vorkonfiguration eingebunden werden.
+Der JDBC-Treiber kann systemweit über eine referatseigene LibreOffice Vorkonfiguration eingebunden werden.
 
 Eintrag *DataAccess.xcu*
 
@@ -38,106 +30,51 @@ Eintrag *DataAccess.xcu*
  </node>
 ```
 
-> **INFO** Für einen generellen Funktionstest kann die
-> *DataAccess.xcu* auch im eigenen Profil erzeugt werden (im Verzeichnis
-> `~/.openoffice.org/3/user/registry/data/org/openoffice/Office)`.
+> **INFO** Für einen generellen Funktionstest kann die *DataAccess.xcu* auch im eigenen Profil erzeugt werden (im Verzeichnis `~/.config/libreoffice/4/user/registry/data/org/openoffice/Office)`.
 
 Benutzerweit
 ------------
+[Für einen einzelnen Benutzer einbinden](https://help.libreoffice.org/Common/JDBC_Connection/de)
 
-Für einen einzelnen Benutzer einbinden:
-
--   OOo Writer &rarr; Extras &rarr; Optionen... &rarr; OpenOffice.org
-    &rarr; Java &rarr; Button "Class Path" &rarr; Button "Archive
-    hinzufügen..." &rarr; entsprechende .jar Datei bzw. .zip Datei des
-    JDBC-Treibers auswählen &rarr; Button "Öffnen" &rarr; Fenster "Class
-    Path" &rarr; Button "OK" &rarr; Fenster
-    "Optionen-OpenOffice.org-Java" &rarr; Button "OK"
-
-OOo Base aufrufen
+LO Base aufrufen
 =================
 
 Basisclient
 -----------
-
-Über die Konsole
-
--   K-Menü &rarr; Systemadministration &rarr; Konsole (Terminal) &rarr;
-    Eingabe: *soffice -base* oder *sbase*
+Über die Konsole K-Menü &rarr; Systemadministration &rarr; Konsole (Terminal) &rarr; Eingabe: *soffice -base* oder *sbase*
 
 Windows
 -------
+* Windows Startmenü &rarr; Programme &rarr; LibreOffice &rarr; LibreOffice Base
+* Eingabeaufforderung &rarr; Eingabe: *&lt;LibreOffice Installationspfad&gt;\\program\\sbase*
 
-Über das Windows Startmenü\
-\*Windows Startmenü &rarr; Programme &rarr; OpenOffice.org &rarr;
-OpenOffice.org Base
-
-Über die Windows Eingabeaufforderung\
-\*Eingabeaufforderung &rarr; Eingabe: *&lt;OpenOffice.org
-Installationspfad&gt;\\program\\sbase*
-
-Einmaliges erstellen der benötigten OOo-Base Datenbank
+Einmaliges erstellen der benötigten LO-Base Datenbank
 ======================================================
+1. [LO Base aufrufen](#LO_Base_aufrufen)
+2. Datenbank auswählen<br>
+   ![**Entsprechende Datenbank auswählen. &rarr; Button "Weiter&gt;&gt;"**](images/Datenbank/WOL_Base_DB_auswaehlen.png "Entsprechende Datenbank auswählen. --> Button "Weiter>>"")
+3. Datenbankverbindung einrichten<br>
+   ![**Datenbank Verbindungsinformationen eingeben. &rarr; Button "Weiter&gt;&gt;"**](images/Datenbank/WOL_Base_DB_Verbindung.png "fig:Datenbank Verbindungsinformationen eingeben. --> Button "Weiter>>"")<br>
+  Über den Button **Klasse testen** kann die entsprechende JDBC-Treiberklasse getestet werden.
+4. Benutzer-Authentifizierung einrichten<br>
+   ![**Benutzer für den Datenbankzugriff eingeben. Falls ein Passwort erforderlich ist Checkbox setzen. &rarr;Button "Weitter&gt;&gt;"**](images/Datenbank/WOL_Base_DB_Zugriff.png "Benutzer für den Datenbankzugriff eingeben. Falls ein Passwort erforderlich ist Checkbox setzen. -->Button "Weitter>>"")<br>
+   Mit dem Button **Verbindungstest** kann die Verbindung zur Datenbank getestet werden.<br>
+5. Fertig stellen und fortfahren<br>
+   ![**Die Datenbank soll nicht angemeldet werden und LO Base soll beendet werden &rarr; Button "Fertig stellen"**](images/Datenbank/WOL_Base_Fertigstellen.png "Die Datenbank soll nicht angemeldet werden und LO Base soll beendet werden --> Button "Fertig stellen"")
+6. LO Datenquelle speichern<br>
 
-OOo\_Base\_aufrufen
--------------------
-
-[ OOo Base aufrufen](#OOo_Base_aufrufen)
-
-Datenbank auswählen
--------------------
-
-![**Entsprechende Datenbank auswählen. &rarr; Button "Weiter&gt;&gt;"**](600px-WOL_Base_DB_auswaehlen.png "Entsprechende Datenbank auswählen. --> Button "Weiter>>"")
-
-Datenbankverbindung einrichten
-------------------------------
-
-![**Datenbank Verbindungsinformationen eingeben. &rarr; Button "Weiter&gt;&gt;"**](600px-WOL_Base_DB_Verbindung.png "fig:Datenbank Verbindungsinformationen eingeben. --> Button "Weiter>>"")
-
-Über den Button "Klasse testen" kann die entsprechende
-JDBC-Treiberklasse getestet werden.
-
-Benutzer-Authentifizierung einrichten
--------------------------------------
-
-![**Benutzer für den Datenbankzugriff eingeben. Falls ein Passwort erforderlich ist Checkbox setzen. &rarr;Button "Weitter&gt;&gt;"**](600px-WOL_Base_DB_Zugriff.png "Benutzer für den Datenbankzugriff eingeben. Falls ein Passwort erforderlich ist Checkbox setzen. -->Button "Weitter>>"")
-
-Verbindung zur Datenbank testen
--------------------------------
-
-Schritt **3. Benutzer-Authentifizierung einrichten**&rarr;Button "Verbindungstest"
-
-![**Passwort eingeben &rarr; Button "OK"**](WOL_Base_Verbindungstest.png "fig:Passwort eingeben --> Button "OK"")
-
-Foldende Meldung kommt, wenn der Verbindungstest erfolgreich war.
-
-![**Verbindungtest war erfolgreich &rarr; Button "OK"**](WOL_Base_Verbindungstest_erfolgreich.png "fig:Verbindungtest war erfolgreich --> Button "OK"")
-
-Fertig stellen und fortfahren
------------------------------
-
-![**Die Datenbank soll nicht angemeldet werden und OOo Base soll beendet werden &rarr; Button "Fertig stellen"**](600px-WOL_Base_Fertigstellen.png "Die Datenbank soll nicht angemeldet werden und OOo Base soll beendet werden --> Button "Fertig stellen"")
-
-OOo Datenquelle speichern
--------------------------
-
-![**OOo Base Datenbank speichern**](600px-WOL_Base_Speichern.png "OOo Base Datenbank speichern")
-
-OOo Base Datenbank bereitstellen
+LO Base Datenbank bereitstellen
 ================================
 
-OOo Base Datenbank auf dem Webserver bereitstellen
+LO Base Datenbank auf dem Webserver bereitstellen
 --------------------------------------------------
 
-Damit die OOo Base Datenbank von mehreren Benutzern benutzt werden kann,
-ist es zu empfehlen die .odb Datei auf den Webserver zu legen.
+Damit die LO Base Datenbank von mehreren Benutzern benutzt werden kann, ist es zu empfehlen die .odb Datei auf den Webserver zu legen.
 
-OOo Base Datenbank über den WollMux registrieren
+LO Base Datenbank über den WollMux registrieren
 ------------------------------------------------
 
-Damit eine OOo Base Datenbank verwendet werden kann, muss diese über
-einen **Registriere-Abschnitt** registriert werden. Ein Datenquelle kann
-z.B. in der *referat.conf* registriert werden.
+Damit eine LO Base Datenbank verwendet werden kann, muss diese über einen **Registriere-Abschnitt** registriert werden. Eine Datenquelle kann z.B. in der *referat.conf* registriert werden.
 
 Beispiel mit der vorher erstellten oracle.odb:
 
@@ -154,17 +91,13 @@ Datenquellen(
 Weiter Informationen:
 
 * [Registriere Datenquelle](Konfigurationsdatei_wollmux_conf.md#registriere)
-* [Einrichten einer OOo Datenquelle](#einrichten-einer-ooo-datenquelle)
+* [Einrichten einer LO Datenquelle](#einrichten-einer-lo-datenquelle)
 * [Datenquellen](Konfigurationsdatei_wollmux_conf.md#datenquellen)
 
-Einrichten einer OOo Datenquelle
+Einrichten einer LO Datenquelle
 ================================
 
-Für den Zugiff auf eine externe Datenbank mit dem WollMux, muss in der
-**referat.conf** eine OOo Datenquelle definiert werden, die auf die
-registrierte OOo Base Datenbank verweist. Ebenso kann eine eigene .conf
-Konfigurationsdatei erstellt werden, die über ein %include "<Name>.conf"
-Eintrag in der referat.conf eingebunden wird.
+Für den Zugiff auf eine externe Datenbank mit dem WollMux, muss in der **referat.conf** eine LO Datenquelle definiert werden, die auf die registrierte LO Base Datenbank verweist. Ebenso kann eine eigene .conf Konfigurationsdatei erstellt werden, die über ein %include "<Name>.conf" Eintrag in der referat.conf eingebunden wird.
 
 Beispiel mit DB-Schema zum Dialog "Empfänger auswählen" anbinden:
 
@@ -185,17 +118,12 @@ Datenquellen(
 )
 ```
 
-siehe [ Einrichten einer OOo Datenquelle](Konfigurationsdatei_wollmux.conf#TYPE_.22ooo.22)
+siehe [Einrichten einer LO Datenquelle](Konfigurationsdatei_wollmux_conf.md#TYPE_ooo)
 
 Dialog "Empfänger auswählen" anbinden
 =====================================
 
-Der Dialog "Empfänger auswählen" kann über die Konfigurationsdatei
-**adressauswahl-referat.conf** z.B durch einen extra Reiter, erweitert
-werden. Als Beispiel dienen die Spielwarenläden in der
-adressauswahl-referat.conf, dessen Eintrag kopiert und angepasst werden
-kann. Die Datei adressauswahl-referat.conf wird durch das [xupdate Script](Standardkonfiguration_des_WollMux_installieren_und_pflegen#Liste_der_nicht_durch_xupdate_.C3.BCberschriebenen_Dateien)
-nicht überschrieben.
+Der Dialog **Empfänger auswählen** kann über die Konfigurationsdatei **adressauswahl-referat.conf** z.B durch einen extra Reiter, erweitert werden. Als Beispiel dienen die Spielwarenläden in der adressauswahl-referat.conf, dessen Eintrag kopiert und angepasst werden kann. Die Datei adressauswahl-referat.conf wird durch das [xupdate Script](Standardkonfiguration_des_WollMux_installieren_und_pflegen#Liste_der_nicht_durch_xupdate_.C3.BCberschriebenen_Dateien) nicht überschrieben.
 
 Beispielanpassung für Spielwarenläden:
 

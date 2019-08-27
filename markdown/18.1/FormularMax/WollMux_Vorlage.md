@@ -39,8 +39,7 @@ Details und Erläuterungen finden sich zur Genüge im Internet. Auf folgenden Se
 
 ### Formatvorlagen des WollMux
 
-Formatvorlagen kann man entweder selbst erstellen oder man verwendet die Formatvorlagen, die vom WollMux für die Briefköpfe verwendet werden. Diese Formatvorlagen befinden sich in einer eignen Writer Vorlage, die in jede beliebige Vorlage eingefügt werden kann.
-Diese Vorlage (Name: WOL\_Briefkopf-Absatzformate\_v1\_2005-11-22.ott) ist in jeder WollMux Konfiguration enthalten.
+Formatvorlagen kann man entweder selbst erstellen oder man verwendet die Formatvorlagen, die vom WollMux für die Briefköpfe verwendet werden. Diese Formatvorlagen befinden sich in einer eignen Writer Vorlage, die in jede beliebige Vorlage eingefügt werden kann. Diese Vorlage (Name: WOL\_Briefkopf-Absatzformate\_v1\_2005-11-22.ott) ist in jeder WollMux Konfiguration enthalten.
 
 Diese Formatvorlagen können folgendermaßen verwendet werden:
 
@@ -60,8 +59,7 @@ Wenn diese Formatvorlagen angepasst werden sollen, muss dies über verknüpfte F
 
 Die Vorlage kann nun mit den selbst erstellten und eingefügten Formatvorlagen formatiert werden. Wobei z.B. Fließtext für den normalen Vorlageninhalt verwendet wird.
 
-► Bei umzustellenden Vorlagen sollten zuerst alle enthaltenden Formatierungen gelöscht werden. Dazu sollte ggf. vorher ein Ausdruck gemacht werden, um nachprüfen zu können, wie der Text vorher formatiert war, da dadurch Formatierungen wie Schriftgestaltung, Einrückungen, Aufzählungen, usw. verloren gehen können.
-Dazu wird der Text markiert und entweder über Rechtsklick oder über *Format → Standardformatierung* die Formatierung entfernt.
+► Bei umzustellenden Vorlagen sollten zuerst alle enthaltenden Formatierungen gelöscht werden. Dazu sollte ggf. vorher ein Ausdruck gemacht werden, um nachprüfen zu können, wie der Text vorher formatiert war, da dadurch Formatierungen wie Schriftgestaltung, Einrückungen, Aufzählungen, usw. verloren gehen können. Dazu wird der Text markiert und entweder über Rechtsklick oder über *Format → Standardformatierung* die Formatierung entfernt.
 
 ![Standardformatierung](images/LO_Formatierung_loeschen.jpg "fig:Standardformatierung")
 
@@ -73,8 +71,7 @@ Man sollte Formatvorlagen nicht nur aus Prinzip verwenden, sie bieten natürlich
 - Es ist auch einfacher, z.B. eine Coporate Identity (wie das Visuelle Erscheinungsbild der Stadt München) umzusetzen.
 - In vielen Fällen verringern Formatvorlagen auch die Probleme, die bei der Crossbearbeitung (in verschiedenen Office Suiten) auftreten können.
 
-Man kann sich analog zur WOL\_Briefkopf-Absatzformate\_v1\_2005-11-22.ott auch eigene Vorlagen erstellen und in diese die eigenen Formatvorlagen „auslagern“. Diese können auch wie oben beschrieben, in jede beliebige Vorlage eingefügt werden.
-Dies kann man auch wie in Kapitel [Automatisches Einfügen von Sachbearbeiterdaten](WollMux_Vorlage.md#automatisches-einfügen-von-sachbearbeiterdaten) beschrieben über spezielle WollMux Befehle automatisieren.
+Man kann sich analog zur WOL\_Briefkopf-Absatzformate\_v1\_2005-11-22.ott auch eigene Vorlagen erstellen und in diese die eigenen Formatvorlagen „auslagern“. Diese können auch wie oben beschrieben, in jede beliebige Vorlage eingefügt werden. Dies kann man auch wie in Kapitel [Automatisches Einfügen von Sachbearbeiterdaten](WollMux_Vorlage.md#automatisches-einfügen-von-sachbearbeiterdaten) beschrieben über spezielle WollMux Befehle automatisieren.
 
 ### Speichern der Vorlage
 
@@ -266,7 +263,7 @@ Der häufigste Fall ist wohl der, die Textmarke umzubenennen. Dazu macht man ein
 
 Durch einen Doppelklick mit der linken Maustaste auf eine Textmarke wird die Lage der Textmarke im Text angezeigt.
 
-> **WARNING** Es gibt leider einen Bug in LibreOffice/OpenOffice.org, der dazu führt, dass die Änderung der Textmarke nicht erkannt wird. Wenn man also eine Textmarke ändert, macht man einfach irgendwo ein Leerzeichen und löscht dieses wieder. Dann kann man auf alle Fälle die Änderung speichern.
+> **WARNING** Es gibt leider einen Bug in LibreOffice, der dazu führt, dass die Änderung der Textmarke nicht erkannt wird. Wenn man also eine Textmarke ändert, macht man einfach irgendwo ein Leerzeichen und löscht dieses wieder. Dann kann man auf alle Fälle die Änderung speichern.
 
 
 ### Textmarken löschen
