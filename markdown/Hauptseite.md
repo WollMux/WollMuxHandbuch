@@ -63,8 +63,6 @@ Weitergehende Links
 -------------------
 
 -   <https://github.com/WollMux/WollMux> - WollMux-Repository bei GitHub
--   <http://www.muenchen.de/wollmux> - WollMux-Seite auf muenchen.de
--   <http://www.muenchen.de/limux> - Informationen zum LiMux-Projekt
 -   <http://joinup.ec.europa.eu/software/wollmux/description> -
     WollMux-Projektseite bei Joinup
 -   <http://wiki.stadt.freiburg.de/ooo/> - OpenOffice.org-Wiki der Stadt
