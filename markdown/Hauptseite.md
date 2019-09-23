@@ -13,10 +13,18 @@ er mittlerweile auch in anderen Kommunen und Unternehmen zum Einsatz.
 
 Mehr darüber, was der WollMux alles kann, erfahren Sie hier: **[Features des WollMux](Features.md)**
 
-> **Info**  <span style="font-size:larger;font-weight:bold;color:#1D9101">WollMux Herunterladen</span>
-> - **[WollMux 18.0.2](http://www.wollmux.net/files/18.0.2/wollmux-18.0.2-installer.jar)** (![](Linux-icon.png "fig:Linux-icon.png")![](Windows-icon.png "fig:Windows-icon.png") Linux und Windows, 18MB)
-> - **[WollMux-Konfiguration 18.0.2](http://www.wollmux.net/files/18.0.2/wollmux-config-de-utf8-18.0.2.tar.gz)** (![](Linux-icon.png "fig:Linux-icon.png") Linux, deutsch, 5MB)
-> - **[WollMux-Konfiguration 18.0.2](http://www.wollmux.net/files/18.0.2/wollmux-config-de-18.0.2-installer.exe)** (![](Windows-icon.png "fig:Windows-icon.png") Windows, deutsch, 5MB)
+> **Info**  <span style="font-size:larger;font-weight:bold;color:#1D9101">WollMux Herunterladen (nur aus dem internen Netzwerk möglich)</span>
+> - **[WollMux 18.0.11](http://www.wollmux.net/files/18.0.11/wollmux-18.0.11-installer.jar)** (![](Linux-icon.png "fig:Linux-icon.png")![](Windows-icon.png "fig:Windows-icon.png") Linux und Windows, 18MB)
+> - **[WollMux-Konfiguration 18.0.11](http://www.wollmux.net/files/18.0.11/wollmux-config-de-utf8-18.0.11.tar.gz)** (![](Linux-icon.png "fig:Linux-icon.png") Linux, deutsch, 5MB)
+> - **[WollMux-Konfiguration 18.0.11](http://www.wollmux.net/files/18.0.11/wollmux-config-de-18.0.11-installer.exe)** (![](Windows-icon.png "fig:Windows-icon.png") Windows, deutsch, 5MB)
+> - [Andere Sprachen & Versionen](Download.md)
+>
+> <span style="font-size:smaller; color:gray;">Um alle Features des WollMux nutzen zu können ist eine WollMux-Konfiguration erforderlich!</span>
+
+> **Info**  <span style="font-size:larger;font-weight:bold;color:#1D9101">Testversion von WollMux Herunterladen (nur aus dem internen Netzwerk möglich)</span>
+> - **[WollMux 18.1.6](http://www.wollmux.net/files/18.1.6/wollmux-18.1.6-installer.jar)** (![](Linux-icon.png "fig:Linux-icon.png")![](Windows-icon.png "fig:Windows-icon.png") Linux und Windows, 18MB)
+> - **[WollMux-Konfiguration 18.1.6](http://www.wollmux.net/files/18.1.6/wollmux-config-de-utf8-18.1.6.tar.gz)** (![](Linux-icon.png "fig:Linux-icon.png") Linux, deutsch, 5MB)
+> - **[WollMux-Konfiguration 18.1.6](http://www.wollmux.net/files/18.1.6/wollmux-config-de-18.1.6-installer.exe)** (![](Windows-icon.png "fig:Windows-icon.png") Windows, deutsch, 5MB)
 > - [Andere Sprachen & Versionen](Download.md)
 >
 > <span style="font-size:smaller; color:gray;">Um alle Features des WollMux nutzen zu können ist eine WollMux-Konfiguration erforderlich!</span>
