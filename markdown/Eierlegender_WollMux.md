@@ -19,4 +19,4 @@
 
 ### Zielsetzung
 
-Der Eierlegende WollMux ist ein neues System mit dem Ziel, stadtweit die Arbeit mit Vorlagen zu vereinfachen und Features zu bieten, die bislang noch nicht vorhanden sind. Auch die Einhaltung stadtweiter Standards wie des Erscheinungsbildes soll durch den WollMux vereinfacht werden. Zielplattformen für den WollMux sind sowohl Linux als auch Windows. Er unterstützt die Migration auf LibreOffice/OpenOffice.org und Linux.
+Der Eierlegende WollMux ist ein neues System mit dem Ziel, stadtweit die Arbeit mit Vorlagen zu vereinfachen und Features zu bieten, die bislang noch nicht vorhanden sind. Auch die Einhaltung stadtweiter Standards wie des Erscheinungsbildes soll durch den WollMux vereinfacht werden. Zielplattformen für den WollMux sind sowohl Linux als auch Windows. Er unterstützt die Migration auf LibreOffice und Linux.
