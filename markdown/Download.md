@@ -1,8 +1,6 @@
-Auf dieser Seite finden Sie direkte Links zum Download des aktuellsten
-Releases.
+Auf dieser Seite finden Sie direkte Links zum Download des aktuellsten Releases.
 
-Eine detaillierte Installationsanleitung finden Sie auf der Seite
-"[WollMux installieren](WollMux_installieren.md)".
+Eine detaillierte Installationsanleitung finden Sie auf der Seite "[WollMux installieren](WollMux_installieren.md)".
 
 Stable Release
 ==============
@@ -77,21 +75,11 @@ Extrahieren Sie dieses Archiv in <code>%USERPROFILE%</code> damit dort das notwe
 Daily Builds
 ============
 
-Die aktuelle Entwicklungsversion des WollMux wird bei Änderungen am
-Quelltext pünktlich zu Mitternacht neu gebaut. Diese Versionen bieten
-sich an, wenn Sie den WollMux testen wollen oder vorab bereits neue
-Features benötigen.
+Die aktuelle Entwicklungsversion des WollMux wird bei Änderungen am Quelltext pünktlich zu Mitternacht neu gebaut. Diese Versionen bieten sich an, wenn Sie den WollMux testen wollen oder vorab bereits neue Features benötigen.
 
-Die Daily Builds befinden sich
-[hier](http://www.wollmux.net/daily/?C=M;O=D).
+Die Daily Builds befinden sich [hier](http://www.wollmux.net/daily/?C=M;O=D).
 
 Quelltext
 =========
 
-Den Quelltext mit den neuesten Änderungen finden Sie immer in unserem
-[Repository](Repository.md).
-Informationen zum Kompilieren des WollMux finden Sie auf der Seite
-"[WollMux kompilieren](WollMux_kompilieren.md)".
-Hinweis: Wenn Sie den WollMux selber kompilieren, brauchen Sie trotzdem
-noch eine WollMux-Konfiguration, damit der WollMux mit allen Features
-verwendet werden kann.
+Den Quelltext mit den neuesten Änderungen finden Sie immer in unserem [Repository](Repository.md). Informationen zum Kompilieren des WollMux finden Sie auf der Seite "[WollMux kompilieren](WollMux_kompilieren.md)". Hinweis: Wenn Sie den WollMux selber kompilieren, brauchen Sie trotzdem noch eine WollMux-Konfiguration, damit der WollMux mit allen Features verwendet werden kann.
