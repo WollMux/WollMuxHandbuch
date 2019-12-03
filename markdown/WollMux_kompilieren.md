@@ -142,11 +142,6 @@ Debug-Konfiguration vom Typ "Java Application" angelegt werden. Als Main-Klasse 
 Dann kann die Debug-Konfiguration in Eclipse starten (darauf achten dass kein soffice-Prozess läuft).
 Im Anschluss kann LibreOffice gestartet werden.
 
-Ältere Versionen
-----------------
-
-siehe [WollMux kompilieren (vor Version 16.04)](WollMux_kompilieren_vor_Version_16.04.md)
-
 Siehe auch
 ----------
 

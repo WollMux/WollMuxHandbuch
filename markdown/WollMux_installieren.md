@@ -164,9 +164,4 @@ Um die WollMuxBar und eine zentrale Vorlagensammlung nutzen zu können,
 wird eine WollMux-Konfiguration benötigt (siehe
 [Standardkonfiguration des WollMux installieren und pflegen](18.0/Standardkonfiguration_des_WollMux_installieren_und_pflegen.md)).
 
-Ältere Versionen
-----------------
-
--   siehe [WollMux installieren (vor Version 16.04)](WollMux_installieren_vor_Version_16.04.md)
-
 <Category:Eierlegender_WollMux> <Category:Handbuch_des_WollMux>

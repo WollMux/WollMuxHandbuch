@@ -43,10 +43,7 @@ Nach der Installation von LibreOffice Portable werden die o.g. Dateien
 in das oberste Verzeichnis der LibreOffice-Installation kopiert
 (standardmäßig "LibreOfficePortable"). Für die Installation von Java
 Portable bietet sich ebenfalls das oberste Verzeichnis der
-Libreoffice-Installation an. Bei der [Installation der Extensions](WollMux_installieren_vor_Version_16.04.md),
-ist auf die richtige Reihenfolge zu achten: Zuerst die Extension der
-WollMux-Konfiguration und anschließend die WollMux.oxt installieren. Für
-die Installation kann auch der Extension-Manager verwendet werden.
+Libreoffice-Installation an.
 
 ### Bekannte Probleme
 

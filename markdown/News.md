@@ -70,8 +70,6 @@ daily builds from <http://www.wollmux.net/daily/> instead.
 #### 06. Juli 2012
 
 Am 06. Juli fand der 1.WollMux Community Workshop in München statt.
-Details sind [ hier](1._WollMux_Community_Workshop.md)
-verfügbar.
 
 #### 08. Mai 2012
 
