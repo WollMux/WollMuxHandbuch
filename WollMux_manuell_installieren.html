@@ -72,7 +72,7 @@
     <link rel="next" href="WollMux_mit_LibreOffice_Portable.html" />
     
     
-    <link rel="prev" href="WollMux_installieren_vor_Version_16.04.html" />
+    <link rel="prev" href="WollMux_installieren.html" />
     
 
     </head>
@@ -200,25 +200,6 @@
             
 
             
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="1.3.4.1" data-path="WollMux_kompilieren_vor_Version_16.04.html">
-            
-                <a href="WollMux_kompilieren_vor_Version_16.04.html">
-            
-                    
-                    WollMux kompilieren (bis_Version 15.04a)
-            
-                </a>
-            
-
-            
-        </li>
-    
-
-            </ul>
-            
         </li>
     
         <li class="chapter " data-level="1.3.5" data-path="Wollmux-Debugging.html">
@@ -248,20 +229,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.3.6.1" data-path="WollMux_installieren_vor_Version_16.04.html">
-            
-                <a href="WollMux_installieren_vor_Version_16.04.html">
-            
-                    
-                    WollMux installieren (vor Version 16.04)
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter active" data-level="1.3.6.2" data-path="WollMux_manuell_installieren.html">
+        <li class="chapter active" data-level="1.3.6.1" data-path="WollMux_manuell_installieren.html">
             
                 <a href="WollMux_manuell_installieren.html">
             
@@ -274,7 +242,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.6.3" data-path="WollMux_mit_LibreOffice_Portable.html">
+        <li class="chapter " data-level="1.3.6.2" data-path="WollMux_mit_LibreOffice_Portable.html">
             
                 <a href="WollMux_mit_LibreOffice_Portable.html">
             
@@ -356,45 +324,6 @@
             
                     
                     Mailinglisten
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.3.10" data-path="WollMux-Schulungen.html">
-            
-                <a href="WollMux-Schulungen.html">
-            
-                    
-                    WollMux Schulungen
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.3.11" data-path="Community-Mitglieder_und_Ansprechpartner.html">
-            
-                <a href="Community-Mitglieder_und_Ansprechpartner.html">
-            
-                    
-                    Community Mitglieder und Ansprechpartner
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.3.12" data-path="1._WollMux_Community_Workshop.html">
-            
-                <a href="1._WollMux_Community_Workshop.html">
-            
-                    
-                    1. WollMux Community Workshop
             
                 </a>
             
@@ -1295,25 +1224,16 @@
                                 <section class="normal markdown-section">
                                 
                                 <h2 id="voraussetzungen">Voraussetzungen</h2>
-<p>Bevor sie den WollMux installieren k&#xF6;nnen, m&#xFC;ssen auf ihrem System
-folgende Programme vorhanden sein:</p>
+<p>Bevor sie den WollMux installieren k&#xF6;nnen, m&#xFC;ssen auf ihrem System folgende Programme vorhanden sein:</p>
 <ul>
-<li><strong><a href="http://www.libreoffice.org/download/libreoffice-still/" target="_blank">LibreOffice</a></strong>
-oder
-<strong><a href="http://www.openoffice.org/de/downloads/index.html" target="_blank">OpenOffice</a></strong></li>
-<li><strong><a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html" target="_blank">JAVA
-JRE (x86)</a></strong></li>
+<li><strong><a href="http://www.libreoffice.org/download/libreoffice-still/" target="_blank">LibreOffice</a></strong> oder <strong><a href="http://www.openoffice.org/de/downloads/index.html" target="_blank">OpenOffice</a></strong></li>
+<li><strong><a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html" target="_blank">JAVA JRE (x86)</a></strong></li>
 </ul>
 <h2 id="vorbereitung">Vorbereitung</h2>
 <ul>
-<li>Schlie&#xDF;en aller offenen Office-Fenster einschlie&#xDF;lich dem
-Schnellstarter, sowie der WollMuxBar.</li>
-<li>Bitte schauen Sie im Systemmonitor bzw. Taskmanager nach, ob auch
-wirklich alle Prozesse mit dem Namen &#x201C;soffice.bin&#x201D; beendet sind.
-Falls nicht, schlie&#xDF;en Sie bitte alle noch
-laufenden soffice.bin-Prozesse.</li>
-<li>Unter Linux stellen Sie bitte sicher, dass die Java-Integration f&#xFC;r
-LibreOffice installiert ist:</li>
+<li>Schlie&#xDF;en aller offenen Office-Fenster einschlie&#xDF;lich dem Schnellstarter, sowie der WollMuxBar.</li>
+<li>Bitte schauen Sie im Systemmonitor bzw. Taskmanager nach, ob auch wirklich alle Prozesse mit dem Namen &#x201C;soffice.bin&#x201D; beendet sind. Falls nicht, schlie&#xDF;en Sie bitte alle noch laufenden soffice.bin-Prozesse.</li>
+<li>Unter Linux stellen Sie bitte sicher, dass die Java-Integration f&#xFC;r LibreOffice installiert ist:</li>
 </ul>
 <p><code>apt-get install libreoffice-java-common</code></p>
 <h2 id="extension-installieren">Extension installieren</h2>
@@ -1337,57 +1257,34 @@ LibreOffice installiert ist:</li>
 <li>Installation der neuen Extension f&#xFC;r <strong>OpenOffice</strong>:</li>
 </ul>
 <p><code>unopkg add WollMux-AOO.oxt --shared</code></p>
-<p>F&#xFC;r eine Installation auf Benutzerebene k&#xF6;nnen Sie den Extension-Manager
-verwenden, den Sie &#xFC;ber Extras-&gt;Extension Manager in
-LibreOffice/OpenOffice.org starten k&#xF6;nnen. Allerdings wird dies nicht
-empfohlen. Der gleichzeitige Betrieb von WollMux-Installationen auf
-Rechnerebene und WollMux-Installationen auf Benutzerebene kann zu
-Problemen f&#xFC;hren und wird deshalb vom WollMux nicht unterst&#xFC;tzt.</p>
+<p>F&#xFC;r eine Installation auf Benutzerebene k&#xF6;nnen Sie den Extension-Manager verwenden, den Sie &#xFC;ber Extras-&gt;Extension Manager in LibreOffice/OpenOffice.org starten k&#xF6;nnen. Allerdings wird dies nicht empfohlen. Der gleichzeitige Betrieb von WollMux-Installationen auf Rechnerebene und WollMux-Installationen auf Benutzerebene kann zu Problemen f&#xFC;hren und wird deshalb vom WollMux nicht unterst&#xFC;tzt.</p>
 <h2 id="der-erste-start">Der erste Start</h2>
-<p><a href="datei:wm16.04-erster-start.png" target="_blank">thumb|Abbildung 11</a> Nach
-erfolgreicher Installation der WollMux-Extension
-(LibreOffice/OpenOffice) wird beim Start des Writers auf die fehlende
-Datei &#x201C;wollmux.conf&#x201D; hingewiesen (Abbildung 11).</p>
-<p>Das bedeutet, dass der WollMux ohne zentraler Vorlagensammlung
-arbeitet.\
-Folgende Feature sind nutzbar:</p>
+<p><a href="datei:wm16.04-erster-start.png" target="_blank">thumb|Abbildung 11</a> Nach erfolgreicher Installation der WollMux-Extension (LibreOffice/OpenOffice) wird beim Start des Writers auf die fehlende Datei &#x201C;wollmux.conf&#x201D; hingewiesen (Abbildung 11).</p>
+<p>Das bedeutet, dass der WollMux ohne zentraler Vorlagensammlung arbeitet. Folgende Feature sind nutzbar:</p>
 <ul>
 <li><a href="Seriendruckvorlagen_mit_dem_WollMux_erstellen">Seriendruckvorlagen mit dem WollMux erstellen</a></li>
 <li><a href="FormularMax_4000">WollMux Formulare mit dem FM4000 erstellen</a></li>
 </ul>
-<p><strong>Hinweis:</strong> Bei &#xE4;lteren WollMux-Versionen (vor 16.04) muss eine
-WollMux-Konfiguration installiert werden.</p>
+<p><strong>Hinweis:</strong> Bei &#xE4;lteren WollMux-Versionen (vor 16.04) muss eine WollMux-Konfiguration installiert werden.</p>
 <h2 id="wollmuxbar-installieren">WollMuxBar installieren</h2>
-<p>Um die WollMuxBar und eine zentrale Vorlagensammlung nutzen zu k&#xF6;nnen,
-wird eine WollMux-Konfiguration ben&#xF6;tigt (siehe
-<a href="Standardkonfiguration_des_WollMux_installieren_und_pflegen">Standardkonfiguration_des_WollMux_installieren_und_pflegen</a>).</p>
+<p>Um die WollMuxBar und eine zentrale Vorlagensammlung nutzen zu k&#xF6;nnen, wird eine WollMux-Konfiguration ben&#xF6;tigt (siehe <a href="Standardkonfiguration_des_WollMux_installieren_und_pflegen">Standardkonfiguration_des_WollMux_installieren_und_pflegen</a>).</p>
 <h3 id="unter-linux">Unter Linux</h3>
 <ul>
-<li>Kopieren der Datei WollMuxBar.jar in das Verzeichnis
-<em>/usr/share/java</em>.</li>
-<li>Kopieren der Datei wollmuxbar; die Datei speichern im Verzeichnis
-<em>/usr/bin</em>.</li>
+<li>Kopieren der Datei WollMuxBar.jar in das Verzeichnis <em>/usr/share/java</em>.</li>
+<li>Kopieren der Datei wollmuxbar; die Datei speichern im Verzeichnis <em>/usr/bin</em>.</li>
 </ul>
-<p>Die WollMuxBar l&#xE4;sst sich anschlie&#xDF;end einfach &#xFC;ber die Konsole mit dem
-Befehl <em>/usr/bin/wollmuxbar</em> aufrufen. Sie k&#xF6;nnen auch eine
-entsprechende Verkn&#xFC;pfung auf dem Desktop anlegen.</p>
+<p>Die WollMuxBar l&#xE4;sst sich anschlie&#xDF;end einfach &#xFC;ber die Konsole mit dem Befehl <em>/usr/bin/wollmuxbar</em> aufrufen. Sie k&#xF6;nnen auch eine entsprechende Verkn&#xFC;pfung auf dem Desktop anlegen.</p>
 <h3 id="unter-windows">Unter Windows</h3>
 <ul>
-<li>Erstellen eines Ordners, in dem die WollMuxBar installiert werden
-soll: z.B. C:\Programme\WollMux</li>
-<li>Kopieren der Dateien <em>WollMuxBar.jar</em>, <em>wollmuxbar.l4j.ini</em> und
-<em>wollmuxbar.exe</em> werden in den soeben erzeugten Ordner kopiert.</li>
+<li>Erstellen eines Ordners, in dem die WollMuxBar installiert werden soll: z.B. C:\Programme\WollMux</li>
+<li>Kopieren der Dateien <em>WollMuxBar.jar</em>, <em>wollmuxbar.l4j.ini</em> und <em>wollmuxbar.exe</em> werden in den soeben erzeugten Ordner kopiert.</li>
 </ul>
-<p>Die WollMuxBar l&#xE4;sst sich anschlie&#xDF;end einfach &#xFC;ber das Ausf&#xFC;hren der
-Datei <em>wollmuxbar.exe</em> starten. Sie k&#xF6;nnen auch eine Verkn&#xFC;pfung zur
-<em>wollmuxbar.exe</em> auf dem Desktop oder dem Startmen&#xFC; anlegen.</p>
+<p>Die WollMuxBar l&#xE4;sst sich anschlie&#xDF;end einfach &#xFC;ber das Ausf&#xFC;hren der Datei <em>wollmuxbar.exe</em> starten. Sie k&#xF6;nnen auch eine Verkn&#xFC;pfung zur <em>wollmuxbar.exe</em> auf dem Desktop oder dem Startmen&#xFC; anlegen.</p>
 <h3 id="directdraw-unterst&#xFC;tzung-der-jvm-konfigurativ-unterbinden">DirectDraw Unterst&#xFC;tzung der JVM konfigurativ unterbinden</h3>
-<p><div style="background-color:#FFFD7A; border:1px dashed gray; padding: 2px 6px; margin-top:1.2em; margin-bottom:1.2em; margin-left:1px; margin-right:auto; font-size:smaller;">
-wollmuxbar.exe wird mit launch4j erzeugt. launch4j unterst&#xFC;tzt eine
-Ini-Datei, &#xFC;ber die Parameter an die JVM &#xFC;bergeben werden k&#xF6;nnen.\
-Anhand der Beispieldatei wollmuxbar.l4j.ini kann die
-DirectDraw-Hardwarebeschleunigung abschalten.</div></p>
-<p>&lt;/div&gt;</p>
+<div style="background-color:#FFFD7A; border:1px dashed gray; padding: 2px 6px; margin-top:1.2em; margin-bottom:1.2em; margin-left:1px; margin-right:auto; font-size:smaller;">
+wollmuxbar.exe wird mit launch4j erzeugt. launch4j unterst&#xFC;tzt eine Ini-Datei, &#xFC;ber die Parameter an die JVM &#xFC;bergeben werden k&#xF6;nnen. Anhand der Beispieldatei wollmuxbar.l4j.ini kann die DirectDraw-Hardwarebeschleunigung abschalten.
+</div>
+
 <p><category:eierlegender_wollmux> <category:handbuch_des_wollmux></category:handbuch_des_wollmux></category:eierlegender_wollmux></p>
 <script type="text/javascript">var className='toc';</script>
                                 
@@ -1416,7 +1313,7 @@ DirectDraw-Hardwarebeschleunigung abschalten.</div></p>
 
             
                 
-                <a href="WollMux_installieren_vor_Version_16.04.html" class="navigation navigation-prev " aria-label="Previous page: WollMux installieren (vor Version 16.04)">
+                <a href="WollMux_installieren.html" class="navigation navigation-prev " aria-label="Previous page: WollMux installieren">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
@@ -1432,7 +1329,7 @@ DirectDraw-Hardwarebeschleunigung abschalten.</div></p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"WollMux manuell installieren","level":"1.3.6.2","depth":3,"next":{"title":"WollMux mit LibreOffice Portable","level":"1.3.6.3","depth":3,"path":"WollMux_mit_LibreOffice_Portable.md","ref":"WollMux_mit_LibreOffice_Portable.md","articles":[]},"previous":{"title":"WollMux installieren (vor Version 16.04)","level":"1.3.6.1","depth":3,"path":"WollMux_installieren_vor_Version_16.04.md","ref":"WollMux_installieren_vor_Version_16.04.md","articles":[]},"dir":"ltr"},"config":{"plugins":["atoc","collapsible-menu","forkmegithub","richquotes","redirect","splitter","back-to-top-button","link-checker"],"root":"markdown","styles":{"website":"styles/website.css"},"pluginsConfig":{"link-checker":{"dieOnError":false,"fqdn":[]},"collapsible-menu":{},"atoc":{"addClass":true,"className":"toc"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{},"highlight":{},"back-to-top-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"redirect":{},"forkmegithub":{"color":"gray","url":"https://github.com/WollMux/WollMux"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Landeshauptstadt München","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"WollMux Handbuch","language":"de","links":{"sidebar":{"Homepage":"http://www.wollmux.org"}},"gitbook":"3.x.x"},"file":{"path":"WollMux_manuell_installieren.md","mtime":"2019-08-27T11:32:48.884Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-27T11:55:34.387Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"WollMux manuell installieren","level":"1.3.6.1","depth":3,"next":{"title":"WollMux mit LibreOffice Portable","level":"1.3.6.2","depth":3,"path":"WollMux_mit_LibreOffice_Portable.md","ref":"WollMux_mit_LibreOffice_Portable.md","articles":[]},"previous":{"title":"WollMux installieren","level":"1.3.6","depth":2,"path":"WollMux_installieren.md","ref":"WollMux_installieren.md","articles":[{"title":"WollMux manuell installieren","level":"1.3.6.1","depth":3,"path":"WollMux_manuell_installieren.md","ref":"WollMux_manuell_installieren.md","articles":[]},{"title":"WollMux mit LibreOffice Portable","level":"1.3.6.2","depth":3,"path":"WollMux_mit_LibreOffice_Portable.md","ref":"WollMux_mit_LibreOffice_Portable.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["atoc","collapsible-menu","forkmegithub","richquotes","redirect","splitter","back-to-top-button","link-checker"],"root":"markdown","styles":{"website":"styles/website.css"},"pluginsConfig":{"link-checker":{"dieOnError":false,"fqdn":[]},"collapsible-menu":{},"atoc":{"addClass":true,"className":"toc"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{},"highlight":{},"back-to-top-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"redirect":{},"forkmegithub":{"color":"gray","url":"https://github.com/WollMux/WollMux"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Landeshauptstadt München","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"WollMux Handbuch","language":"de","links":{"sidebar":{"Homepage":"http://www.wollmux.org"}},"gitbook":"3.x.x"},"file":{"path":"WollMux_manuell_installieren.md","mtime":"2019-12-03T14:13:16.910Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-12-03T14:28:59.081Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
