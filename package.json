@@ -7,15 +7,15 @@
     "url": "https://github.com/WollMux/WollMuxHandbuch"
   },
   "devDependencies": {
-    "grunt": "~1.0.0",
+    "grunt": "^1.0.4",
     "grunt-concurrent": "^2.3.1",
     "grunt-contrib-jshint": "~1.0.0",
-    "grunt-contrib-nodeunit": "~1.0.0",
+    "grunt-contrib-nodeunit": "^2.0.0",
     "grunt-contrib-uglify": "~2.0.0",
     "grunt-contrib-watch": "^1.0.0",
     "grunt-gh-pages": "^2.0.0",
     "grunt-markdownlint": "^1.0.9",
-    "grunt-run": "^0.6.0",
+    "grunt-run": "^0.8.1",
     "grunt-serve": "^0.1.6",
     "load-grunt-tasks": "^3.5.2"
   },
