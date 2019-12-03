@@ -18,7 +18,7 @@ WollMux 18.0.2
 <tbody>
 <tr class="odd">
 <td colspan="2"><p><img src="images/Windows-icon.png" title="fig:Windows-icon.png" alt="Windows-icon.png" /> <a href="http://www.wollmux.net/files/18.0.2/wollmux-18.0.2-installer.jar">wollmux-18.0.2-installer.jar</a></p></td>
-<td><p>Der Windows Installer registriert automatisch die WollMux-Extension (.oxt) systemweit in LibreOffice/OpenOffice.org, kopiert die <a href="WollMuxBar.html" class="uri" title="wikilink">WollMuxBar</a> auf Ihr System und legt optional ein Desktop-Icon und einen Startmenü-Eintrag an. Sie benötigen Administratorrechte auf Ihrem Rechner, um den Installer ausführen zu können.<br />
+<td><p>Der Windows Installer registriert automatisch die WollMux-Extension (.oxt) systemweit in LibreOffice, kopiert die <a href="WollMuxBar.html" class="uri" title="wikilink">WollMuxBar</a> auf Ihr System und legt optional ein Desktop-Icon und einen Startmenü-Eintrag an. Sie benötigen Administratorrechte auf Ihrem Rechner, um den Installer ausführen zu können.<br />
 ''Anmerkung: Sie benötigen zusätzlich eine WollMux-Konfiguration, damit der WollMux funktioniert.</p></td>
 </tr>
 <tr class="even">

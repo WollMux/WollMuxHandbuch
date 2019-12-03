@@ -1,7 +1,7 @@
 ![](images/Wollmux_logo_medium.gif "fig:Wollmux_logo_medium.gif") - das Briefkopf- und Formularsystem der LHM
 ======================================================================================================
 
-Der “Eierlegende WollMux” (kurz: WollMux) ist eine Extension für [OpenOffice.org](http://www.openoffice.org) / [LibreOffice](http://www.documentfoundation.org), die von der [Landeshauptstadt München](http://www.muenchen.de) im Rahmen des LiMux-Projekts entwickelt wurde. Der WollMux erweitert OpenOffice.org / LibreOffice um zahlreiche Funktionen, welche die Arbeit mit Vorlagen, Formularen und Briefköpfen wesentlich erleichtern. Da der WollMux als OpenSource veröffentlicht wurde und für jeden frei verfügbar ist, kommt er mittlerweile auch in anderen Kommunen und Unternehmen zum Einsatz.
+Der “Eierlegende WollMux” (kurz: WollMux) ist eine Extension für [LibreOffice](http://www.documentfoundation.org), die von der [Landeshauptstadt München](http://www.muenchen.de) im Rahmen des LiMux-Projekts entwickelt wurde. Der WollMux erweitert LibreOffice um zahlreiche Funktionen, welche die Arbeit mit Vorlagen, Formularen und Briefköpfen wesentlich erleichtern. Da der WollMux als OpenSource veröffentlicht wurde und für jeden frei verfügbar ist, kommt er mittlerweile auch in anderen Kommunen und Unternehmen zum Einsatz.
 
 Mehr darüber, was der WollMux alles kann, erfahren Sie hier: **[Features des WollMux](Features.md)**
 

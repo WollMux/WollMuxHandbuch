@@ -1,4 +1,4 @@
-Der “Eierlegende WollMux” (kurz: WollMux) ist eine Extension für [LibreOffice](http://www.libreoffice.org/) und [OpenOffice.org](http://www.openoffice.org) , die von der [Landeshauptstadt München](http://www.muenchen.de) im Rahmen des [LiMux-Projekts](http://www.muenchen.de/limux) entwickelt wurde. Der WollMux bietet zahlreiche Funktionen, welche die Arbeit mit Vorlagen, Formularen und Briefköpfen wesentlich erleichtern.
+Der “Eierlegende WollMux” (kurz: WollMux) ist eine Extension für [LibreOffice](http://www.libreoffice.org/), die von der [Landeshauptstadt München](http://www.muenchen.de) im Rahmen des [LiMux-Projekts](http://www.muenchen.de/limux) entwickelt wurde. Der WollMux bietet zahlreiche Funktionen, welche die Arbeit mit Vorlagen, Formularen und Briefköpfen wesentlich erleichtern.
 
 ### Features des WollMux
 
