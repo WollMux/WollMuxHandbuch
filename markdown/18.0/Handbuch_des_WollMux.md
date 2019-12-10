@@ -1,5 +1,9 @@
 ![Eierlegender WollMux](100px-Wollmux.jpg "Eierlegender WollMux")
 
+> **Warning** Es gibt bereits eine neuere Version von WollMux unter [WollMux 18.1](../18.1/Handbuch_des_WollMux.md).
+> Diese Version erhält nur noch wichtige Fehlerbehebungen. Bitte steigen Sie auf die neue Version um.
+> Die Dokumentation kann von der Realität abweichen.
+
 Die Seiten dieser Kategorie stellen das Administrations-Handbuch des
 WollMux dar.
 
