@@ -2,7 +2,7 @@ Download
 ========
 
 D-III-ITD-D101 stellt Basisarchive der Standardkonfiguration auf der
-Seite [Standardkonfiguration des WollMux downloaden](../Download.md) zur
+Seite [Standardkonfiguration des WollMux downloaden](../Hauptseite.md) zur
 Verfügung.
 
 Inhalt
@@ -23,7 +23,7 @@ weiter unten.
 
 Zur Installation auf dem Basisclient gehen Sie wie folgt vor:
 
--   [Laden Sie sich die aktuelle Version herunter.](../Download.md)
+-   [Laden Sie sich die aktuelle Version herunter.](../Hauptseite.md)
 -   Extrahieren Sie sie in Ihr persönliches Verzeichnis.
 -   Öffnen Sie das Verzeichnis `/home/<benutzername>/.wollmux` (wobei
     `/home/<benutzername>` für Ihr persönliches Verzeichnis steht) im
@@ -526,7 +526,7 @@ Vorüberlegungen
 
 In unregelmäßigen Abständen stellt D-III-ITD-D101 neue Versionen der
 Standardkonfiguration auf der
-[Downloadseite](../Download.md)
+[Downloadseite](../Hauptseite.md)
 zur Verfügung.
 
 ### Kategorien von Änderungen
@@ -641,7 +641,7 @@ dabei eine lokale Kopie der aktuellen Referatskonfiguration, in die die
 -   *Backup anlegen*: Bevor Sie mit dem Update beginnen sollten Sie von
     Ihrer lokalen Kopie nochmals eine Kopie anlegen, um im Problemfall
     schnell und einfach auf die Originaldateien zugreifen zu können.
--   *Neue Standardkonfiguration entpacken*: Laden Sie sich die [neueste Version der Standardkonfiguration herunter](../Download.md)
+-   *Neue Standardkonfiguration entpacken*: Laden Sie sich die [neueste Version der Standardkonfiguration herunter](../Hauptseite.md)
     und entpacken Sie diese auf Ihrer lokalen Festplatte. Beachten Sie,
     dass es je nach eingesetztem Fileserver unter Umständen zu Problemen
     mit Symlinks kommen kann, wenn Sie auf einem Netzlaufwerk arbeiten.

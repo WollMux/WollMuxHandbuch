@@ -4,7 +4,6 @@
 * [News](News.md)
 * [Eierlegender WollMux](Eierlegender_WollMux.md)
   * [Features](Features.md)
-  * [Download](Download.md)
   * [Code Repository](Repository.md)
   * [WollMux kompilieren](WollMux_kompilieren.md)
   * [WollMux Debugging](Wollmux-Debugging.md)

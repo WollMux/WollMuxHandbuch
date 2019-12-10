@@ -1,7 +1,7 @@
 Download
 ========
 
-D-III-ITD-D101 stellt Basisarchive der Standardkonfiguration auf der Seite [Standardkonfiguration des WollMux downloaden](../Download.md) zur Verfügung.
+D-III-ITD-D101 stellt Basisarchive der Standardkonfiguration auf der Seite [Standardkonfiguration des WollMux downloaden](../Hauptseite.md) zur Verfügung.
 
 Inhalt
 ======
@@ -14,7 +14,7 @@ Installation auf dem Arbeitsplatzrechner (Basisclient)
 Zu allererst sollten Sie die Standardkonfiguration lokal auf einem Basisclient installieren. Erst wenn Sie dies erfolgreich durchgeführt und lokal Ihre referatsspezifischen Änderungen eingepflegt und getestet haben, können Sie im nächsten Schritt die Konfiguration auf dem Server testen. Beachten Sie hierzu auch den empfohlenen Workflow zur [Anpassung und Pflege der Standardkonfiguration](#anpassung-und-pflege-der-standardkonfiguration) weiter unten.
 
 Zur Installation auf dem Basisclient gehen Sie wie folgt vor:
-- [Laden Sie sich die aktuelle Version herunter.](../Download.md)
+- [Laden Sie sich die aktuelle Version herunter.](../Hauptseite.md)
 - Extrahieren Sie sie in Ihr persönliches Verzeichnis.
 - Öffnen Sie das Verzeichnis `/home/<benutzername>/.wollmux` (wobei `/home/<benutzername>` für Ihr persönliches Verzeichnis steht) im Dateimanager (Dolphin). Falls das Verzeichnis noch nicht existiert, legen Sie es an. Beachten Sie, dass das erste Zeichen des Verzeichnisnamens ein Punkt ist.
   > **INFO** Damit Dateien und Verzeichnisse deren Name mit Punkt beginnt (wie `.wollmux`) im Konqueror angezeigt werden, muss die Option *Ansicht/Versteckte Dateien anzeigen* gesetzt sein.
@@ -226,7 +226,7 @@ Update der Standardkonfiguration
 Vorüberlegungen
 ---------------
 
-In unregelmäßigen Abständen stellt D-III-ITD-D101 neue Versionen der Standardkonfiguration auf der [Downloadseite](../Download.md) zur Verfügung.
+In unregelmäßigen Abständen stellt D-III-ITD-D101 neue Versionen der Standardkonfiguration auf der [Downloadseite](../Hauptseite.md) zur Verfügung.
 
 ### Kategorien von Änderungen
 
@@ -269,7 +269,7 @@ Vorgehensweise zur Durchführung des Update
 
 Das Einpflegen der Änderungen eines neuen Releases der von D-III-ITD-D101 bereitgestellten Standardkonfiguration in Ihre Referatskonfiguration folgt grundsätzlich dem selben Workflow wie weiter oben im Abschnitt [Anpassung und Pflege der Standardkonfiguration](#anpassung-und-pflege-der-standardkonfiguration) beschrieben. Die dort beschriebenen Schritte werden hier nicht wiederholt. Nur die Schritte zur Durchführung der zum Update notwendigen Änderungen sind im Folgenden genauer ausgeführt. Ausgangssituation ist dabei eine lokale Kopie der aktuellen Referatskonfiguration, in die die Änderungen eingepflegt werden sollen.
 - *Backup anlegen*: Bevor Sie mit dem Update beginnen sollten Sie von Ihrer lokalen Kopie nochmals eine Kopie anlegen, um im Problemfall schnell und einfach auf die Originaldateien zugreifen zu können.
-- *Neue Standardkonfiguration entpacken*: Laden Sie sich die [neueste Version der Standardkonfiguration herunter](../Download.md) und entpacken Sie diese auf Ihrer lokalen Festplatte. Beachten Sie, dass es je nach eingesetztem Fileserver unter Umständen zu Problemen mit Symlinks kommen kann, wenn Sie auf einem Netzlaufwerk arbeiten. Die Arbeit auf der lokalen Festplatte ist daher meist anzuraten.
+- *Neue Standardkonfiguration entpacken*: Laden Sie sich die [neueste Version der Standardkonfiguration herunter](../Hauptseite.md) und entpacken Sie diese auf Ihrer lokalen Festplatte. Beachten Sie, dass es je nach eingesetztem Fileserver unter Umständen zu Problemen mit Symlinks kommen kann, wenn Sie auf einem Netzlaufwerk arbeiten. Die Arbeit auf der lokalen Festplatte ist daher meist anzuraten.
 - `xupdate`'' ausführen'': Starten Sie aus dem Verzeichnis *scripts* das Skript `xupdate`.
 
   > **WARNING** Es ist wichtig, dass Sie das `xupdate` Skript aus der *neuen* Standardkonfiguration verwenden, da nur das neue Skript alle Neuerungen korrekt übertragen kann.<br>

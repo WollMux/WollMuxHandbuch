@@ -11,7 +11,7 @@ Der folgende Wegweiser soll Ihnen dabei helfen, den Einstieg in die Dokumentatio
 
 #### Wie bekomme ich den WollMux zum laufen?
 
-Lesen Sie zuerst [WollMux downloaden](../Download.md) und [WollMux installieren](../WollMux_installieren.md), dann [Konfiguration des WollMux in Ihrem Referat](Konfiguration_des_WollMux_in_Ihrem_Referat.md).
+Lesen Sie zuerst [WollMux downloaden](../Hauptseite.md) und [WollMux installieren](../WollMux_installieren.md), dann [Konfiguration des WollMux in Ihrem Referat](Konfiguration_des_WollMux_in_Ihrem_Referat.md).
 
 #### Welche Möglichkeiten der Anpassung bietet der WollMux?
 
