@@ -1,7 +1,5 @@
 Die folgenden Mailinglisten stehen Ihnen zur Verfügung um Kontakt mit unseren WollMux-Entwicklern und anderen WollMux-Interessierten aufzunehmen.
 
-Bei Fragen oder Problemen können Sie sich auch an *limux@muenchen.de* wenden.
-
 ### wollmux-general
 
 *wollmux-general* ist eine offene Diskussionsliste für alle WollMux-Angelegenheit, inklusive Endbenutzer- und Entwickler-Fragen. Sie müssen die Liste abbonniert haben, um darauf posten zu können.
