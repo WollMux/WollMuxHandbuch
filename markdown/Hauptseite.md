@@ -5,20 +5,20 @@ Der “Eierlegende WollMux” (kurz: WollMux) ist eine Extension für [LibreOffi
 
 Mehr darüber, was der WollMux alles kann, erfahren Sie hier: **[Features des WollMux](Features.md)**
 
-> **Info**  <span style="font-size:larger;font-weight:bold;color:#1D9101">WollMux Herunterladen (nur aus dem internen Netzwerk möglich)</span>
-> - **[WollMux 18.0.11](http://webdav.muenchen.de/limux/sonstiges/wollmux/packages/WollMux-18.0.11)**
-> - **[WollMux 18.1.6](http://webdav.muenchen.de/limux/sonstiges/wollmux/packages/WollMux-18.1.6)** (Testversion)
+> **Info**  <span style="font-size:larger;font-weight:bold;color:#1D9101">WollMux Herunterladen</span>
+> - **[WollMux 18.0.12](https://github.com/WollMux/WollMux/releases/tag/RELEASE_18.0.12)**
+> - **[WollMux 18.1.8](https://github.com/WollMux/WollMux/releases/tag/RELEASE_18.1.8)**
 > - **[WollMux-Konfiguration 18.0.7](http://webdav.muenchen.de/limux/sonstiges/wollmux/packages/wollmux-standard-config-18.0.7)**
-> - [Andere Versionen](http://webdav.muenchen.de/limux/sonstiges/wollmux/packages/)
+> - [Andere Versionen](https://github.com/WollMux/WollMux/releases)
 >
 > <span style="font-size:smaller; color:gray;">Um alle Features des WollMux nutzen zu können ist eine WollMux-Konfiguration erforderlich!</span>
 
 Dokumentation
 -------------
 
-**[Handbuch des WollMux](18.0/Handbuch_des_WollMux.md)** - Anleitungen zur Verwendung und Konfiguration des WollMux
+**[Handbuch des WollMux](18.1/Handbuch_des_WollMux.md)** - Anleitungen zur Verwendung und Konfiguration des WollMux
 
-**[FormularMax-Handbuch](18.0/FormularMax/FormularMax.md)** - Ausführliches Handbuch für die Erstellung von WollMux-Vorlagen mit dem im WollMux enthaltenen “FormularMax 4000”
+**[FormularMax-Handbuch](18.1/FormularMax/FormularMax.md)** - Ausführliches Handbuch für die Erstellung von WollMux-Vorlagen mit dem im WollMux enthaltenen “FormularMax 4000”
 
 **[WollMux-Seriendruck (PDF)](http://www.wollmux.net/files/WollMux_Seriendruck.pdf)** - Ausführliches Handbuch für den WollMux Seriendruck
 
