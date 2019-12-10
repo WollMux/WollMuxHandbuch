@@ -2,11 +2,11 @@
 
 ### Quicklinks
 
-[WollMux downloaden](Download.md)
+[WollMux downloaden](Hauptseite.md)
 
-[Konfiguration des WollMux in Ihrem Referat](18.0/Konfiguration_des_WollMux_in_Ihrem_Referat.md)
+[Konfiguration des WollMux in Ihrem Referat](18.1/Konfiguration_des_WollMux_in_Ihrem_Referat.md)
 
-[Handbuch und Wegweiser](18.0/Handbuch_des_WollMux.md)
+[Handbuch und Wegweiser](18.1/Handbuch_des_WollMux.md)
 
 ### Definition
 

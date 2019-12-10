@@ -11,7 +11,7 @@ Download
 ========
 
 D-III-ITD-D101 stellt Basisarchive der Standardkonfiguration auf der
-Seite [Standardkonfiguration des WollMux downloaden](../Download.md) zur
+Seite [Standardkonfiguration des WollMux downloaden](../Hauptseite.md) zur
 Verfügung.
 
 Installation

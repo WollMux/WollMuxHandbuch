@@ -21,7 +21,7 @@ Dokumentation zu finden.
 
 #### Wie bekomme ich den WollMux zum laufen?
 
-Lesen Sie zuerst [WollMux downloaden](../Download.md) und
+Lesen Sie zuerst [WollMux downloaden](../Hauptseite.md) und
 [WollMux installieren](../WollMux_installieren.md), dann
 [Konfiguration des WollMux in Ihrem
 Referat](Konfiguration_des_WollMux_in_Ihrem_Referat.md).

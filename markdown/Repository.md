@@ -37,6 +37,6 @@ Wenn Sie den Quelltext von WollMux ausgecheckt haben, können Sie theoretisch de
 > **Hint** Um alle Features des WollMux verwenden zu können, wird
 > zusätzlich eine WollMux-Konfiguration benötigt. Eine
 > Beispielkonfiguration befindet sich z.B. in unserem
-> [Download-Bereich](Download.md).
+> [Download-Bereich](Hauptseite.md).
 
 <Category:Eierlegender_WollMux> <Category:Handbuch_des_WollMux>
