@@ -189,4 +189,3 @@ Weitere Informationen:
 * [wollmux:FunctionDialog](Schnittstellen_des_WollMux_fuer_Experten.md#wollmuxfunctiondialog)
 * [Fragen rund um Datenquellen](Fragen_rund_um_Datenquellen.md)
 * [Handbuch des WollMux](Handbuch_des_WollMux.md)
-* [Eierlegender WollMux](../Eierlegender_WollMux.md)

@@ -1,6 +1,6 @@
 <!-- toc -->
 
-Der [WollMux](../Eierlegender_WollMux.md) hat
+Der WollMux hat
 konzeptuell nur eine einzige Konfigurationsdatei, im Folgenden als
 *wollmux.conf* bezeichnet. In der Praxis wird diese meist mit Hilfe des
 [%include-Mechanismus](Format_von_WollMux-Config-Dateien.md#include)
