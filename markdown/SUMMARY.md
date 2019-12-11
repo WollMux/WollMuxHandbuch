@@ -4,9 +4,6 @@
   * [News](News.md)
   * [Features](Features.md)
   * [Getting started](Getting_Started.md)
-  * [Releasenotes](Releasenotes_16.04.md)
-    * [Releasenotes 16.04](Releasenotes_16.04.md)
-    * [Releasenotes 15.04](Releasenotes_15.04.md)
   * [Bekannte Probleme mit WollMux Releases](Bekannte_Probleme_mit_WollMux-Releases.md)
   * [Mailinglisten](Mailinglisten.md)
 
