@@ -1,7 +1,6 @@
 # Inhalt
 
 * [Einführung](Hauptseite.md)
-  * [News](News.md)
   * [Features](Features.md)
   * [Getting started](Getting_Started.md)
   * [Bekannte Probleme mit WollMux Releases](Bekannte_Probleme_mit_WollMux-Releases.md)
