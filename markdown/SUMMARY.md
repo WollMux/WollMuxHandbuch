@@ -3,7 +3,6 @@
 * [Einführung](Hauptseite.md)
   * [Features](Features.md)
   * [Getting started](Getting_Started.md)
-  * [Bekannte Probleme mit WollMux Releases](Bekannte_Probleme_mit_WollMux-Releases.md)
   * [Mailinglisten](Mailinglisten.md)
 
 * [WollMux 18.0](18.0/Handbuch_des_WollMux.md)
