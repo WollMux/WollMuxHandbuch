@@ -11,6 +11,8 @@ Mehr darüber, was der WollMux alles kann, erfahren Sie hier: **[Features des Wo
 > - **[WollMux-Konfiguration 18.0.7](http://webdav.muenchen.de/limux/sonstiges/wollmux/packages/wollmux-standard-config-18.0.7)**
 > - [Andere Versionen](https://github.com/WollMux/WollMux/releases)
 >
+> [Release Notes](https://github.com/WollMux/WollMux/blob/master/doc/ChangeLog)
+>
 > <span style="font-size:smaller; color:gray;">Um alle Features des WollMux nutzen zu können ist eine WollMux-Konfiguration erforderlich!</span>
 
 Dokumentation
