@@ -1,12 +1,9 @@
 # Inhalt
 
 * [Einführung](Hauptseite.md)
-* [News](News.md)
-* [Eierlegender WollMux](Eierlegender_WollMux.md)
+  * [News](News.md)
   * [Features](Features.md)
-  * [WollMux installieren](WollMux_installieren.md)
-    * [WollMux manuell installieren](WollMux_manuell_installieren.md)
-    * [WollMux mit LibreOffice Portable](WollMux_mit_LibreOffice_Portable.md)
+  * [Getting started](Getting_Started.md)
   * [Releasenotes](Releasenotes_16.04.md)
     * [Releasenotes 16.04](Releasenotes_16.04.md)
     * [Releasenotes 15.04](Releasenotes_15.04.md)
