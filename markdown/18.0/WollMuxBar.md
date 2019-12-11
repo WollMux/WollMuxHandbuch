@@ -9,7 +9,7 @@ Installation
 Die WollMuxBar wird ausgeliefert als JAR-Datei *WollMuxBar.jar*. Diese
 JAR-Datei kann an einen beliebigen Ort kopiert werden. Weiteres erfahren
 Sie auf den Seiten [WollMux downloaden](../Hauptseite.md)
-und [WollMux installieren](../WollMux_installieren.md).
+und [WollMux installieren](../Getting_Started.md).
 
 Konfiguration
 -------------
