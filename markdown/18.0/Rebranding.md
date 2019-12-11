@@ -16,10 +16,8 @@ Benutzer-sichtbaren Vorkommen des Namens “WollMux” zu ändern.
 
 Auf dieser Wiki-Seite wird dokumentiert, welche Schritte dafür
 auszuführen sind. Voraussetzung für die hier beschriebenen Anpassungen
-ist auf jeden Fall eine korrekt eingerichtete WollMux-Buildumgebung mit
-dem aus dem [Repository](../Repository.md) ausgecheckten
-WollMux-Quelltext. Mehr dazu wie man eine WollMux-Buildumgebung
-aufsetzen kann, findet sich unter anderem auf der Seite "[WollMux kompilieren](../WollMux_kompilieren)".
+ist auf jeden Fall eine korrekt eingerichtete WollMux-Buildumgebung Nähere
+Informationen dazu finden Sie auf [GitHub](https://github.com/WollMux/WollMux).
 
 ### Anpassung der WollMux-Konfiguration
 
