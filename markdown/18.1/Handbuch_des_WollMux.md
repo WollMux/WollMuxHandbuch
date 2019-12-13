@@ -19,7 +19,7 @@ Lesen Sie zuerst [Konfiguration des WollMux in Ihrem Referat](Konfiguration_des_
 
 #### Ich möchte eine Vorlage/ein Formular erstellen.
 
-Lesen Sie [Textfragmente im WollMux](Textfragmente_im_WollMux.md), danach [Erstellung oder Anpassung einer Vorlage - Beispiel](FormularMax/Erstellung_oder_Anpassung_einer_Vorlage_-_Beispiel.md) und zu guter letzt [Dokumentkommandos des WollMux](Dokumentkommandos_des_WollMux.md). Außerdem lohnt ein Blick ins [Handbuch des FormularMax](FormularMax/FormularMax.md) und [WollMux-Seriendruck (PDF)](http://www.wollmux.net/files/WollMux_Seriendruck.pdf).
+Lesen Sie [Textfragmente im WollMux](Textfragmente_im_WollMux.md), danach [Erstellung oder Anpassung einer Vorlage - Beispiel](FormularMax/Erstellung_oder_Anpassung_einer_Vorlage_-_Beispiel.md) und zu guter letzt [Dokumentkommandos des WollMux](Dokumentkommandos_des_WollMux.md). Außerdem lohnt ein Blick ins [Handbuch des FormularMax](FormularMax/FormularMax.md) und [WollMux-Seriendruck](MailMerge/Seriendruck.md).
 
 #### Ich möchte ein tieferes Verständnis für die Technik des WollMux.
 

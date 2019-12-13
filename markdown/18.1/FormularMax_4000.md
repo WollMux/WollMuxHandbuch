@@ -5,7 +5,7 @@ Der FormularMax 4000 ist eine integrierte Entwicklungsumgebung für die Erstellu
 Handbuch für WollMux-Vorlagenumsteller
 ======================================
 
-Unter Mithilfe von Teilnehmern der Umsteller-Kurse und eOS-Mitarbeitern ist **[ein Handbuch (PDF)](http://www.wollmux.net/files/FormularMax_Handbuch.pdf)** entstanden, das die Verwendung des FormularMax 4000 ausführlicher beschreibt, als es diese Wiki-Seite tut. Dieses Handbuch wird jedoch (im Gegensatz zu dieser Wiki-Seite) nicht aktuell gehalten.
+Unter Mithilfe von Teilnehmern der Umsteller-Kurse und eOS-Mitarbeitern ist **[ein Handbuch](FormularMax/FormularMax.md)** entstanden, das die Verwendung des FormularMax 4000 ausführlicher beschreibt, als es diese Wiki-Seite tut. Dieses Handbuch wird jedoch (im Gegensatz zu dieser Wiki-Seite) nicht aktuell gehalten.
 
 Button einrichten
 =================
