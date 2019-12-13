@@ -22,7 +22,7 @@ Dokumentation
 
 **[FormularMax-Handbuch](18.1/FormularMax/FormularMax.md)** - Ausführliches Handbuch für die Erstellung von WollMux-Vorlagen mit dem im WollMux enthaltenen “FormularMax 4000”
 
-**[WollMux-Seriendruck (PDF)](http://www.wollmux.net/files/WollMux_Seriendruck.pdf)** - Ausführliches Handbuch für den WollMux Seriendruck
+**[WollMux-Seriendruck (PDF)](18.1/MailMerge/Seriendruck.md)** - Ausführliches Handbuch für den WollMux Seriendruck
 
 **[Mailinglisten](Mailinglisten.md)** - Weitere Hilfe steht Ihnen jederzeit über unsere Mailinglisten zur Verfügung.
 
