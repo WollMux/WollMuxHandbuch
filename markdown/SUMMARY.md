@@ -80,5 +80,6 @@
     * [Komfortfunktionen und weitere Features](18.1/FormularMax/Komfortfunktionen.md)
     * [Kombinationsmöglichkeiten mit dem Seriendruck](18.1/FormularMax/KomboSeriendruck.md)
     * [Umstellung von MS Word Vorlagen](18.1/FormularMax/MS_Word_Vorlagen.md)
+  * [Seriendruck Handbuch](18.1/MailMerge/Seriendruck.md)
 
 * [Hidden](README.md)
