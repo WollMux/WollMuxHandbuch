@@ -49,6 +49,7 @@
     * [Komfortfunktionen und weitere Features](18.0/FormularMax/Komfortfunktionen.md)
     * [Kombinationsmöglichkeiten mit dem Seriendruck](18.0/FormularMax/KomboSeriendruck.md)
     * [Umstellung von MS Word Vorlagen](18.0/FormularMax/MS_Word_Vorlagen.md)
+  * [Seriendruck Handbuch](18.0/MailMerge/Seriendruck.md)
 
 * [WollMux 18.1](18.1/Handbuch_des_WollMux.md)
   * [Handbuch des WollMux](18.1/Handbuch_des_WollMux.md)
