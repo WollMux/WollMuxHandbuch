@@ -24,16 +24,12 @@ Dokumentation
 
 **[WollMux-Seriendruck (PDF)](18.1/MailMerge/Seriendruck.md)** - Ausführliches Handbuch für den WollMux Seriendruck
 
-**[Mailinglisten](Mailinglisten.md)** - Weitere Hilfe steht Ihnen jederzeit über unsere Mailinglisten zur Verfügung.
-
 Source Code
 -----------
 
 Der WollMux ist ein OpenSource-Projekt (lizenziert unter der [European Union Public License](http://joinup.ec.europa.eu/software/page/eupl)). Den aktuellen Quelltext finden Sie in unserem **[Source Code Repository](https://github.com/WollMux/WollMux)**.
 
 Eine Anleitung zum Auschecken des Quelltextes aus dem Code Repository und wie Sie den WollMux selber compilieren können, finden Sie im ReadMe des Repositorys.
-
-Bei weitergehenden Fragen wenden Sie sich an unsere **[Mailinglisten](Mailinglisten.md)**.
 
 Fehlermeldungen
 ---------------
