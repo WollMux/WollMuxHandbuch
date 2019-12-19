@@ -3,7 +3,6 @@
 * [Einführung](Hauptseite.md)
   * [Features](Features.md)
   * [Getting started](Getting_Started.md)
-  * [Mailinglisten](Mailinglisten.md)
 
 * [WollMux 18.0](18.0/Handbuch_des_WollMux.md)
   * [Handbuch des WollMux](18.0/Handbuch_des_WollMux.md)
