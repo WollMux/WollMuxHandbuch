@@ -30,8 +30,7 @@ First, read [Configuring\_WollMux](Configuring_WollMux.md), then
 
 Read
 [Text\_fragments\_in\_wollmux](Text_fragments_in_wollmux.md),
-then [FormularMax Handbook
-(PDF)](http://www.wollmux.net/files/FormularMax_Handbook_english.pdf)
+then [FormularMax Handbook](MailMerge/Seriendruck.md)
 and, last but not least,
 [WollMux\_document\_commands](WollMux_document_commands.md).
 
