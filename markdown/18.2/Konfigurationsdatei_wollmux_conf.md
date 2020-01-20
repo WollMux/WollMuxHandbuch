@@ -2430,15 +2430,6 @@ Die Option ALLOW\_USER\_CONFIG
 
 Hintergrund dieser Option: Da die Einstellungen in der Datei *wollmuxbar.conf* grundsätzlich Vorrang vor den Einstellungen in der Datei *wollmux.conf* haben, besteht das Risiko, dass Benutzer ungewollt eine vorgegebene Einstellung aus den Referaten überschreiben. Durch Deaktivierung der Option ALLOW\_USER\_CONFIG kann dies (dauerhaft oder zum Zweck der Fehlersuche) sicher vermieden werden.
 
-Die Option ALLOW\_EXTERNAL\_WOLLMUX
------------------------------------
-
-Die Option ALLOW\_EXTERNAL\_WOLLMUX unterstützt die WollMux-Entwickler beim Debugging und ist auf der Seite [Wollmux-Debugging - Einstellungen\_in\_der\_wollmux.conf](Wollmux-Debugging.md#verwendung) ausführlicher beschrieben.
-
-**Sie ist standardmäßig deaktiviert** und kann über folgende Zeile in der Konfigurationsdatei *wollmux.conf* aktiviert werden:
-
-`ALLOW_EXTERNAL_WOLLMUX "true"`
-
 FormularMax4000
 ===============
 
