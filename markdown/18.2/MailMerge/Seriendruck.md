@@ -443,7 +443,7 @@ Um den Serienbrief zu drucken betätigen Sie die Schaltfläche *Drucken* in der 
 Diese Option ist die Standard Option, wenn Sie den Seriendruck Dialog starten. Sie bietet zwei mögliche Ausgabeformate:
 - **ODT-Datei**
   - Mit dieser Auswahl wird der Seriendruck mit allen Datensätzen in ein einzelnes Dokument geschrieben, das dann alle Datensätze enthält.
-  - Ermöglicht die Vorschau, nachträgliche Bearbeitung und Archivierung
+  - Ermöglicht die Vorschau und Archivierung
   - Unterstützt „nächster Datensatz“ Funktion
 - **PDF-Datei**
   - Ermöglicht die Vorschau und Archivierung, aber keine nachträgliche Bearbeitung
