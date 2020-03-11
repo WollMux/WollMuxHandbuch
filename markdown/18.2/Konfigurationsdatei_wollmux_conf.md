@@ -43,10 +43,10 @@ Wird der DEFAULT\_CONTEXT nicht angegeben, so wird das Verzeichnis als DEFAULT\_
 
 Wird ein relativer Pfad als DEFAULT\_CONTEXT angegeben (z.B. ../netzlaufwerke/fileserver/wollmux), so wird dieser relativ zu dem Verzeichnis ausgewertet, in dem die wollmux.conf [gefunden wurde](#top).
 
-Der SERVER-Parameter
+Der CONF_SERVER-Parameter
 ====================
 
-`SERVER "http://myconf.wollmux"`
+`CONF_SERVER "http://myconf.wollmux"`
 
 Der SERVER-Parameter ist eine URL zu einem Server, der die Konfiguration des Wollmux übernimmt. Wenn dieser Parameter gesetzt ist, wird *immer* der Weg über den Server genommen. Wenn dieser nicht gesetzt ist, wird vorausgesetzt, dass in der wollmux.conf bereits eine valide Konfiguration (mit "DEFAULT_CONTEXT"- und "%include"-Parameter) vorhanden ist. Leichte Modifikationen sind durch den USERNAME-Parameter möglich, der im anschließenden näher erklärt wird.
 An den Server wird ein HTTP-Post Request mit folgendem Inhalt gesendet:
