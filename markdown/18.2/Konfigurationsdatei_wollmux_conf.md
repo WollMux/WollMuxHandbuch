@@ -310,53 +310,6 @@ Dialoge(
 )
 ```
 
-Warndialog bei mehrfacher Installation des WollMux
---------------------------------------------------
-
-Eine häufige Quelle für Ärger und zeitaufendige Fehlersuchen sind sog. Mehrfachinstallationen des WollMux. Sie entstehen üblicherweise dann, wenn ein WollMux-Paket installiert wird, während noch ein offener soffice-Prozess läuft. Dadurch kann die alte Version des WollMux-Pakets u.U. nicht fehlerfrei deinstalliert werden und es bleibt eine alte, nicht funktionierende WollMux-Installation übrig. Eine Mehrfachinstallation kann auch dann auftreten, wenn eine systemweite Installation und eine benutzerspezifische Installation des WollMux gleichzeitig vorliegen. Als Folge kann es sein, dass der WollMux nicht fehlerfrei arbeitet und unverhersehbare Fehler produziert.
-
-Um die Ursache derartiger Fehler frühzeitig erkennen zu können, wurde folgender Warndialog eingeführt. Beim Starten von LibreOffice oder beim Öffnen der WollMux-Leiste erfolgt eine Prüfung, ob der WollMux mehrfach installiert ist. Dabei werden sowohl die systemweiten als auch die benutzerspezifischen Installationsziele von LibreOffice untersucht. Wird mehr als eine WollMux-Installation erkannt oder ändert sich das Datum der jüngsten Installation, so wird der Warndialog und eine entsprechende Fehlermeldung in der Datei wollmux.log ausgegeben.
-
-Der angezeigte Text des Warndialogs kann wie im folgenden Beispiel über den Konfigurationsabschnitt Dialoge/MehrfachinstallationWarndialog frei konfiguriert werden:
-```
-Dialoge(
-  MehrfachinstallationWarndialog(
-    TITLE "Mehrfachinstallation des WollMux"
-    MSG( 
-         "Der WollMux ist mehrfach auf Ihrem System installiert.%n"
-         "Dieser Zustand kann zu unerklärbaren Effekten führen%n"
-         "und sollte daher dringend bereinigt werden.%n"
-         "%n"
-         "Die jüngste Installation liegt unter:%n"
-         "- ${RECENT_INST_PATH}%n"
-         "%n"
-         "Außerdem wurden folgende Installationen gefunden:%n"
-         "${OTHER_INSTS_LIST}"
-       )
-    )
-)
-```
-
-Der gesamte Abschnitt MehrfachinstallationWarndialog ist optional. Fehlt er, so wird im Fehlerfall ein Warndialog mit den voreingestellten Inhalten des WollMux angezeigt. Ist der Abschnitt definiert, so können folgende Werte gesetzt werden:
-
-Das Attribut 'TITLE': Das Attribut enthält die Kopfzeile des Warndialogs. Die Angabe von TITLE ist optional. Wenn TITLE nicht angebeben ist, wird die entsprechende Voreinstellungen des WollMux verwendet.
-
-Das Attribut 'MSG': Das Attribut enthält den eigentlichen Text Inhalt des Warndialogs. Innerhalb des Abschnitts MehrfachinstallationWarndialog ist die Angabe von MSG immer notwendig. Fehlt MSG, so wird die Anzeige des Dialogs dadurch deaktiviert. Innerhalb von MSG können folgende Variablen verwendet werden, die mit den zur Laufzeit bestimmten Werten des WollMux gefüllt werden:
-- **${RECENT\_INST\_PATH}**: Enthält den Pfad der jüngsten WollMux-Installation, die auf dem System gefunden wurde.
-- **${RECENT\_INST\_LAST\_MODIFIED}**: Enthält das Datum der letzten Änderung der jüngsten WollMux-Installation, die auf dem System gefunden wurde.
-- **${OTHER\_INSTS\_LIST}**: Enthält eine Liste mit den Pfaden aller anderen konkurrierenden WollMux-Installation, die auf dem System gefunden wurden.
-
-### Warndialog deaktivieren
-
-Zum Deaktivieren des Warndialogs genügt es, einen leeren Dialoge/MehrfachinstallationWarndialog-Abschnitt in der wollmux.conf zu definieren:
-```
-Dialoge(
-  MehrfachinstallationWarndialog(
-  )
-)
-```
-Der Warndialog wird damit nicht mehr angezeigt. Die entsprechende Fehlermeldung in der Datei wollmux.log erscheint aber trotzdem.
-
 Textfragmente
 =============
 
