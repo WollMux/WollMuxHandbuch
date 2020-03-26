@@ -58,14 +58,11 @@ Erlaubt es, den Fenstertitel der Formular-Eingabemaske zu editieren.
 In der erscheinenden Maske können eine oder mehrere Druckfunktionen aus einer DropDown-Liste ausgewählt und für dieses Dokument gesetzt werden. In der DropDown-Liste werden alle Druckfunktionen angezeigt, die im globalen [Druckfunktionen-Abschnitt](Konfigurationsdatei_wollmux_conf.md#druckfunktionen) der WollMux-Konfiguration konfiguriert sind.
 
 Achtung: Die folgenden Druckfunktionen lassen sich **nicht** sinnvoll mit dem FormularMax 4000 verwenden. Wenn Sie hier eine dieser Druckfunktionen setzen, so wird es nicht das tun, was sie vielleicht erwarten.
-* PDFGesamtdokumentOutput
 * SachleitendeVerfuegung
 * MailMergeNewSetFormValue
 * OOoMailMergeToOdtFile
 * MailMergeNewToEMail
 * Seriendruck
-* PDFGesamtdokument
-* Gesamtdokument
 * MailMergeNewToSingleODT
 * SachleitendeVerfuegungOutput
 * OOoMailMergeToPrinter

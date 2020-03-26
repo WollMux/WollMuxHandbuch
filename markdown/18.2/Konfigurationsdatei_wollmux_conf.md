@@ -2039,16 +2039,19 @@ Druckfunktionen(
 
 Das Attribut ORDER: Verschiedene Druckfunktionen können beliebig kombiniert und hintereinander ausgeführt werden. Ein praktischer Anwendungszweck ist z.B. die Möglichkeit, den Komfortdruck für Sachleitende Verfügungen mit dem Komfortdruck für Serienbriefe zu verketten. Das Attribut ORDER definiert dabei die Reihenfolge, in der die einzelnen Druckfunktionen kombiniert werden, wobei Druckfunktionen mit kleinem ORDER-Wert vor Druckfunktionen mit höherem ORDER-Wert ausgeführt werden. Das Attribut ORDER ist für alle Druckfunktionen optional, sollte aber stets angegeben werden, damit die Aufrufkette immer eindeutig definiert ist. Ist das ORDER-Attribut nicht angegeben, so wird automatisch die Voreinstellung "100" verwendet.
 
-de.muenchen.allg.itd51.wollmux.func.StandardPrint
--------------------------------------------------
+Standard Druckfunktionen
+------------------------
 
-Dieses Java-Modul enthält einige vorgefertigte Standard-Druckfunktionen. Alle diese Druckfunktionen sind auch in der WollMux-Standard-Konfiguration definiert.
-- *sachleitendeVerfuegung*: Druckt die verschiedenen Ausdrucke eines Dokuments mit Sachleitenden Verfügungen.
-- *sachleitendeVerfuegungOutput*: Die Druckfunktion wird automatisch im Hintergrund von der Druckfunktion sachleitendeVerfuegung verwendet und muss nie direkt aufgerufen bzw. eingebunden werden.
-- *mailMergeWithoutSelection*: Serienbriefdruck: Druckt für jeden Datensatz der über Bearbeiten/Datenbank austauschen gewählten Tabelle eine entsprechende Ausfertigung.
-- *mailMergeWithSelection*: Serienbriefdruck: Präsentiert dem Benutzer eine Auswahlliste in der er die Datensätze wählen kann, für die eine Ausfertigung gedruckt werden soll. Angezeigt wird in dieser Liste für jeden Datensatz der Inhalt der Spalte "WollMuxDescription". Ist eine Spalte "WollMuxSelected" vorhanden und enthält "1", "ja" oder "true", so ist der entsprechende Datensatz in der Auswahlliste bereits vorselektiert.
-- *superMailMerge*: Interaktive Seriendruckfunktion: Lässt den Benutzer eine Tabelle einer in OOo registrierten Datenquelle *oder eine Tabelle einer offenen Calc-Datei* auswählen als Datenlieferant für den Seriendruck. Im Falle der Calc-Tabelle werden nur die sichtbaren Zellen verwendet. Es ist also möglich, vor dem Seriendruck in Calc die Daten zu filtern. Ein Button *Einzelauswahl* erlaubt eine manuelle Selektion genau wie bei der Funktion *mailMergeWithSelection*. Die Spalten "WollMuxDescription" und "WollMuxSelected" werden in diesem Fall wie dort beschrieben ausgewertet.
-- *printIntoFile*: "Druckt" den Inhalt in ein offenes Writer-Dokument. Das XTextDocument in das der Druck geschrieben werden soll kann über das Property `PrintIntoFile_OutputDocument` des XPrintModels gesetzt werden. Ist dieses Property nicht gesetzt, so wird ein neues Dokumentfenster geöffnet.
+Einige Druckfuntkionen sind im WollMux automatisch enthalten, ohne dass diese definiert werden müssen. Eine Redefinition ist möglich.
+* **SachleitendeVerfuegung** (Order 50): Druckt ein Dokument mit allen Sachleitenden Verfügungen aus.
+* **SachleitendeVerfuegungOutput** (Order 150): Druckt einen Sachleitende Verfügung aus.
+* **MailMergeNewSetFormValue** (Order 75): Setzt die Datenbankwerte beim Seriendruck.
+* **OOoMailMergeToOdtFile** (Order 200): Druckt einen Serienbrief in ein ODT Dokument.
+* **MailMergeNewToODTEMail** (Order 200): Versendet einen Serienbrief per E-Mail mit ODT Anhängen.
+* **MailMergeNewToPDFEMail** (Order 200): Versendet einen Serienbrief per E-Mail mit PDF Anhängen.
+* **MailMergeNewToSingleODT** (Order 200): Erzeugt für jeden Eintrag eines Serienbriefs eine eigene ODT Datei.
+* **MailMergeNewToSinglePDF** (Order 200): Erzeugt für jeden Eintrag eines Serienbriefs eine eigene PDF Datei.
+* **OOoMailMergeToPrinter** (Order 200): Sendet einen Serienbrief an einen Drucker.
 
 Informationen zum Entwickeln eigener Konfortdruckfunktionen finden Sie unter: [Schnittstellen für Experten: Einbinden von Komfortdruckfunktionen](Schnittstellen_des_WollMux_fuer_Experten.md#einbinden-eigener-komfortdruckfunktionen).
 
