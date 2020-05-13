@@ -1388,9 +1388,6 @@ Die Eigenschaften von WollMux-Formularfenstern lassen sich über den Abschnitt *
 Fenster(
   Formular(
     ZOOM "55"
-    Y "96"
-    WIDTH "400"
-    HEIGHT "600"
   )
 )
 ```
@@ -1398,22 +1395,6 @@ Fenster(
 ### ZOOM
 
 Die ZOOM Angabe spezifiziert den Zoom-Faktor des neben der Formularmaske dargestellten Writer-Fensters. Das Attribut verhält sich wie das [gleichnamige Attribut des "Textdokumente"-Abschnitts](#zoom-zoomwert).
-
-### X, Y
-
-Bestimmt die Positionierung der Eingabemaske. Erlaubt sind folgende Angaben:
-- *&lt;Zahlenwert&gt;*: gibt die genaue Position in Pixeln an, gemessen von der oberen linken Ecke (0,0) des Bildschirms.
-- *center*: Die Eingabemaske wird so positioniert, dass ihre Mitte mit der Mitte der X bzw. Y-Achse zusammenfällt.
-- *min*: Fenster wird ganz oben bzw. ganz links positioniert.
-- *max*: Fenster wird ganz unten bzw. ganz rechts positioniert.
-- *auto*: Koordinate automatisch bestimmen. Dies ist das Standardverhalten, wenn überhaupt keine X bzw. Y Angabe vorhanden ist.
-
-### WIDTH, HEIGHT
-
-Gibt die Dimensionen der Eingabemaske an. Folgende Angaben sind zulässig:
-- *&lt;Zahlenwert&gt;*: Gibt die Breite/Höhe in Pixeln an.
-- *max*: Die Breite/Höhe wird so groß wie möglich.
-- *auto*: Dimension automatisch bestimmen. Dies ist das Standardverhalten, wenn überhaupt keine WIDTH bzw. HEIGHT Angabe vorhanden ist.
 
 Funktionen
 ==========
