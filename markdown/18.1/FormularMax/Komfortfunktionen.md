@@ -24,7 +24,7 @@ Vorgehensweise:
 
 1. An der ersten Stelle, an der der Wert erscheinen soll, wird das passende Formularelement eingefügt. Dies erhält wie unter Kapitel [Vorarbeiten](FM4000.md#vorarbeiten) beschrieben eine Beschriftung **Label&lt;&lt;ID&gt;&gt;**.
 2. An allen anderen Stellen werden die Elemente eingefügt, die auf dieses Element verweisen. Die Beschriftung dort ist allerdings nur noch die ID erhält: **&lt;&lt;ID&gt;&gt;**. Dadurch wird festgelegt, dass diese Elemente den gleichen Wert erhalten, den das Feld mit der Beschriftung **Label&lt;&lt;ID&gt;&gt;** enthält.
-![Eingabefeld, das den Wert des Feldes mit der ID "ID" annehmen wird.](images/LO_Feldbefehl_ID.jpg "fig:Eingabefeld, das den Wert des Feldes mit der ID "ID" annehmen wird.")
+   ![Eingabefeld, das den Wert des Feldes mit der ID "ID" annehmen wird.](images/LO_Feldbefehl_ID.jpg "fig:Eingabefeld, das den Wert des Feldes mit der ID "ID" annehmen wird.")
 3. Am Schluss werden die Felder in den FM4000 eingelesen. In der FormularGUI erscheint nur **eine** Eingabemöglichkeit für alle Werte. Im Tab *Einfügungen* kann die Anzahl der Einfügestellen überprüft werden.
 
 Beispiel: In der Vorlage kommt öfters der Nachname des Adressaten vor. Das erste Feld mit dem Nachnamen erhält dann die Beschriftung Nachname&lt;&lt;Nachname&gt;&gt;. An allen anderen Stellen, an denen Felder mit dem Nachnamen erscheinen soll erhalten die Beschriftung &lt;&lt;Nachname&gt;&gt;.
@@ -40,16 +40,16 @@ Der WollMux bietet nun eine Funktion, über die sich solche geschlechtsabhängig
 **Vorgehensweise**:
 
 1. Alle geschlechtsabhängigen Bezeichnungen sind Eingabelisten
-  1. Das Schreiben enthält eine Anrede, wie „Sehr geehrte Frau/Herr/Damen und Herren“, wobei „Frau/Herr/Damen und Herren“ das Ausgangsfeld für die gender Funktion wird. Dazu wird eine Eingabeliste erstellt, die die Werte Herr oder Herrn, Frau und optional einen dritten Wert wie Damen und Herren erhält. Die Eingabeliste erhält als Bezeichnung und ID „Anrede“, geschrieben **Anrede&lt;&lt;Anrede&gt;&gt;**. Alle anderen geschlechtsabhängigen Bezeichnungen werden sich auf dieses Feld beziehen<br>
-  ![Eingabeliste für die Anrede](images/LO_Feldbefehl_gender.jpg "fig:Eingabeliste für die Anrede")
-  2. In der Regel wird das erste „gender“-Feld das „geehrte/geehrter“ aus der Anrede sein. Dazu wird wieder eine Eingabeliste angelegt, die die Werte geehrter, geehrte und optional nochmal geehrte für die Plural-Form erhält. Das Feld heißt dann **&lt;&lt;gender:Anrede&gt;&gt;**
-  3. Für alle anderen Felder ist das Vorgehen analog zu Punkt 2. In eine Eingabeliste werden die Werte eingetragen, z.B. Antragsteller, Antragstellerin und optional nochmal Antragsteller. Die Bezeichnung des Feldes wird wieder **&lt;&lt;gender:Anrede&gt;&gt;**
-
-2.  Wenn alle geschlechtsabhängigen Felder vergeben sind, werden diese in den FM4000 eingelesen. In der FormularGUI wird es nur eine Auswahlmöglichkeit, nämlich für die Anrede geben, bei den Einfügungen wird es soviel Einträge geben, wie es geschlechtsabhängige Felder in der Vorlage gibt.<br>
-![Eingabeliste für ein geschlechtsabhängiges Feld](images/LO_Feldbefehl_gender2.jpg "fig:Eingabeliste für ein geschlechtsabhängiges Feld")
+   1. Das Schreiben enthält eine Anrede, wie „Sehr geehrte Frau/Herr/Damen und Herren“, wobei „Frau/Herr/Damen und Herren“ das Ausgangsfeld für die gender Funktion wird. Dazu wird eine Eingabeliste erstellt, die die Werte Herr oder Herrn, Frau und optional einen dritten Wert wie Damen und Herren erhält. Die Eingabeliste erhält als Bezeichnung und ID „Anrede“, geschrieben **Anrede&lt;&lt;Anrede&gt;&gt;**. Alle anderen geschlechtsabhängigen Bezeichnungen werden sich auf dieses Feld beziehen<br>
+      ![Eingabeliste für die Anrede](images/LO_Feldbefehl_gender.jpg "fig:Eingabeliste für die Anrede")
+   2. In der Regel wird das erste „gender“-Feld das „geehrte/geehrter“ aus der Anrede sein. Dazu wird wieder eine Eingabeliste angelegt, die die Werte geehrter, geehrte und optional nochmal geehrte für die Plural-Form erhält. Das Feld heißt dann **&lt;&lt;gender:Anrede&gt;&gt;**
+   3. Für alle anderen Felder ist das Vorgehen analog zu Punkt 2. In eine Eingabeliste werden die Werte eingetragen, z.B. Antragsteller, Antragstellerin und optional nochmal Antragsteller. Die Bezeichnung des Feldes wird wieder **&lt;&lt;gender:Anrede&gt;&gt;**
+2. Wenn alle geschlechtsabhängigen Felder vergeben sind, werden diese in den FM4000 eingelesen. In der FormularGUI wird es nur eine Auswahlmöglichkeit, nämlich für die Anrede geben, bei den Einfügungen wird es soviel Einträge geben, wie es geschlechtsabhängige Felder in der Vorlage gibt.<br>
+   ![Eingabeliste für ein geschlechtsabhängiges Feld](images/LO_Feldbefehl_gender2.jpg "fig:Eingabeliste für ein geschlechtsabhängiges Feld")
 
 > **WARNING** Die Reihenfolge in den Eingabelisten ist zwinged! Zuerst kommt die männliche, dann die weibliche und optional eine Form für Plural o.ä..<br>
 
+<!-- -->
 > **HINT** Werden zwei gleiche Werte in einer Eingabeliste benötigt, setzt man hinter den doppelten Eintrag ein Leerzeichen.
 
 Schematische Darstellung der gender Funktion mit optionalem Eintrag für Damen und Herren und den dazugehörigen Werten.
@@ -96,42 +96,45 @@ Diese Werte sollen nicht manuell sondern automatisch richtig befüllt werden.
 **Vorgehensweise anhand des Beispieles** (zur Vereinfachung werden nur die Werte, Tiger und Elefant verweendet):
 
 1. **Combobox erstellen**<br>
-Man erstellt eine Combobox, die die Ausgangswerte enthält. Sie erhält die Beschriftung Tiere&lt;&lt;Tiere&gt;&gt; und die Werte Tiger und Elefant.
-![Eingabeliste für ein geschlechtsabhängiges Feld](images/LO_Feldbefehl_abhFelder.jpg "fig:Eingabeliste für ein geschlechtsabhängiges Feld")
+  Man erstellt eine Combobox, die die Ausgangswerte enthält. Sie erhält die Beschriftung Tiere&lt;&lt;Tiere&gt;&gt; und die Werte Tiger und Elefant.
+  ![Eingabeliste für ein geschlechtsabhängiges Feld](images/LO_Feldbefehl_abhFelder.jpg "fig:Eingabeliste für ein geschlechtsabhängiges Feld")
 2. **Eingabefeld**<br>
-An der Stelle, an der Pflanzenfresser bzw. Tierfresser abhängig von der Combobox erscheinen soll, wird ein Eingabefeld mit der gleichen ID (&lt;&lt;Tiere&gt;&gt;) angelegt.<br>
-Man kann auch alternativ eine Eingabeliste mit den gewünschten Werten anlegen. Dies hat allerdings nur den Effekt, dass man auch in der Vorlage sieht, welche Werte an dieser Stelle erscheinen sollen. Diese Werte werden aber später mit den Werten, die im FM4000 festgelegt werden, überschrieben.
-![Eingabeliste für ein geschlechtsabhängiges Feld](images/LO_Feldbefehl_abhFelder2.jpg "fig:Eingabeliste für ein geschlechtsabhängiges Feld")
+  An der Stelle, an der Pflanzenfresser bzw. Tierfresser abhängig von der Combobox erscheinen soll, wird ein Eingabefeld mit der gleichen ID (&lt;&lt;Tiere&gt;&gt;) angelegt.<br>
+  Man kann auch alternativ eine Eingabeliste mit den gewünschten Werten anlegen. Dies hat allerdings nur den Effekt, dass man auch in der Vorlage sieht, welche Werte an dieser Stelle erscheinen sollen. Diese Werte werden aber später mit den Werten, die im FM4000 festgelegt werden, überschrieben.
+  ![Eingabeliste für ein geschlechtsabhängiges Feld](images/LO_Feldbefehl_abhFelder2.jpg "fig:Eingabeliste für ein geschlechtsabhängiges Feld")
 3. **Weitere Eingabefelder**<br>
-Falls noch weitere abhängige Felder vorhanden sind, können analog zu 2., weitere Eingabefelder angelegt werden.
+  Falls noch weitere abhängige Felder vorhanden sind, können analog zu 2., weitere Eingabefelder angelegt werden.
 4. **Einlesen in den FM4000 und festlegen der Werte**<br>
-In diesem Schritt werden nun die Werte vergeben, die in Abhängigkeit von der ersten Combobox im ersten Eingabefeld erscheinen sollen.<br>
-Dazu müssen die Felder vorher in den FM4000 eingelesen werden. Danach führt man folgende Schritte aus:
-  1. In den Tab *Einfügungen* wechseln
-  2. Bei den *Einfügungen* gibt es nun mehrere mit der ID „Tiere“. Durch anklicken der entsprechenden Einfügungen kann man in der Vorlage überprüft werden, wo sie sich dort befindet. Man wählt nun die Einfügung aus, die die abhängigen Werte erhalten soll.
-  3. Über *Ansicht → Trafo, Autofill...* die benötigte Ansicht aktivieren und in der neu erschienenen Spalte die Schaltfläche *Aktivieren* betätigen. Ggf die Spalte ein bisschen breiter ziehen.
-  4. In der Combobox für Funktionen &lt;Code&gt; (ganz unten) auswählen.
-  5. Nun wird ein Code eingegeben, der dafür sorgt, dass in diesem Feld für Elefant Pflanzenfresser und für Tiger Fleischfresser erscheint. Der Code ist folgendermaßen aufgebaut:<br>
-```
-SELECT(
-    IF(
-        MATCH(
+  In diesem Schritt werden nun die Werte vergeben, die in Abhängigkeit von der ersten Combobox im ersten Eingabefeld erscheinen sollen.<br>
+  Dazu müssen die Felder vorher in den FM4000 eingelesen werden. Danach führt man folgende Schritte aus:
+   1. In den Tab *Einfügungen* wechseln
+   2. Bei den *Einfügungen* gibt es nun mehrere mit der ID „Tiere“. Durch anklicken der entsprechenden Einfügungen kann man in der Vorlage überprüft werden, wo sie sich dort befindet. Man wählt nun die Einfügung aus, die die abhängigen Werte erhalten soll.
+   3. Über *Ansicht → Trafo, Autofill...* die benötigte Ansicht aktivieren und in der neu erschienenen Spalte die Schaltfläche *Aktivieren* betätigen. Ggf die Spalte ein bisschen breiter ziehen.
+   4. In der Combobox für Funktionen &lt;Code&gt; (ganz unten) auswählen.
+   5. Nun wird ein Code eingegeben, der dafür sorgt, dass in diesem Feld für Elefant Pflanzenfresser und für Tiger Fleischfresser erscheint. Der Code ist folgendermaßen aufgebaut:<br>
+
+      ```
+      SELECT(
+        IF(
+          MATCH(
             VALUE "Tiere"
             "Elefant"
-        )<br>
-        THEN "Planzenfresser"
-    )<br>
-    ELSE "Fleichfresser"
-)
-```
-![Ansicht für Codeeingabe im FM4000](images/LO_FM4000-abhFelder.jpg "fig:Ansicht für Codeeingabe im FM4000")
+          )
+          THEN "Planzenfresser"
+        )
+        ELSE "Fleichfresser"
+      )
+      ```
 
-Tipps:
-* Wenn das Feld für die Codeeingabe einen rosa Hintergrund bekommt, ist dafür ein Syntaxfehler (fehlende Klammer, Anführungszeichen, Schreibfehler, …) verantwortlich.
-* Es ist auf die Groß- und Kleinschreibung zu achten
-* Ein guter Hinweis, ob der Code passt ist, wenn nach dem erneuten öffnen des FM4000 der Code „schön“ formatiert ist.
+      ![Ansicht für Codeeingabe im FM4000](images/LO_FM4000-abhFelder.jpg "fig:Ansicht für Codeeingabe im FM4000")
 
-Im Beispiel wird nur von zwei Werten ausgegangen, der Code kann natürlich so angepasst werden, dass er mit beliebig vielen Werten arbeiten kann. Dazu wird einfach der IF – THEN Teil so oft wie nötig wiederholt (Anzahl der Alternativen -1)
+      Tipps:
+
+      * Wenn das Feld für die Codeeingabe einen rosa Hintergrund bekommt, ist dafür ein Syntaxfehler (fehlende Klammer, Anführungszeichen, Schreibfehler, …) verantwortlich.
+      * Es ist auf die Groß- und Kleinschreibung zu achten
+      * Ein guter Hinweis, ob der Code passt ist, wenn nach dem erneuten öffnen des FM4000 der Code „schön“ formatiert ist.
+
+      Im Beispiel wird nur von zwei Werten ausgegangen, der Code kann natürlich so angepasst werden, dass er mit beliebig vielen Werten arbeiten kann. Dazu wird einfach der IF – THEN Teil so oft wie nötig wiederholt (Anzahl der Alternativen -1)
 
 ----------------------------------------
 
@@ -140,6 +143,7 @@ Im Beispiel wird nur von zwei Werten ausgegangen, der Code kann natürlich so an
 Der WollMux bietet die Möglichkeit Text und Textbereiche ein- bzw. ausblenden zu lassen. Dieses Feature kann dazu hergenommen werden, um Vorlagen, die sich nur marginal von einander unterscheiden, zu konsolidieren, indem man sie zusammenfasst.
 
 Die Sichtbarkeiten werden prinzipiell entweder über Checkboxen oder Comboboxen gesteuert. Der Unterschied dabei ist, dass man
+
 * über Checkboxen mehrere Alternativen gleichzeitig ein- oder ausblenden kann, da man für jede Alternative eine Checkbox vergibt, die dann separat aktiviert werden kann.
 * über Comboboxen von mehreren Alternativen immer nur exakt eine Alternative auswählen kann, da eine Combobox nur einen Wert darstellen kann.
 
@@ -155,22 +159,22 @@ Vorgehensweise:
 
 1. *Ansicht → TRAFO, PLAUSI, AUTOFILL, GROUPS* aktivieren.
 2. Falls die Checkboxen nicht eingelesen werden, werden drei Checkboxen erstellt. Die Checkboxen erhalten IDs und sinnvolle Labels. In diesem Beispiel sind die IDs Alt1, Alt2 und Alt3, die Vorlage enthält in diesem Fall keine weiteren Formularelemente.
-![Checkboxen zur Steuerung der Sichtbarkeiten](images/LO_SichtbarkeitCheckboxen.jpg "fig:Checkboxen zur Steuerung der Sichtbarkeiten")
+   ![Checkboxen zur Steuerung der Sichtbarkeiten](images/LO_SichtbarkeitCheckboxen.jpg "fig:Checkboxen zur Steuerung der Sichtbarkeiten")
 3. Als nächster Schritt werden die Bereiche festgelegt, die ein- oder ausgeblendet werden sollen. Jede Alternative wird dabei zu einem Bereich. Dazu wird in den Tab *Bereiche* gewechselt. Über Bereiche werden immer nur ganze Absätze ausgeblendet, wie einzelne Wörter ausgeblendet werden, steht in Kapitel [Sichtbarkeiten von einzelnen Wörtern oder Textteilen](Komfortfunktionen.md#sichtbarkeiten-von-einzelnen-wörtern-oder-textteilen).
-    1. In die Vorlage wechseln und die 1.Alternative markieren.
-    2. Wieder zurück in den FM4000 gehen und dort auf *Neu* klicken. Es wird ein neuer Bereich angelegt. Den Bereich erkennt man durch graue Linien oberhalb und unterhalb des Bereichs.
-    3. Über das Häkchen neben den Sichtbarkeiten kann getestet werden, ob der Text richtig ein- bzw. ausgeblendet wird.
-    4. Für die anderen Alternativen gilt das gleiche Vorgehen.
-    5. Ganze Seiten können mit *Neu (ganze Seite)* als Bereich erfasst werden. Bereiche können über *Aufheben* auch wieder entfernt werden, der Text bleibt dabei erhalten.
-    6. Den Sichtbarkeitsbereichen können sinnvolle Namen vergeben werden.
-    ![Bereiche festlegen](images/LO_SichtbarkeitBereiche.jpg "fig:Bereiche festlegen")
+   1. In die Vorlage wechseln und die 1.Alternative markieren.
+   2. Wieder zurück in den FM4000 gehen und dort auf *Neu* klicken. Es wird ein neuer Bereich angelegt. Den Bereich erkennt man durch graue Linien oberhalb und unterhalb des Bereichs.
+   3. Über das Häkchen neben den Sichtbarkeiten kann getestet werden, ob der Text richtig ein- bzw. ausgeblendet wird.
+   4. Für die anderen Alternativen gilt das gleiche Vorgehen.
+   5. Ganze Seiten können mit *Neu (ganze Seite)* als Bereich erfasst werden. Bereiche können über *Aufheben* auch wieder entfernt werden, der Text bleibt dabei erhalten.
+   6. Den Sichtbarkeitsbereichen können sinnvolle Namen vergeben werden.
+      ![Bereiche festlegen](images/LO_SichtbarkeitBereiche.jpg "fig:Bereiche festlegen")
 4. Nun werden die Sichtbarkeiten definiert. Die Sichtbarkeiten stellen quasi die Verbindung der Checkboxen mit den Bereichen dar. Dazu wird in den Tab *Sichtbarkeiten* gewechselt.
-    1. Über *Neu* drei neue Sichtbarkeiten anlegen.
-    2. Auch den Sichtbarkeiten können andere sprechende Namen vergeben werden, damit man leicht feststellen kann, welche Sichtbarkeit zu welchem Bereich und Checkbox gehört. Dieser Name darf keine Leerzeichen enthalten.
-    3. Auf Sichtbarkeit1 klicken. Dort steht momentan der Code *CAT „true“*. Dieser kann gelöscht werden.
-    4. Stattdessen wird hier **VALUE „Alt1“** eingetragen. Dies bedeutet, dass diese Sichtbarkeit gilt, wenn die Checkbox mit der ID **Alt1** aktiviert ist.Das gleiche wird nun mit den anderen Sichtbarkeiten gemacht.
+   1. Über *Neu* drei neue Sichtbarkeiten anlegen.
+   2. Auch den Sichtbarkeiten können andere sprechende Namen vergeben werden, damit man leicht feststellen kann, welche Sichtbarkeit zu welchem Bereich und Checkbox gehört. Dieser Name darf keine Leerzeichen enthalten.
+   3. Auf Sichtbarkeit1 klicken. Dort steht momentan der Code *CAT „true“*. Dieser kann gelöscht werden.
+   4. Stattdessen wird hier **VALUE „Alt1“** eingetragen. Dies bedeutet, dass diese Sichtbarkeit gilt, wenn die Checkbox mit der ID **Alt1** aktiviert ist.Das gleiche wird nun mit den anderen Sichtbarkeiten gemacht.
 5. Als letzten Schritt müssen jetzt noch die Sichtbarkeiten den Bereichen zugeordnet werden. Dazu wird wieder in den Tab *Bereiche* gewechselt. Dort wird nacheinander auf jeden Bereich geklickt, der GROUPS View aktiviert und die Zuordnung durch Klicken auf die passende Sichtbarkeit hergestellt.
-![Gruppierung der Bereiche mit den Sichtbarkeiten](images/LO_SichtbarkeitGruppieren.jpg "fig:Gruppierung der Bereiche mit den Sichtbarkeiten")
+   ![Gruppierung der Bereiche mit den Sichtbarkeiten](images/LO_SichtbarkeitGruppieren.jpg "fig:Gruppierung der Bereiche mit den Sichtbarkeiten")
 
 ### Sichtbarkeiten über Comboboxen
 
@@ -179,26 +183,27 @@ Bei der Erläuterung der Vorgehensweise zur Erstellung der Sichtbarkeiten wird v
 Die hier vorgestellte Reihenfolge ist größtenteils nicht zwingend.
 
 Vorgehensweise:
+
 1. *Ansicht → TRAFO, PLAUSI, AUTOFILL, GROUPS* aktivieren.
 2. Falls die Combobox nicht eingelesen wird, wird ein Combobox erstellt. Die Combobox Erhält eine ID, ein sinnvolles Label und drei Werte: Alt1, Alt2 und Alt3, die Vorlage enthält in diesem Fall keine weiteren Formularelemente.<br>
-![Gruppierung der Bereiche mit den Sichtbarkeiten](images/LO_SichtbarkeitComboBox.jpg "fig:Gruppierung der Bereiche mit den Sichtbarkeiten")
+   ![Gruppierung der Bereiche mit den Sichtbarkeiten](images/LO_SichtbarkeitComboBox.jpg "fig:Gruppierung der Bereiche mit den Sichtbarkeiten")
 3. Als nächster Schritt werden die Bereiche festgelegt, die ein- oder ausgeblendet werden sollen. Jede Alternative wird dabei zu einem Bereich. Dazu wird in den Tab *Bereiche* gewechselt. Über Bereiche werden immer nur ganze Absätze ausgeblendet, wie einzelne Wörter ausgeblendet werden, steht in Kapitel [Sichtbarkeiten von einzelnen Wörtern oder Textteilen](Komfortfunktionen.md#sichtbarkeiten-von-einzelnen-wörtern-oder-textteilen).
-    1. In die Vorlage wechseln und die 1.Alternative markieren.
-    2. Wieder zurück in den FM4000 gehen und dort auf *Neu* klicken. Es wird ein neuer Bereich angelegt. Den Bereich erkennt man durch graue Linien oberhalb und unterhalb des Bereichs.
-    3. Über das Häkchen neben den Sichtbarkeiten kann getestet werden, ob der Text richtig ein- bzw. ausgeblendet wird.
-    4. Für die anderen Alternativen gilt das gleiche Vorgehen.
-    5. Ganze Seiten können mit *Neu (ganze Seite)* als Bereich erfasst werden. Bereiche können über *Aufheben* auch wieder entfernt werden, der Text bleibt dabei erhalten.
-    6. Den Sichtbarkeitsbereichen können sinnvolle Namen vergeben werden.
-![Bereiche festlegen](images/LO_SichtbarkeitBereiche.jpg "fig:Bereiche festlegen")
+   1. In die Vorlage wechseln und die 1.Alternative markieren.
+   2. Wieder zurück in den FM4000 gehen und dort auf *Neu* klicken. Es wird ein neuer Bereich angelegt. Den Bereich erkennt man durch graue Linien oberhalb und unterhalb des Bereichs.
+   3. Über das Häkchen neben den Sichtbarkeiten kann getestet werden, ob der Text richtig ein- bzw. ausgeblendet wird.
+   4. Für die anderen Alternativen gilt das gleiche Vorgehen.
+   5. Ganze Seiten können mit *Neu (ganze Seite)* als Bereich erfasst werden. Bereiche können über *Aufheben* auch wieder entfernt werden, der Text bleibt dabei erhalten.
+   6. Den Sichtbarkeitsbereichen können sinnvolle Namen vergeben werden.
+   ![Bereiche festlegen](images/LO_SichtbarkeitBereiche.jpg "fig:Bereiche festlegen")
 4. Nun werden die Sichtbarkeiten definiert. Die Sichtbarkeiten stellen quasi die Verbindung der Combobox mit den Bereichen dar. Dazu wird in den Tab *Sichtbarkeiten* gewechselt.
-    1. Über *Neu* drei neue Sichtbarkeiten anlegen.
-    2. Auch den Sichtbarkeiten können andere sprechende Namen vergeben werden, damit man leicht feststellen kann, welche Sichtbarkeit zu welchem Bereich und Wert aus der Combobox gehört. Dieser Name darf keine Leerzeichen enthalten.
-    3. Auf Sichtbarkeit1 klicken. Dort steht momentan der Code *CAT „true“*. Dieser kann gelöscht werden.
-    4. Stattdessen wird hier **MATCH(VALUE „Alternativen“ „Alt1“)** eingetragen. Dies bedeutet, dass diese Sichtbarkeit gilt, wenn der Wert **Alt1** aus der Combobox mit der ID **Alternativen** aktiviert ist.
-    5. Das gleiche wird nun mit den anderen Sichtbarkeiten gemacht.
-![Code zur Zuordnung der Sichtbarkeiten zu den Werten aus der Combobox](images/LO_SichtbarkeitSichtbarkeitenCombobox.jpg "fig:Code zur Zuordnung der Sichtbarkeiten zu den Werten aus der Combobox")
+   1. Über *Neu* drei neue Sichtbarkeiten anlegen.
+   2. Auch den Sichtbarkeiten können andere sprechende Namen vergeben werden, damit man leicht feststellen kann, welche Sichtbarkeit zu welchem Bereich und Wert aus der Combobox gehört. Dieser Name darf keine Leerzeichen enthalten.
+   3. Auf Sichtbarkeit1 klicken. Dort steht momentan der Code *CAT „true“*. Dieser kann gelöscht werden.
+   4. Stattdessen wird hier **MATCH(VALUE „Alternativen“ „Alt1“)** eingetragen. Dies bedeutet, dass diese Sichtbarkeit gilt, wenn der Wert **Alt1** aus der Combobox mit der ID **Alternativen** aktiviert ist.
+   5. Das gleiche wird nun mit den anderen Sichtbarkeiten gemacht.
+      ![Code zur Zuordnung der Sichtbarkeiten zu den Werten aus der Combobox](images/LO_SichtbarkeitSichtbarkeitenCombobox.jpg "fig:Code zur Zuordnung der Sichtbarkeiten zu den Werten aus der Combobox")
 5. Als letzten Schritt müssen jetzt noch die Sichtbarkeiten den Bereichen zugeordnet werden. Dazu wird wieder in den Tab *Bereiche* gewechselt. Dort wird nacheinander auf jeden Bereich geklickt, der GROUPS View aktiviert und die Zuordnung durch Klicken auf die passende Sichtbarkeit hergestellt.
-![Gruppierung der Bereiche mit den Sichtbarkeiten](images/LO_SichtbarkeitGruppieren.jpg "fig:Gruppierung der Bereiche mit den Sichtbarkeiten")
+   ![Gruppierung der Bereiche mit den Sichtbarkeiten](images/LO_SichtbarkeitGruppieren.jpg "fig:Gruppierung der Bereiche mit den Sichtbarkeiten")
 
 ### Sichtbarkeiten in der FormularGUI
 
@@ -207,13 +212,14 @@ Es gibt natürlich auch die Fälle, bei denen in den ausgeblendeten Bereichen Fo
 Im weiteren wird das unter [Sichtbarkeiten über Comboboxen](Komfortfunktionen.md#sichtbarkeiten-über-comboboxen) genannte Beispiel fortgeführt.
 
 Vorgehensweise:
+
 1. Ggf. in den Tab *Formular-GUI* wechseln.
 2. Ggf. *Ansicht → TRAFO, PLAUSI, AUTOFILL, GROUPS* aktivieren.
 3. Auf das auszublendene Element klicken.
 4. Extra View aktivieren.
 5. Auf den Tab GROUPS wechseln.
 6. Dort auf die Gruppe klicken, zu der dieses Element gehören soll.
-![Gruppierung von Formularelementen](images/LO_SichtbarkeitFormularfeldergruppieren.jpg "fig:Gruppierung von Formularelementen")
+  ![Gruppierung von Formularelementen](images/LO_SichtbarkeitFormularfeldergruppieren.jpg "fig:Gruppierung von Formularelementen")
 
 Es kann passieren, dass bei Sichtbarkeiten in der FormularGUI das eingeblendete Element – wenn es z.B. das letzte Element ist, nicht gleich (komplett) sichtbar ist, sondern erst nach unten gescrollt werden muss.
 
@@ -228,9 +234,10 @@ Der WollMux bietet auch die Möglichkeit nur einzelne Wörter oder Textteile aus
 Bei diesem Beispiel wird davon ausgegangen, dass im FM4000 bereits Sichtbarkeitsgruppen angelegt worden ist. Zur Vereinfachung wird wieder das Beispiel aus Kapitel [Sichtbarkeiten über Comboboxen](Komfortfunktionen.md#sichtbarkeiten-über-comboboxen) weitergeführt.
 
 Vorgehensweise:
+
 1. Den betroffenen Text markieren.
 2. Über Einfügen → Textmarke eine Textmarke an diese Stelle einfügen. Die Textmarke lautet: **WM(CMD 'setGroups' GROUPS 'Sichtbarkeit3')** wobei Sichtbarkeit3 die Bezeichnung der Sichtbarkeit (siehe FM4000) ist.<br>
-![Gruppierung von Formularelementen](images/LO_SichtbarkeitTextmarkeGroups.jpg "fig:Gruppierung von Formularelementen")
+  ![Gruppierung von Formularelementen](images/LO_SichtbarkeitTextmarkeGroups.jpg "fig:Gruppierung von Formularelementen")
 
 ### Aufheben von Gruppen in Sichtbarkeiten
 
@@ -260,19 +267,18 @@ Der Tab *AUTOFILL* wird in der rechten Hälfte des FM4000-Fensters angezeigt, we
 Beim Verwenden bzw. Anlegen von Funktionen sollte man immer auf den Funktionstester (siehe Kapitel [Der Funktionstester](Komfortfunktionen.md#der-funktionstester)) zurückgreifen, da dort die Richtigkeit der Funktionen sehr einfach getestet werden kann, bevor sie in das Formular übertragen wird.
 
 * Beispiel 1:<br>
-In der Abtretungserklärung (auch als Beispiel in der WollMux Konfiguration enthalten) gibt es ein Feld, in dem die Höhe des Darlehensbetrages (ID *DarlBetrag*) eingetragen wird. An einer anderen Stelle wird die Höhe der Abtretung auf die Höhe des Darlehens zuzüglich 20% festgelegt. Dieses Feld (ID *DarlehenplusZusatzkosten*) soll natürlich automatisch berechnet werden. Dafür gibt es mehrere Berechnungsmöglichkeiten; in der Abtretungserklärung wurde folgende gewählt:<br>
-`Darlehensbetrag + Darlehensbetrag * 20 / 100`<br>
-<br>
-![AUTOFILL für Berechnung der max. Belastung](images/autofill_abtrerklaerung1.jpg "fig:AUTOFILL für Berechnung der max. Belastung")
-Um keine Fehlermeldung angezeigt zu bekommen, wird hier mit dem SELECT Statement das Feld *DarlBetrag* mit einer 0 vorbelegt, da mit leeren Feldern nicht gerechnet werden kann.<br>
-Da es sich um einen Geldbetrag handelt wird dieser noch zusätzlich auf zwei Nachkommastellen formatiert, das übernimmt der FORMAT Befehl.
-
+  In der Abtretungserklärung (auch als Beispiel in der WollMux Konfiguration enthalten) gibt es ein Feld, in dem die Höhe des Darlehensbetrages (ID *DarlBetrag*) eingetragen wird. An einer anderen Stelle wird die Höhe der Abtretung auf die Höhe des Darlehens zuzüglich 20% festgelegt. Dieses Feld (ID *DarlehenplusZusatzkosten*) soll natürlich automatisch berechnet werden. Dafür gibt es mehrere Berechnungsmöglichkeiten; in der Abtretungserklärung wurde folgende gewählt:<br>
+  `Darlehensbetrag + Darlehensbetrag * 20 / 100`<br>
+  <br>
+  ![AUTOFILL für Berechnung der max. Belastung](images/autofill_abtrerklaerung1.jpg "fig:AUTOFILL für Berechnung der max. Belastung")
+  Um keine Fehlermeldung angezeigt zu bekommen, wird hier mit dem SELECT Statement das Feld *DarlBetrag* mit einer 0 vorbelegt, da mit leeren Feldern nicht gerechnet werden kann.<br>
+  Da es sich um einen Geldbetrag handelt wird dieser noch zusätzlich auf zwei Nachkommastellen formatiert, das übernimmt der FORMAT Befehl.
 * Beispiel 2:<br>
-Bei einem Antrag auf Urlaubsübertragung für Beamte wird das Jahr eingegeben, aus dem der Resturlaub stammt und bis wann er übertragen werden soll, nämlich bis zum 30.09. des Folgejahres.<br>
-Nachdem das Jahr aus dem der Resturlaub (ID: *Jahr*) stammt, eingegeben ist, ergibt sich das Datum für die Übertragung automatisch: '30.09.*Jahr* +1' (ID *bis\_zum*). Dieses Feld kann nun mit einem AUTOFILL vorbelegt werden.
-![AUTOFILL für Urlaubsübertragung](images/LO_FunktionenUrlaubsuebertragung.jpg "fig:AUTOFILL für Urlaubsübertragung")
-Zusätzlich zur Berechnung des Jahres ist hier noch ein IF Statement nötig, da das zu berechnende Feld einen Fehler anzeigen würde, solange *Jahr* leer ist. Mit leeren Feldern kann keine Berechnung erfolgen. Das hat zwar keine Auswirkungen, da der Fehler verschwindet, sobald die Eingabe bei *Jahr* erfolgt ist, sieht aber nicht schön aus.<br>
-Der Code wird beim Feld mit der ID *bis\_zum* im Tab *AUTOFILL* eingegeben.
+  Bei einem Antrag auf Urlaubsübertragung für Beamte wird das Jahr eingegeben, aus dem der Resturlaub stammt und bis wann er übertragen werden soll, nämlich bis zum 30.09. des Folgejahres.<br>
+  Nachdem das Jahr aus dem der Resturlaub (ID: *Jahr*) stammt, eingegeben ist, ergibt sich das Datum für die Übertragung automatisch: '30.09.*Jahr* +1' (ID *bis\_zum*). Dieses Feld kann nun mit einem AUTOFILL vorbelegt werden.
+  ![AUTOFILL für Urlaubsübertragung](images/LO_FunktionenUrlaubsuebertragung.jpg "fig:AUTOFILL für Urlaubsübertragung")
+  Zusätzlich zur Berechnung des Jahres ist hier noch ein IF Statement nötig, da das zu berechnende Feld einen Fehler anzeigen würde, solange *Jahr* leer ist. Mit leeren Feldern kann keine Berechnung erfolgen. Das hat zwar keine Auswirkungen, da der Fehler verschwindet, sobald die Eingabe bei *Jahr* erfolgt ist, sieht aber nicht schön aus.<br>
+  Der Code wird beim Feld mit der ID *bis\_zum* im Tab *AUTOFILL* eingegeben.
 
 ### PLAUSIs
 
@@ -283,6 +289,7 @@ PLAUSIs (Plausibilitätsprüfungen) werden dazu verwendet, um für bestimmte Fel
 > **WARNING** PLAUSIs können Falscheingaben nicht verhindern. Sie sind nur Voragen für korrekte Inhalte der betroffenen Felder.
 
 Häufig verwendete, vorgegebene PLAUSIs:
+
 * Bereich: Legt einen Bereich fest innerhalb dessen sich die Eingabe bewegen soll, z.B. für Geldbeträge (100 - 200€) oder Altersangaben (18 – 21 Jahre)
 * NichtLeer: Damit wird festgelegt, dass dieses Feld nicht leer sein darf.
 * KorrektesDatum: Damit wird die Eingabe eines Datums in einem bestimmten Format gefordert.
@@ -305,6 +312,7 @@ Die Verwendung von GROUPS ist für die Festlegung von Sichtbarkeiten relevant un
 Der Tab *TRAFO* wird in der rechten Hälfte des FM4000-Fensters angezeigt, wenn in der linken der Tab *Einfügungen* angezeigt wird und dort *genau ein* Eintrag selektiert ist. Ist für das ausgewählte Element noch keine TRAFO gesetzt, so muss der Tab TRAFO erst durch den *Aktivieren* Button in der Trafo-View freigeschaltet werden. Die als TRAFO spezifizierte Funktion (falls nicht "&lt;keine&gt;") gibt an, wie ein einzufügender Wert vor dem Einfügen umgewandelt werden soll.
 
 Beispiele:
+
 * die Darstellung der Telefonnummer nach DIN in den Briefköpfen wird über einen TRAFO gesteuert
 * Die Verwendung von anhängigen Feldern wie in Kapitel [Felder mit abhängigen Inhalten verwenden](Komfortfunktionen.md#felder-mit-abhängigen-inhalten-verwenden) beschrieben, geschieht über TRAFOs.
 
@@ -312,11 +320,11 @@ Im folgenden sind die Möglichkeiten beschrieben, Funktionen zu spezifizieren.
 
 > **HINT** Verwenden Sie den [Funktionstester](Komfortfunktionen.md#der-funktionstester) um Ihre Funktionen einzugeben und zu testen.
 
-#### &lt;Wert&gt;
+#### Wert
 
 Die Auswahl von "&lt;Wert&gt;" in der Funktion-ComboBox erlaubt die Eingabe eines (evtl. mehrzeiligen) Textes mit dem das Feld vorbelegt wird. Handelt es sich bei dem Feld um eine Checkbox, so wird der Text "true" als gesetzt und alles andere als nicht gesetzt interpretiert.
 
-#### &lt;Code&gt;
+#### Code
 
 Die Auswahl von "&lt;Code&gt;" in der Funktion-ComboBox erlaubt die Direkteingabe einer [Funktion](Konfigurationsdatei_wollmux_conf.md#funktionen) (ohne umschließenden Funktionsbezeichner). Die Funktion muss vollständig spezifiziert sein und alle Formularfelder auf die Bezug genommen wird müssen mit ihrer korrekten ID referenziert werden. Im folgenden ein Beispiel für eine PLAUSI, die testet, ob das Feld "Nachname" nicht leer ist.
 
@@ -327,6 +335,7 @@ Zu beachten ist, dass "Nachname" hier wirklich die ID des entsprechenden Eingabe
 #### Globale Funktion
 
 Der [Funktionen-Abschnitt der wollmux.conf](../Konfigurationsdatei_wollmux_conf.md#funktionen) erlaubt das Angeben von globalen Funktionen. Alle dort angegebenen Funktionen werden vom FM4000 zur Auswahl angeboten. Erwartet eine Funktion Parameter, so können diese in den entsprechenden ComboBoxen gesetzt werden, entweder auf einen festen String oder als Referenz auf ein Formularfeld. Die Auswahl von "\[nicht fest verdrahtet\]" lässt den entsprechenden Parameter-Wert offen. Je nach Kontext werden offen gelassene Parameter-Werte verschieden behandelt:
+
 * Bei AUTOFILLs sollte nie ein Parameter unbelegt bleiben. Je nach Funktion können unbelegte Parameter zu Fehlern führen.
 * Bei TRAFOs werden alle unbelegten Parameter mit dem jeweils zu transformierenden Wert belegt. Deshalb hat eine TRAFO fast immer mindestens einen unbelegten Parameter.
 * Bei PLAUSIs werden alle unbelegten Parameter mit dem Wert des Formularfeldes zu dem die PLAUSI gehört belegt. Deshalb hat eine PLAUSI fast immer mindestens einen unbelegten Parameter.
@@ -342,10 +351,12 @@ Achtung: Wird eine global registrierte Plugin-Funktion für ein Formular verwend
 ##### Nicht registrierte Plugin-Funktionen
 
 Manchmal ist es nicht erwünscht, Plugin-Funktionen im globalen *Funktionen*-Abschnitt zu registrieren. Gründe hierfür können zum Beispiel folgende sein:
-* Eine Funktion wird nur in einer oder zwei Vorlagen verwendet. Es kann störend sein, wenn solche Funktionen in jeder Funtionsauswahl-Kombobox des FormularMax 4000 angezeigt werden.
+*
+ Eine Funktion wird nur in einer oder zwei Vorlagen verwendet. Es kann störend sein, wenn solche Funktionen in jeder Funtionsauswahl-Kombobox des FormularMax 4000 angezeigt werden.
 * Soll eine Vorlage an ein anderes Referat weitergegeben werden und die Vorlage verwendet eine global registrierte Plugin-Funktion, so muss das empfangende Referat die Plugin-Funktion ebenfalls global registrieren. Dabei sind schwer auflösbare Namenskonflikte möglich und die Funktion erscheint in jedem FormularMax 4000 des empfangenden Referats. Beides ist ungünstig.
 
 In solchen Fällen ist es günstiger, auf das globale registrieren einer Plugin-Funktion zu verzichten. Um diese dennoch verwenden zu können, kann eine Kombination von BIND und EXTERN direkt eingegeben werden. Zu diesem Zweck wird als Funktion "&lt;Code&gt;" ausgewählt und im Eingabefeld ein Code eingegeben wie z.B. der folgende
+
 ```
 BIND(
  FUNCTION(
@@ -389,13 +400,15 @@ Jede Funktion setzt sich aus einer oder mehrerer Grundfunktionen zusammen. Jede 
 Da der WollMux nicht mit leeren Feldern rechnen kann, wird in diesen Fällen immer eine Fehlermeldung erscheinen. Dieses Verhalten tritt z.B. dann schon auf, wenn in einer einfachen Summenfunktion noch nicht alle Felder durch den Benutzer ausgefüllt sind. Da die Meldung erst durch das Ergebnis der Funktion ersetzt wird, nachdem alle dazugehörigen Felder ausgefüllt sind und die Meldung vorher den Benutzer des Formulars verwirren wird, gilt es, diese Fehlermeldungen abzufangen.
 
 Dazu gibt es drei Möglichkeiten:
-1. Man belegt alle Felder, die für die Funktion benötigt werden mit einem AUTOFILL-Wert „0“. Dadurch gibt es keine leeren Felder und auch keine Fehlermeldung mehr. Diese Möglichkeit wird aber z.B. bei Divisionen nicht funktionieren.
-2. Man sagt der Funktion an sich, dass sie „0“ verwenden soll, wenn das entsprechende Feld leer ist.
-3. Man fängt die Fehlermeldung an sich ab. Dies funktioniert mit der Funktion „ONERROR“.<br>
-Bei einer Summenberechnung mit Feld „A“ und Feld „B“ würde das so aussehen:
-```
-SELECT(
-    SUM(VALUE "A", VALUE "B")
-    ONERROR("wird automatisch berechnet")
-)
-```
+
+  1. Man belegt alle Felder, die für die Funktion benötigt werden mit einem AUTOFILL-Wert „0“. Dadurch gibt es keine leeren Felder und auch keine Fehlermeldung mehr. Diese Möglichkeit wird aber z.B. bei Divisionen nicht funktionieren.
+  2. Man sagt der Funktion an sich, dass sie „0“ verwenden soll, wenn das entsprechende Feld leer ist.
+  3. Man fängt die Fehlermeldung an sich ab. Dies funktioniert mit der Funktion „ONERROR“.<br>
+  Bei einer Summenberechnung mit Feld „A“ und Feld „B“ würde das so aussehen:
+
+  ```
+  SELECT(
+      SUM(VALUE "A", VALUE "B")
+      ONERROR("wird automatisch berechnet")
+  )
+  ```

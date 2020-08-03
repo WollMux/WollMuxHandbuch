@@ -24,5 +24,8 @@
     },
 	"styles": {
 		"website": "styles/website.css"
+	},
+	"structure": {
+		"readme": "Hauptseite.md"
 	}
 }

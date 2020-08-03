@@ -8,6 +8,7 @@ Der FormularMax 4000 ist eine integrierte Entwicklungsumgebung für die Erstellu
 
 Um den FormularMax 4000 aufrufen zu können muss zuerst der Symbolleiste
 ein entsprechender Button hinzugefügt werden. Wenn Sie über Ansicht/Symbolleisten die Leiste "Werkzeuge für Vorlagenersteller (WollMux) aktivieren, so haben Sie einen entsprechenden Button. Ansonsten können Sie sich auch einen Button manuell in eine Symbolleiste einfügen wie folgt:
+
 1. Extras/Anpassen.../Reiter "Symbolleisten"
 2. Oben bei Symbolleiste "Standard" auswählen
 3. Unten bei Speichern in "LibreOffice Writer" auswählen

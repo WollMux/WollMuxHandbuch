@@ -1,5 +1,6 @@
-JDBC-Treiber downloaden
-=======================
+# {{ page.title }}
+
+## JDBC-Treiber downloaden
 
 Für den Zugriff auf eine Datenbank wird ein jdbc-Treiber benötigt.
 
@@ -7,12 +8,9 @@ Für den Zugriff auf eine Datenbank wird ein jdbc-Treiber benötigt.
 
 Der Treiber sollte <u>nicht</u> auf einem Netzlaufwerk, sondern lokal abgelegt werden.
 
-JDBC-Treiber einbinden
-======================
+## JDBC-Treiber einbinden
 
-
-Systemweit
-----------
+### Systemweit
 
 Der JDBC-Treiber kann systemweit über eine referatseigene LibreOffice Vorkonfiguration eingebunden werden.
 
@@ -32,24 +30,21 @@ Eintrag *DataAccess.xcu*
 
 > **INFO** Für einen generellen Funktionstest kann die *DataAccess.xcu* auch im eigenen Profil erzeugt werden (im Verzeichnis `~/.config/libreoffice/4/user/registry/data/org/openoffice/Office)`.
 
-Benutzerweit
-------------
+### Benutzerweit
 [Für einen einzelnen Benutzer einbinden](https://help.libreoffice.org/Common/JDBC_Connection/de)
 
-LO Base aufrufen
-=================
+## LO Base aufrufen
 
-Basisclient
------------
+### Basisclient
 Über die Konsole K-Menü &rarr; Systemadministration &rarr; Konsole (Terminal) &rarr; Eingabe: *soffice -base* oder *sbase*
 
-Windows
--------
+### Windows
+
 * Windows Startmenü &rarr; Programme &rarr; LibreOffice &rarr; LibreOffice Base
 * Eingabeaufforderung &rarr; Eingabe: *&lt;LibreOffice Installationspfad&gt;\\program\\sbase*
 
-Einmaliges erstellen der benötigten LO-Base Datenbank
-======================================================
+## Einmaliges erstellen der benötigten LO-Base Datenbank
+
 1. [LO Base aufrufen](#LO_Base_aufrufen)
 2. Datenbank auswählen<br>
    ![**Entsprechende Datenbank auswählen. &rarr; Button "Weiter&gt;&gt;"**](images/Datenbank/WOL_Base_DB_auswaehlen.png "Entsprechende Datenbank auswählen. --> Button "Weiter>>"")
@@ -63,16 +58,13 @@ Einmaliges erstellen der benötigten LO-Base Datenbank
    ![**Die Datenbank soll nicht angemeldet werden und LO Base soll beendet werden &rarr; Button "Fertig stellen"**](images/Datenbank/WOL_Base_Fertigstellen.png "Die Datenbank soll nicht angemeldet werden und LO Base soll beendet werden --> Button "Fertig stellen"")
 6. LO Datenquelle speichern<br>
 
-LO Base Datenbank bereitstellen
-================================
+## LO Base Datenbank bereitstellen
 
-LO Base Datenbank auf dem Webserver bereitstellen
---------------------------------------------------
+### LO Base Datenbank auf dem Webserver bereitstellen
 
 Damit die LO Base Datenbank von mehreren Benutzern benutzt werden kann, ist es zu empfehlen die .odb Datei auf den Webserver zu legen.
 
-LO Base Datenbank über den WollMux registrieren
-------------------------------------------------
+### LO Base Datenbank über den WollMux registrieren
 
 Damit eine LO Base Datenbank verwendet werden kann, muss diese über einen **Registriere-Abschnitt** registriert werden. Eine Datenquelle kann z.B. in der *referat.conf* registriert werden.
 
@@ -94,8 +86,7 @@ Weiter Informationen:
 * [Einrichten einer LO Datenquelle](#einrichten-einer-lo-datenquelle)
 * [Datenquellen](Konfigurationsdatei_wollmux_conf.md#datenquellen)
 
-Einrichten einer LO Datenquelle
-================================
+## Einrichten einer LO Datenquelle
 
 Für den Zugiff auf eine externe Datenbank mit dem WollMux, muss in der **referat.conf** eine LO Datenquelle definiert werden, die auf die registrierte LO Base Datenbank verweist. Ebenso kann eine eigene .conf Konfigurationsdatei erstellt werden, die über ein %include "<Name>.conf" Eintrag in der referat.conf eingebunden wird.
 
@@ -120,8 +111,7 @@ Datenquellen(
 
 siehe [Einrichten einer LO Datenquelle](Konfigurationsdatei_wollmux_conf.md#TYPE_ooo)
 
-Dialog "Empfänger auswählen" anbinden
-=====================================
+## Dialog "Empfänger auswählen" anbinden
 
 Der Dialog **Empfänger auswählen** kann über die Konfigurationsdatei **adressauswahl-referat.conf** z.B durch einen extra Reiter, erweitert werden. Als Beispiel dienen die Spielwarenläden in der adressauswahl-referat.conf, dessen Eintrag kopiert und angepasst werden kann. Die Datei adressauswahl-referat.conf wird durch das [xupdate Script](Standardkonfiguration_des_WollMux_installieren_und_pflegen#Liste_der_nicht_durch_xupdate_.C3.BCberschriebenen_Dateien) nicht überschrieben.
 
@@ -132,40 +122,40 @@ MeineOOoDatenquelle(       # Name der Datenquelle mit dem Typ ooo
        TITLE "<Titel>"
        CLOSEACTION "back"
        TIP "Einen Namen als Empfänger auswählen"
-       
+
        Intro(
          (LABEL "Sie können nach Namensbestandteilen oder Straßennamen suchen" TYPE "label" )
          (TYPE "glue")
        )#Intro
-    
+
        Suche(
          (TYPE "textfield" ID "suchanfrage" ACTION "search" AUTOFILL "")
          (LABEL "Suchen"  TYPE "button" HOTKEY "S"  ACTION "search")
        )#Suche
-       
+
        Suchstrategie(
          MeineOOoDatenquelle()
          MeineOOoDatenquelle(<DB-Spalte mit Namen> "${suchanfrage1}*" )   # Die DB-Spalten müssen in der Datenquellen-Definition bei "Schema" eingetragen sein
-         MeineOOoDatenquelle(<DB-Spalte mit Namen> "${suchanfrage1} ${suchanfrage2}" ) 
-         MeineOOoDatenquelle(<DB-Spalte mit Namen> "${suchanfrage1} ${suchanfrage2} ${suchanfrage3}*" ) 
-         MeineOOoDatenquelle(<DB-Ppalte mit PLZ> "${suchanfrage1}" ) 
-         MeineOOoDatenquelle(<DB-Spalte mit Namen> "${suchanfrage1} ${suchanfrage2} ${suchanfrage3}" ) 
-         MeineOOoDatenquelle(<DB-Spalte mit Namen> "${suchanfrage1} ${suchanfrage2}" ) 
-         MeineOOoDatenquelle(<DB-Spalte mit Namen> "${suchanfrage1}" ) 
+         MeineOOoDatenquelle(<DB-Spalte mit Namen> "${suchanfrage1} ${suchanfrage2}" )
+         MeineOOoDatenquelle(<DB-Spalte mit Namen> "${suchanfrage1} ${suchanfrage2} ${suchanfrage3}*" )
+         MeineOOoDatenquelle(<DB-Ppalte mit PLZ> "${suchanfrage1}" )
+         MeineOOoDatenquelle(<DB-Spalte mit Namen> "${suchanfrage1} ${suchanfrage2} ${suchanfrage3}" )
+         MeineOOoDatenquelle(<DB-Spalte mit Namen> "${suchanfrage1} ${suchanfrage2}" )
+         MeineOOoDatenquelle(<DB-Spalte mit Namen> "${suchanfrage1}" )
        )#Suchstrategie
-       
+
        Spaltenumsetzung(
          EmpfaengerZeile1(VALUE("<DB-Spalte mit Namen>"))
          EmpfaengerZeile2(VALUE("<DB-Spalte mit Straße>"))
          EmpfaengerZeile3(CAT(VALUE("DB-Spalte mit PLZ>") " " VALUE("<DB-Spalte mit Ort>")))
        )
-    
+
        Suchergebnis(
          (LABEL "Suchergebnis" TYPE "label")
-         (TYPE "listbox" ID "suchergebnis" LINES "10" ACTION "select" 
+         (TYPE "listbox" ID "suchergebnis" LINES "10" ACTION "select"
            DISPLAY "${EmpfaengerZeile1}") #Bezieht sich schon auf Ergebnis nach Spaltenumsetzung
        )#Suchergebnis
-    
+
        Vorschau( #Bezieht sich schon auf Ergebnis nach Spaltenumsetzung
          (LABEL "Vorschau" TYPE "label")
          (LABEL "Empfänger Zeile 1" DB_SPALTE "EmpfaengerZeile1" TYPE "textfield" READONLY "true")
@@ -173,7 +163,7 @@ MeineOOoDatenquelle(       # Name der Datenquelle mit dem Typ ooo
          (LABEL "Empfänger Zeile 3" DB_SPALTE "EmpfaengerZeile3" TYPE "textfield" READONLY "true")
          (TYPE "glue")
        )#Vorschau
-      
+
        Fussbereich(
          (LABEL "Abbrechen"  TYPE "button" HOTKEY "A"  ACTION "back")
          (TYPE "glue")

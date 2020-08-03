@@ -8,7 +8,7 @@ Die hier und auf [Sachleitende Verfügungen](SLV.md) erläuterten Themen erläut
 
 ## Auswahl der Mischvorlage
 
-### Was ist eine Mischvorlage?
+### Was ist eine Mischvorlage
 
 Eine Mischvorlage ist eine Vorlage für eine Vorlage. Fast alle Vorlagen bei der Landeshauptstadt München enthalten einen Briefkopf. Die Mischvorlagen ermöglichen es, dass man Vorlagen erstellen kann ohne sich Gedanken über das Design des Briefkopfes machen zu müssen. Man muss nur entscheiden, welchen Briefkopf die Vorlage enthalten soll und die passende Mischvorlage auswählen.
 
@@ -34,8 +34,9 @@ Prinzipiell sollten Vorlagen und Dokumente so weit wie möglich über Formatvorl
 ### Richtige Formatierung
 
 Details und Erläuterungen finden sich zur Genüge im Internet. Auf folgenden Seiten gibt es gute Dokumentationen:
-1. http://wiki.documentfoundation.org/images/c/cc/0206WG3-IntroductionToStyles.pdf (Englisch)
-2. http://www.libreofficewiki.de/FormatVorlagen
+
+1. [Einführung in Styles](http://wiki.documentfoundation.org/images/c/cc/0206WG3-IntroductionToStyles.pdf) (Englisch)
+2. [Formatvorlagen](http://www.libreofficewiki.de/FormatVorlagen)
 
 ### Formatvorlagen des WollMux
 
@@ -43,9 +44,9 @@ Formatvorlagen kann man entweder selbst erstellen oder man verwendet die Formatv
 
 Diese Formatvorlagen können folgendermaßen verwendet werden:
 
-1.  In die Vorlage wechseln, in die die Formatvorlagen eingefügt werden sollen.
-2.  Bitte darauf achten, das kein Text o.ä. markiert ist – dieser würde gelöscht werden. Ansonsten ist es egal, an welcher Stelle der Cursor steht.
-3.  Über *Einfügen → Datei* die WOL\_Briefkopf-Absatzformate\_v1\_2005-11-22.ott einfügen. Dazu muss diese natürlich irgendwo im Dateisystem liegen.
+1. In die Vorlage wechseln, in die die Formatvorlagen eingefügt werden sollen.
+2. Bitte darauf achten, das kein Text o.ä. markiert ist – dieser würde gelöscht werden. Ansonsten ist es egal, an welcher Stelle der Cursor steht.
+3. Über *Einfügen → Datei* die WOL\_Briefkopf-Absatzformate\_v1\_2005-11-22.ott einfügen. Dazu muss diese natürlich irgendwo im Dateisystem liegen.
 
 In der WOL\_Briefkopf-Absatzformate\_v1\_2005-11-22.ott sind einige Formatvorlagen enthalten. Erläuterungen zu den Formatvorlagen sind im WollMux Wiki auf der Seite [Formatvorlagen](../Formatvorlagen.md) zu finden.
 
@@ -53,9 +54,9 @@ In der WOL\_Briefkopf-Absatzformate\_v1\_2005-11-22.ott sind einige Formatvorlag
 
 Wenn diese Formatvorlagen angepasst werden sollen, muss dies über verknüpfte Formatvorlagen geschehen. Dies geschieht in der zu bearbeitenden Vorlage:
 
-1.  Rechtsklick auf die zu ändernde Formatvorlage und *Neu* wählen.
-2.  Einen sprechenden Namen vergeben, z.B. „Fließtext eingerückt 2cm“. Bei *verknüpft mit* steht „Fließtext“
-3.  Die Einstellungen für diese Formatvorlage vornehmen und speichern.
+1. Rechtsklick auf die zu ändernde Formatvorlage und *Neu* wählen.
+2. Einen sprechenden Namen vergeben, z.B. „Fließtext eingerückt 2cm“. Bei *verknüpft mit* steht „Fließtext“
+3. Die Einstellungen für diese Formatvorlage vornehmen und speichern.
 
 Die Vorlage kann nun mit den selbst erstellten und eingefügten Formatvorlagen formatiert werden. Wobei z.B. Fließtext für den normalen Vorlageninhalt verwendet wird.
 
@@ -63,13 +64,13 @@ Die Vorlage kann nun mit den selbst erstellten und eingefügten Formatvorlagen f
 
 ![Standardformatierung](images/LO_Formatierung_loeschen.jpg "fig:Standardformatierung")
 
-### Warum Formatvorlagen verwenden?
+### Warum Formatvorlagen verwenden
 
 Man sollte Formatvorlagen nicht nur aus Prinzip verwenden, sie bieten natürlich auch viele Vorteile, z.B.:
 
-- Das Ändern der Formatierung von Text oder Textbereichen ist einfacher, wenn der Text mit Formatvorlagen formatiert ist.
-- Es ist auch einfacher, z.B. eine Coporate Identity (wie das Visuelle Erscheinungsbild der Stadt München) umzusetzen.
-- In vielen Fällen verringern Formatvorlagen auch die Probleme, die bei der Crossbearbeitung (in verschiedenen Office Suiten) auftreten können.
+* Das Ändern der Formatierung von Text oder Textbereichen ist einfacher, wenn der Text mit Formatvorlagen formatiert ist.
+* Es ist auch einfacher, z.B. eine Coporate Identity (wie das Visuelle Erscheinungsbild der Stadt München) umzusetzen.
+* In vielen Fällen verringern Formatvorlagen auch die Probleme, die bei der Crossbearbeitung (in verschiedenen Office Suiten) auftreten können.
 
 Man kann sich analog zur WOL\_Briefkopf-Absatzformate\_v1\_2005-11-22.ott auch eigene Vorlagen erstellen und in diese die eigenen Formatvorlagen „auslagern“. Diese können auch wie oben beschrieben, in jede beliebige Vorlage eingefügt werden. Dies kann man auch wie in Kapitel [Automatisches Einfügen von Sachbearbeiterdaten](WollMux_Vorlage.md#automatisches-einfügen-von-sachbearbeiterdaten) beschrieben über spezielle WollMux Befehle automatisieren.
 
@@ -112,10 +113,10 @@ Auch die meisten anderen Formatierungen, wie Einrückungen, Tab-Stopps, usw. las
 
 Tipps:
 
-- Text nicht mit Leerzeichen einrücken. → besser Tabs oder Einrückungen in den Formatvorlagen verwenden.
-- Text nicht durch mehrere Tabs einrücken. → ein definierter Tab in einer Formatvorlage eignet sich besser.
-- Seitenumbrüche nicht über Zeilenschaltungen oder Absätze definieren. → Mit „Strg + Enter“ werden Seitenumbrüche eingefügt.
-- Zur Ausrichtung von Text eignen sich auch Tabellen oder Rahmen.
+* Text nicht mit Leerzeichen einrücken. → besser Tabs oder Einrückungen in den Formatvorlagen verwenden.
+* Text nicht durch mehrere Tabs einrücken. → ein definierter Tab in einer Formatvorlage eignet sich besser.
+* Seitenumbrüche nicht über Zeilenschaltungen oder Absätze definieren. → Mit „Strg + Enter“ werden Seitenumbrüche eingefügt.
+* Zur Ausrichtung von Text eignen sich auch Tabellen oder Rahmen.
 
 ----------------------------------------
 
@@ -265,7 +266,6 @@ Durch einen Doppelklick mit der linken Maustaste auf eine Textmarke wird die Lag
 
 > **WARNING** Es gibt leider einen Bug in LibreOffice, der dazu führt, dass die Änderung der Textmarke nicht erkannt wird. Wenn man also eine Textmarke ändert, macht man einfach irgendwo ein Leerzeichen und löscht dieses wieder. Dann kann man auf alle Fälle die Änderung speichern.
 
-
 ### Textmarken löschen
 
 Das Löschen der Textmarken erfolgt ebenfalls im Navigator. Dazu wird nach Rechtsklick auf die zu löschende Textmarke, *Textmarke → Löschen* ausgewählt.
@@ -286,10 +286,11 @@ Das &lt;FRAG\_ID&gt; ist durch die passende FRAG\_ID zu ersetzen.
 
 Die Vorlagen im WollMux sind durch eine Vielzahl von Fragmenten zusammengesetzt. Für die Vorlagenerstellung sind im Prinzip aber nur zwei davon geeignet:
 
-- Unterschrift
-- Name\_Bezeichnung
+* Unterschrift
+* Name\_Bezeichnung
 
 Durch Unterschrift wird
+
 ```
 Mit freundlichen Grüßen
 
@@ -297,20 +298,22 @@ Mit freundlichen Grüßen
 
 <DienstBezLang>
 ```
+
 eingefügt.
 
 Durch Name\_Bezeichnung wird
+
 ```
 Mit freundlichen Grüßen
 
 <Titel> <Nachname>
 ```
+
 eingefügt.
 
 Im Übrigen gelten die Hinweise aus Kapitel [Automatisches Einfügen von Sachbearbeiterdaten](WollMux_Vorlage.md#automatisches-einfügen-von-sachbearbeiterdaten).
 
 > **WARNING** Um selbst erstellte Fragmente verwenden zu können, müssen diese in die WollMux Konfiguration eingebunden sein und eine ID, i.d.R. Der Dateiname, haben.
-
 
 ### OverrideFrag
 

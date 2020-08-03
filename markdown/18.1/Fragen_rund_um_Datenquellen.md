@@ -1,15 +1,17 @@
-### Ich möchte eine externe Datenbank als Datenquelle im WollMux verwenden
+# {{ page.title }}
+
+## Ich möchte eine externe Datenbank als Datenquelle im WollMux verwenden
 
 siehe [Datenbanken mit dem WollMux verwenden](Datenbanken_mit_dem_WollMux_verwenden.md)
 
-### Ich möchte sämtliche Daten einer Datenquelle in der Empfängerauswahl sehen
+## Ich möchte sämtliche Daten einer Datenquelle in der Empfängerauswahl sehen
 
 Gerade wenn man nur wenige Datensätze in der Datenquelle hat, ist das recht ergonomisch für den Benutzer.
 
-![](images/FragenDatenquellen/Empfaengerauswahl_gerichte.png "Empfaengerauswahl gerichte.png")
+![Empfaengerauswahl Gerichte](images/FragenDatenquellen/Empfaengerauswahl_gerichte.png "Empfaengerauswahl gerichte.png")
 
 Dafür sind zwei Änderungen in der conf wichtig, die hier rot eingekreist sind.
 
-![](images/FragenDatenquellen/Tab_gerichte.png "Tab gerichte.png")
+![Tab Gerichte](images/FragenDatenquellen/Tab_gerichte.png "Tab gerichte.png")
 
 <Kategorie:Wollmuxpraxis> [Kategorie:Handbuch des WollMux](Kategorie:Handbuch_des_WollMux)

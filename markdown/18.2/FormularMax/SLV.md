@@ -103,6 +103,7 @@ Ist in der Vorlage/im Dokument ein Textrahmen "WollMuxVerfuegungspunkt1" vorhand
 ## Definition von Textbereichen zum Ausblenden problematischer Inhalte
 
 Manche Textinhalte werden von LibreOffice.org beim Drucken nicht korrekt ausgeblendet, wenn sie sich unterhalb eines ausgeblendeten Verfügungspunktes befinden. Davon sind folgende Elemente betroffen:
+
 * An Seiten verankerte Objekte werden nicht ausgeblendet, da sie keinem Bereich angehören.
 * Tabellen mit sichtbaren Rahmen: Beim Ausblenden eines Verfügungspunktes der eine Tabelle mit sichtbaren Rahmen enthält, wird zwar der Inhalt der Tabelle ausgeblendet, die Rahmen bleiben aber als Gerüst sichtbar.
 * Manuelle Seitenumbrüche: Wird unterhalb eines ausgeblendeten Verfügungspunktes mit Seitenumbrüchen gearbeitet, so blendet LibreOffice.org diese Seitenumbrüche nicht aus. Als Ergebnis entstehen unerwünschte leere Seiten, bei denen nur die Kopfzeile mit einer falschen Gesamtseitenzahl angezeigt wird.
@@ -112,13 +113,11 @@ Manche Textinhalte werden von LibreOffice.org beim Drucken nicht korrekt ausgebl
 Mit Hilfe sogenannter Textbereiche ist es aber dennoch möglich, diese Inhalte zuverlässig auszublenden. Dazu markiert man die betroffenen Textteile mit der Maus und fügt über *Einfügen → Bereich...* einen neuen Bereich ein. Abhängig von der Position des betroffenen Textteils muss man bei der Erstellung des Bereichs auf folgende Regeln achten:
 
 * **Unterhalb eines Verfügungspunktes:**<br>
-Befindet sich der problematische Inhalt unterhalb einer Überschrift eines Verfügungspunktes, so kann der Bereich beliebig benannt werden. Man muss aber beim Markieren der betroffenen Textteile darauf achten, dass der Bereich nicht vor der Überschrift des zugehörigen Verfügungspunktes startet. Innerhalb eines so erzeugten Bereichs können keine Druckblöcke (z.B. *Immer drucken)* verwendet werden, da stets der gesamte betroffene Bereich ausgeblendet wird und so auch die Druckblöcke nicht angezeigt würden, wenn sie angezeigt werden sollten.
-
-|![Fehlerhaft ausgeblendete Tabelle](../images/SLV/entwurfMitTabelleUndBereich.png "fig:Fehlerhaft ausgeblendete Tabelle")|![Fehlerhaft ausgeblendete Tabelle](../images/SLV/keinDruckfehlerBeiTabelle.png "fig:Fehlerhaft ausgeblendete Tabelle")|
-
+  Befindet sich der problematische Inhalt unterhalb einer Überschrift eines Verfügungspunktes, so kann der Bereich beliebig benannt werden. Man muss aber beim Markieren der betroffenen Textteile darauf achten, dass der Bereich nicht vor der Überschrift des zugehörigen Verfügungspunktes startet. Innerhalb eines so erzeugten Bereichs können keine Druckblöcke (z.B. *Immer drucken)* verwendet werden, da stets der gesamte betroffene Bereich ausgeblendet wird und so auch die Druckblöcke nicht angezeigt würden, wenn sie angezeigt werden sollten.
+  ![Fehlerhaft ausgeblendete Tabelle](../images/SLV/entwurfMitTabelleUndBereich.png "fig:Fehlerhaft ausgeblendete Tabelle")|![Fehlerhaft ausgeblendete Tabelle](../images/SLV/keinDruckfehlerBeiTabelle.png "fig:Fehlerhaft ausgeblendete Tabelle")|
 * **Innerhalb eines Blocks zur Drucksteuerung**<br>
-Mit den Blöcken zur Drucksteuerung können beliebige Textstellen beim Drucken der Sachleitenden Verfügungen ein- oder ausgeblendet werden, auch dann, wenn sie sich nicht direkt unterhalb einer Überschrift, sondern z.B. in einem eigenen Textrahmen befinden. Liegt der problematische Inhalt in einem solchen Druckblock, so muss der Bereichsname nach folgendem System aufgebaut sein:`<beliebiger Name> GROUPS '<SLV_Sichtbarkeitsgruppe>'`<br>
-Dabei können Sie an die Stelle &lt;beliebiger Name&gt; einen beliebigen Namen setzen. An der Stelle &lt;SLV\_Sichtbarkeitsgruppe&gt; muss einer der folgenden Werte eingetragen werden:
+  Mit den Blöcken zur Drucksteuerung können beliebige Textstellen beim Drucken der Sachleitenden Verfügungen ein- oder ausgeblendet werden, auch dann, wenn sie sich nicht direkt unterhalb einer Überschrift, sondern z.B. in einem eigenen Textrahmen befinden. Liegt der problematische Inhalt in einem solchen Druckblock, so muss der Bereichsname nach folgendem System aufgebaut sein:`<beliebiger Name> GROUPS '<SLV_Sichtbarkeitsgruppe>'`<br>
+  Dabei können Sie an die Stelle &lt;beliebiger Name&gt; einen beliebigen Namen setzen. An der Stelle &lt;SLV\_Sichtbarkeitsgruppe&gt; muss einer der folgenden Werte eingetragen werden:
   * SLV\_AllVersions: Analog zum Druckblock "immer drucken" wird dieser Bereich in allen Ausfertigungen gedruckt.
   * SLV\_NotInOriginal: Analog zum Druckblock "immer außer Original" wird dieser Bereich in allen Ausfertigungen außer dem Original gedruckt.
   * SLV\_OriginalOnly: Analog zum Druckblock "nur im Original" wird dieser Bereich ausschließlich im Original gedruckt.
@@ -147,7 +146,7 @@ In der Spalte "Kopien" kann für jeden Ausdruck eingestellt werden, wie oft dies
 
 Hier kann man festlegen, dass der Ausdruck in umgekehrter Reihenfolge startet. Bei aktivierter Checkbox wird zuerst der Entwurf (Wiedervorlage) gedruckt.
 
-### Beispiel: Drucken einer Vormerkung 
+### Beispiel: Drucken einer Vormerkung
 
 Über das Symbol *Datei direkt drucken* oder den Menüeintrag *Drucken* erscheint der Dialog "Wollmux Komfortdruck".
 
@@ -197,7 +196,7 @@ Nach Betätigen der Schaltfläche *Alle drucken *erhält man vier Ausdrucke. Jed
 </tr>
 </table>
 
-### Grundsätzliches zu Sachleitende Verfügungen Drucken 
+### Grundsätzliches zu Sachleitende Verfügungen Drucken
 
 * Bei einem Externen Brief wird die I. als "I. Original" angezeigt, sonst wird die Beschreibung aus der Verfügung angezeigt (z.B. Vormerkung oder Niederschrift).
 * Falls bei einer Verfügung kein Absatz als Zuleitungszeile markiert ist, wird der Druckzähler mit 1 initialisiert.
