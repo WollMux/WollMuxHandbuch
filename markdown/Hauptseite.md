@@ -6,8 +6,7 @@ Der “Eierlegende WollMux” (kurz: WollMux) ist eine Extension für [LibreOffi
 Mehr darüber, was der WollMux alles kann, erfahren Sie hier: **[Features des WollMux](Features.md)**
 
 > **Info**  <span style="font-size:larger;font-weight:bold;color:#1D9101">WollMux Herunterladen</span>
-> - **[WollMux 18.0.12](https://github.com/WollMux/WollMux/releases/tag/RELEASE_18.0.12)**
-> - **[WollMux 18.1.8](https://github.com/WollMux/WollMux/releases/tag/RELEASE_18.1.8)**
+> - **[WollMux 18.1.13](https://github.com/WollMux/WollMux/releases/tag/RELEASE_18.1.13)**
 > - **[WollMux-Konfiguration 18.1.0](https://github.com/WollMux/wollmux-config/releases/tag/v18.1.0)**
 > - [Andere Versionen](https://github.com/WollMux/WollMux/releases)
 >
