@@ -7,6 +7,7 @@ Der WollMux bietet neben den in diesem Handbuch beschriebenen Features auch noch
 Man kann einen WollMux-Serienbrief erstellen und diesen dann mit [Sachleitende Verfügungen](SLV.md) versehen. Dabei gibt es keine Besonderheiten zu beachten.
 
 Wenn man also einen zweiseitigen Serienbrief für 100 Adressaten schreibt, diesen noch mit einem Abdruck, der zwei Zuleitungszeilen enthält, versieht und dann noch eine Wiedervorlage einbaut, erhält man einen Ausdruck bzw. eine Datei mit 800 Seiten.
+
 * 200 Seiten für das Original
 * 2 x 200 Seiten für die beiden Zuleitungen
 * 200 Seiten für den Entwurf (Wiedervorlage)

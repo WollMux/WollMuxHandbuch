@@ -5,6 +5,7 @@
 Die umzustellende Vorlage sollte – wenn möglich - in Word geöffnet und auf Besonderheiten überprüft werden. Sollte Word nicht mehr zur Verfügung stehen, kann diese Überprüfung auch im Writer erfolgen.
 
 Besonderheiten könnten sein:
+
 * Makros
 * unsichtbarer Text
 * aufwändige Formatierungen, wie Hoch-/Querformat gemischt, viele  grafische Elemente, komplexer textlicher Aufbau usw.
@@ -59,7 +60,7 @@ Eine genaue Beschreibung, um was es sich bei Mischvorlagen handelt, steht in Kap
 
 Die Hinweise in der Mischvorlage werden gelöscht und der komplette Inhalt – ohne Briefkopf – der Ausgangsvorlage wird nun markiert, kopiert und in die Mischvorlage anstelle der Hinweise eingefügt.
 
-### Bereiche aus dem Dokument entfernen:
+### Bereiche aus dem Dokument entfernen
 
 In Word ist in den Vorlagen oftmals mit Abschnitten gearbeitet worden, um bestimmte Textstellen vor Änderungen zu schützen. Diese Abschnitte werden im Writer als Bereiche definiert und sollten hier entfernt werden.
 
@@ -68,6 +69,7 @@ In Word ist in den Vorlagen oftmals mit Abschnitten gearbeitet worden, um bestim
 Mit Bereichen kann ein Textdokument in verschiedene Layoutbereiche unterteilt werden. Dabei muss man sich den Zweck von Bereichen irgendwo zwischen Seitenvorlagen und Textrahmen vorstellen.
 
 Zum Beispiel kann ein Bereich mehrspaltig sein, wie die erwähnten Textrahmen und Seitenvorlagen. Der Unterschied liegt darin:
+
 * Anders als bei Textrahmen ist ein Bereich nicht auf eine Seite beschränkt. Er kann irgendwo auf einer Seite beginnen und beliebig viele Seiten lang sein.
 * Anders als Seitenvorlagen kann er Kopf-/Fußzeilen und Seitenränder nicht direkt beeinflussen, sondern übernimmt die Einstellungen der Seite, auf welcher er eingefügt wird.
 

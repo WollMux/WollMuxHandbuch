@@ -1,7 +1,6 @@
 <!-- toc -->
 
-Grundsätzliches zu dieser Unterlage und zum WollMux Seriendruck
-===============================================================
+# Grundsätzliches zu dieser Unterlage und zum WollMux Seriendruck
 
 Diese Unterlage beschreibt den WollMux Seriendruck, den Sie in LibreOffice hinter dem *Briefumschlag in der Sidebar* finden. Der LibreOffice Seriendruck wird hier nicht weiter beschrieben..
 
@@ -9,28 +8,25 @@ In dieser Unterlage wird dargestellt, wie Sie mit dem WollMux Seriendruck zeitsp
 
 Zusätzlich kann der WollMux Seriendruck natürlich mit den Sachleitenden Verfügungen (SLVs) und der Formularfunktion des WollMux verknüpft werden. Diese Punkte werden in den jeweiligen Handbüchern zu diesen Themen erläutert. Wobei für die Anwendung der Formularfunktion der Besuch der dazugehörigen Schulung oder zumindest das Studium des dazugehörigen Handbuchs sehr empfehlenswert ist.
 
-Darstellung des Seriendrucks
-----------------------------
+## Darstellung des Seriendrucks
 
 ![Grafische Darstellung des Seriendrucks](images/mailmerge_overview.png "Grafische Darstellung des Seriendrucks")
 
-- ****Ausgangsdokument bzw. Ausgangsvorlage****: Diese Datei besteht z. B. aus dem Brief(kopf) mit seinen gleich lautenden Textstellen. Für die veränderlichen (variablen) Textstellen werden Platzhalter, die sog. Serienbrieffelder, eingefügt.
-- **Datenquelle**: Die Datenquelle ist eine weitere Datei, i.d.R. eine Calc Tabelle. In dieser Datei befinden sich all die Informationen (z.B. die Daten zum Adressaten), die sich bei jedem Brief ändern, also variabel sind.
-- **Serienbrief oder Serienetikett**: Der Serienbrief bzw. das Serienetikett ist das Endergebnis. Er beinhaltet sowohl die festen als auch die variablen Texte aus dem Ausgangsdokument und der Datenquelle zum Zeitpunkt der Erstellung. Er wird durch das Zusammenführen dieser beiden Dateien erzeugt. Der Serienbrief bzw. das Serienetikett selbst kann in Dateiform (ein Dokument für alle Briefe oder pro Brief eine Datei) oder in Papierform (Drucker) ausgegeben werden.
-- **Zusammenführen (Serienbriefdokument und Datenquelle verbinden)**: Vorgang bei dem der Serienbrief aus dem Ausgangsdokument -bzw. -vorlage und der Datenquelle erzeugt wird. Der Serienbrief ist ein Endergebnis, das die Daten zum Zeitpunkt der Erstellung beinhaltet. Er kann nicht aktualisiert werden. Wenn Sie das Ausgangsdokument oder die Datenquelle aktualisieren, müssen Sie das Zusammenführen erneut durchführen.
-- **Serienbrieffeld**: Platzhalter an dem die passende Information aus der Datenquelle eingefügt wird.
-- **Seriendruckfelder**: Allgemeiner Begriff / Oberbegriff für Serienbrieffelder.
-- **Spezialfelder**: Felder zur individuellen Steuerung des variablen Inhalts, z.B. für Gender oder Wenn-Dann Funktionen.
+* **Ausgangsdokument bzw. Ausgangsvorlage**: Diese Datei besteht z. B. aus dem Brief(kopf) mit seinen gleich lautenden Textstellen. Für die veränderlichen (variablen) Textstellen werden Platzhalter, die sog. Serienbrieffelder, eingefügt.
+* **Datenquelle**: Die Datenquelle ist eine weitere Datei, i.d.R. eine Calc Tabelle. In dieser Datei befinden sich all die Informationen (z.B. die Daten zum Adressaten), die sich bei jedem Brief ändern, also variabel sind.
+* **Serienbrief oder Serienetikett**: Der Serienbrief bzw. das Serienetikett ist das Endergebnis. Er beinhaltet sowohl die festen als auch die variablen Texte aus dem Ausgangsdokument und der Datenquelle zum Zeitpunkt der Erstellung. Er wird durch das Zusammenführen dieser beiden Dateien erzeugt. Der Serienbrief bzw. das Serienetikett selbst kann in Dateiform (ein Dokument für alle Briefe oder pro Brief eine Datei) oder in Papierform (Drucker) ausgegeben werden.
+* **Zusammenführen (Serienbriefdokument und Datenquelle verbinden)**: Vorgang bei dem der Serienbrief aus dem Ausgangsdokument -bzw. -vorlage und der Datenquelle erzeugt wird. Der Serienbrief ist ein Endergebnis, das die Daten zum Zeitpunkt der Erstellung beinhaltet. Er kann nicht aktualisiert werden. Wenn Sie das Ausgangsdokument oder die Datenquelle aktualisieren, müssen Sie das Zusammenführen erneut durchführen.
+* **Serienbrieffeld**: Platzhalter an dem die passende Information aus der Datenquelle eingefügt wird.
+* **Seriendruckfelder**: Allgemeiner Begriff / Oberbegriff für Serienbrieffelder.
+* **Spezialfelder**: Felder zur individuellen Steuerung des variablen Inhalts, z.B. für Gender oder Wenn-Dann Funktionen.
 
-Die Datenquelle
-===============
+# Die Datenquelle
 
 Die Datenquelle (Calc Tabelle) beinhaltet alle variablen Daten (z. B. Adressen) die Sie in Ihrem Serienbrief nutzen möchten. Der Aufbau der Datenquelle beeinflusst die Erstellung des Ausgangsdokuments bzw. der Ausgangsvorlage und die Möglichkeiten, die Ihnen dort zur Verfügung stehen erheblich.
 
 Sie sollten - wenn möglich immer - die Felder, die schon in der Ausgangsvorlage bzw. im Ausgangsdokument vorhanden sind, verwenden. Dies betrifft. insb. die Felder, die schon im Briefkopf enthalten sind. Wir empfehlen diese Felder **nicht** zu ändern – also **nicht** „EmpfaengerZeile1“ in „Anrede“ umzubenennen. Viel besser und auch flexibler ist es die Datenquelle entsprechend anzupassen.
 
-Grundlagen
-----------
+## Grundlagen
 
 Als Datenquelle können Sie Tabellen aus Tabellendokumenten, wie Sie sie mit Calc erstellen, verwenden. In diesem Handbuch wird primär die Nutzung der WollMux-Seriendruckfunktion mit Tabellen aus Tabellendokumenten beschrieben. Tabellen aus Textdokumenten (Writer) können nicht für den Seriendruck verwendet werden. Falls Sie Word-Tabellen für den Seriendruck in Word verwendet haben, müssen diese in Tabellendokumente (Calc) übernommen werden.
 
@@ -38,8 +34,7 @@ Jede Datenquelle besteht aus einer Tabelle, z. B. aus einer Tabelle eines Calc-T
 
 ![Typischer Aufbau einer Datenquelle](images/mailmerge_datasource.png "Typischer Aufbau einer Datenquelle")
 
-Erstellung der Datenquelle
---------------------------
+## Erstellung der Datenquelle
 
 Eine neue Datenquelle kann in LibreOffice entweder über **Datei → Neu → Tabellendokument** oder über **Extras → Seriendruck (WollMux) → Neue Calc-Tabelle...** erstellt werden.
 
@@ -50,25 +45,23 @@ Ab der zweiten Zeile tragen Sie Ihre Daten ein. Wenn Sie alle Datensätze einget
 
 Bitte achten Sie darauf, dass Ihre Tabelle folgenden Qualitätskriterien entspricht:
 
-- Die Feldnamen sollten nur aus folgenden Zeichen bestehen:
-  - 0-9 
-  - a-z
-  - A-Z
-  - \_ 
-  - Also keine Leerzeichen, Sonderzeichen etc. im Feldnamen.
-- Bitte machen Sie in den Spaltenüberschriften, also bei den Feldnamen keine (manuellen) Zeilenumbrüche.
-- Es sollten keine Leerspalten in der Datenquelle vorhanden sein: Die Feldnamenszeile muss vollständig ausgefüllt sein. Zwischen den Datenspalten darf keine Spalte existieren, die keine Überschrift hat.
-  - In der Datenquelle können auch Spalten enthalten sein, die nicht für den Seriendruck verwendet werden sollen. Das bedeutet, Sie können auch Calc Tabellen verwenden, die Sie schon für andere Zwecke angelegt haben, die aber die Felder, die Sie für den Seriendruck verwenden wollen schon enthält. Dadurch brauchen Sie nicht extra eine weitere Tabelle anzulegen.
-- Identische Information – Identischer Eintrag: Achten Sie darauf, dass z. B. in einer Spalte „Anrede“ wirklich immer die Anrede auf die gleiche Art eingetragen ist; also immer „Herr“ oder immer „Herrn“, aber auf keinen Fall mischen. Überprüfen Sie das mit der Funktion Autofilter in Calc. Näheres zum Autofilter finden Sie im Kapitel [Datensätze für den Ausdruck filtern](#datensätze-für-den-ausdruck-filtern).
-- Verwenden Sie in verschiedenen Tabellen (Datenquellen) denselben Feldnamen für denselben Inhalt, z. B.: Nehmen Sie entweder immer „Nachname“ oder immer „Name“ als Feldname für den Familiennamen. Wenn sie in der einen Tabelle „Name“ schreiben und in einer anderen „Nachname“ und in der dritten „Familienname“, dann müssen Sie Ihre Serienbriefe immer wieder anpassen und es wird unübersichtlich.
+* Die Feldnamen sollten nur aus folgenden Zeichen bestehen:
+  * 0-9
+  * a-z
+  * A-Z
+  * \_
+  * Also keine Leerzeichen, Sonderzeichen etc. im Feldnamen.
+* Bitte machen Sie in den Spaltenüberschriften, also bei den Feldnamen keine (manuellen) Zeilenumbrüche.
+* Es sollten keine Leerspalten in der Datenquelle vorhanden sein: Die Feldnamenszeile muss vollständig ausgefüllt sein. Zwischen den Datenspalten darf keine Spalte existieren, die keine Überschrift hat.
+  * In der Datenquelle können auch Spalten enthalten sein, die nicht für den Seriendruck verwendet werden sollen. Das bedeutet, Sie können auch Calc Tabellen verwenden, die Sie schon für andere Zwecke angelegt haben, die aber die Felder, die Sie für den Seriendruck verwenden wollen schon enthält. Dadurch brauchen Sie nicht extra eine weitere Tabelle anzulegen.
+* Identische Information – Identischer Eintrag: Achten Sie darauf, dass z. B. in einer Spalte „Anrede“ wirklich immer die Anrede auf die gleiche Art eingetragen ist; also immer „Herr“ oder immer „Herrn“, aber auf keinen Fall mischen. Überprüfen Sie das mit der Funktion Autofilter in Calc. Näheres zum Autofilter finden Sie im Kapitel [Datensätze für den Ausdruck filtern](#datensätze-für-den-ausdruck-filtern).
+* Verwenden Sie in verschiedenen Tabellen (Datenquellen) denselben Feldnamen für denselben Inhalt, z. B.: Nehmen Sie entweder immer „Nachname“ oder immer „Name“ als Feldname für den Familiennamen. Wenn sie in der einen Tabelle „Name“ schreiben und in einer anderen „Nachname“ und in der dritten „Familienname“, dann müssen Sie Ihre Serienbriefe immer wieder anpassen und es wird unübersichtlich.
 
-Nachbearbeitung der Datenquelle
--------------------------------
+## Nachbearbeitung der Datenquelle
 
 Die Datenquelle kann jederzeit nachbearbeitet werden. Die Daten stehen sofort für den Seriendruck zu Verfügung. Öffnen Sie einfach das Tabellendokument, führen Sie die Änderungen durch und speichern Sie die Datei. Oder klicken Sie in der Sidebarauf die Schaltfläche *Tabelle bearbeiten*. Dadurch wechseln Sie zur Datenquelle.
 
-Datenquellen aus MS Office konvertieren
----------------------------------------
+## Datenquellen aus MS Office konvertieren
 
 Unter Umständen haben Sie bereits Serienbriefe mit Word erstellt. Die Datenquellen, die Sie dafür eingesetzt haben, können Sie nicht direkt in LibreOffice weiterverwenden. Sie müssen zunächst konvertiert werden.
 
@@ -78,29 +71,29 @@ Beim Serienbrief in Word wurden üblicherweise Exceldateien oder Wordtabellen al
 Abspeichern der alten Datei im neuen Format: Gehen Sie so vor, wenn Ihnen alte Exceltabellen als Datenquellen vorliegen.
 
 Konvertierung einer Excel-Tabelle in eine Calc-Tabelle
-- Öffnen Sie die Exceltabelle in Calc.
-- Speichern Sie die Datei dann im \*.ods-Format ab.
-- Schließen Sie die Calcdatei und Öffnen Sie sie erneut.
-- Kontrollieren und korrigieren Sie eventuell aufgetretene Abweichungen.
-- Sie können die Datei nun als Datenquelle für Ihren Seriendruck verwenden.
 
+* Öffnen Sie die Exceltabelle in Calc.
+* Speichern Sie die Datei dann im \*.ods-Format ab.
+* Schließen Sie die Calcdatei und Öffnen Sie sie erneut.
+* Kontrollieren und korrigieren Sie eventuell aufgetretene Abweichungen.
+* Sie können die Datei nun als Datenquelle für Ihren Seriendruck verwenden.
 
 ### Weg 2
 Konvertierung durch Kopieren der Inhalte in ein neues Dokument im neuen Format. Dieser Weg ist bei Wordtabellen notwendig, da eine Wordtabelle nicht direkt im Calcformat gespeichert werden kann.
 
 Konvertierung einer Wordtabelle in eine Calctabelle:
-- Öffnen Sie die Wordtabelle, die Sie konvertieren möchten, zunächst im Writer.
-- Erstellen Sie eine neue leere Calcdatei.
-- Markieren Sie die Tabelle im Writer und kopieren Sie sie z. B. über *Bearbeiten → Kopieren* in die Zwischenablage.
-- Wechseln Sie nun in die Calctabelle und fügen Sie die Daten dort z. B. über *Bearbeiten → Einfügen* aus der Zwischenablage ein.
-- Bestätigen Sie mit *OK*.
-- Überprüfen Sie den Inhalt der neuen Calcdatei je nach Größe stichpunktartig.
-- Falls Sie in Ihrer Wordtabelle Formeln verwenden, werden diese nicht mit kopiert. Statt der Formeln stehen in den eingefügten Zellen die Ergebnisse der Formeln. Erstellen Sie die Formeln neu.
-- Speichern Sie die Datei im Calcformat (\*.ods) ab.
-- Sie können die Datei nun als Datenquelle für Ihren Seriendruck verwenden.
 
-Datenquelle an die WollMux Felder anpassen
-------------------------------------------
+* Öffnen Sie die Wordtabelle, die Sie konvertieren möchten, zunächst im Writer.
+* Erstellen Sie eine neue leere Calcdatei.
+* Markieren Sie die Tabelle im Writer und kopieren Sie sie z. B. über *Bearbeiten → Kopieren* in die Zwischenablage.
+* Wechseln Sie nun in die Calctabelle und fügen Sie die Daten dort z. B. über *Bearbeiten → Einfügen* aus der Zwischenablage ein.
+* Bestätigen Sie mit *OK*.
+* Überprüfen Sie den Inhalt der neuen Calcdatei je nach Größe stichpunktartig.
+* Falls Sie in Ihrer Wordtabelle Formeln verwenden, werden diese nicht mit kopiert. Statt der Formeln stehen in den eingefügten Zellen die Ergebnisse der Formeln. Erstellen Sie die Formeln neu.
+* Speichern Sie die Datei im Calcformat (\*.ods) ab.
+* Sie können die Datei nun als Datenquelle für Ihren Seriendruck verwenden.
+
+## Datenquelle an die WollMux Felder anpassen
 
 Wenn Sie sich ein WollMux Formular mit dem externen Briefkopf ansehen, werden Sie feststellen, dass dort einige Felder schon enthalten sind, die ebenfalls mit Daten aus der Datenquelle befüllt werden sollen.
 ![Bereits vorhandene Felder im externen Briefkopf](images/mailmerge_fields_external.png)
@@ -144,11 +137,9 @@ Die wichtigsten Felder werden wahrscheinlich die Felder im Empfängerfeld sein, 
 5. Wenn man die Zelle J2 nun markiert und nach unten zieht, werden alle Felder mit der Funktionen und den dazugehörigen Feldern befüllt.
 6. Mit den anderen Felder wird einfach analog verfahren.
 
-Die Ausgangsvorlage bzw. das Ausgangsdokument
-=============================================
+# Die Ausgangsvorlage bzw. das Ausgangsdokument
 
-Vorlage oder Dokument?
-----------------------
+## Vorlage oder Dokument
 
 Auch wenn man jedes beliebige Formular oder bestehendes Dokument oder auch ein neues Dokument für den Seriendruck verwenden kann, empfiehlt es sich gut zu überlegen, ob nicht die Verwendung einer richtigen Vorlage für den Serienbrief die beste Möglichkeit ist. In den meisten Fällen sollte diese Frage mit ja beantwortet werden können. Nachfolgende Tablle zeigt die wichtigsten Unterschiede zwischen der Verwendung einer Vorlage oder eines Dokuments:
 
@@ -197,15 +188,13 @@ Auch wenn man jedes beliebige Formular oder bestehendes Dokument oder auch ein n
 
 Im Handbuch wird davon ausgegangen, dass eine Vorlage für die Erstellung des Serienbriefes verwendet wird, weil das in der Regel der bessere Weg ist. Das Vorgehen bei Verwendung eines Dokumentes unterscheidet sich davon aber nicht wesentlich, so dass hierfür der Inhalt des Handbuches genauso gilt.
 
-Auswahl der Vorlage oder des Briefkopfes
-----------------------------------------
+## Auswahl der Vorlage oder des Briefkopfes
 
 Sie können als Grundlage für Ihren Serienbrief jede Mischvorlage, jeden Briefkopf aus dem WollMux oder auch schon jede bestehende Vorlage bzw. Dokument verwenden. Falls Sie Ihren Serienbrief mit Formularfunktionen oder Sachleitenden Verfügungen kombinieren wollen, sollten Sie die dazugehörigen Handbücher anschauen und im ersten Fall am besten die dazugehörigen Kurse besuchen.
 
 Weil in der Praxis der externe Briefkopf wohl der häufigste Anwendungsfall sein wird, wird dieser als Beispiel im Handbuch verwendet.
 
-Erstellung des Serienbriefes
-----------------------------
+## Erstellung des Serienbriefes
 
 ### Feste Inhalte
 
@@ -222,6 +211,7 @@ Dazu müssen Sie zunächst eine Verbindung zwischen den Seriendruckdaten (Datenq
 ![Seriendruck-Sidebar des WollMux beim ersten Start](images/mailmerge_bar.png "Seriendruck-Sidebar des WollMux beim ersten Start")
 
 Öffnen Sie die Sidebar für den WollMux Seriendruck. Dort haben Sie vier Optionen eine Datenquelle zu verknüpfen:
+
 1. *Datei...*: Hier können Sie eine bestehende Calcdatei aus dem Dateisystem als Datenquelle auswählen. Diese Datei wird dabei automatisch geöffnet.
 2. *Datenbank*: Um eine Datenbank auszuwählen muss diese vorher unter LibreOffice registriert worden sein.
 3. Wenn bereits eine Datenquelle (Calc Datei) offen ist, erscheinen diese als Einträge unterhalb der Schaltfläche "Datenbank" und können durch anklicken ausgewählt werden.
@@ -236,6 +226,7 @@ Wenn man die Seriendruck-Sidebar öffnet, so sieht man direkt, ob die Vorlage mi
 #### Einfügen von Serienbrieffeldern
 
 In der geöffneten und mit der Datenquelle verbundenen Vorlage gehen Sie folgendermaßen vor:
+
 1. Positionieren Sie den Cursor an der Stelle, an der Sie das Serienbrieffeld einfügen wollen
 2. Betätigen Sie die Schaltfläche *Serienbrieffeld*. Es erscheint eine alphabetische Liste mit allen Felder der Datenquelle.
 3. Klicken Sie auf den benötigten Eintrag. Das Feld erscheint an der Cursorposition.
@@ -243,19 +234,21 @@ In der geöffneten und mit der Datenquelle verbundenen Vorlage gehen Sie folgend
 #### Löschen von Serienbrieffeldern
 
 Serienbrieffelder lassen sich genauso löschen, wie anderen Zeichen auch. Also durch
-- *Entf*, wenn der Cursor vor dem Serienbrieffeld steht.
-- *Backspace*, wenn der Cursor nach dem Serienbrieffeld platziert ist.
-- *Entf* oder *Backspace* wenn das Serienbrieffeld markiert ist.
+
+* *Entf*, wenn der Cursor vor dem Serienbrieffeld steht.
+* *Backspace*, wenn der Cursor nach dem Serienbrieffeld platziert ist.
+* *Entf* oder *Backspace* wenn das Serienbrieffeld markiert ist.
 
 #### Ersetzen von bereits vorhandenen WollMux-Formularfeldern durch Serienbrieffeldern
 
 Wenn Sie als Basis für Ihren Serienbrief ein bereits fertiges WollMux-Formular verwenden wollen oder auch nur einen Briefkopf, müssen Sie nicht alle Felder, die Sie nicht mehr benötigen, weil sie durch Serienbrieffelder ersetzt werden, manuell löschen. Sie können diese Felder direkt über die Sidebar austauschen.
 
 Dazu gehen Sie folgendermaßen vor:
+
 1. Verbinden Sie Ihr Formular mit Ihrer Datenquelle – falls noch nicht geschehen.
 2. Betätigen Sie in der Sidebar die Schaltfläche *Alle Felder anpassen*.
 3. Es erscheint ein Fenster mit einer Liste aller Felder, die nicht aus der Datenquelle stammen. In der rechten Spalte können Sie die neuen Felder direkt eintragen oder durch Betätigen der Schaltfläche *Serienbrieffeld* auswählen.
-   
+
    ![Felder anpassen am Beispiel der Abtretungserklärung](images/mailmerge_replace_fields.png "Felder anpassen am Beispiel der Abtretungserklärung")
 4. Mit der Schaltfläche *Felder anpassen* werden die alten Felder durch die neuen ersetzt.
 
@@ -264,9 +257,10 @@ Alle Felder, die Bestandteil des Briefkopfes sind, sollten nicht ersetzt werden.
 ### Spezialfelder
 
 Spezialfelder helfen abhängig von den Seriendruckdaten den Inhalt im Serienbrief zu steuern, ohne alles in der Datenquelle einzugeben. Wenn sie z. B. außer den Adressdaten noch eine variable Briefanrede in Ihrem Brief brauchen, gibt es verschiedene Wege das zu verwirklichen:
-- **Ohne Spezialfelder:** Sie erstellen in der Datenquelle eine zusätzliche Spalte mit dem Feldnamen Briefanrede.<br>
+
+* **Ohne Spezialfelder:** Sie erstellen in der Datenquelle eine zusätzliche Spalte mit dem Feldnamen Briefanrede.<br>
   Pro Datensatz tragen Sie die entsprechende Anrede ein, wie „Sehr geehrter Herr Huber,“ „Sehr geehrte Frau Maier,“. In das Ausgangsdokument tragen Sie einfach das Seriendruckfeld Briefanrede (&lt;Briefanrede&gt;) an der entsprechenden Stelle ein.
-- **Mit Spezialfeldern:** Sie verwenden das Feld Anrede um zwischen Frau und Herr zu unterscheiden und nutzen das Spezialfeld Gender, indem sie festlegen: Immer wenn im Feld Anrede Frau steht, soll Sehr geehrte Frau in den Brief eingetragen werden und immer wenn im Feld Anrede Herr steht soll Sehr geehrter Herr in den Brief eingetragen werden. Damit sparen Sie sich die zusätzliche Spalte in der Datenquelle.
+* **Mit Spezialfeldern:** Sie verwenden das Feld Anrede um zwischen Frau und Herr zu unterscheiden und nutzen das Spezialfeld Gender, indem sie festlegen: Immer wenn im Feld Anrede Frau steht, soll Sehr geehrte Frau in den Brief eingetragen werden und immer wenn im Feld Anrede Herr steht soll Sehr geehrter Herr in den Brief eingetragen werden. Damit sparen Sie sich die zusätzliche Spalte in der Datenquelle.
 
 Spezialfelder helfen, Ihre Datenquelle übersichtlich zu halten und flexibel mit Ihren Daten im Serienbrief zu arbeiten.
 
@@ -284,7 +278,7 @@ Steht im Feld Anrede Frau, w, oder weibl., dann wird der Text im Feld *Text weib
 
 ![Genderfunktion für die typische Briefanrede](images/mailmerge_gender.png "Genderfunktion für die typische Briefanrede")
 
-#### Wenn...Dann...Sonst...
+#### Wenn...Dann...Sonst
 
 Im Prinzip ist die Genderfunktion ein Spezialfall. Mit der Wenn...Dann...Sonst... Funktion kann der Inhalt eines Feldes universeller gesteuert werden. Wenn also ein Feld in der Datenquelle einen bestimmten Wert annimmt, soll ein definierter Wert angezeigt werden, ansonsten ein anderer Wert.
 
@@ -318,16 +312,17 @@ Wobei das Feld Titel nun kein Serienbrieffeld mehr ist sondern ein Spezialfeld u
 
 ![Wenn...Dann..Sonst... Feld zur Unterdrückung des Leerzeichens beim Titel](images/mailmerge_ifthenelse.png "Wenn...Dann..Sonst... Feld zur Unterdrückung des Leerzeichens beim Titel")
 
-- **Wenn:** Hier ist die Bedingung dass der Titel genau leer ist.
-- **Dann:** Ist das Feld leer
-- **Sonst:** Wird der Titel angezeigt und ein Leerzeichen danach, dass allerdings in nicht sichtbar ist. Wenn man aber in das Feld klickt, sieht man den Abstand zwischen &lt;Titel&gt; und dem blinkenden Cursor.
+* **Wenn:** Hier ist die Bedingung dass der Titel genau leer ist.
+* **Dann:** Ist das Feld leer
+* **Sonst:** Wird der Titel angezeigt und ein Leerzeichen danach, dass allerdings in nicht sichtbar ist. Wenn man aber in das Feld klickt, sieht man den Abstand zwischen &lt;Titel&gt; und dem blinkenden Cursor.
 
 Das führt zu folgendem Ergebnis:
-- Mit Titel:
+
+* Mit Titel:
 
 `Sehr·geehrte·Frau·Dr.·Müller,`
 
-- Ohne Titel:
+* Ohne Titel:
 
 `Sehr·geehrter·Herr·Müller,`
 
@@ -386,8 +381,9 @@ Auch hier sind mehrere Lösungsmöglichkeiten denkbar. Eine ist in nachfolgender
 In der Wenn-Abfrage des Wenn...Dann...Sonst...-Feldes können Sie mit Regulären Ausdrücken arbeiten. Reguläre Ausdrücke sind Platzhalter, die Sie beim Suchen in LibreOffice verwenden können.
 
 Beispiele:
-- Platzhalter für genau ein beliebiges Zeichen: .
-- Platzhalter für beliebig viele beliebige Zeichen: .\*
+
+* Platzhalter für genau ein beliebiges Zeichen: .
+* Platzhalter für beliebig viele beliebige Zeichen: .\*
 
 Weitere Reguläre Ausdrücke finden Sie in der Hilfe von LibreOffice.
 
@@ -409,11 +405,9 @@ Wenn beim Drucken jeder Brief in eine eigene Datei gedruckt werden soll, z. B. u
 
 Dieses Spezialfeld kann dazu verwendet werden, um auf einer Seite mehrere Datensätze zu drucken. Z.B. wird dieses Feld benötigt, wenn Sie Etiketten über den WollMux Seriendruck erstellen wollen.
 
-Zusammenführen von Ausgangsdokument und Datenquelle
-===================================================
+# Zusammenführen von Ausgangsdokument und Datenquelle
 
-Vorschau
---------
+## Vorschau
 
 Um vor dem Zusammenführen von Ausgangsdokument und Datenquelle zu prüfen, ob das Ergebnis den eigenen Vorstellungen entsprechen wird, können Sie sich ein Vorschau anzeigen lassen.
 
@@ -429,8 +423,7 @@ Klicken Sie auf die Schaltfläche *&lt;Feldname&gt;* in der Sidebar. Sie sehen d
 
 Die Schaltfläche heißt nun wieder *Vorschau*.
 
-Serienbrief Drucken
--------------------
+## Serienbrief Drucken
 
 Um den Serienbrief zu drucken betätigen Sie die Schaltfläche *Drucken* in der Sidebar. Es erscheint nun der Seriendruckdialog des WollMux, der Ihnen nun eine Reihe von Optionen bietet.
 
@@ -441,15 +434,16 @@ Um den Serienbrief zu drucken betätigen Sie die Schaltfläche *Drucken* in der 
 ### Gesamtdokument erstellen
 
 Diese Option ist die Standard Option, wenn Sie den Seriendruck Dialog starten. Sie bietet zwei mögliche Ausgabeformate:
-- **ODT-Datei**
-  - Mit dieser Auswahl wird der Seriendruck mit allen Datensätzen in ein einzelnes Dokument geschrieben, das dann alle Datensätze enthält.
-  - Ermöglicht die Vorschau, nachträgliche Bearbeitung und Archivierung
-  - Unterstützt „nächster Datensatz“ Funktion
-- **PDF-Datei**
-  - Ermöglicht die Vorschau und Archivierung, aber keine nachträgliche Bearbeitung
-  - Ein-/Ausblendungen können über die Datenquelle angesteuert werden.
-  - Keine Unterstützung der Funktion „nächster Datensatz“
-  - **Die beste Möglichkeit des Ausdrucks bei „großen“ Serienbriefen mit vielen Datensätzen (ab ca. 300 Seiten).**
+
+* **ODT-Datei**
+  * Mit dieser Auswahl wird der Seriendruck mit allen Datensätzen in ein einzelnes Dokument geschrieben, das dann alle Datensätze enthält.
+  * Ermöglicht die Vorschau und Archivierung
+  * Unterstützt „nächster Datensatz“ Funktion
+* **PDF-Datei**
+  * Ermöglicht die Vorschau und Archivierung, aber keine nachträgliche Bearbeitung
+  * Ein-/Ausblendungen können über die Datenquelle angesteuert werden.
+  * Keine Unterstützung der Funktion „nächster Datensatz“
+  * **Die beste Möglichkeit des Ausdrucks bei „großen“ Serienbriefen mit vielen Datensätzen (ab ca. 300 Seiten).**
 
 Bei beiden Optionen besteht die Möglichkeit die Anzahl der Datensätze über die Funktion *Folgende Datensätze verwenden* einzuschränken.
 
@@ -464,20 +458,22 @@ Der Serienbrief kann auch direkt gedruckt werden. Dabei können die üblichen Dr
 ### E-Mails Verschicken
 
 Hierüber können die Serienbriefe direkt als Email(s) versendet werden. Dazu gehen Sie bitte folgendermaßen vor:
-- Wählen Sie zwischen den Ausgabeformaten ODT und PDF (vergleiche [Einzeldateien erzeugen](#einzeldateien-erzeugen)).
-- Geben Sie ein Muster für den Namen des Anhangs an. Dabei können Serienbrieffelder verwendet werden (vergleiche [Einzeldateien erzeugen](#einzeldateien-erzeugen).
-- Als Absender ersetzen Sie bitte &lt;felix.wollmux@muenchen.de&gt; durch Ihre Email Adresse.
-- Die Datenquelle benötigt eine Spalte, die die Emailadressen der Empfänger enthält.
-- Sie können über die entsprechenden Felder den Betreff und den Inhalt der Nachricht festlegen. Dazu können Sie auch Serienbrief- oder Spezialfelder verwenden.
+
+* Wählen Sie zwischen den Ausgabeformaten ODT und PDF (vergleiche [Einzeldateien erzeugen](#einzeldateien-erzeugen)).
+* Geben Sie ein Muster für den Namen des Anhangs an. Dabei können Serienbrieffelder verwendet werden (vergleiche [Einzeldateien erzeugen](#einzeldateien-erzeugen).
+* Als Absender ersetzen Sie bitte &lt;felix.wollmux@muenchen.de&gt; durch Ihre Email Adresse.
+* Die Datenquelle benötigt eine Spalte, die die Emailadressen der Empfänger enthält.
+* Sie können über die entsprechenden Felder den Betreff und den Inhalt der Nachricht festlegen. Dazu können Sie auch Serienbrief- oder Spezialfelder verwenden.
 
 ![Seriendruck als Email](images/mailmerge_print3.png "Seriendruck als Email")
 
 ### Einzeldateien erzeugen
 
 Mit dieser Option werden die Serienbriefe in einzelne Dateien geschrieben. Folgende Optionen stehen dabei zur Verfügung:
-- Als Ausgabeformat stehen .odt und .pdf zur Verfügung.
-- Sie können ein Muster für die Dateinamen festlegen. Dazu können Sie auch Serienbrief- und Spezialfelder verwenden.
-- Sie können ein beliebiges Zielverzeichnis, in das die Dateien gespeichert werden sollen auswählen.
+
+* Als Ausgabeformat stehen .odt und .pdf zur Verfügung.
+* Sie können ein Muster für die Dateinamen festlegen. Dazu können Sie auch Serienbrief- und Spezialfelder verwenden.
+* Sie können ein beliebiges Zielverzeichnis, in das die Dateien gespeichert werden sollen auswählen.
 
 Über die Funktion *Folgende Datensätze verwenden* kann die Anzahl der Einzeldateien eingeschränkt werden.
 
@@ -489,8 +485,7 @@ Alle Arten des Seriendrucks starten Sie mit dem Button *Los geht’s*. Ein Forts
 
 ![Fortschrittsbalken](images/mailmerge_progress.png "Fortschrittsbalken")
 
-## Leerseiten in Seriendokumenten drucken.
-------------------------------------------
+## Leerseiten in Seriendokumenten drucken
 
 In LibreOffice gibt es unter *Extras → Optionen → LibreOffice Writer → Drucken* die Option *Automatisch eingefügte Leerseiten drucken.* Diese Option ist standardmäßig aus technischen Gründen deaktiviert. Es gibt aber eine Konstellation, bei der Sie diese Einstellung aktivieren müssen. Nachfolgende Tabelle verdeutlicht die verschiedenen Optionen und die erforderlichen Einstellungen:
 
@@ -528,8 +523,7 @@ Wenn Sie das nicht immer machen wollen, können Sie bei Serienbriefen mit ungera
 
 Mit strg + Enter fügen Sie am Ende Ihres Serienbriefes einen manuellen Seitenumbruch und damit eine leere Seite ein.
 
-Datensätze für den Ausdruck filtern
--------------------------------------------------
+## Datensätze für den Ausdruck filtern
 
 Wenn Sie für Ihren Seriendruck nur eine Auswahl Ihrer Datensätze verwenden wollen, können Sie dies ganz einfach mit den Filtermöglichkeiten in LibreOffice Calc machen. Prinzipiell gibt es dazu zwei verschieden Möglichkeiten, die hier aber nur kurz vorgestellt werden.
 
@@ -549,8 +543,7 @@ Der Autofilter ermöglicht es Ihnen in jeder Spalte bestimmte Kriterien auszuwä
 
 Ebenso kann man natürlich auch Filter auf mehrere Spalten gleichzeitig anwenden, um die Daten noch mehr einzuschränken, so könnte man z.B. in der Spalte Anrede nach „Herr“ filtern und beim Ort nach „München“, so dass als Ergebnis nur noch die Datensätze übrig bleiben, bei denen sich um Herren handelt, die in München wohnen.
 
-Nutzung einer bereits bestehenden Ausgangsvorlage (oder Dokuments)
-==================================================================
+# Nutzung einer bereits bestehenden Ausgangsvorlage (oder Dokuments)
 
 Wenn Sie Ihre Ausgangsvorlage gespeichert haben, können Sie sie jederzeit wieder aufrufen und das Zusammenführen erneut durchführen.
 
@@ -562,8 +555,7 @@ Der Speicherort der Datenquelle ist in der Ausgangsvorlage gespeichert, so dass 
 
 Falls Sie nun eine andere Datenquelle mit der Ausgangsvorlage nutzen möchten, klicken Sie auf Datenquelle und wählen die gewünschte Datenquelle aus.
 
-Sachleitende Verfügungen im Serienbrief
-=======================================
+# Sachleitende Verfügungen im Serienbrief
 
 Die Funktionalität Sachleitende Verfügung können Sie in einem Serienbrief genauso einsetzen, wie in einem Einzelbrief.
 
@@ -573,15 +565,13 @@ Wenn Sie z.B. einen einseitigen Brief mit zwei Sachleitenden Verfügungen und ei
 
 Weitere Hinweise und Tipps zu SLV und Seriendruck finden Sie im [FormularMax4000-Handbuch im Kapitel Kombinationsmöglichkeiten mit dem Seriendruck](../FormularMax/KomboSeriendruck.md).
 
-Etikettendruck
-==============
+# Etikettendruck
 
 Im Unterschied zum Serienbrief werden bei Serienetiketten die Daten mehrerer Datensätze auf einer Seite ausgegeben. Um das zu gewährleisten wird das Spezialfeld *Nächster Datensatz* benötigt.
 
 Zur Erstellung von Serienetiketten können Sie die gleiche Datenquelle verwenden, wie für den normalen Seriendruck. Auch die Neuerstellung einer Datenquelle funktioniert analog zum „normalen“ Seriendruck (siehe Kapitel [Die Datenquelle](#die-datenquelle)).
 
-Erstellen des Ausgangsdokument
-------------------------------
+## Erstellen des Ausgangsdokument
 
 Das Erstellen eines Ausgangsdokument funktioniert im ersten Schritt genauso wie im LibreOffice Seriendruck. Zuerst müssen Sie das Format Ihrer Etiketten wählen. *Dazu gehen ins Menü Datei → Neu → Etiketten*.
 
@@ -593,8 +583,7 @@ Danach wechseln Sie auf den Reiter *Optionen*. Dort gibt es noch eine wichtige E
 
 Nach Setzen des Häkchens erscheint in Ihren Serienetiketten ein kleines Fenster mit einem Button *Etiketten synchronisieren*. Zum Erstellen des Ausgangsdokuments bestätigen Sie den Button *Neues Dokument*.
 
-Einfügen der Seriendruckfelder
-------------------------------
+## Einfügen der Seriendruckfelder
 
 Im Prinzip funktioniert das Einfügen der Seriendruckfelder genauso so wie beim „normalen“ Seriendruck. Beim Erstellen von Etiketten müssen Sie nur darauf achten, dass Sie die Eingaben immer im linken, oberen Feld machen. Der Übertrag in die anderen Felder erfolgt dann durch *Etiketten synchronisieren*.
 
@@ -602,8 +591,7 @@ Nachdem Sie Ihr Etikettenformat bestätigt haben, starten Sie den WollMux Serien
 
 Man würde nun vermuten, dass hier etwas nicht stimmt, da ja in allen Feldern der gleiche Eintrag steht. Die Vorschau zeigt in diesem Fall aber nur den optischen Aufbau an, nicht den richtigen Inhalt. Jetzt betätigen Sie in der Sidebar den Button *Drucken* und wählen das Ausgabeformat, z.B. Gesamtdruck. In diesem Schritt werden dann erst die richtigen Daten eingefügt.
 
-Fehlerhafte Seitenränder anpassen
----------------------------------
+## Fehlerhafte Seitenränder anpassen
 
 Manchmal stimmen die Ränder der Papieretiketten nicht mit den Rändern des Dokuments überein, das über die Funktion Etiketten erstellt wurde. Passen Sie dann das Seitenformat an. Meistens erreichen Sie den gewünschten Effekt mit A4.
 
