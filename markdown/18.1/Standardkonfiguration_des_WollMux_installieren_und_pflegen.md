@@ -152,18 +152,22 @@ Die im Folgenden beschriebenen Schritte machen die Konfiguration systemweit verf
 * Öffnen Sie in diesem Verzeichnis die Datei `wollmux.conf` zum Bearbeiten. Falls Sie noch nicht existiert, erzeugen Sie eine neue Datei dieses Namens.
     > **WARNING** `.conf` Dateien müssen *immer* im Unicode UTF-8 Format geöffnet und gespeichert werden, damit Umlaute korrekt funktionieren. Wenn Sie LibreOffice zum Bearbeiten verwenden wollen, wählen Sie als Dateityp "Text Kodiert". Achten Sie darauf, beim *Speichern als...* die Checkbox *Filtereinstellungen bearbeiten* links unten anzuschalten, um die Kodierung wählen zu können. Beachten Sie, dass WordPad *nicht* zum Bearbeiten von `.conf` Dateien verwendet werden kann. Der von WordPad unterstützte Dateityp "Unicode-Textdokument" ist *nicht* UTF-8!
 * Löschen Sie den Inhalt der `wollmux.conf` und geben Sie stattdessen folgendes ein:
+
     ```
     DEFAULT_CONTEXT "http://<Pfad der Konfiguration auf dem Web-Server>/"
     %include "http://<Pfad der Konfiguration auf dem Web-Server>/conf/main.conf"
     %include "http://<Pfad der Konfiguration auf dem Web-Server>/conf/wollmuxbar_standard.conf"
     ```
+
     Ersetzen Sie dabei "`http://<Pfad der Konfiguration auf dem Web-Server>`" durch die korrekte URL. Die korrekte URL ist die, die Ihnen, wenn Sie sie im Browser eingeben (und die automatische Index-Erstellung auf dem Webserver aktiviert ist), einen Index wie den Folgenden liefert:
+
     ```
     Parent Directory                             -
     conf/                   05-Feb-2007 16:00    -
     scripts/                01-Feb-2007 09:17    -
     vorlagen/               01-Feb-2007 09:17    -
     ```
+
 * Wenn Sie diese Schritte korrekt durchgeführt haben, dann sollte die auf Ihrem Server gespeicherte Konfiguration vom WollMux verwendet werden.
 * Falls etwas nicht funktioniert, finden Sie vielleicht einen Hinweis auf das Problem in der Datei <Benutzerverzeichnis>`/.wollmux/wollmux.log`, in die der WollMux Fehlermeldungen schreibt. <Benutzerverzeichnis> ist dabei das Verzeichnis, in dem sich der Ordner "`Eigene` `Dateien`" des Benutzers befindet. Unter Windows ist dies das Verzeichnis `C:\Benutzer\<Benutzerkürzel>`.
 
@@ -173,10 +177,12 @@ Die im Folgenden beschriebenen Schritte machen die Konfiguration nur für ein be
 
 * Identifizieren Sie das lokale Benutzerverzeichnis. Unter Windows ist dies `C:\Benutzer\<Benutzerkürzel>`. Allgemein ist es das Verzeichnis, das den Ordner "`Eigene Dateien`" des Benutzers enthält.
 * Legen Sie in diesem Verzeichnis  einen Ordner mit Name `.wollmux` an, falls so ein Ordner dort noch nicht existiert. Beachten Sie, dass das erste Zeichen des Namens ein Punkt ist. Über den Windows-Explorer ist es leider nicht möglich, einen Ordner anzulegen, dessen Name mit einem Punkt beginnt. Über die Eingabeaufforderung ist dies jedoch möglich mit folgenden Befehlen(exemplarisch für Windows 2000):
+
     ```
     cd C:\Dokumente und Einstellungen\<Benutzerkürzel>\
     mkdir .wollmux`
     ```
+
 * Legen Sie in diesem Verzeichnis eine Datei `wollmux.conf` an, mit dem selben Inhalt wie im vorangehenden Abschnitt "Systemweite Konfiguration" beschrieben.
 
 ## Anpassung und Pflege der Standardkonfiguration
@@ -283,10 +289,11 @@ Das Einpflegen der Änderungen eines neuen Releases der von D-III-ITD-D101 berei
 * *Test*: Testen Sie die geänderte Konfiguration, wie im Abschnitt [Anpassung und Pflege der Standardkonfiguration](#anpassung_und_pflege_der_standardkonfiguration) beschrieben.
 
 > **WARNING** Auf gründliche Tests vor dem Produktiveinsatz darf auf keinen Fall verzichtet werden. Die bei D-III-ITD-D101 vor dem Release einer neuen Standardkonfiguration durchgeführten Tests sind nicht umfassend und können Tests vor Ort im Referat nicht ersetzen, denn
-* solange der WollMux sich noch in der Entwicklungsphase befindet, wird die Standardkonfiguration immer vorrangig mit dem aktuellsten WollMux-Snapshot getestet. Tests zur Kompatibilität mit alten WollMux-Versionen und entsprechende Hinweise im Changelog dienen als Orientierung und Hilfestellung für die Referate bei Planung und Test ihrer Updates. Sie sind nicht als definitive Aussagen zu verstehen. Dass Ihre Referatskonfiguration nach einem Update noch mit der bei Ihnen eingesetzten WollMux-Version reibungslos zusammenspielt, muss immer durch Tests im Referat sichergestellt werden bevor eine Konfiguration in den Produktiveinsatz übernommen wird. Sollten Sie dabei auf unerwartete Probleme stoßen, eröffnen Sie bitte ein Ticket. In den meisten Fällen lassen sich Kompatibilitätsprobleme durch einfache Eingriffe beheben bzw. die benutzersichtbaren Auswirkungen beseitigen, ohne dass das komplette Update zurückgerollt und die Version übersprungen wird. Berücksichtigen Sie bei jedem Update mögliche Supportzeiten in Ihrer Zeitplanung.
-* kein Referat setzt die Standardkonfiguration unverändert ein (d.h. mit den Gruppen "Bienchen" und "Blümchen"). Jede Anpassung, egal wie harmlos sie erscheinen mag, kann zu Problemen beim Update führen.
-* die korrekte Funktionalität des `xupdate` Skripts bei Anwendung auf Ihre angepasste Referatskonfiguration kann D-III-ITD-D101 naturgemäß nicht sicherstellen.
-* beim Update auf eine neue Version sind oft manuelle Anpassungen notwendig. Dabei können sich leicht Fehler einschleichen. Überprüfen Sie daher bevor Sie ein Ticket eröffnen immer, ob Sie die notwendigen manuellen Änderungen vollständig durchgeführt haben. Falls Sie einen Versionssprung ausgelassen haben, überprüfen Sie, dass Sie die manuellen Änderungen der ausgelassenen Versionen alle in der richtigen Reihenfolge (das älteste zuerst) nachgetragen haben.
+>
+> * solange der WollMux sich noch in der Entwicklungsphase befindet, wird die Standardkonfiguration immer vorrangig mit dem aktuellsten WollMux-Snapshot getestet. Tests zur Kompatibilität mit alten WollMux-Versionen und entsprechende Hinweise im Changelog dienen als Orientierung und Hilfestellung für die Referate bei Planung und Test ihrer Updates. Sie sind nicht als definitive Aussagen zu verstehen. Dass Ihre Referatskonfiguration nach einem Update noch mit der bei Ihnen eingesetzten WollMux-Version reibungslos zusammenspielt, muss immer durch Tests im Referat sichergestellt werden bevor eine Konfiguration in den Produktiveinsatz übernommen wird. Sollten Sie dabei auf unerwartete Probleme stoßen, eröffnen Sie bitte ein Ticket. In den meisten Fällen lassen sich Kompatibilitätsprobleme durch einfache Eingriffe beheben bzw. die benutzersichtbaren Auswirkungen beseitigen, ohne dass das komplette Update zurückgerollt und die Version übersprungen wird. Berücksichtigen Sie bei jedem Update mögliche Supportzeiten in Ihrer Zeitplanung.
+> * kein Referat setzt die Standardkonfiguration unverändert ein (d.h. mit den Gruppen "Bienchen" und "Blümchen"). Jede Anpassung, egal wie harmlos sie erscheinen mag, kann zu Problemen beim Update führen.
+> * die korrekte Funktionalität des `xupdate` Skripts bei Anwendung auf Ihre angepasste Referatskonfiguration kann D-III-ITD-D101 naturgemäß nicht sicherstellen.
+> * beim Update auf eine neue Version sind oft manuelle Anpassungen notwendig. Dabei können sich leicht Fehler einschleichen. Überprüfen Sie daher bevor Sie ein Ticket eröffnen immer, ob Sie die notwendigen manuellen Änderungen vollständig durchgeführt haben. Falls Sie einen Versionssprung ausgelassen haben, überprüfen Sie, dass Sie die manuellen Änderungen der ausgelassenen Versionen alle in der richtigen Reihenfolge (das älteste zuerst) nachgetragen haben.
 
 ### Das Skript `xupdate`
 

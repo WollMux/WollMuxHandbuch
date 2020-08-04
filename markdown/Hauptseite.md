@@ -5,9 +5,10 @@ Der “Eierlegende WollMux” (kurz: WollMux) ist eine Extension für [LibreOffi
 Mehr darüber, was der WollMux alles kann, erfahren Sie hier: **[Features des WollMux](Features.md)**
 
 > **Info**  <span style="font-size:larger;font-weight:bold;color:#1D9101">WollMux Herunterladen</span>
-> - **[WollMux 18.1.13](https://github.com/WollMux/WollMux/releases/tag/RELEASE_18.1.13)**
-> - **[WollMux-Konfiguration 18.1.0](https://github.com/WollMux/wollmux-config/releases/tag/v18.1.0)**
-> - [Andere Versionen](https://github.com/WollMux/WollMux/releases)
+>
+> * **[WollMux 18.1.13](https://github.com/WollMux/WollMux/releases/tag/RELEASE_18.1.13)**
+> * **[WollMux-Konfiguration 18.1.0](https://github.com/WollMux/wollmux-config/releases/tag/v18.1.0)**
+> * [Andere Versionen](https://github.com/WollMux/WollMux/releases)
 >
 > [Release Notes](https://github.com/WollMux/WollMux/blob/master/doc/ChangeLog)
 >
@@ -33,5 +34,5 @@ Fehler im WollMux können über den öffentlichen [Issue Tracker](https://github
 
 ## Weitergehende Links
 
-- <https://github.com/WollMux/WollMux> - WollMux-Repository bei GitHub
-- <http://joinup.ec.europa.eu/software/wollmux/description> - WollMux-Projektseite bei Joinup
+* <https://github.com/WollMux/WollMux> - WollMux-Repository bei GitHub
+* <http://joinup.ec.europa.eu/software/wollmux/description> - WollMux-Projektseite bei Joinup

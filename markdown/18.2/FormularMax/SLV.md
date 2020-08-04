@@ -70,13 +70,13 @@ Das Markieren eines Blocks und das Aufheben der Markierung eines Blocks funktion
 
 ### Schaltfläche *Nur Original*
 
-Mit der Schaltfläche *Nur Original *kann ein markierter Block ausgezeichnet werden, der ausschließlich im Original gedruckt wird.Als Original gilt dabei grundsätzlich immer die Fassung, bei der alle römischen Ziffern inklusive I. ausgeblendet sind.
+Mit der Schaltfläche *Nur Original* kann ein markierter Block ausgezeichnet werden, der ausschließlich im Original gedruckt wird.Als Original gilt dabei grundsätzlich immer die Fassung, bei der alle römischen Ziffern inklusive I. ausgeblendet sind.
 
 Das Markieren eines Blocks und das Aufheben der Markierung eines Blocks funktioniert analog zu *Immer drucken* durch das Betätigen der zugehörigen Schaltfläche.
 
 ### Schaltfläche *Nur Entwurf*
 
-Mit der Schaltfläche *Nur Entwurf *kann ein markierter Block ausgezeichnet werden der nur im Entwurf gedruckt wird. Als Entwurf wird der Ausdruck bezeichnet der alle Sachleitende Verfügungen enthält.
+Mit der Schaltfläche *Nur Entwurf* kann ein markierter Block ausgezeichnet werden der nur im Entwurf gedruckt wird. Als Entwurf wird der Ausdruck bezeichnet der alle Sachleitende Verfügungen enthält.
 
 Das Markieren eines Blocks und das Aufheben der Markierung eines Blocks funktioniert analog zu *Immer drucken* durch das Betätigen der zugehörigen Schaltfläche.
 
@@ -173,7 +173,7 @@ Nach Betätigen der Schaltfläche *Alle drucken* erhält man drei Ausdrucke. Jed
 
 ![WollMux Komfortdruck ext. Briefkopf](../images/SLV/externerBriefkopf_drucken.png "fig:WollMux Komfortdruck ext. Briefkopf")
 
-Nach Betätigen der Schaltfläche *Alle drucken *erhält man vier Ausdrucke. Jede als Zuleitungszeile markierte Zeile, zählt als ein Ausdruck. WV (Wiedervorlage) zählt ebenfalls als ein Ausdruck. Bei nicht benötigen eines Ausdruckes muss die Zahl entsprechend gesetzt werden. Ein- und Ausblendungen z.B für "I.A. Name" können über Schaltflächen zur Drucksteuerung einzelner Blöcke gesetzt werden.
+Nach Betätigen der Schaltfläche *Alle drucken* erhält man vier Ausdrucke. Jede als Zuleitungszeile markierte Zeile, zählt als ein Ausdruck. WV (Wiedervorlage) zählt ebenfalls als ein Ausdruck. Bei nicht benötigen eines Ausdruckes muss die Zahl entsprechend gesetzt werden. Ein- und Ausblendungen z.B für "I.A. Name" können über Schaltflächen zur Drucksteuerung einzelner Blöcke gesetzt werden.
 
 <table>
 <tr>

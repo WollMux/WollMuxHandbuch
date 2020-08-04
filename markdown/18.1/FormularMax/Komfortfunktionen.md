@@ -243,7 +243,7 @@ Vorgehensweise:
 
 Möchte man z.B. ein Formularelement wieder aus der Gruppierung entfernen, ist dies über die grafische Oberfläche des FM4000 nicht möglich. Dazu muss man in die Formularbeschreibung (Kapitel [Formularbeschreibung editieren](FM4000.md#formularbeschreibung-editieren)) wechseln.
 
-Dort sucht man nach dem betroffenen Element und löscht dann **GROUPS „Name der Sichtbarkeit“**. Im Beispiel aus Kapitel [Sichtbarkeiten in der FormularGUI](Komfortfunktionen.md#sichtbarkeiten-in-der-formulargui) müsste dann **GROUPS „Sichtbarkeit1“ **gelöscht werden.
+Dort sucht man nach dem betroffenen Element und löscht dann **GROUPS „Name der Sichtbarkeit“**. Im Beispiel aus Kapitel [Sichtbarkeiten in der FormularGUI](Komfortfunktionen.md#sichtbarkeiten-in-der-formulargui) müsste dann **GROUPS „Sichtbarkeit1“** gelöscht werden.
 
 ![Markierter GROUPS in der Formularbeschreibung](images/LO_SichtbarkeitGroupsFormularbeschreibung.jpg "fig:Markierter GROUPS in der Formularbeschreibung")
 
@@ -303,7 +303,7 @@ Wichtig ist bei der Verwendung von PLAUSIs auch entsprechende Hinweise, z.B. üb
 
 ### GROUPS
 
-Der Tab *GROUPS* wird in der rechten Hälfte des FM4000-Fensters angezeigt, wenn in der linken der Tab *Formular-GUI* oder *Bereiche* angezeigt wird und dort *genau ein* Eintrag selektiert ist. Wenn das ausgewählte Element weder PLAUSI noch AUTOFILL noch GROUPS gesetzt hat, so muss erst der Button *Aktivieren *in der Extra-View gedrückt werden, um die Tabs PLAUSI, AUTOFILL und GROUPS einzublenden. Auf dem Tab *GROUPS* sind alle definierten Sichtbarkeitsgruppen aufgeführt und können durch Anklicken bei gedrückter Ctrl/Strg-Taste dem ausgewählten Formularsteuerelement zugewiesen werden, so dass die Sichtbarkeit des Elements von der entsprechenden Sichtbarkeitsfunktion abhängt.
+Der Tab *GROUPS* wird in der rechten Hälfte des FM4000-Fensters angezeigt, wenn in der linken der Tab *Formular-GUI* oder *Bereiche* angezeigt wird und dort *genau ein* Eintrag selektiert ist. Wenn das ausgewählte Element weder PLAUSI noch AUTOFILL noch GROUPS gesetzt hat, so muss erst der Button *Aktivieren* in der Extra-View gedrückt werden, um die Tabs PLAUSI, AUTOFILL und GROUPS einzublenden. Auf dem Tab *GROUPS* sind alle definierten Sichtbarkeitsgruppen aufgeführt und können durch Anklicken bei gedrückter Ctrl/Strg-Taste dem ausgewählten Formularsteuerelement zugewiesen werden, so dass die Sichtbarkeit des Elements von der entsprechenden Sichtbarkeitsfunktion abhängt.
 
 Die Verwendung von GROUPS ist für die Festlegung von Sichtbarkeiten relevant und wird im Kapitel [Sichtbarkeiten](Komfortfunktionen.md#sichtbarkeiten) erläutert.
 
@@ -351,8 +351,8 @@ Achtung: Wird eine global registrierte Plugin-Funktion für ein Formular verwend
 ##### Nicht registrierte Plugin-Funktionen
 
 Manchmal ist es nicht erwünscht, Plugin-Funktionen im globalen *Funktionen*-Abschnitt zu registrieren. Gründe hierfür können zum Beispiel folgende sein:
-*
- Eine Funktion wird nur in einer oder zwei Vorlagen verwendet. Es kann störend sein, wenn solche Funktionen in jeder Funtionsauswahl-Kombobox des FormularMax 4000 angezeigt werden.
+
+* Eine Funktion wird nur in einer oder zwei Vorlagen verwendet. Es kann störend sein, wenn solche Funktionen in jeder Funtionsauswahl-Kombobox des FormularMax 4000 angezeigt werden.
 * Soll eine Vorlage an ein anderes Referat weitergegeben werden und die Vorlage verwendet eine global registrierte Plugin-Funktion, so muss das empfangende Referat die Plugin-Funktion ebenfalls global registrieren. Dabei sind schwer auflösbare Namenskonflikte möglich und die Funktion erscheint in jedem FormularMax 4000 des empfangenden Referats. Beides ist ungünstig.
 
 In solchen Fällen ist es günstiger, auf das globale registrieren einer Plugin-Funktion zu verzichten. Um diese dennoch verwenden zu können, kann eine Kombination von BIND und EXTERN direkt eingegeben werden. Zu diesem Zweck wird als Funktion "&lt;Code&gt;" ausgewählt und im Eingabefeld ein Code eingegeben wie z.B. der folgende
