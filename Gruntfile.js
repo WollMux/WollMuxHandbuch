@@ -34,19 +34,11 @@ module.exports = function(grunt) {
                 ]
             }
         },
-        serve: {
-            options: {
-                port: 4000,
-                serve: {
-                    path: '_book'
-                }
-            }
-        },
-        concurrent: {
-            gbserve: {
-                tasks: ['watch', 'serve'],
+        connect: {
+            server: {
                 options: {
-                    logConcurrentOutput: true
+                    port: 4000,
+                    base: '_book'
                 }
             }
         },
@@ -84,13 +76,12 @@ module.exports = function(grunt) {
     });
 
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-run');
-    grunt.loadNpmTasks('grunt-serve');
-    grunt.loadNpmTasks('grunt-concurrent');
     grunt.loadNpmTasks('grunt-markdownlint');
     grunt.loadNpmTasks('grunt-gh-pages');
 
-    grunt.registerTask('default', ['run:gitbook', 'concurrent:gbserve']);
+    grunt.registerTask('default', ['run:gitbook', 'connect', 'watch']);
     grunt.registerTask('check', ['markdownlint']);
     grunt.registerTask('deploy', ['run:gitbook', 'gh-pages']);
 };
