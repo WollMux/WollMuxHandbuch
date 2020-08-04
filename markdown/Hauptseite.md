@@ -19,7 +19,7 @@ Mehr darüber, was der WollMux alles kann, erfahren Sie hier: **[Features des Wo
 
 **[FormularMax-Handbuch](18.1/FormularMax/FormularMax.md)** - Ausführliches Handbuch für die Erstellung von WollMux-Vorlagen mit dem im WollMux enthaltenen “FormularMax 4000”
 
-**[WollMux-Seriendruck (PDF)](18.1/MailMerge/Seriendruck.md)** - Ausführliches Handbuch für den WollMux Seriendruck
+**[WollMux-Seriendruck](18.1/MailMerge/Seriendruck.md)** - Ausführliches Handbuch für den WollMux Seriendruck
 
 ## Source Code
 
