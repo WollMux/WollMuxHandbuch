@@ -95,6 +95,7 @@ Der Knopf "Vorschau" zeigt immer den Modus an, in den gewechselt werden soll. Is
 Über die Schaltfläche "Drucken" werden die Serienbriefe erstellt. Die Serienbriefe können dabei entweder:
 
 * in ein Gesamtdokument geschrieben werden
+* in ein PDF-Gesamtdokument geschrieben werden
 * direkt auf dem Drucker ausgegeben werden
 * als Emails verschickt werden
 * in einzelne Dateien geschrieben werden.

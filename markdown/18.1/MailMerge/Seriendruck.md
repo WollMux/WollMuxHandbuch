@@ -427,7 +427,7 @@ Die Schaltfläche heißt nun wieder *Vorschau*.
 
 Um den Serienbrief zu drucken betätigen Sie die Schaltfläche *Drucken* in der Sidebar. Es erscheint nun der Seriendruckdialog des WollMux, der Ihnen nun eine Reihe von Optionen bietet.
 
-![Druckdialog des WollMux](images/mailmerge_print.png "Druckdialog des WollMux")
+![Druckdialog des WollMux](images/drucken.png "Druckdialog des WollMux")
 
 Über die Funktion *Folgende Datensätze verwenden* kann die Anzahl der Ausdrucke eingeschränkt werden.
 
