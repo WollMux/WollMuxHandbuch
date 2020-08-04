@@ -33,5 +33,6 @@
   * [Seriendruck Handbuch](18.1/MailMerge/Seriendruck.md)
     * [Seriendruck, erweiterte Funktion](18.1/MailMerge/Seriendruck_erweiterte_Funktion.md)
     * [Seriendruckvorlagen mit dem WollMux erstellen](18.1/MailMerge/Seriendruckvorlagen_mit_dem_WollMux_erstellen.md)
+    * [Datenquellen aus MS Office konvertieren](18.1/MailMerge/MSOffice.md)
 
 * [Hidden](README.md)
