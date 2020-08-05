@@ -211,11 +211,11 @@ Die folgenden Parameter sind optional:
 * Das Attribut **TRAFO** verhält sich genau wie das [Attribut TRAFO](Dokumentkommandos_des_WollMux.md#das-kommando-wmcmd-insertformvalue-id-feldid-trafo-funktionsbezeichner) des Dokumentkommandos insertFormValue. Wird **TRAFO** jedoch im Zusammenhang mit dem Dokumentkommando insertValue verwendet, kann der Funktionsbezeichner &lt;Funktionsbezeichner&gt; ausschließlich der Name einer globalen Funktion sein, d.h. einer Funktion die in wollmux.conf definiert ist. Funktionen innerhalb dokumentspezifischer Formularbeschreibungen können hier nicht angesprochen werden.<br>
   Beispiel: Das Attribut TRAFO kann hier z.B. verwendet werden, um über eine externe Funktion die im Briefkopf angezeigten Telefonnummern automatisch formatieren zu lassen. Die Konfigurationsdatei wollmux.conf enthält dazu folgenden Funktionen-Abschnitt:
 
-  ```
+```
   Funktionen(
     Telefonnummer(EXTERN(URL "java:de.muenchen.allg.itd51.wollmux.func.Standard.formatiereTelefonnummerDIN5008" PARAMS("nummer")))
   )
-  ```
+```
 
   Dabei verweist die URL "java:de.muenchen.allg.itd51.wollmux.func.Standard.formatiereTelefonnummerDIN5008" auf eine externe Java-Methode, die die Formatierung einer internen Telefonnummer gemäß DIN 5008 übernimmt. Das zugehörige insertValue-Dokumentkommando würde wie folgt aussehen: `WM(CMD 'insertValue' DB_SPALTE 'Telefon' TRAFO 'Telefonnummer')`
 
@@ -526,17 +526,17 @@ Zur Darstellung variabler Inhalte innerhalb der kritischen Textstellen wird die 
 </td></tr>
 </table>
 
-# Seriendruckfelder
+## Seriendruckfelder
 
 Über die Leiste "Seriendruck (WollMux)" können Felder für den Seriendruck in das Dokument eingefügt werden. Der WollMux unterscheidet die folgenden Felder:
 
-## Einfache Seriendruckfelder
+### Einfache Seriendruckfelder
 
 Einfache Seriendruckfelder repräsentieren exakt den entsprechenden Wert zu einem Spaltennamen der Serienbriefdatenquelle oder den Wert einer Eingabe in der Formular-GUI. Transformationen werden von diesem Feld nicht unterstützt.
 
 Im Dokument werden einfache Serienbrieffelder durch Felder des Typs `com.sun.star.text.TextField.Database` abgebildet, die auch im OOo-Seriendruck Verwendung finden. Einfache Seriendruckfelder können damit nicht nur über die Sidebar **Seriendruck (WollMux)**, sondern in OOo auch über Einfügen&rarr;Feldbefehl&rarr;Andere.../Datenbank/Seriendruck-Feld oder über die Datenquellen-Ansicht eingefügt werden. Im Gegensatz zum OOo-Seriendruck wertet der WollMux aber nicht die Angaben zur Datenbank und des Tabellennamens aus, die in diesem Seriendruckfeld hinterlegt sind. WollMux verwendet ausschließlich den Spaltennamen, der als dritte Angabe in dem Seriendruckfeld hinterlegt ist. Die Auswahl der aktuellen Tabelle erfolgt in der Seriendruckleiste des WollMux über das Bedienfeld "Datenquelle".
 
-## Spezialfelder (InputUser)
+### Spezialfelder (InputUser)
 
 Spezialfelder sind Felder, die bestehende Eingabedaten der Serienbriefdatenquelle oder der FormularGUI über eine definierte Logik transformieren können. Jedem Spezialfeld ist genau eine WollMux-Funktion zugeordnet, die zur Ausführung kommt, wenn sich der Wert der darin referenzierten Eingabedaten ändert.
 
@@ -562,7 +562,7 @@ AUTOFUNCTION_1212659067594_0(
 
 Die Funktion in diesem Beispiel hängt von dem Wert der ID "Vorname" ab. Diese Abhängigkeit ist dem WollMux bekannt und sobald sich der Wert des Feldes "Vorname" z.B. durch eine Benutzereingabe in der Formular-GUI oder beim Seriendruck ändert wird, wird die Funktion aufgerufen und der Funktionswert neu berechnet. Da Funktionen auch von mehreren IDs abhängen können, übermittelt der WollMux dazu die Werte aller in der Funktion referenzierten IDs als Parameter an die Funktion.
 
-# Textbereiche mit der Namenserweiterung GROUPS
+## Textbereiche mit der Namenserweiterung GROUPS
 
 Über den Menüpunkt "Einfügen&rarr;Bereich..." von LibreOffice können Textbereiche erzeugt werden, die den Gesamttext in kleinere Bereiche unterteilen. Jeder so erzeugte Textbereich besitzt einen Namen, der über den Navigator von LibreOffice ("Bearbeiten&rarr;Navigator/Bereiche") eingesehen und verändert werden kann. Der WollMux bietet die Möglichkeit einen solchen Textbereich über einen einfachen Zusatz im Namen des Textbereichs mit Sichtbarkeitsgruppen zu versehen. Analog zum [Dokumentkommando SetGroups](#das-kommando-wmcmd-setgroups-groups-groupid1-groupid2-) können mit dem Namenszusatz Sichtbarkeitsgruppen definiert werden, die die Ein- und Ausblendung dieses Bereichs steuern.
 
@@ -580,11 +580,11 @@ Die Angabe der natürlichen Zahl &lt;nummer&gt; ist dabei optional und wird anal
 
 Analog zu den [Dokumentkommandos SetGroups](#das-kommando-setgroups) können auch Textbereiche so verschachtelt werden, dass die Gruppenzugehörigkeit des umschließenden Textbereichs auf die eingeschlossenen Textbereiche vererbt wird. Auch das Mischen von SetGroups-Dokumentkommandos und Textbereichen ist möglich. So werden z.B. die in einem Textbereich definierten SetGroups-Dokumentkommandos korrekt erkannt und verarbeitet. Auch können Textbereiche in ein umschließendes setGroups-Dokumentkommando eingebettet werden. In beiden Fällen erben die inneren Elemente die Gruppenzugehörigkeit des umschließenden Elements.
 
-# Seitenvorlage Wollmuxseite
+## Seitenvorlage Wollmuxseite
 
 Beim Öffnen einer Vorlage oder eines Dokuments mit WollMux-Kommandos, wird die Seitenvorlage "Wollmuxseite" in das Seitenformat "Standard" übertragen, falls die Seitenvorlage "Wollmuxseite" vorhanden ist. Dadurch wird jede Vorlage oder jedes Dokument an das Visuelle Erscheinungsbild angepasst, dessen Vorgaben in der Seitenvorlage "Wollmuxseite" realisiert wurden. Die Seitenvorlage "Wollmuxseite" kann z.B. über das Kommando [WM(CMD 'insertFrag' FRAG_ID 'Formate')](#das-kommando-insertfrag) eingefügt werden.
 
-# WollMux-Metadaten im Dokument
+## WollMux-Metadaten im Dokument
 
 Jedes Dokument kann Daten enthalten, die der WollMux für seine Arbeit benötigt, die aber nicht sichtbar für Endanwenderinnen und Endanwender in Erscheinung treten sollen. Solche Daten werden Metadaten genannt und vom WollMux abhängig von der Konfigurationseinstellung [PERSISTENT_DATA_MODE](Konfigurationsdatei_wollmux_conf.md#der-persistentdatamode) entweder in Notizen oder in einer eigenen XML-Datei namens "wollmux.rdf" im ODF-Paket abgelegt.
 
@@ -655,7 +655,7 @@ Die Metadaten sind nach Aufgabengebieten strukturiert und über zugehörige Schl
 
 * **WollMuxFormularbeschreibung** In der **WollMuxFormularbeschreibung** sind alle Informationen des WollMuxformulars gespeichert. Die Inhalte der Formularbeschreibung sind im folgenden Abschnitt ausführlich beschrieben und können mit Hilfe des [FormularMax 4000](FormularMax_4000.md) komfortabel gesetzt und verändert werden.
 
-# Beschreibung der Formular-GUI
+## Beschreibung der Formular-GUI
 
 Die Beschreibung der Formular-GUI erfolgt in einer zusätzlichen XML-Datei namens wollmux.rdf. Im folgenden ist der Aufbau einer Formular-GUI-Beschreibung schematisch dargestellt:
 
@@ -715,19 +715,19 @@ WM(
 
 Die Unterabschnitte Reiter1, Reiter2,... (deren Namen beliebige [Bezeichner](Format_von_WollMux-Config-Dateien.md#schlüssel) sein können) beschreiben jeweils einen Reiter (ein Tab) der Formular-GUI. Im jeweiligen Unterabschnitt **Eingabefelder** werden die Formularfelder (z.B. Textfelder oder ComboBoxen) beschrieben, die der Anzeige und Bearbeitung der Formulardaten dienen. Im dazugehörigen Unterabschnitt **Buttons** werden die Buttons spezifiziert, die am unteren Rand des jeweiligen Tabs angezeigt werden sollen. In der wollmux.conf können global bestimmte Buttons aktiviert oder deaktiviert werden.
 
-## PLAUSI_MARKER_COLOR "&lt;Farbangabe&gt;"
+### PLAUSI_MARKER_COLOR "&lt;Farbangabe&gt;"
 
 Felder, die mit einer Plausibilitätsprüfung hinterlegt sind werden in dieser Farbe eingefärbt, wenn die Plausiberechnung ergibt, dass der eingegebene Wert nicht korrekt ist. Die &lt;Farbangabe&gt; ist eine wie in CSS übliche hexadezimale Beschreibung der Farbe im Format "#RRGGBB", wobei RR, GG und BB die Rot, Grün und Blau-Komponenten angeben (hexadezimal, 00-FF).
 
-## CLOSEACTION "&lt;Aktion&gt;"
+### CLOSEACTION "&lt;Aktion&gt;"
 
 Gibt an, welche Aktion ausgeführt werden soll, wenn der Benutzer das Fenster über die Mechanismen des Betriebssystems (z.B. den Schließen-Knopf in der Titelleiste des Fensters) schließt. Derzeit wird nur "abort" unterstützt.
 
-## TITLE "Titel"
+### TITLE "Titel"
 
 Auf Formularebene gibt TITLE den Fenstertitel der Formular-GUI an. Auf Reiterebene gibt TITLE die Beschriftung des Reiters an.
 
-## TIP "Text"
+### TIP "Text"
 
 Auf Reiterebene gibt TIP den Text an, der erscheinen soll, wenn der Mauszeiger eine Weile über dem Reiter verharrt. Auf Ebene der einzelnen Eingabeelemente oder Buttons gibt es den Text an, der erscheint, wenn der Mauszeiger über dem entsprechenden Element eine Weile verharrt.
 
@@ -737,19 +737,19 @@ Beispiel:
 
 `TIP "<html>Zeile 1<br>Zeile 2</html>"`
 
-## HOTKEY "Buchstabe"
+### HOTKEY "Buchstabe"
 
 Auf Reiterebene bestimmt dies den Buchstaben, der bei gedrückter Alt-Taste den Reiter direkt anwählt. In einer Button-Beschreibung wird entsprechend ein Tastaturkürzel für den entsprechenden Button festgelegt. Für Buchstabe sind keine Umlaute oder Sonderzeichen erlaubt.
 
-## Beschreibung eines Eingabefelds
+### Beschreibung eines Eingabefelds
 
 Die Beschreibung eines Eingabefeldes besteht aus Schlüssel-Wert-Paaren. Die möglichen Paare werden in den folgenden Abschnitten beschrieben. Dabei ist zu beachten, dass nicht alle für jede Art von Eingabefeld Anwendung finden.
 
-### LABEL "Label"
+#### LABEL "Label"
 
 Der Label-Text wird links (bei Checkboxen rechts) neben dem Eingabeelement angezeigt.
 
-### TYPE "Feldtyp"
+#### TYPE "Feldtyp"
 
 Der Feldtyp spezifizert dier Art des GUI-Elements. Die folgenden Feldtypen werden unterstützt:
 
@@ -761,31 +761,31 @@ Der Feldtyp spezifizert dier Art des GUI-Elements. Die folgenden Feldtypen werde
 * **separator**: eine (je nach Kontext horizontale oder vertikale) Linie zur Gruppierung ohne weitere Funktion
 * **glue**: ein unsichtbares Element, das dazu dient, Abstände zwischen 2 Eingabefeldern einzufügen
 
-### VALUES (&lt;Liste&gt;)
+#### VALUES (&lt;Liste&gt;)
 
 Diese Liste von Strings spezifiziert die Werte, die ein Eingabefeld des Typs "combobox" dem Benutzer zur Auswahl anbietet.
 
-### LINES "Anzahl"
+#### LINES "Anzahl"
 
 Legt die Anzahl der angezeigten Zeilen für ein Element des Typs "textarea" fest. Die Eingabe wird dadurch nicht begrenzt. Es können beliebig viele Zeilen eingegeben werden.
 
-### WRAP "false"
+#### WRAP "false"
 
 Die Angabe WRAP "false" unterbindet bei Elementen des Typs "textarea" den Umbruch der Zeilen in der Anzeige. Standardeinstellung ist WRAP "true", d.h. lange Zeilen werden am Rand des Feldes umgebrochen. Man beachte, dass dies nur die Anzeige im Dialogfenster betrifft. Es werden keine harten Zeilenumbrüche eingefügt.
 
-### READONLY "true"
+#### READONLY "true"
 
 Wird dies angegeben, so kann der Benutzer den Wert des Eingabefeldes nicht ändern.
 
-### EDIT "true"
+#### EDIT "true"
 
 Wird dies bei einem Feld vom Type "combobox" angegeben, so kann der Benutzer nicht nur aus der Liste auswählen, sondern auch freien Text eingeben.
 
-### PLAUSI(&lt;Funktion&gt;)
+#### PLAUSI(&lt;Funktion&gt;)
 
 Dieses Attribut erlaubt das Angeben einer [Funktion](Konfigurationsdatei_wollmux_conf.md#funktionen), die bei jeder Änderung des Feldinhaltes berechnet wird. Liefert diese Funktion *nicht "true"*, wird das Feld [farblich markiert](#plausimarkercolor-farbangabe) und beim Versuch, das Dokument zu Drucken oder in ein PDF umzuwandeln wird [der entsprechende Warnungs-Dialog](Konfigurationsdatei_wollmux_conf.md#plausiwarnung) angezeigt.
 
-### AUTOFILL(&lt;Funktion&gt;)
+#### AUTOFILL(&lt;Funktion&gt;)
 
 Die hier angegebene Funktion wird benutzt, um Felder automatisch (vor-)auszufüllen. Ein mit AUTOFILL versehenes Feld wird bei jeder Änderung eines Feldes, von dem die AUTOFILL-Funktion abhängt, neu berechnet. Davon abgesehen kann der Benutzer den Wert manuell ändern (wenn das Feld nicht auf READONLY gesetzt ist).
 
@@ -793,21 +793,21 @@ Anmerkung: Eine AUTOFILL-Funktion sollte nur von Feldern abhängen, die vor dem 
 
 Auch aus Usability-Sicht ist es nicht wünschenswert, wenn sich Felder, mit denen der Benutzer bei der sequentiellen Bearbeitung des Formulars bereits durch ist, nochmals verändern.
 
-### GROUPS(&lt;Gruppenliste&gt;)
+#### GROUPS(&lt;Gruppenliste&gt;)
 
 Mit diesem Attribut können eine oder mehrere Gruppen angegeben werden, zu denen das Eingabeelement gehören soll. Gruppen lassen sich über Einträge im [Abschnitt Sichtbarkeit](#der-abschnitt-sichtbarkeit) abhängig von anderen Eingabeelementen ein- oder ausblenden. Auf diese Weise lassen sich Formulare realisieren, die dem Sachbearbeiter nur die Felder anzeigen, die jeweils relevant sind. Zum Beispiel lassen sich so Eingabefelder zum Ehepartner ausblenden, wenn bei Familienstand "ledig" angewählt wurde.
 
 Bemerkung: Das Attribut GROUPS kann auch [in Dokumentkommandos verwendet werden](#Das_Spezial-Attribut_GROUPS_zur_Steuerung_von_Ein-_und_Ausblendungen), um Teile des erzeugten Dokuments ein- oder auszublenden.
 
-## Beschreibung eines Buttons
+### Beschreibung eines Buttons
 
 Die Beschreibung eines Buttons besteht aus einer Liste von Schlüssel-Wert-Paaren. Die möglichen Paare werden in den folgenden Abschnitten beschrieben. Dabei ist zu beachten, dass nicht alle für jedes Element der Button-Leiste Anwendung finden.
 
-### LABEL "Label"
+#### LABEL "Label"
 
 Die Beschriftung des Buttons.
 
-### TYPE "Typ"
+#### TYPE "Typ"
 
 Der Typ des Eingabeelements. Folgende Typen werden unterstützt:
 
@@ -815,15 +815,15 @@ Der Typ des Eingabeelements. Folgende Typen werden unterstützt:
 * **separator**: eine Linie zur Gruppierung ohne weitere Funktion
 * **glue**: ein unsichtbares Element, das dazu dient, Abstände zwischen 2 Buttons einzufügen
 
-### MINSIZE "Pixelzahl"
+#### MINSIZE "Pixelzahl"
 
 Diese Angabe wird nur bei Elementen vom Typ "glue" ausgewertet und gibt die minimale Breite des einzufügenden Leerraumes in Pixeln an.
 
-### HOTKEY "Buchstabe"
+#### HOTKEY "Buchstabe"
 
 Wird dies angegeben, so kann die mit dem Button verknüpfte Aktion über die Tastatur mit der Kombination Alt-Buchstabe aufgerufen werden. Für Buchstabe sind keine Umlaute oder Sonderzeichen erlaubt.
 
-### ACTION "Aktion"
+#### ACTION "Aktion"
 
 Die Aktion spezifiziert, was passieren soll, wenn der Benutzer den entsprechenden Button aktiviert. Die folgenden Aktionen werden unterstützt:
 
@@ -838,15 +838,15 @@ Die Aktion spezifiziert, was passieren soll, wenn der Benutzer den entsprechende
 * **closeAndOpenExt**: Speichert das Formular in einer temporären Datei eines beliebigen Formats (z.B. odt oder pdf), schließt dann das Formular ohne Benutzerrückfrage und öffnet die temporäre Datei mit der externen Anwendung, die im EXT-Attribut dieses Buttons angegeben ist. Das Format, in dem die temporäre Datei gespeichert wird, ist davon abhängig, was im [FILTER-Attribut](Konfigurationsdatei_wollmux_conf.md#filter-filtername) für die verwendete externe Anwendung im [Abschnitt "ExterneAnwendungen"](Konfigurationsdatei_wollmux_conf.md#externeanwendungen) der WollMux-Konfiguration angegeben ist.
 * **saveTempAndOpenExt**: Speichert das Formular in einer temporären Datei eines beliebigen Formats (z.B. odt oder pdf) und öffnet die temporäre Datei mit der externen Anwendung, die im EXT-Attribut dieses Buttons angegeben ist. Das Format, in dem die temporäre Datei gespeichert wird, ist davon abhängig, was im     [FILTER-Attribut](Konfigurationsdatei_wollmux_conf.md#filter-filtername) für die verwendete externe Anwendung im [Abschnitt    "ExterneAnwendungen"](Konfigurationsdatei_wollmux_conf.md#externeanwendungen) der WollMux-Konfiguration angegeben ist.
 
-### DIALOG "&lt;Funktionsdialog&gt;"
+#### DIALOG "&lt;Funktionsdialog&gt;"
 
 Wird bei Buttons mit [ACTION "funcDialog"](Konfigurationsdatei_wollmux_conf.md#action-aktion) angegeben, um den [Funktionsdialog](Konfigurationsdatei_wollmux_conf.md#funktionsdialoge) auszuwählen, der durch den Button aufgerufen werden soll.
 
-### EXT "&lt;Anwendungsname&gt;"
+#### EXT "&lt;Anwendungsname&gt;"
 
 Wird bei Buttons mit [ACTION](#action-aktion) "closeAndOpenExt" und "saveTempAndOpenExt" benötigt, um die externe Anwendung zu identifizieren, die zum Öffnen der nach Ausführen der Action gespeicherten temporären Datei verwendet werden soll. Als Anwendungsname stehen die Anwendungen zur Verfügung, die im [Abschnitt "ExterneAnwendungen"](Konfigurationsdatei_wollmux_conf.md#externeanwendungen) der WollMux-Konfiguration deklariert wurden. Für die Anwendung muss in der WollMux-Konfiguration mit dem [Attribut FILTER](Konfigurationsdatei_wollmux_conf.md#filter-filtername) ein Export-Filter festgelegt worden sein!
 
-## Der Abschnitt "Sichtbarkeit"
+### Der Abschnitt "Sichtbarkeit"
 
 In diesem Abschnitt können Bedingungen definiert werden, unter denen bestimmte Teile der Formular-GUI und des Formulardokuments ausgeblendet bzw. eingeblendet werden. Dies ist besonders nützlich zur Konsolidierung mehrerer Formulare, die größtenteils den gleichen Inhalt haben (z.B. "Abtretungserklärung für ..."). Typischerweise wird die Sichtbarkeit der Formularteile an Checkboxen geknüpft. Der Abschnitt Sichtbarkeit hat folgenden Aufbau:
 
@@ -861,11 +861,11 @@ Sichtbarkeit
 
 Jeder Eintrag im Abschnitt Sichtbarkeit beginnt mit einem Gruppenbezeichner, wie er einem Eingabeelement mittels [GROUPS-Attribut](Dokumentkommandos_des_WollMux.md#groupsgruppenliste) zugewiesen werden kann. Danach folgt eine [Funktion](Konfigurationsdatei_wollmux_conf.md#funktionen). Diese wird bei jeder Änderung eines der Eingabefelder von denen sie abhängt neu ausgewertet. Liefert sie "true", werden die Mitglieder der Gruppe angezeigt, ansonsten nicht.
 
-## Die Abschnitte "Funktionen" und "Funktionsdialoge"
+### Die Abschnitte "Funktionen" und "Funktionsdialoge"
 
 Diese Abschnitte funktionieren genau wie die Abschnitte [Funktionen](Konfigurationsdatei_wollmux_conf.md#funktionen) und [Funktionsdialoge](Konfigurationsdatei_wollmux_conf.md#funktionsdialoge) in der wollmux.conf und erlauben die Definition formularspezifischer Funktionen und Funktionsdialoge. Wo möglich sollte darauf verzichtet und stattdessen die Definition global in der wollmux.conf gehalten werden.
 
-## Beispiel
+### Beispiel
 
 ```
 WM(

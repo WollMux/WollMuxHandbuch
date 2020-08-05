@@ -58,14 +58,16 @@ Funktionen(
 * Testen der Funktion durch Öffnen der Vorlage
 
 > **INFO**
-* Die Funktion erwartet genau einen Parameter, der innerhalb der Funktion “Anrede” genannt wird. Beim Ausführen des insertValue-Befehls wird das Sachbearbeiterfeld “Anrede” als Argument “Anrede” übergeben.
-* **Bevor man zu externen Funktionen greift, sollte man sich immer überlegen, ob die Mittel des WollMux die Anforderung nicht bereits abdecken können.**
-  * Bisher wurden nur 5 von 12 möglichen internen Funktionen genutzt.
+>
+> * Die Funktion erwartet genau einen Parameter, der innerhalb der Funktion “Anrede” genannt wird. Beim Ausführen des insertValue-Befehls wird das Sachbearbeiterfeld “Anrede” als Argument “Anrede” übergeben.
+> * **Bevor man zu externen Funktionen greift, sollte man sich immer überlegen, ob die Mittel des WollMux die Anforderung nicht bereits abdecken können.**
+>   * Bisher wurden nur 5 von 12 möglichen internen Funktionen genutzt.
 
 <!-- -->
 > **HINT**
-* Der FormularMax 4000 (FM4000) zeigt die soeben definierten Funktionen auch an!
-  * Externen Briefkopf öffnen, FM4000 starten, auf Reiter “Einfügungen” wechseln und schauen, welche Funktionen bei Trafos angeboten werden.
+>
+> * Der FormularMax 4000 (FM4000) zeigt die soeben definierten Funktionen auch an!
+>   * Externen Briefkopf öffnen, FM4000 starten, auf Reiter “Einfügungen” wechseln und schauen, welche Funktionen bei Trafos angeboten werden.
 
 ## Übung: Erste einfache Arithmetik in Basic
 
@@ -100,9 +102,10 @@ Funktionen(
 * Speichern der Vorlage und Testen der Funktion durch Öffnen der Vorlage
 
 > **INFO**
-* Die Funktion erwartet einen Parameter, der dem WollMux im Schlüssel PARAMS bekannt gemacht wird.
-* Über den FM4000 erzeugen wir (indirekt) ein Dokumentkommando der Form `WM(CMD 'insertFormValue' TRAFO 'IsOlderThan21')`
-* Die Funktion bekommt damit automatisch den Wert als Parameter übergeben, der im Formularfeld angezeigt würde, wenn es keine Trafo gäbe.
+>
+> * Die Funktion erwartet einen Parameter, der dem WollMux im Schlüssel PARAMS bekannt gemacht wird.
+> * Über den FM4000 erzeugen wir (indirekt) ein Dokumentkommando der Form `WM(CMD 'insertFormValue' TRAFO 'IsOlderThan21')`
+> * Die Funktion bekommt damit automatisch den Wert als Parameter übergeben, der im Formularfeld angezeigt würde, wenn es keine Trafo gäbe.
 
 ## Übung: BasicMakro am Dokument
 
@@ -153,9 +156,7 @@ Sub is6MoreThanY(x as Integer, y as Integer) as String
 End Sub
 ```
 
-* wollmux.conf:
-
-  `Is6MoreThanY(EXTERN(URL "vnd.sun.star.script:POR.WollMuxFunctions.is6MoreThanY?language=Basic&location=application" PARAMS("x" "y")))`
+* wollmux.conf: `Is6MoreThanY(EXTERN(URL "vnd.sun.star.script:POR.WollMuxFunctions.is6MoreThanY?language=Basic&location=application" PARAMS("x" "y")))`
 * Vorlage bearbeiten und FM4000 starten
 * Bind wird vom FormularMax 4000 automatisch erzeugt.
 * Über die Anpassung der Formularbeschreibung kann man Verknüpfung mit anderen Feldern herstellen

@@ -1676,7 +1676,7 @@ Der Fehlerstring ist so gewählt, dass er im normalen Betrieb nicht auftreten ka
 
 Es müssen mindestens 2 Argumente angegeben werden. Als Argumente sind beliebige Funktionen zulässig. Die Funktion STRCMP wertet ihre Argumente der Reihe nach aus und führt für die Argumente 2 bis N einen Vergleich mit dem ersten Argument durch. Bei jedem Vergleich kann eines der folgenden 3 Ergebnisse herauskommen: "Die Strings sind identisch", "Der erste String kommt in einer alphabetischen Sortierung vor dem zweiten", "Der zweite String kommt alphabetisch vor dem ersten". Der Vergleich basiert auf der Reihenfolge der Zeichen im Unicode-Zeichensatz, d.h. insbes. werden Kleinbuchstaben und Großbuchstaben als unterschiedliche Zeichen aufgefasst. Die Funktion STRCMP kann folgende 5 Ergebnisse zurückliefern, wobei in einem booleschen Kontext, wie in einer IF-Bedingung, alle nicht-true Ergebnisse false entsprechen:
 
- "true": Alle Strings sind identisch. Beispiel: `STRCMP("a" "a" "a")`
+* "true": Alle Strings sind identisch. Beispiel: `STRCMP("a" "a" "a")`
 * "-1": Mindestens eines der Argumente 2 bis N ist verschieden von Argument1 und kommt alphabetisch *nach* Argument1. Alle anderen Argumente kommen entweder auch alphabetisch *nach* Argument1 oder sie sind identisch zu Argument1.
 
   Beispiel: `STRCMP("a" "a" "z")`
