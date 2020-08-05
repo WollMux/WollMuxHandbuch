@@ -318,6 +318,10 @@ Nach Betätigen der Schaltfläche "Alle Ausdrucke drucken" erhält man folgende 
 * Alle Ausdrucke können über die Schaltfläche "Alle Drucken" ausgedruckt werden.
 * Über die Schaltfläche "Druckeinstellungen" kann ein anderer Drucker ausgewählt werden oder Einstellungen geändert werden.
 
+### Ausdrucke in einem PDF sammeln
+
+Mit dieser Alternative zum Drucken wird ein PDF-Dokument erstellt, in dem alle Ausdrucke enthalten sind. Dies entspricht in etwa dem Vorgehen alle Dokumente mit einem "PDF-Drucker" zu drucken und die erstellten PDF-Dokumente dann zu einem Dokument zu vereinen.
+
 ### Anhang Details
 
 Hier eine Zusammenfassung des Verhaltens aller Schaltflächen in den verschiedenen möglichen Situationen:

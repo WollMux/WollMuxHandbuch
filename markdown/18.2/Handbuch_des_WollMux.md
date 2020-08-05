@@ -12,7 +12,7 @@ Der folgende Wegweiser soll Ihnen dabei helfen, den Einstieg in die Dokumentatio
 
 ### Wie bekomme ich den WollMux zum laufen
 
-Lesen Sie zuerst [WollMux downloaden](../Hauptseite.md) und dann [WollMux installieren](../Getting_Started.md).
+Lesen Sie zuerst [WollMux downloaden](../README.md) und dann [WollMux installieren](../Getting_Started.md).
 
 ### Welche Möglichkeiten der Anpassung bietet der WollMux
 

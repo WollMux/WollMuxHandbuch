@@ -5,11 +5,6 @@
 	"language": "de",
 	"root": "markdown",
 	"plugins": [ "atoc", "collapsible-menu", "forkmegithub", "richquotes", "redirect", "splitter", "back-to-top-button", "link-checker"],
-	"links": {
-		"sidebar": {
-			"Homepage": "http://www.wollmux.org"
-		}
-	},
 	"pluginsConfig": {
         "atoc": {
             "addClass": true,
@@ -24,8 +19,5 @@
     },
 	"styles": {
 		"website": "styles/website.css"
-	},
-	"structure": {
-		"readme": "Hauptseite.md"
 	}
 }
