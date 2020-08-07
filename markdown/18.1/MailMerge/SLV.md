@@ -17,7 +17,7 @@ Dies entspricht natürlich der Anzahl, die Sie hätten, würden Sie 100 zweiseit
 Die Option "PDF mit allen Ausdrucken erstellen" des Komfortdrucks kann nicht mit allen Druckoptionen des Seriendrucks kombiniert werden.
 
 * **Gesamtdokument erstellen (.odt)** Diese Option ist grundsätzlich kombinierbar, allerdings wird ein *PDF* erstellt, obwohl die Seriendruckoption von *ODT* spricht.
-* **Gesamtdokument erstellen (.pdf)** Diese Option ist ohne Einschränkung kombinierbar.
+* **Gesamtdokument erstellen (.pdf)** Diese Option ist ohne Einschränkung kombinierbar. (Bis einschließlich Version 18.1.13 noch fehlerhaft)
 * **Direkt Drucken** Diese Option ist nicht kombinierbar.
 * **E-Mails verschicken** Diese Option ist nicht kombinierbar.
 * **Einzeldateien erzeugen** Diese Option ist nicht kombinierbar.
