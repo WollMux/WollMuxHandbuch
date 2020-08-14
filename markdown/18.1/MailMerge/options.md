@@ -1,5 +1,7 @@
 # Zusammenführen von Ausgangsdokument und Datenquelle
 
+<!-- toc -->
+
 ## Vorschau
 
 Um vor dem Zusammenführen von Ausgangsdokument und Datenquelle zu prüfen, ob das Ergebnis den eigenen Vorstellungen entsprechen wird, können Sie sich ein Vorschau anzeigen lassen.
@@ -109,6 +111,12 @@ Sie müssen also die Option *Automatisch eingefügte Leerseiten drucken* aktivie
 Wenn Sie das nicht immer machen wollen, können Sie bei Serienbriefen mit ungerader Seitenzahl eine leere Seite am Schluss einfügen, damit Sie eine gerade Seitenzahl haben, dann brauchen Sie sich um die Option *Automatisch eingefügte Leerseiten drucken* nicht kümmern.
 
 Mit strg + Enter fügen Sie am Ende Ihres Serienbriefes einen manuellen Seitenumbruch und damit eine leere Seite ein.
+
+### Leerseiten im Gesamtdokument PDF
+
+Sollten Sie ein Gesamtdokument PDF mit Leerseiten erstellen wollen, so muss eine andere Option gesetzt werden. Diese finden Sie unter *Datei → Exportieren als → Als PDF exportieren... → Automatisch eingefügte Leerseiten exportieren*. Leider ist es noch notwendig den Export einmal zu starten, damit die Einstellung gespeichert wird und beim Seriendruck verwendet werden kann. Das exportierte PDF-Dokument muss nicht gespeichert werden. Nun können Sie wie gewohnt den Seriendruck als Gesamtdokument PDF durchführen und erhalten bei einer ungeraden Seitenzahl nach jedem Datensatz eine Leerseite.
+
+Nach dem Druck sollten Sie die Option wieder deaktivieren.
 
 ## Datensätze für den Ausdruck filtern
 
