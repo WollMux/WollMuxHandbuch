@@ -633,6 +633,34 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="zusammenf&#xFC;hren-von-ausgangsdokument-und-datenquelle">Zusammenf&#xFC;hren von Ausgangsdokument und Datenquelle</h1>
+<!-- toc -->
+<ul>
+<li><a href="#vorschau">Vorschau</a><ul>
+<li><a href="#vorschau-anzeigen-lassen">Vorschau anzeigen lassen</a></li>
+<li><a href="#vorschau-ausschalten">Vorschau ausschalten</a></li>
+</ul>
+</li>
+<li><a href="#serienbrief-drucken">Serienbrief Drucken</a><ul>
+<li><a href="#gesamtdokument-erstellen-odt">Gesamtdokument erstellen (.odt)</a></li>
+<li><a href="#gesamtdokument-erstellen-pdf">Gesamtdokument erstellen (.pdf)</a></li>
+<li><a href="#direkt-drucken">Direkt drucken</a></li>
+<li><a href="#e-mails-verschicken">E-Mails Verschicken</a></li>
+<li><a href="#einzeldateien-erzeugen">Einzeldateien erzeugen</a></li>
+<li><a href="#seriendruck-starten">Seriendruck starten</a></li>
+</ul>
+</li>
+<li><a href="#leerseiten-in-seriendokumenten-drucken">Leerseiten in Seriendokumenten drucken</a><ul>
+<li><a href="#leerseiten-im-gesamtdokument-pdf">Leerseiten im Gesamtdokument PDF</a></li>
+</ul>
+</li>
+<li><a href="#datens&#xE4;tze-f&#xFC;r-den-ausdruck-filtern">Datens&#xE4;tze f&#xFC;r den Ausdruck filtern</a><ul>
+<li><a href="#zeilen-ausblenden">Zeilen ausblenden</a></li>
+<li><a href="#in-calc-filtern">In Calc filtern</a></li>
+</ul>
+</li>
+<li><a href="#nutzung-einer-bereits-bestehenden-ausgangsvorlage-oder-dokuments">Nutzung einer bereits bestehenden Ausgangsvorlage (oder Dokuments)</a></li>
+</ul>
+<!-- tocstop -->
 <h2 id="vorschau">Vorschau</h2>
 <p>Um vor dem Zusammenf&#xFC;hren von Ausgangsdokument und Datenquelle zu pr&#xFC;fen, ob das Ergebnis den eigenen Vorstellungen entsprechen wird, k&#xF6;nnen Sie sich ein Vorschau anzeigen lassen.</p>
 <h3 id="vorschau-anzeigen-lassen">Vorschau anzeigen lassen</h3>
@@ -709,6 +737,9 @@
 <p>Sie m&#xFC;ssen also die Option <em>Automatisch eingef&#xFC;gte Leerseiten drucken</em> aktivieren, wenn Sie einen Duplexdrucker verwenden und einen Serienbrief haben, der eine ungerade Seitenzahl hat. Nach dem Druck sollten Sie die Option wieder deaktivieren.</p>
 <p>Wenn Sie das nicht immer machen wollen, k&#xF6;nnen Sie bei Serienbriefen mit ungerader Seitenzahl eine leere Seite am Schluss einf&#xFC;gen, damit Sie eine gerade Seitenzahl haben, dann brauchen Sie sich um die Option <em>Automatisch eingef&#xFC;gte Leerseiten drucken</em> nicht k&#xFC;mmern.</p>
 <p>Mit strg + Enter f&#xFC;gen Sie am Ende Ihres Serienbriefes einen manuellen Seitenumbruch und damit eine leere Seite ein.</p>
+<h3 id="leerseiten-im-gesamtdokument-pdf">Leerseiten im Gesamtdokument PDF</h3>
+<p>Sollten Sie ein Gesamtdokument PDF mit Leerseiten erstellen wollen, so muss eine andere Option gesetzt werden. Diese finden Sie unter <em>Datei &#x2192; Exportieren als &#x2192; Als PDF exportieren... &#x2192; Automatisch eingef&#xFC;gte Leerseiten exportieren</em>. Leider ist es noch notwendig den Export einmal zu starten, damit die Einstellung gespeichert wird und beim Seriendruck verwendet werden kann. Das exportierte PDF-Dokument muss nicht gespeichert werden. Nun k&#xF6;nnen Sie wie gewohnt den Seriendruck als Gesamtdokument PDF durchf&#xFC;hren und erhalten bei einer ungeraden Seitenzahl nach jedem Datensatz eine Leerseite.</p>
+<p>Nach dem Druck sollten Sie die Option wieder deaktivieren.</p>
 <h2 id="datens&#xE4;tze-f&#xFC;r-den-ausdruck-filtern">Datens&#xE4;tze f&#xFC;r den Ausdruck filtern</h2>
 <p>Wenn Sie f&#xFC;r Ihren Seriendruck nur eine Auswahl Ihrer Datens&#xE4;tze verwenden wollen, k&#xF6;nnen Sie dies ganz einfach mit den Filterm&#xF6;glichkeiten in LibreOffice Calc machen. Prinzipiell gibt es dazu zwei verschieden M&#xF6;glichkeiten, die hier aber nur kurz vorgestellt werden.</p>
 <h3 id="zeilen-ausblenden">Zeilen ausblenden</h3>
@@ -768,7 +799,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Der Druck","level":"3.3.3","depth":2,"next":{"title":"Druck mit Sachleitenden Verfügungen","level":"3.3.3.1","depth":3,"path":"18.1/MailMerge/SLV.md","ref":"18.1/MailMerge/SLV.md","articles":[]},"previous":{"title":"Datenquellen aus MS Office konvertieren","level":"3.3.2.1","depth":3,"path":"18.1/MailMerge/MSOffice.md","ref":"18.1/MailMerge/MSOffice.md","articles":[]},"dir":"ltr"},"config":{"plugins":["atoc","collapsible-menu","forkmegithub","richquotes","redirect","splitter","back-to-top-button","link-checker"],"root":"markdown","styles":{"website":"styles/website.css"},"pluginsConfig":{"link-checker":{"dieOnError":false,"fqdn":[]},"collapsible-menu":{},"atoc":{"addClass":true,"className":"toc"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{},"highlight":{},"back-to-top-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"redirect":{},"forkmegithub":{"color":"gray","url":"https://github.com/WollMux/WollMux"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Landeshauptstadt München","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"WollMux Handbuch","language":"de","gitbook":"3.x.x"},"file":{"path":"18.1/MailMerge/options.md","mtime":"2020-08-05T06:48:42.931Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-07T05:58:38.634Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Der Druck","level":"3.3.3","depth":2,"next":{"title":"Druck mit Sachleitenden Verfügungen","level":"3.3.3.1","depth":3,"path":"18.1/MailMerge/SLV.md","ref":"18.1/MailMerge/SLV.md","articles":[]},"previous":{"title":"Datenquellen aus MS Office konvertieren","level":"3.3.2.1","depth":3,"path":"18.1/MailMerge/MSOffice.md","ref":"18.1/MailMerge/MSOffice.md","articles":[]},"dir":"ltr"},"config":{"plugins":["atoc","collapsible-menu","forkmegithub","richquotes","redirect","splitter","back-to-top-button","link-checker"],"root":"markdown","styles":{"website":"styles/website.css"},"pluginsConfig":{"link-checker":{"dieOnError":false,"fqdn":[]},"collapsible-menu":{},"atoc":{"addClass":true,"className":"toc"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{},"highlight":{},"back-to-top-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"redirect":{},"forkmegithub":{"color":"gray","url":"https://github.com/WollMux/WollMux"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Landeshauptstadt München","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"WollMux Handbuch","language":"de","gitbook":"3.x.x"},"file":{"path":"18.1/MailMerge/options.md","mtime":"2020-08-14T06:28:49.884Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-14T06:32:25.820Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
