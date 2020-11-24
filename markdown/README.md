@@ -6,7 +6,7 @@ Mehr darüber, was der WollMux alles kann, erfahren Sie hier: **[Features des Wo
 
 > **Info**  <span style="font-size:larger;font-weight:bold;color:#1D9101">WollMux Herunterladen</span>
 >
-> * **[WollMux 18.1.13](https://github.com/WollMux/WollMux/releases/tag/RELEASE_18.1.13)**
+> * **[WollMux 18.1.14](https://github.com/WollMux/WollMux/releases/tag/RELEASE_18.1.14)**
 > * **[WollMux-Konfiguration 18.1.0](https://github.com/WollMux/wollmux-config/releases/tag/v18.1.0)**
 > * [Andere Versionen](https://github.com/WollMux/WollMux/releases)
 >
