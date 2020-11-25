@@ -33,7 +33,7 @@ Die Schriftart ist Arial, außer es ist in der Tabelle etwas anderes angegeben. 
 </td>
 <td valign="top">0
 </td>
-<td valign="top"><div class="thumb tnone"><div class="thumbinner" style="width:182px;"><a href="/wiki/index.php?title=Spezial:Hochladen&amp;wpDestFile=Formatvorlage_Adresse_Angaben.jpg" class="new" title="Datei:Formatvorlage Adresse Angaben.jpg">Datei:Formatvorlage Adresse Angaben.jpg</a>  <div class="thumbcaption"></div></div></div>
+<td valign="top"><div class="thumb tnone"><div class="thumbinner" style="width:182px;"><img src="images/Formatvorlagen/Adresse_Angaben.jpg" alt="Formatvorlage Adresse Angaben"><div class="thumbcaption"></div></div></div>
 </td></tr>
 <tr>
 <td valign="top">Adresse_Empfänger
@@ -46,7 +46,7 @@ Die Schriftart ist Arial, außer es ist in der Tabelle etwas anderes angegeben. 
 </td>
 <td valign="top">0
 </td>
-<td valign="top"><div class="thumb tnone"><div class="thumbinner" style="width:182px;"><a href="/wiki/index.php?title=Spezial:Hochladen&amp;wpDestFile=Formatvorlage_Adresse_Empf%C3%A4nger.jpg" class="new" title="Datei:Formatvorlage Adresse Empfänger.jpg">Datei:Formatvorlage Adresse Empfänger.jpg</a>  <div class="thumbcaption"></div></div></div>
+<td valign="top">
 </td></tr>
 <tr>
 <td valign="top">AnkerUndTabellenschutz
@@ -72,7 +72,7 @@ Die Schriftart ist Arial, außer es ist in der Tabelle etwas anderes angegeben. 
 </td>
 <td valign="top">0
 </td>
-<td valign="top"><div class="thumb tnone"><div class="thumbinner" style="width:182px;"><a href="/wiki/index.php?title=Spezial:Hochladen&amp;wpDestFile=Formatvorlage_Bezeichung_Formular.jpg" class="new" title="Datei:Formatvorlage Bezeichung Formular.jpg">Datei:Formatvorlage Bezeichung Formular.jpg</a>  <div class="thumbcaption"></div></div></div>
+<td valign="top"><div class="thumb tnone"><div class="thumbinner" style="width:182px;"><img src="images/Formatvorlagen/Bezeichung_Formular.jpg" alt="Formatvorlage Bezeichnung Formular"><div class="thumbcaption"></div></div></div>
 </td></tr>
 <tr>
 <td valign="top">Datum
@@ -85,7 +85,7 @@ Die Schriftart ist Arial, außer es ist in der Tabelle etwas anderes angegeben. 
 </td>
 <td valign="top">Gilt nur für den Externen Briefkopf.
 </td>
-<td valign="top"><div class="thumb tnone"><div class="thumbinner" style="width:182px;"><a href="/wiki/index.php?title=Spezial:Hochladen&amp;wpDestFile=Formatvorlage_Datum.jpg" class="new" title="Datei:Formatvorlage Datum.jpg">Datei:Formatvorlage Datum.jpg</a>  <div class="thumbcaption"></div></div></div>
+<td valign="top"><div class="thumb tnone"><div class="thumbinner" style="width:182px;"><img src="images/Formatvorlagen/Datum.jpg" alt="Formatvorlage Datum"><div class="thumbcaption"></div></div></div>
 </td></tr>
 <tr>
 <td valign="top">Fax_Beschriftung
@@ -98,7 +98,7 @@ Die Schriftart ist Arial, außer es ist in der Tabelle etwas anderes angegeben. 
 </td>
 <td valign="top">0
 </td>
-<td valign="top"><div class="thumb tnone"><div class="thumbinner" style="width:182px;"><a href="/wiki/index.php?title=Spezial:Hochladen&amp;wpDestFile=Formatvorlage_Fax_Beschriftung.jpg" class="new" title="Datei:Formatvorlage Fax Beschriftung.jpg">Datei:Formatvorlage Fax Beschriftung.jpg</a>  <div class="thumbcaption"></div></div></div>
+<td valign="top"><div class="thumb tnone"><div class="thumbinner" style="width:182px;"><img src="images/Formatvorlagen/Fax_Beschriftung.jpg" alt="Formatvorlage Fax Beschriftung"><div class="thumbcaption"></div></div></div>
 </td></tr>
 <tr>
 <td valign="top">Fensterzeile
@@ -111,7 +111,7 @@ Die Schriftart ist Arial, außer es ist in der Tabelle etwas anderes angegeben. 
 </td>
 <td valign="top">0
 </td>
-<td valign="top"><div class="thumb tnone"><div class="thumbinner" style="width:182px;"><a href="/wiki/index.php?title=Spezial:Hochladen&amp;wpDestFile=Formatvorlage_Fensterzeile.jpg" class="new" title="Datei:Formatvorlage Fensterzeile.jpg">Datei:Formatvorlage Fensterzeile.jpg</a>  <div class="thumbcaption"></div></div></div>
+<td valign="top"><div class="thumb tnone"><div class="thumbinner" style="width:182px;"><img src="images/Formatvorlagen/Fensterzeile.jpg" alt="Formatvorlage Fensterzele"><div class="thumbcaption"></div></div></div>
 </td></tr>
 <tr>
 <td valign="top">Fließtext
@@ -137,7 +137,7 @@ Die Schriftart ist Arial, außer es ist in der Tabelle etwas anderes angegeben. 
 </td>
 <td valign="top">0
 </td>
-<td valign="top"><div class="thumb tnone"><div class="thumbinner" style="width:182px;"><a href="/wiki/index.php?title=Spezial:Hochladen&amp;wpDestFile=Formatvorlage_Fu%C3%9Fzeile_Wollmux.jpg" class="new" title="Datei:Formatvorlage Fußzeile Wollmux.jpg">Datei:Formatvorlage Fußzeile Wollmux.jpg</a>  <div class="thumbcaption"></div></div></div>
+<td valign="top"><div class="thumb tnone"><div class="thumbinner" style="width:182px;"><img src="images/Formatvorlagen/Fußzeile_Wollmux.jpg" alt="Formatvorlage Adresse Fußzeile WollMux"><div class="thumbcaption"></div></div></div>
 </td></tr>
 <tr>
 <td valign="top">Hauptabteilung_Fachbereich
@@ -150,7 +150,7 @@ Die Schriftart ist Arial, außer es ist in der Tabelle etwas anderes angegeben. 
 </td>
 <td valign="top">0
 </td>
-<td valign="top"><div class="thumb tnone"><div class="thumbinner" style="width:182px;"><a href="/wiki/index.php?title=Spezial:Hochladen&amp;wpDestFile=Formatvorlage_Hauptabteilung_Fachbereich.jpg" class="new" title="Datei:Formatvorlage Hauptabteilung Fachbereich.jpg">Datei:Formatvorlage Hauptabteilung Fachbereich.jpg</a>  <div class="thumbcaption"></div></div></div>
+<td valign="top"><div class="thumb tnone"><div class="thumbinner" style="width:182px;"><img src="images/Formatvorlagen/Hauptabteilung_Fachbereich.jpg" alt="Formatvorlage Hauptabteilung Fachbereich"><div class="thumbcaption"></div></div></div>
 </td></tr>
 <tr>
 <td valign="top">kurzm_angaben
@@ -163,7 +163,7 @@ Die Schriftart ist Arial, außer es ist in der Tabelle etwas anderes angegeben. 
 </td>
 <td valign="top">0
 </td>
-<td valign="top"><div class="thumb tnone"><div class="thumbinner" style="width:182px;"><a href="/wiki/index.php?title=Spezial:Hochladen&amp;wpDestFile=Formatvorlage_Kurzm_Angaben.jpg" class="new" title="Datei:Formatvorlage Kurzm Angaben.jpg">Datei:Formatvorlage Kurzm Angaben.jpg</a>  <div class="thumbcaption"></div></div></div>
+<td valign="top"><div class="thumb tnone"><div class="thumbinner" style="width:182px;"><img src="images/Formatvorlagen/Kurzm_Angaben.jpg" alt="Formatvorlage Kurzmitteilung Angaben"><div class="thumbcaption"></div></div></div>
 </td></tr>
 <tr>
 <td valign="top">LHM
@@ -176,7 +176,7 @@ Die Schriftart ist Arial, außer es ist in der Tabelle etwas anderes angegeben. 
 </td>
 <td valign="top">0
 </td>
-<td valign="top"><div class="thumb tnone"><div class="thumbinner" style="width:182px;"><a href="/wiki/index.php?title=Spezial:Hochladen&amp;wpDestFile=Formatvorlage_LHM.jpg" class="new" title="Datei:Formatvorlage LHM.jpg">Datei:Formatvorlage LHM.jpg</a>  <div class="thumbcaption"></div></div></div>
+<td valign="top"><div class="thumb tnone"><div class="thumbinner" style="width:182px;"><img src="images/Formatvorlagen/LHM.jpg" alt="Formatvorlage LHM"><div class="thumbcaption"></div></div></div>
 </td></tr>
 <tr>
 <td valign="top">Referat
@@ -189,7 +189,7 @@ Die Schriftart ist Arial, außer es ist in der Tabelle etwas anderes angegeben. 
 </td>
 <td valign="top">0
 </td>
-<td valign="top"><div class="thumb tnone"><div class="thumbinner" style="width:182px;"><a href="/wiki/index.php?title=Spezial:Hochladen&amp;wpDestFile=Formatvorlage_Referat.jpg" class="new" title="Datei:Formatvorlage Referat.jpg">Datei:Formatvorlage Referat.jpg</a>  <div class="thumbcaption"></div></div></div>
+<td valign="top"><div class="thumb tnone"><div class="thumbinner" style="width:182px;"><img src="images/Formatvorlagen/Referat.jpg" alt="Formatvorlage Referat"><div class="thumbcaption"></div></div></div>
 </td></tr>
 <tr>
 <td valign="top">Sachleitende Verfügung<br />Sachleitende Verfügung dünn<br />Sachleitende Verfügung unterstrichen
@@ -215,7 +215,7 @@ Die Schriftart ist Arial, außer es ist in der Tabelle etwas anderes angegeben. 
 </td>
 <td valign="top">0
 </td>
-<td valign="top"><div class="thumb tnone"><div class="thumbinner" style="width:182px;"><a href="/wiki/index.php?title=Spezial:Hochladen&amp;wpDestFile=Formatvorlage_Schreiben.jpg" class="new" title="Datei:Formatvorlage Schreiben.jpg">Datei:Formatvorlage Schreiben.jpg</a>  <div class="thumbcaption"></div></div></div>
+<td valign="top"><div class="thumb tnone"><div class="thumbinner" style="width:182px;"><img src="images/Formatvorlagen/Schreiben.jpg" alt="Formatvorlage Schreiben"><div class="thumbcaption"></div></div></div>
 </td></tr>
 <tr>
 <td valign="top">Seite<br />Seitenzahl
@@ -228,7 +228,7 @@ Die Schriftart ist Arial, außer es ist in der Tabelle etwas anderes angegeben. 
 </td>
 <td valign="top">Einzug vor Text: 12.20 cm
 </td>
-<td valign="top"><div class="thumb tnone"><div class="thumbinner" style="width:182px;"><a href="/wiki/index.php?title=Spezial:Hochladen&amp;wpDestFile=Formatvorlage_Seite.jpg" class="new" title="Datei:Formatvorlage Seite.jpg">Datei:Formatvorlage Seite.jpg</a>  <div class="thumbcaption"></div></div></div>Vorlage für die Formatierung der Seitenzahl. Diese erscheint im internen oder externen Briefkopf ab der Seite 2 oben rechts.
+<td valign="top"><div class="thumb tnone"><div class="thumbinner" style="width:182px;"><img src="images/Formatvorlagen/Seite.jpg" alt="Formatvorlage Seite"><div class="thumbcaption"></div></div></div>Vorlage für die Formatierung der Seitenzahl. Diese erscheint im internen oder externen Briefkopf ab der Seite 2 oben rechts.
 </td></tr>
 <tr>
 <td valign="top">Verfasser
@@ -241,7 +241,7 @@ Die Schriftart ist Arial, außer es ist in der Tabelle etwas anderes angegeben. 
 </td>
 <td valign="top">0
 </td>
-<td valign="top"><div class="thumb tnone"><div class="thumbinner" style="width:182px;"><a href="/wiki/index.php?title=Spezial:Hochladen&amp;wpDestFile=Formatvorlage_Verfasser.jpg" class="new" title="Datei:Formatvorlage Verfasser.jpg">Datei:Formatvorlage Verfasser.jpg</a>  <div class="thumbcaption"></div></div></div>
+<td valign="top"><div class="thumb tnone"><div class="thumbinner" style="width:182px;"><img src="images/Formatvorlagen/Verfasser.jpg" alt="Formatvorlage Verfasser"><div class="thumbcaption"></div></div></div>
 </td></tr>
 <tr>
 <td valign="top">Weisse_Schrift
@@ -254,7 +254,7 @@ Die Schriftart ist Arial, außer es ist in der Tabelle etwas anderes angegeben. 
 </td>
 <td valign="top">Die Schriftfarbe ist weiss.
 </td>
-<td valign="top">Das Konstrukt ist nötig, damit der Bereich hinter den Rahmen mit Absender, Empfängeradresse, usw. nicht beschriftet werden kann. Dieser "Workaround" stellt sicher, dass die Briefköpfe auch mit MS Office austauschbar bleiben und dort noch dem städtischen Erscheinungsbild entsprechen.<div class="thumb tnone"><div class="thumbinner" style="width:182px;"><a href="/wiki/index.php?title=Spezial:Hochladen&amp;wpDestFile=Formatvorlage_Weisse_Schrift.jpg" class="new" title="Datei:Formatvorlage Weisse Schrift.jpg">Datei:Formatvorlage Weisse Schrift.jpg</a>  <div class="thumbcaption"></div></div></div>
+<td valign="top">Das Konstrukt ist nötig, damit der Bereich hinter den Rahmen mit Absender, Empfängeradresse, usw. nicht beschriftet werden kann. Dieser "Workaround" stellt sicher, dass die Briefköpfe auch mit MS Office austauschbar bleiben und dort noch dem städtischen Erscheinungsbild entsprechen.<div class="thumb tnone"><div class="thumbinner" style="width:182px;"><img src="images/Formatvorlagen/Weisse_Schrift.jpg" alt="Formatvorlage Weiße Schrift"><div class="thumbcaption"></div></div></div>
 </td></tr>
 <tr>
 <td valign="top">WollMuxVerfuegungspunkt
@@ -267,7 +267,7 @@ Die Schriftart ist Arial, außer es ist in der Tabelle etwas anderes angegeben. 
 </td>
 <td valign="top">Einzug Erste Zeile -0,7cm
 </td>
-<td valign="top"><div class="thumb tnone"><div class="thumbinner" style="width:182px;"><a href="/wiki/index.php?title=Spezial:Hochladen&amp;wpDestFile=Formatvorlage_WollMuxVerfuegungspunkt.jpg" class="new" title="Datei:Formatvorlage WollMuxVerfuegungspunkt.jpg">Datei:Formatvorlage WollMuxVerfuegungspunkt.jpg</a>  <div class="thumbcaption"></div></div></div>
+<td valign="top"><div class="thumb tnone"><div class="thumbinner" style="width:182px;"><img src="images/Formatvorlagen/WollMuxVerfuegungspunkt.jpg" alt="Formatvorlage WollMux Verfügungspunkt"><div class="thumbcaption"></div></div></div>
 </td></tr>
 <tr>
 <td valign="top">WollMuxVerfuegungspunktAbdruck
@@ -280,7 +280,7 @@ Die Schriftart ist Arial, außer es ist in der Tabelle etwas anderes angegeben. 
 </td>
 <td valign="top">Einzug Erste Zeile -0,7cm
 </td>
-<td valign="top"><div class="thumb tnone"><div class="thumbinner" style="width:182px;"><a href="/wiki/index.php?title=Spezial:Hochladen&amp;wpDestFile=Formatvorlage_WollMuxVerfuegungspunktAbdruck.jpg" class="new" title="Datei:Formatvorlage WollMuxVerfuegungspunktAbdruck.jpg">Datei:Formatvorlage WollMuxVerfuegungspunktAbdruck.jpg</a>  <div class="thumbcaption"></div></div></div>
+<td valign="top"><div class="thumb tnone"><div class="thumbinner" style="width:182px;"><img src="images/Formatvorlagen/WollMuxVerfuegungspunktAbdruck.jpg" alt="Formatvorlage WollMux Verfügungspunkt Abdruck"><div class="thumbcaption"></div></div></div>
 </td></tr>
 <tr>
 <td valign="top">WollMuxZuleitungszeile
@@ -293,7 +293,7 @@ Die Schriftart ist Arial, außer es ist in der Tabelle etwas anderes angegeben. 
 </td>
 <td valign="top">Unterstrichen
 </td>
-<td valign="top"><div class="thumb tnone"><div class="thumbinner" style="width:182px;"><a href="/wiki/index.php?title=Spezial:Hochladen&amp;wpDestFile=Formatvorlage_WollMuxZuleitungszeile.jpg" class="new" title="Datei:Formatvorlage WollMuxZuleitungszeile.jpg">Datei:Formatvorlage WollMuxZuleitungszeile.jpg</a>  <div class="thumbcaption"></div></div></div>
+<td valign="top"><div class="thumb tnone"><div class="thumbinner" style="width:182px;"><img src="images/Formatvorlagen/WollMuxZuleitungszeile.jpg" alt="Formatvorlage WollMux Zuleitungszeile"><div class="thumbcaption"></div></div></div>
 </td></tr>
 <tr>
 <td valign="top">Zeichen
@@ -306,7 +306,7 @@ Die Schriftart ist Arial, außer es ist in der Tabelle etwas anderes angegeben. 
 </td>
 <td valign="top">0
 </td>
-<td valign="top"><div class="thumb tnone"><div class="thumbinner" style="width:182px;"><a href="/wiki/index.php?title=Spezial:Hochladen&amp;wpDestFile=Formatvorlage_Zeichen.jpg" class="new" title="Datei:Formatvorlage Zeichen.jpg">Datei:Formatvorlage Zeichen.jpg</a>  <div class="thumbcaption"></div></div></div>
+<td valign="top"><div class="thumb tnone"><div class="thumbinner" style="width:182px;"><img src="images/Formatvorlagen/Zeichen.jpg" alt="Formatvorlage Zeichen"><div class="thumbcaption"></div></div></div>
 </td></tr>
 <tr>
 <td valign="top">Zusatz_Referat
@@ -319,7 +319,7 @@ Die Schriftart ist Arial, außer es ist in der Tabelle etwas anderes angegeben. 
 </td>
 <td valign="top">0
 </td>
-<td valign="top"><div class="thumb tnone"><div class="thumbinner" style="width:182px;"><a href="/wiki/index.php?title=Spezial:Hochladen&amp;wpDestFile=Formatvorlage_Zusatz_Referat.jpg" class="new" title="Datei:Formatvorlage Zusatz Referat.jpg">Datei:Formatvorlage Zusatz Referat.jpg</a>  <div class="thumbcaption"></div></div></div> Formatvorlage für die Zusatzbezeichung rechts oben im externen Briefkopf, den manche Dienststellen verwenden, z.B. Tourismusamt.
+<td valign="top"><div class="thumb tnone"><div class="thumbinner" style="width:182px;"><img src="images/Formatvorlagen/Zusatz_Referat.jpg" alt="Formatvorlage Zusatz Referat"><div class="thumbcaption"></div></div></div> Formatvorlage für die Zusatzbezeichung rechts oben im externen Briefkopf, den manche Dienststellen verwenden, z.B. Tourismusamt.
 </td></tr></table>
 
 <Kategorie:Office_Vorlagenumsteller_Handbuch>
