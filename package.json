@@ -7,7 +7,7 @@
     "url": "https://github.com/WollMux/WollMuxHandbuch"
   },
   "devDependencies": {
-    "grunt": "^1.2.1",
+    "grunt": "^1.5.2",
     "grunt-contrib-connect": "^3.0.0",
     "grunt-contrib-jshint": "^2.1.0",
     "grunt-contrib-nodeunit": "^2.1.0",
