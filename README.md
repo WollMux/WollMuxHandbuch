@@ -74,7 +74,7 @@ into the branch `gh-pages`.
 
 * **message**: Commit message. Default: "Neue Version."
 
-[Link](https://wollmux.org/WollMuxHandbuch/Hauptseite.html) to generated documentation.
+[View](https://wollmux.org/) generated documentation
 
 ---
 
