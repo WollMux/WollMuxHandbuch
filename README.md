@@ -23,44 +23,30 @@ The documentation is written in [Markdown format](https://toolchain.gitbook.com/
 * Install Node.js dependencies
 
   `npm install`
-  
-* Install Gitbook plugins
-
-  `gitbook install`
+  `npm install -g grunt-cli`
 
 * Build the documentation
 
+  * Serve locally
+    `npx honkit serve`
+
   * HTML
 
-    `gitbook build`
+    `npx honkit build` (Result is in `_book` directory)
 
   * PDF
 
-    `gitbook pdf . ./wollmux-handbuch.pdf`
+    `npx honkit pdf . ./wollmux-handbuch.pdf`
 
   * eBook
 
-    `gitbook mobi . ./wollmux-handbuch.mobi`
+    `npx honkit mobi . ./wollmux-handbuch.mobi`
 
-    `gitbook epub . ./wollmux-handbuch.epub`
+    `npx honkit epub . ./wollmux-handbuch.epub`
 
 ## Editing
 
 > Currently the documentation is primarily written in German. An incomplete version in English has been started in the branch 'language-en'.
-
-The Markdown files can be edited with any plain text editor. Specialized editors with Markdown support can be found on the internet for free.
-
-GitBook contains a web server, that can be used to preview the generated HTML while editing.
-
-The server is started with Grunt.
-
-`grunt`
-
-This command will compile the Markdown to HTML and start the GitBook server. Any time a file in the folder `markdown` is changed, the files are recompiled and the server is restarted.
-
-The server listens on the port 4000. To see the HTML document open your browser on `http://localhost:4000/Hauptseite.html`.
-
-If your browser has a plugin for [LiveReload](http://livereload.com/) installed, the website is automatically refreshed.
 
 ## Deployment
 

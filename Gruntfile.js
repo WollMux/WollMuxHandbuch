@@ -10,7 +10,7 @@ module.exports = function(grunt) {
         watch: {
           scripts: {
             files: ['markdown/**/*.*'],
-            tasks: ['run:gitbook'],
+            tasks: ['run:honkit'],
             options: {
               spawn: false,
               interrupt: true,
@@ -22,12 +22,12 @@ module.exports = function(grunt) {
             options: {
               // Task-specific options go here.
             },
-            gitbook: {
+            honkit: {
                 cmd: (function(){
                   if (process.platform.startsWith("win")) {
-                    return "gitbook.cmd";
+                    return "honkit.cmd";
                   }
-                  return "gitbook";
+                  return "honkit";
                 }()),
                 args: [
                     'build'
@@ -81,7 +81,8 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-markdownlint');
     grunt.loadNpmTasks('grunt-gh-pages');
 
-    grunt.registerTask('default', ['run:gitbook', 'connect', 'watch']);
+    grunt.registerTask('default', ['run:honkit', 'connect', 'watch']);
     grunt.registerTask('check', ['markdownlint']);
-    grunt.registerTask('deploy', ['run:gitbook', 'gh-pages']);
+    grunt.registerTask('deploy', ['run:honkit', 'gh-pages']);
+    grunt.registerTask('serve', ['run:honkit', 'serve']);
 };

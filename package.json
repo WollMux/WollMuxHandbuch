@@ -7,15 +7,21 @@
     "url": "https://github.com/WollMux/WollMuxHandbuch"
   },
   "devDependencies": {
+    "gitbook-plugin-back-to-top-button": "^0.1.4",
+    "gitbook-plugin-collapsible-menu": "^1.0.3",
+    "gitbook-plugin-forkmegithub": "^2.2.0",
+    "gitbook-plugin-redirect": "^0.0.7",
+    "gitbook-plugin-richquotes": "^0.0.9",
+    "gitbook-plugin-splitter": "^0.0.8",
     "grunt": "^1.5.3",
-    "grunt-contrib-connect": "^3.0.0",
-    "grunt-contrib-jshint": "^2.1.0",
+    "grunt-contrib-jshint": "^3.2.0",
     "grunt-contrib-nodeunit": "^4.0.0",
-    "grunt-contrib-uglify": "^5.0.0",
-    "grunt-contrib-watch": "^1.0.0",
+    "grunt-contrib-uglify": "^5.2.2",
+    "grunt-contrib-watch": "^1.1.0",
     "grunt-gh-pages": "^4.0.0",
     "grunt-markdownlint": "^3.1.5",
     "grunt-run": "^0.8.1",
+    "honkit": "^4.0.0",
     "load-grunt-tasks": "^5.1.0"
   },
   "dependencies": {
