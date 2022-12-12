@@ -62,11 +62,7 @@ module.exports = function(grunt) {
                 base: '_book',
                 push: true,
                 tag: (function(){ return (tag) ? tag : ""; }()),
-                message: (function(){ return (message) ? message : "Neue Version."; }()),
-                user: {
-                    name: 'WollMux',
-                    email: 'wollmux@wollmux.org'
-                }
+                message: (function(){ return (message) ? message : "Deploy current version"; }())
             },
             src: ['**']
         }
