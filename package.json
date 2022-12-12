@@ -10,6 +10,7 @@
     "gitbook-plugin-back-to-top-button": "^0.1.4",
     "gitbook-plugin-collapsible-menu": "^1.0.3",
     "gitbook-plugin-forkmegithub": "^2.2.0",
+    "gitbook-plugin-link-checker": "^1.1.4",
     "gitbook-plugin-redirect": "^0.0.7",
     "gitbook-plugin-richquotes": "^0.0.9",
     "gitbook-plugin-splitter": "^0.0.8",
