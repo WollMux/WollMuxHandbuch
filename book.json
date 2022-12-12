@@ -4,7 +4,7 @@
 	"author": "Landeshauptstadt München",
 	"language": "de",
 	"root": "markdown",
-	"plugins": [ "atoc", "collapsible-menu", "forkmegithub", "richquotes", "redirect", "splitter", "back-to-top-button", "link-checker"],
+	"plugins": [ "atoc", "forkmegithub", "richquotes", "redirect", "back-to-top-button", "link-checker"],
 	"pluginsConfig": {
         "atoc": {
             "addClass": true,
