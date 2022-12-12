@@ -23,11 +23,8 @@ module.exports = function(grunt) {
               // Task-specific options go here.
             },
             honkit: {
-                cmd: (function(){
-                  if (process.platform.startsWith("win")) {
-                    return "honkit.cmd";
-                  }
-                  return "honkit";
+                 cmd: (function(){
+                    return "node_modules/honkit/bin/honkit.js";
                 }()),
                 args: [
                     'build'
