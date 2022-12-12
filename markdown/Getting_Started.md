@@ -3,8 +3,8 @@
 
 Bevor sie den WollMux installieren können, müssen auf ihrem System folgende Programme vorhanden sein:
 
-- **[LibreOffice](http://www.libreoffice.org/download/libreoffice-still/)**
-- **[JAVA JRE](http://www.oracle.com/technetwork/java/javase/downloads/index.html)**
+- **[LibreOffice](https://www.libreoffice.org/download/download-libreoffice/)**
+- **[JAVA JRE](https://adoptium.net/de/)**
 
 ## Vorbereitung
 
