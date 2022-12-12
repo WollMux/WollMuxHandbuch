@@ -6,21 +6,18 @@ Mehr darüber, was der WollMux alles kann, erfahren Sie hier: **[Features des Wo
 
 > **Info**  <span style="font-size:larger;font-weight:bold;color:#1D9101">WollMux Herunterladen</span>
 >
-> * **[WollMux 18.1.14](https://github.com/WollMux/WollMux/releases/tag/RELEASE_18.1.14)**
-> * **[WollMux-Konfiguration 18.1.0](https://github.com/WollMux/wollmux-config/releases/tag/v18.1.0)**
-> * [Andere Versionen](https://github.com/WollMux/WollMux/releases)
+> * **[WollMux](https://github.com/WollMux/WollMux/releases/latest)**
+> * **[WollMux-Konfiguration](https://github.com/WollMux/wollmux-config/releases)**
 >
-> [Release Notes](https://github.com/WollMux/WollMux/blob/master/doc/ChangeLog)
->
-> <span style="font-size:smaller; color:gray;">Um alle Features des WollMux nutzen zu können ist eine WollMux-Konfiguration erforderlich!</span>
+> <span style="font-size:smaller; color:gray;">Um alle WollMux-Features nutzen zu können ist eine WollMux-Konfiguration erforderlich!</span>
 
 ## Dokumentation
 
-**[Handbuch des WollMux](18.1/Handbuch_des_WollMux.md)** - Anleitungen zur Verwendung und Konfiguration des WollMux
+**[Handbuch des WollMux](18.2/Handbuch_des_WollMux.md)** - Anleitungen zur Verwendung und Konfiguration des WollMux
 
-**[FormularMax-Handbuch](18.1/FormularMax/FormularMax.md)** - Ausführliches Handbuch für die Erstellung von WollMux-Vorlagen mit dem im WollMux enthaltenen “FormularMax 4000”
+**[FormularMax-Handbuch](18.2/FormularMax/FormularMax.md)** - Ausführliches Handbuch für die Erstellung von WollMux-Vorlagen mit dem im WollMux enthaltenen “FormularMax 4000”
 
-**[WollMux-Seriendruck](18.1/MailMerge/Seriendruck.md)** - Ausführliches Handbuch für den WollMux Seriendruck
+**[WollMux-Seriendruck](18.2/MailMerge/Seriendruck.md)** - Ausführliches Handbuch für den WollMux Seriendruck
 
 ## Source Code
 
