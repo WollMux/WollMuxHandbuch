@@ -6,8 +6,9 @@ The documentation is written in [Markdown format](https://toolchain.gitbook.com/
 ## Build Requirements
 
 * [Node.js](https://nodejs.org)
-* [Grunt](http://gruntjs.com/getting-started)
-* [GitBook](https://toolchain.gitbook.com/setup.html)
+
+## Runtime Requirements
+
 * [Calibre](https://calibre-ebook.com/download) for PDF and eBook formats.
 
 ## Building
