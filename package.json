@@ -22,7 +22,7 @@
     "grunt-gh-pages": "^4.0.0",
     "grunt-markdownlint": "^3.1.5",
     "grunt-run": "^0.8.1",
-    "honkit": "^4.0.0",
+    "honkit": "^4.0.4",
     "load-grunt-tasks": "^5.1.0"
   },
   "dependencies": {
