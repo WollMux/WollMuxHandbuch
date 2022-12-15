@@ -31,6 +31,9 @@ The documentation is written in [Markdown format](https://toolchain.gitbook.com/
   * Serve locally
     `grunt serve`
 
+  * Do syntax checks
+    `grunt check`
+
   * HTML
 
     `grunt build` (Result is in `_book` directory)

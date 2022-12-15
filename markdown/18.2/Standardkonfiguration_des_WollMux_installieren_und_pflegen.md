@@ -286,7 +286,7 @@ Das Einpflegen der Änderungen eines neuen Releases der von D-III-ITD-D101 berei
 
   > **WARNING** Das Skript bestimmt die zu bearbeitende Konfiguration aus dem eigenen Aufrufpfad. Es muss also immer das `run_automux` aus dem richtigen *scripts/* Verzeichnis aufgerufen werden.
 
-* *Test*: Testen Sie die geänderte Konfiguration, wie im Abschnitt [Anpassung und Pflege der Standardkonfiguration](#anpassung_und_pflege_der_standardkonfiguration) beschrieben.
+* *Test*: Testen Sie die geänderte Konfiguration, wie im Abschnitt [Anpassung und Pflege der Standardkonfiguration](#anpassung-und-pflege-der-standardkonfiguration) beschrieben.
 
 > **WARNING** Auf gründliche Tests vor dem Produktiveinsatz darf auf keinen Fall verzichtet werden. Die bei D-III-ITD-D101 vor dem Release einer neuen Standardkonfiguration durchgeführten Tests sind nicht umfassend und können Tests vor Ort im Referat nicht ersetzen, denn
 >

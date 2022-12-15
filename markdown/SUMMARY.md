@@ -35,12 +35,11 @@
   * [Umstellung von MS Word Vorlagen](18.2/FormularMax/MS_Word_Vorlagen.md)
 * [Seriendruck](18.2/MailMerge/Seriendruck.md)
   * [Das Ausgangsdokument](18.2/MailMerge/document.md)
-  * [Die Datenquelle](18.2/MailMerge/document.md)
+  * [Die Datenquelle](18.2/MailMerge/datasource.md)
     * [Datenquellen aus MS Office konvertieren](18.2/MailMerge/MSOffice.md)
   * [Der Druck](18.2/MailMerge/options.md)
     * [Druck mit Sachleitenden Verfügungen](18.2/MailMerge/SLV.md)
   * [Etiketten drucken](18.2/MailMerge/etiketten.md)
-
 
 ## WollMux 18.1
 
@@ -70,7 +69,7 @@
   * [Umstellung von MS Word Vorlagen](18.1/FormularMax/MS_Word_Vorlagen.md)
 * [Seriendruck](18.1/MailMerge/Seriendruck.md)
   * [Das Ausgangsdokument](18.1/MailMerge/document.md)
-  * [Die Datenquelle](18.1/MailMerge/document.md)
+  * [Die Datenquelle](18.1/MailMerge/datasource.md)
     * [Datenquellen aus MS Office konvertieren](18.1/MailMerge/MSOffice.md)
   * [Der Druck](18.1/MailMerge/options.md)
     * [Druck mit Sachleitenden Verfügungen](18.1/MailMerge/SLV.md)

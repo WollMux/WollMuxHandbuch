@@ -78,7 +78,7 @@ Dazu müssen Sie zunächst eine Verbindung zwischen den Seriendruckdaten (Datenq
 1. *Datei...*: Hier können Sie eine bestehende Calcdatei aus dem Dateisystem als Datenquelle auswählen. Diese Datei wird dabei automatisch geöffnet.
 2. *Datenbank*: Um eine Datenbank auszuwählen muss diese vorher unter LibreOffice registriert worden sein.
 3. Wenn bereits eine Datenquelle (Calc Datei) offen ist, erscheinen diese als Einträge unterhalb der Schaltfläche "Datenbank" und können durch anklicken ausgewählt werden.
-4. In dem Sie *Neue Calc-Tabelle* wählen, können Sie eine Datenquelle für Ihren Seriendruck anlegen. Danach geht es weiter wie in Kapitel [Die Datenquelle](#die-datenquelle) beschrieben.
+4. In dem Sie *Neue Calc-Tabelle* wählen, können Sie eine Datenquelle für Ihren Seriendruck anlegen. Danach geht es weiter wie in Kapitel [Die Datenquelle](datasource.md) beschrieben.
 
 Wenn eine Datenquelle mehrere Tabellenblätter enthält, erscheint für jedes Tabellenblatt ein Eintrag in der Datenquellen-Liste.
 
@@ -115,7 +115,7 @@ Dazu gehen Sie folgendermaßen vor:
    ![Felder anpassen am Beispiel der Abtretungserklärung](images/mailmerge_replace_fields.png "Felder anpassen am Beispiel der Abtretungserklärung")
 4. Mit der Schaltfläche *Felder anpassen* werden die alten Felder durch die neuen ersetzt.
 
-Alle Felder, die Bestandteil des Briefkopfes sind, sollten nicht ersetzt werden. Nicht benötige Felder bleiben leer und stören deshalb nicht. Für die benötigten Felder sollte die Anpassung in der Datenquelle erfolgen (siehe Kapitel [Datenquelle an die WollMux Felder anpassen](#datenquelle-an-die-wollmux-felder-anpassen))
+Alle Felder, die Bestandteil des Briefkopfes sind, sollten nicht ersetzt werden. Nicht benötige Felder bleiben leer und stören deshalb nicht. Für die benötigten Felder sollte die Anpassung in der Datenquelle erfolgen (siehe Kapitel [Datenquelle an die WollMux Felder anpassen](datasource.md#datenquelle-an-die-wollmux-felder-anpassen))
 
 WollMux-Formularfelder, die nicht durch Serienbrieffelder ersetzt werden, werden mit den Daten aus dem Formular befüllt.
 

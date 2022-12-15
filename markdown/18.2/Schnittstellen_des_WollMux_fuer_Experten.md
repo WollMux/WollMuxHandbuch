@@ -192,7 +192,7 @@ Syntax der URL:
 Nach Betätigen eines vorher zugewiesenen Buttons oder einer Tastenkombination, wird vom Cursor ausgehend eine Rückwärts suche gestartet, die so lange läuft, bis in einem Absatz keine Textbausteine mehr gefunden werden. Alle dabei gefundenen Textbausteine werden entsprechend aufgelöst.
 
 * Einrichten einer Tastenkombination siehe [Tastenkombination für eine Schnittstelle setzen](#tastenkombination-für-eine-schnittstelle-setzen)
-* Einrichten eines Buttons siehe [Schaltflächen in die Symbolleiste von LibreOffice einbinden](#zusätzliche-schaltflächen-in-die-symbolleiste-von-LibreOffice-einbinden)
+* Einrichten eines Buttons siehe [Schaltflächen in die Symbolleiste von LibreOffice einbinden](#zusätzliche-schaltflächen-in-die-symbolleiste-von-libreoffice-einbinden)
 
 #### wollmux:TextbausteinVerweisEinfuegen
 
@@ -202,7 +202,7 @@ Syntax der URL:
 
 Nach Betätigen eines vorher zugewiesenen Buttons oder einer Tastenkombination, wird vom Cursor ausgehend eine Rückwärts suche gestartet, die so lange läuft, bis in einem Absatz keine Textbausteine mehr gefunden werden. Für alle dabei gefundenen Textbausteine werden Textmarken mit dem Dokumenten-Kommando 'insertFrag' gesetzt diese werden aber nicht gleich ausgewertet sondern erst nach dem Speichern als Vorlage und spätrigen öffnen.
 
-* Einrichten eines Buttons siehe [Schaltflächen in die Symbolleiste von LibreOffice einbinden](#zusätzliche-schaltflächen-in-die-symbolleiste-von-LibreOffice-einbinden)
+* Einrichten eines Buttons siehe [Schaltflächen in die Symbolleiste von LibreOffice einbinden](#zusätzliche-schaltflächen-in-die-symbolleiste-von-libreoffice-einbinden)
 
 #### wollmux:PlatzhalterAnspringen
 
@@ -213,7 +213,7 @@ Syntax der URL:
 Nach Betätigen eines vorher zugewiesenen Buttons oder einer Tastenkombination wird vom Cursor ausgehend der nächste Platzhalter angesprungen. Falls kein Platzhalter vorhanden ist sondern eine Marke [WM(CMD 'setJumpMark')](Dokumentkommandos_des_WollMux.md#das-kommando-setjumpmark) wird diese angesprungen.
 
 * Einrichten einer Tastenkombination siehe [Tastenkombination für eine Schnittstelle setzen](#tastenkombination-für-eine-schnittstelle-setzen)
-* Einrichten eines Buttons siehe [Schaltflächen in die Symbolleiste von LibreOffice einbinden](#zusätzliche-schaltflächen-in-die-symbolleiste-von-LibreOffice-einbinden)
+* Einrichten eines Buttons siehe [Schaltflächen in die Symbolleiste von LibreOffice einbinden](#zusätzliche-schaltflächen-in-die-symbolleiste-von-libreoffice-einbinden)
 
 #### wollmux:Seriendruck
 

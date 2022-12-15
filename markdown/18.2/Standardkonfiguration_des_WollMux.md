@@ -465,7 +465,7 @@ Die im Verzeichnis `vorlagen/fragmente` enthaltenen Dateien sind die Fragmente a
 
 Die Referate dürfen für ihre eigenen Fragmente beliebige Unterverzeichnisse im Verzeichnis `vorlagen/fragmente` anlegen, solange die Namen dieser Unterverzeichnisse keine Dateierweiterung besitzen. Das Verzeichnis `vorlagen/fragmente/beispiele` ist ein Beispiel dafür, wie ein solches Unterverzeichnis verwendet werden kann, um dort Textbausteine zu hinterlegen.
 
-Wie bereits im [Abschnitt zur Nützlichkeit von Symlinks](#warum-sind-symlinks-nützlich-) erwähnt, ist es empfehlenswert, Vorlagen die an mehreren Stellen in der Menüstruktur oder von mehreren Benutzergruppen verwendet werden, in einem Unterverzeichnis von `vorlagen/fragmente/` zu hinterlegen und an den Stellen, wo die Vorlage verwendet wird entsprechende Symlinks anzulegen.
+Wie bereits im [Abschnitt zur Nützlichkeit von Symlinks](#warum-sind-symlinks-nützlich) erwähnt, ist es empfehlenswert, Vorlagen die an mehreren Stellen in der Menüstruktur oder von mehreren Benutzergruppen verwendet werden, in einem Unterverzeichnis von `vorlagen/fragmente/` zu hinterlegen und an den Stellen, wo die Vorlage verwendet wird entsprechende Symlinks anzulegen.
 
 ### Die Bedeutung der ?.insertFrag Verzeichnisse
 

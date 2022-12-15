@@ -11,7 +11,7 @@ module.exports = function(grunt) {
             options: {
               // Task-specific options go here.
             },
-            honkit: {
+            build: {
                  cmd: (function(){
                     return "node_modules/honkit/bin/honkit.js";
                 }()),
@@ -63,6 +63,7 @@ module.exports = function(grunt) {
 
     grunt.registerTask('default', ['run:live']);
     grunt.registerTask('serve', ['run:live']);
+    grunt.registerTask('build', ['check', 'run:build']);
     grunt.registerTask('check', ['markdownlint']);
     grunt.registerTask('deploy', ['check', 'run:honkit', 'gh-pages']);
 };
