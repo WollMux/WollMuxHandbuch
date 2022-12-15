@@ -1,7 +1,7 @@
 # Handbuch des WollMux
 This repository contains the technical documentation for the [WollMux](https://github.com/WollMux/WollMux) project.
 
-The documentation is written in [Markdown format](https://toolchain.gitbook.com/syntax/markdown.html), that can be converted to HTML, PDF and several eBook formats with [GitBook](https://www.gitbook.com/).
+The documentation is written in [Markdown format](https://honkit.netlify.app/syntax/markdown.html), that can be converted to HTML, PDF and several eBook formats with [Honkit](https://honkit.netlify.app/).
 
 ## Build Requirements
 
