@@ -45,7 +45,7 @@ Eintrag *DataAccess.xcu*
 
 ## Einmaliges erstellen der benötigten LO-Base Datenbank
 
-1. [LO Base aufrufen](#LO_Base_aufrufen)
+1. [LO Base aufrufen](#lo-base-aufrufen)
 2. Datenbank auswählen<br>
    ![**Entsprechende Datenbank auswählen. &rarr; Button "Weiter&gt;&gt;"**](images/Datenbank/WOL_Base_DB_auswaehlen.png "Entsprechende Datenbank auswählen. --> Button "Weiter>>"")
 3. Datenbankverbindung einrichten<br>
