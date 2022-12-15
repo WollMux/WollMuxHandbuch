@@ -29,11 +29,11 @@ The documentation is written in [Markdown format](https://toolchain.gitbook.com/
 * Build the documentation
 
   * Serve locally
-    `npx honkit serve`
+    `grunt serve`
 
   * HTML
 
-    `npx honkit build` (Result is in `_book` directory)
+    `grunt build` (Result is in `_book` directory)
 
   * PDF
 

@@ -7,17 +7,6 @@ module.exports = function(grunt) {
 
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
-        watch: {
-          scripts: {
-            files: ['markdown/**/*.*'],
-            tasks: ['run:honkit'],
-            options: {
-              spawn: false,
-              interrupt: true,
-              livereload: true
-            },
-          },
-        },
         run: {
             options: {
               // Task-specific options go here.
@@ -29,15 +18,15 @@ module.exports = function(grunt) {
                 args: [
                     'build'
                 ]
-            }
-        },
-        connect: {
-            server: {
-                options: {
-                    port: 4000,
-                    base: '_book'
-                }
-            }
+            },
+            live: {
+                cmd: (function(){
+                   return "node_modules/honkit/bin/honkit.js";
+               }()),
+               args: [
+                   'serve'
+               ]
+            },
         },
         markdownlint: {
             full: {
@@ -68,14 +57,12 @@ module.exports = function(grunt) {
         }
     });
 
-    grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-run');
     grunt.loadNpmTasks('grunt-markdownlint');
     grunt.loadNpmTasks('grunt-gh-pages');
 
-    grunt.registerTask('default', ['run:honkit', 'connect', 'watch']);
+    grunt.registerTask('default', ['run:live']);
+    grunt.registerTask('serve', ['run:live']);
     grunt.registerTask('check', ['markdownlint']);
     grunt.registerTask('deploy', ['run:honkit', 'gh-pages']);
-    grunt.registerTask('serve', ['run:honkit', 'serve']);
 };
