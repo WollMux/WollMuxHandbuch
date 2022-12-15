@@ -64,5 +64,5 @@ module.exports = function(grunt) {
     grunt.registerTask('default', ['run:live']);
     grunt.registerTask('serve', ['run:live']);
     grunt.registerTask('check', ['markdownlint']);
-    grunt.registerTask('deploy', ['run:honkit', 'gh-pages']);
+    grunt.registerTask('deploy', ['check', 'run:honkit', 'gh-pages']);
 };
